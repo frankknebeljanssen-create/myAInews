@@ -184,18 +184,29 @@ Source content:
 Write a curated version with:
 1. A new HEADLINE (max 80 chars, sharper than the original, signals what matters)
 2. A BODY of approximately 400 words (~2 mobile screens). Structure:
-   - Opening sentence: what happened, why it matters
-   - 2-3 paragraphs of key facts, specifics, numbers, names
-   - End with the concrete signal/implication for AI practitioners or enterprise readers
+   - Opening paragraph (no sub-heading): what happened, why it matters
+   - **Sub-heading 1** (3-5 words, e.g. "What Happened" or topic-specific like "The Numbers"), then 1-2 paragraphs of key facts, specifics, numbers, names
+   - **Sub-heading 2** (3-5 words, e.g. "Why It Matters" or topic-specific like "The Signal"), then 1-2 paragraphs with implication for AI practitioners or enterprise readers, ending with concrete take-away
 
-Avoid: marketing language, listicle format, padding phrases like "in this article we explore", clickbait, hedging.
-Use: direct prose, specific numbers/names, plain English, paragraph breaks (not bullet points).
+Format the sub-headings as a line of the form: ## Heading Text
+Sub-headings should be specific to the content (NOT generic like "Background" or "Conclusion"). Vary them. Use topic-relevant phrasing.
+
+Avoid: marketing language, listicle format, padding phrases like "in this article we explore", clickbait, hedging, bullet points.
+Use: direct prose, specific numbers/names, plain English, paragraph breaks.
 
 Reply in this exact format:
 HEADLINE: <your headline>
 
 BODY:
-<your ~400-word body>"""
+<opening paragraph>
+
+## <sub-heading 1>
+
+<1-2 paragraphs>
+
+## <sub-heading 2>
+
+<1-2 paragraphs ending with take-away>"""
 
     try:
         msg = client.messages.create(
