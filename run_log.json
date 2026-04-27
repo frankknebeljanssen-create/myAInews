@@ -1,0 +1,15 @@
+[
+  {
+    "timestamp": "2026-04-27T12:48:08.692713+00:00",
+    "feeds_checked": 13,
+    "items_fetched": 147,
+    "new_items": 30,
+    "kept": 21,
+    "dropped": 9,
+    "errors": 0,
+    "input_tokens": 46577,
+    "output_tokens": 12383,
+    "cost_usd": 0.0868,
+    "total_in_news": 21
+  }
+]
