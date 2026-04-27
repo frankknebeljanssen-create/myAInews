@@ -1,0 +1,70 @@
+# myAInews curated AI feeds
+# Edit this file to add/remove sources. Curator picks it up on next run.
+
+feeds:
+  # Vendor blogs (highest signal density)
+  - name: Anthropic News
+    url: https://www.anthropic.com/news/rss.xml
+    weight: high
+
+  - name: OpenAI Blog
+    url: https://openai.com/news/rss.xml
+    weight: high
+
+  - name: Google DeepMind
+    url: https://deepmind.google/blog/rss.xml
+    weight: high
+
+  # The Neuron — prioritize "what happened in ai today"
+  - name: The Neuron
+    url: https://www.theneurondaily.com/feed
+    weight: high
+    priority_keywords:
+      - "what happened in ai today"
+      - "happened in ai"
+
+  # Tech publications (AI sections)
+  - name: MIT Technology Review AI
+    url: https://www.technologyreview.com/topic/artificial-intelligence/feed
+    weight: high
+
+  - name: The Verge AI
+    url: https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
+    weight: medium
+
+  - name: Ars Technica AI
+    url: https://arstechnica.com/ai/feed/
+    weight: medium
+
+  - name: VentureBeat AI
+    url: https://venturebeat.com/category/ai/feed/
+    weight: medium
+
+  - name: TechCrunch AI
+    url: https://techcrunch.com/category/artificial-intelligence/feed/
+    weight: medium
+
+  - name: Wired AI
+    url: https://www.wired.com/feed/tag/ai/latest/rss
+    weight: medium
+
+  # Newsletters / analyst voices
+  - name: Import AI (Jack Clark)
+    url: https://importai.substack.com/feed
+    weight: high
+
+  - name: The Batch (Andrew Ng)
+    url: https://www.deeplearning.ai/the-batch/feed/
+    weight: high
+
+  - name: Latent Space
+    url: https://www.latent.space/feed
+    weight: medium
+
+# Curation configuration
+config:
+  max_items: 30           # max items kept in news.json
+  body_word_target: 400   # ~2 mobile screens
+  filter_strictness: medium   # loose | medium | strict
+  cache_days: 90          # how long to keep curated items
+  max_new_per_run: 30     # safety cap on new items processed per hourly run
