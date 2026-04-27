@@ -6,149 +6,41 @@
 <title>myAInews — Dashboard</title>
 <style>
   * { box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    background: #0a0a0f;
-    color: #e0e0e0;
-    margin: 0;
-    padding: 20px;
-    line-height: 1.5;
-  }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0a0a0f; color: #e0e0e0; margin: 0; padding: 20px; line-height: 1.5; }
   h1 { font-size: 24px; margin: 0 0 4px 0; }
-  h2 {
-    color: #888;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin: 32px 0 12px 0;
-  }
-  .gate {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 80vh;
-  }
-  .gate-box {
-    background: #1c1c26;
-    padding: 40px;
-    border-radius: 12px;
-    width: 360px;
-    max-width: 100%;
-  }
+  h2 { color: #888; font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em; margin: 32px 0 12px 0; }
+  .gate { display: flex; align-items: center; justify-content: center; min-height: 80vh; }
+  .gate-box { background: #1c1c26; padding: 40px; border-radius: 12px; width: 360px; max-width: 100%; }
   .gate-box h1 { margin-top: 0; }
   .gate-box p { color: #888; }
-  input[type=password] {
-    background: #0a0a0f;
-    color: #e0e0e0;
-    border: 1px solid #333;
-    padding: 12px;
-    border-radius: 8px;
-    width: 100%;
-    font-size: 16px;
-    margin: 16px 0;
-  }
-  button {
-    background: #63beff;
-    color: #0a0a0f;
-    border: 0;
-    padding: 12px 20px;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    font-size: 15px;
-  }
+  input[type=password] { background: #0a0a0f; color: #e0e0e0; border: 1px solid #333; padding: 12px; border-radius: 8px; width: 100%; font-size: 16px; margin: 16px 0; }
+  button { background: #63beff; color: #0a0a0f; border: 0; padding: 12px 20px; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 15px; }
   button:hover { background: #88cdff; }
   .hidden { display: none; }
-  .stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 12px;
-    margin-bottom: 8px;
-  }
-  .stat {
-    background: #1c1c26;
-    padding: 16px;
-    border-radius: 8px;
-  }
-  .stat-val {
-    font-size: 26px;
-    font-weight: 700;
-    color: #63beff;
-    line-height: 1.2;
-  }
-  .stat-lbl {
-    font-size: 11px;
-    color: #888;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-top: 4px;
-  }
-  .runs {
-    background: #1c1c26;
-    padding: 12px 16px;
-    border-radius: 8px;
-    max-height: 220px;
-    overflow-y: auto;
-    font-size: 13px;
-  }
-  .run {
-    display: grid;
-    grid-template-columns: 170px 1fr 80px;
-    gap: 10px;
-    padding: 6px 0;
-    border-bottom: 1px solid #2a2a35;
-  }
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 8px; }
+  .stat { background: #1c1c26; padding: 16px; border-radius: 8px; }
+  .stat-val { font-size: 26px; font-weight: 700; color: #63beff; line-height: 1.2; }
+  .stat-lbl { font-size: 11px; color: #888; text-transform: uppercase; letter-spacing: 0.05em; margin-top: 4px; }
+  .runs { background: #1c1c26; padding: 12px 16px; border-radius: 8px; max-height: 220px; overflow-y: auto; font-size: 13px; }
+  .run { display: grid; grid-template-columns: 170px 1fr 80px; gap: 10px; padding: 6px 0; border-bottom: 1px solid #2a2a35; }
   .run:last-child { border-bottom: 0; }
   .cost-pos { color: #ff8866; }
   .cost-zero { color: #66cc66; }
-  .item {
-    background: #1c1c26;
-    padding: 18px;
-    border-radius: 10px;
-    margin-bottom: 12px;
-  }
-  .item h3 {
-    margin: 0 0 6px 0;
-    font-size: 17px;
-    line-height: 1.3;
-  }
-  .item .meta {
-    color: #888;
-    font-size: 12px;
-    margin-bottom: 12px;
-  }
-  .item .body {
-    color: #c0c0c0;
-    font-size: 14px;
-    line-height: 1.6;
-    white-space: pre-wrap;
-  }
+  .item { background: #1c1c26; padding: 18px; border-radius: 10px; margin-bottom: 12px; }
+  .item h3 { margin: 0 0 6px 0; font-size: 17px; line-height: 1.3; }
+  .item .meta { color: #888; font-size: 12px; margin-bottom: 12px; }
+  .item .body { color: #c0c0c0; font-size: 14px; line-height: 1.6; white-space: pre-wrap; }
   .item .actions { margin-top: 14px; }
-  .item .actions a {
-    color: #63beff;
-    text-decoration: none;
-    font-size: 13px;
-    margin-right: 18px;
-  }
+  .item .actions a { color: #63beff; text-decoration: none; font-size: 13px; margin-right: 18px; }
   .item .actions a:hover { text-decoration: underline; }
   .err { color: #ff8866; min-height: 20px; }
-  .controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 14px;
-  }
-  .controls a {
-    color: #63beff;
-    text-decoration: none;
-    font-size: 13px;
-  }
+  .controls { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+  .controls a { color: #63beff; text-decoration: none; font-size: 13px; }
   .controls a:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
 
-<!-- Password gate -->
 <div id="gate" class="gate">
   <div class="gate-box">
     <h1>myAInews</h1>
@@ -159,18 +51,14 @@
   </div>
 </div>
 
-<!-- Dashboard -->
 <div id="dash" class="hidden">
   <div class="controls">
     <h1>myAInews <span style="color:#888;font-size:14px;font-weight:400">— Dashboard</span></h1>
     <a href="https://github.com/frankknebeljanssen-create/myAInews/actions" target="_blank">↻ Trigger run on GitHub</a>
   </div>
-
   <div class="stats" id="stats"></div>
-
   <h2>Recent runs</h2>
   <div class="runs" id="runs"></div>
-
   <h2>Curated items</h2>
   <div id="items"></div>
 </div>
@@ -199,64 +87,35 @@ document.getElementById("pw").addEventListener("keypress", e => {
   if (e.key === "Enter") login();
 });
 
-if (sessionStorage.getItem("myAInews_auth") === "1") {
-  showDash();
-}
+if (sessionStorage.getItem("myAInews_auth") === "1") showDash();
 
 async function showDash() {
   document.getElementById("gate").classList.add("hidden");
   document.getElementById("dash").classList.remove("hidden");
-
   let news = null, log = [];
-  try {
-    news = await fetch("news.json?t=" + Date.now()).then(r => r.json());
-  } catch (e) {}
-  try {
-    log = await fetch("run_log.json?t=" + Date.now()).then(r => r.json());
-  } catch (e) {}
+  try { news = await fetch("news.json?t=" + Date.now()).then(r => r.json()); } catch (e) {}
+  try { log = await fetch("run_log.json?t=" + Date.now()).then(r => r.json()); } catch (e) {}
 
   if (!news || !news.items || news.items.length === 0) {
     document.getElementById("stats").innerHTML = "";
-    document.getElementById("runs").innerHTML =
-      "<p style='color:#888'>No runs yet. Trigger one manually via the link above.</p>";
-    document.getElementById("items").innerHTML =
-      "<p style='color:#888'>No curated items yet.</p>";
+    document.getElementById("runs").innerHTML = "<p style='color:#888'>No runs yet.</p>";
+    document.getElementById("items").innerHTML = "<p style='color:#888'>No curated items yet.</p>";
     return;
   }
 
-  // Stats
   const now = Date.now();
-  const cost24h = log
-    .filter(r => new Date(r.timestamp).getTime() > now - 86400000)
-    .reduce((s, r) => s + (r.cost_usd || 0), 0);
-  const cost30d = log
-    .filter(r => new Date(r.timestamp).getTime() > now - 30*86400000)
-    .reduce((s, r) => s + (r.cost_usd || 0), 0);
+  const cost24h = log.filter(r => new Date(r.timestamp).getTime() > now - 86400000).reduce((s, r) => s + (r.cost_usd || 0), 0);
+  const cost30d = log.filter(r => new Date(r.timestamp).getTime() > now - 30*86400000).reduce((s, r) => s + (r.cost_usd || 0), 0);
   const lastRun = log[log.length - 1];
-  const lastRunMins = lastRun
-    ? Math.round((now - new Date(lastRun.timestamp).getTime()) / 60000)
-    : null;
+  const lastRunMins = lastRun ? Math.round((now - new Date(lastRun.timestamp).getTime()) / 60000) : null;
 
   document.getElementById("stats").innerHTML = `
-    <div class="stat">
-      <div class="stat-val">${news.items.length}</div>
-      <div class="stat-lbl">Curated items</div>
-    </div>
-    <div class="stat">
-      <div class="stat-val">${lastRunMins !== null ? lastRunMins : '—'}<span style="font-size:14px"> min</span></div>
-      <div class="stat-lbl">Since last run</div>
-    </div>
-    <div class="stat">
-      <div class="stat-val">$${cost24h.toFixed(3)}</div>
-      <div class="stat-lbl">Cost 24 h</div>
-    </div>
-    <div class="stat">
-      <div class="stat-val">$${cost30d.toFixed(2)}</div>
-      <div class="stat-lbl">Cost 30 d</div>
-    </div>
+    <div class="stat"><div class="stat-val">${news.items.length}</div><div class="stat-lbl">Curated items</div></div>
+    <div class="stat"><div class="stat-val">${lastRunMins !== null ? lastRunMins : '—'}<span style="font-size:14px"> min</span></div><div class="stat-lbl">Since last run</div></div>
+    <div class="stat"><div class="stat-val">$${cost24h.toFixed(3)}</div><div class="stat-lbl">Cost 24 h</div></div>
+    <div class="stat"><div class="stat-val">$${cost30d.toFixed(2)}</div><div class="stat-lbl">Cost 30 d</div></div>
   `;
 
-  // Recent runs (last 15)
   document.getElementById("runs").innerHTML = log.slice(-15).reverse().map(r => `
     <div class="run">
       <span>${new Date(r.timestamp).toLocaleString()}</span>
@@ -265,16 +124,11 @@ async function showDash() {
     </div>
   `).join("") || "<p style='color:#888'>No runs yet.</p>";
 
-  // Items
   document.getElementById("items").innerHTML = news.items.map(it => `
     <div class="item">
       <h3>${escapeHtml(it.headline)}</h3>
-      <div class="meta">
-        ${escapeHtml(it.source)} ·
-        ${new Date(it.published).toLocaleDateString()} ·
-        curated ${new Date(it.curated_at).toLocaleString()}
-      </div>
-      <div class="body">${escapeHtml(it.body)}</div>
+      <div class="meta">${escapeHtml(it.source)} · ${new Date(it.published).toLocaleDateString()} · curated ${new Date(it.curated_at).toLocaleString()}</div>
+      <div class="body">${renderBody(it.body)}</div>
       <div class="actions">
         <a href="${escapeAttr(it.url)}" target="_blank">Original →</a>
         <span style="color:#555;font-size:12px">id: ${it.id}</span>
@@ -288,8 +142,14 @@ function escapeHtml(s) {
   div.textContent = s || "";
   return div.innerHTML;
 }
-function escapeAttr(s) {
-  return (s || "").replace(/"/g, "&quot;");
+function escapeAttr(s) { return (s || "").replace(/"/g, "&quot;"); }
+function renderBody(s) {
+  const lines = (s || "").split("\n");
+  return lines.map(line => {
+    const m = line.match(/^##\s+(.+)$/);
+    if (m) return `<h4 style="color:#63beff;margin:18px 0 4px 0;font-size:14px;text-transform:uppercase;letter-spacing:0.04em;">${escapeHtml(m[1])}</h4>`;
+    return escapeHtml(line);
+  }).join("\n");
 }
 </script>
 </body>
