@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-04-27T23:46:40.136486+00:00",
+  "generated_at": "2026-04-28T02:07:39.353517+00:00",
   "items": [
+    {
+      "id": "bc5ccb6599f8",
+      "url": "https://www.theverge.com/streaming/919441/google-ask-youtube-ai-chatbot-search",
+      "headline": "Google Launches Conversational Search for YouTube, Targets Premium Users First",
+      "body": "Google is testing a conversational search interface for YouTube called \"Ask YouTube,\" which generates AI-synthesized result pages combining video content, summaries, and follow-up prompts. The feature is currently available to YouTube Premium subscribers in the US aged 18 and older, marking another expansion of Google's AI Mode technology into core search surfaces.\n\n## How Ask YouTube Works\n\nThe feature presents users with an \"Ask YouTube\" button in the search bar. Clicking it surfaces suggested prompts like \"funny baby elephant playing clips\" or \"summary of the rules of volleyball.\" Users can either select a prompt or enter their own question. The system then generates a results page with AI-written text summaries at the top, followed by curated video content organized into thematic galleries, YouTube Shorts, and related queries.\n\nA test search for \"short history of the Apollo 11 moon landing\" returned a text summary with milestone bullets, a timestamped longform video from The Life Guide, video galleries organized by phase (\"From Launch to Splashdown,\" \"Historic Footage and Behind-the-Scenes\"), and Shorts grouped by topic. The interface includes a text box for follow-up questions. Google is drawing text summaries from the videos displayed in results, rather than generating entirely new content.\n\n## Accuracy Gaps and Expansion Plans\n\nThe feature exhibits the accuracy issues typical of AI summarization. In testing, Ask YouTube incorrectly stated that the original Steam Controller had no joysticks when it actually has one. This mirrors known limitations in AI Mode and underscores that conversational search interfaces require user verification of claims.\n\nGoogle plans to expand Ask YouTube beyond Premium subscribers, though no timeline was provided. The move signals confidence in the conversational search model as a durable product direction. For enterprises evaluating AI search integration, Ask YouTube demonstrates the viability of combining LLM-generated summaries with ranked multimedia results, though factual verification remains a critical requirement before deploying such interfaces in knowledge-dependent domains.",
+      "source": "The Verge AI",
+      "published": "2026-04-28T00:01:54+00:00",
+      "curated_at": "2026-04-28T02:05:15.850558+00:00",
+      "original_title": "Google is testing AI chatbot search for YouTube"
+    },
     {
       "id": "e430bd91dd2b",
       "url": "https://www.latent.space/p/appliedintuition",
@@ -290,16 +300,6 @@
       "published": "2026-04-25T15:00:00+00:00",
       "curated_at": "2026-04-27T13:06:07.114893+00:00",
       "original_title": "Apple under Ternus: what comes next for the tech giant’s hardware strategy"
-    },
-    {
-      "id": "9e31221df658",
-      "url": "https://www.wired.com/story/security-news-this-week-discord-sleuths-gained-unauthorized-access-to-anthropics-mythos/",
-      "headline": "Discord Users Breach Anthropic's Restricted Mythos AI Model",
-      "body": "A group of Discord users gained unauthorized access to Anthropic's Mythos Preview, a closely guarded AI tool designed to identify security vulnerabilities in software and networks. The breach highlights the gap between Anthropic's access controls and the determination of researchers willing to piece together publicly available information. The incident raises questions about how thoroughly companies restrict experimental AI tools and whether current safeguards adequately protect systems intended for limited use.\n\n## How the Access Occurred\n\nThe Discord group exploited multiple vectors to reach Mythos. They examined data from a recent breach of Mercor, an AI training startup, and used knowledge of Anthropic's standard model naming conventions to make an educated guess about where the tool was hosted online. One member leveraged existing permissions they held through work as a contractor for an Anthropic partner firm, which granted them access to other Anthropic models. This combination of detective work and legitimate credentials gave the group entry not only to Mythos but to other unreleased Anthropic models as well.\n\nAccording to Bloomberg's reporting, the group used their access cautiously, building only simple websites rather than attempting to exploit Mythos's vulnerability-detection capabilities. This restraint appears designed to avoid triggering Anthropic's monitoring systems and detection mechanisms. The breach itself was discovered and disclosed through Bloomberg's investigation rather than through Anthropic's own security monitoring.\n\n## Implications for AI Containment Strategy\n\nThe incident demonstrates that controlling access to powerful AI systems requires more than credential management and URL obfuscation. Attackers with partial legitimate access can extrapolate system locations and configurations, particularly when companies follow consistent infrastructure patterns. For enterprises deploying restricted AI models, this suggests that predictable naming schemes and hosting conventions create exploitable patterns.\n\nMore broadly, the breach underscores a persistent tension in AI development: companies want to study dangerous capabilities in controlled environments, but restricting access while using standard infrastructure creates an incentive structure that rewards sophisticated reconnaissance. Organizations developing similar experimental tools should assume that multiple stakeholders will attempt to locate and access them, and should architect access controls accordingly rather than relying on security through obscurity. The practical takeaway for enterprises: if you're limiting access to a sensitive AI system, assume sophisticated users will map your infrastructure and use partial credentials to probe for expansion opportunities.",
-      "source": "Wired AI",
-      "published": "2026-04-25T10:30:00+00:00",
-      "curated_at": "2026-04-27T13:06:15.384462+00:00",
-      "original_title": "Discord Sleuths Gained Unauthorized Access to Anthropic’s Mythos"
     }
   ]
 }
