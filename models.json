@@ -18,8 +18,8 @@
     },
     {
       "provider": "Google",
-      "model": "Nano Banana Pro (Gemini 3 Pro Image Preview)",
-      "context": "66k",
+      "model": "Gemini 3.1 Pro Preview",
+      "context": "1.0M",
       "price": "$2.00/M",
       "color": "#4285F4"
     },
