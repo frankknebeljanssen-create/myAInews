@@ -16,7 +16,7 @@ import os, sys, json, re
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
-import requests
+import cloudscraper
 import feedparser
 from bs4 import BeautifulSoup
 from anthropic import Anthropic
@@ -28,9 +28,6 @@ NEURON_RSS = "https://www.theneurondaily.com/feed"
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 MODEL = "claude-haiku-4-5-20251001"
 
-# Full browser User-Agent — feedparser's default UA is often Cloudflare-blocked
-BROWSER_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-
 if not ANTHROPIC_API_KEY:
     print("[neuron] FAIL: ANTHROPIC_API_KEY not set", file=sys.stderr)
     sys.exit(1)
@@ -39,13 +36,11 @@ client = Anthropic(api_key=ANTHROPIC_API_KEY)
 
 
 def fetch_rss_bytes():
-    """Fetch RSS via requests with a real browser UA. Bypasses Cloudflare bot-blocks."""
-    headers = {
-        "User-Agent": BROWSER_UA,
-        "Accept": "application/rss+xml, application/atom+xml, application/xml;q=0.9, text/xml;q=0.8, */*;q=0.5",
-        "Accept-Language": "en-US,en;q=0.9",
-    }
-    r = requests.get(NEURON_RSS, headers=headers, timeout=30)
+    """Fetch RSS via cloudscraper — handles Cloudflare bot challenges that block plain requests."""
+    scraper = cloudscraper.create_scraper(
+        browser={"browser": "chrome", "platform": "darwin", "desktop": True}
+    )
+    r = scraper.get(NEURON_RSS, timeout=30)
     r.raise_for_status()
     return r.content
 
@@ -61,7 +56,6 @@ def fetch_latest_issue():
 
     fp = feedparser.parse(raw)
     if fp.bozo and not fp.entries:
-        # Show first 400 bytes to help diagnose what we actually got
         preview = raw[:400].decode("utf-8", errors="replace")
         raise RuntimeError(f"RSS parse error: {fp.bozo_exception}\nFirst 400 chars of response:\n{preview}")
     if not fp.entries:
