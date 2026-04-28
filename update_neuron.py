@@ -1,30 +1,29 @@
 """Update neuron.json — runs daily via GitHub Actions.
 
-Uses The Neuron's Beehiiv RSS feed (already proven to work in curate.py).
-Bypasses the homepage's Cloudflare protection entirely.
+Beehiiv's /feed endpoint now returns the homepage HTML instead of RSS,
+so we scrape the homepage to find the latest issue, then fetch that issue
+directly. Cloudscraper bypasses Cloudflare's bot challenges that block
+plain requests.
 
 Workflow:
-  1. Fetch RSS feed via feedparser
-  2. Pick newest entry (Beehiiv RSS is sorted newest-first)
-  3. Extract content:encoded HTML (full issue body)
-  4. Strip to clean text
-  5. Send to Haiku 4.5 to extract structured JSON matching the PWA schema
-  6. Compare to existing — skip if same issue_url
-  7. Write neuron.json
+  1. cloudscraper.get(homepage) → find latest /p/ post URL
+  2. cloudscraper.get(issue_url) → full HTML
+  3. Strip to clean text
+  4. Send to Haiku 4.5 for structured extraction
+  5. Compare to existing — skip if same issue_url
+  6. Write neuron.json
 """
 import os, sys, json, re
 from datetime import datetime, timezone
-from email.utils import parsedate_to_datetime
 from pathlib import Path
 import cloudscraper
-import feedparser
 from bs4 import BeautifulSoup
 from anthropic import Anthropic
 
 REPO_ROOT = Path(__file__).parent
 NEURON_FILE = REPO_ROOT / "neuron.json"
 
-NEURON_RSS = "https://www.theneurondaily.com/feed"
+NEURON_HOME = "https://www.theneurondaily.com/"
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 MODEL = "claude-haiku-4-5-20251001"
 
@@ -34,78 +33,73 @@ if not ANTHROPIC_API_KEY:
 
 client = Anthropic(api_key=ANTHROPIC_API_KEY)
 
+# Single scraper instance — reuses Cloudflare cookies across requests
+SCRAPER = cloudscraper.create_scraper(
+    browser={"browser": "chrome", "platform": "darwin", "desktop": True}
+)
 
-def fetch_rss_bytes():
-    """Fetch RSS via cloudscraper — handles Cloudflare bot challenges that block plain requests."""
-    scraper = cloudscraper.create_scraper(
-        browser={"browser": "chrome", "platform": "darwin", "desktop": True}
-    )
-    r = scraper.get(NEURON_RSS, timeout=30)
+
+def fetch(url):
+    print(f"[neuron] GET {url}")
+    r = SCRAPER.get(url, timeout=30)
     r.raise_for_status()
-    return r.content
+    return r.text
 
 
-def fetch_latest_issue():
-    """Fetch RSS feed bytes, parse with feedparser, return latest entry's URL/title/HTML/date."""
-    print(f"[neuron] fetching RSS feed: {NEURON_RSS}")
-    try:
-        raw = fetch_rss_bytes()
-    except Exception as e:
-        raise RuntimeError(f"HTTP error fetching RSS: {e}")
-    print(f"[neuron] received {len(raw)} bytes from RSS endpoint")
-
-    fp = feedparser.parse(raw)
-    if fp.bozo and not fp.entries:
-        preview = raw[:400].decode("utf-8", errors="replace")
-        raise RuntimeError(f"RSS parse error: {fp.bozo_exception}\nFirst 400 chars of response:\n{preview}")
-    if not fp.entries:
-        raise RuntimeError("RSS feed has no entries")
-    latest = fp.entries[0]
-
-    issue_url = latest.get("link", "")
-    if not issue_url:
-        raise RuntimeError("latest entry has no link")
-
-    title = latest.get("title", "").strip()
-
-    # Beehiiv RSS includes content:encoded with full body
-    content_html = ""
-    if hasattr(latest, "content") and latest.content:
-        content_html = latest.content[0].get("value", "")
-    if not content_html and hasattr(latest, "summary"):
-        content_html = latest.summary
-    if not content_html and hasattr(latest, "description"):
-        content_html = latest.description
-    if not content_html:
-        raise RuntimeError("latest entry has no content/summary")
-
-    # pubDate is RFC2822, convert to YYYY-MM-DD
-    pub_date = ""
-    if hasattr(latest, "published"):
-        try:
-            dt = parsedate_to_datetime(latest.published)
-            pub_date = dt.strftime("%Y-%m-%d")
-        except Exception:
-            pass
-    if not pub_date:
-        pub_date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-
-    return {
-        "issue_url": issue_url,
-        "title": title,
-        "content_html": content_html,
-        "pub_date": pub_date,
-    }
+def find_latest_issue_url(home_html):
+    """Parse homepage for the URL of the latest /p/ post (Beehiiv pattern)."""
+    soup = BeautifulSoup(home_html, "html.parser")
+    seen = set()
+    candidates = []
+    for a in soup.find_all("a", href=True):
+        href = a["href"]
+        if "/p/" not in href:
+            continue
+        full = href if href.startswith("http") else f"https://www.theneurondaily.com{href if href.startswith('/') else '/' + href}"
+        # de-dup, preserve discovery order
+        if full not in seen:
+            seen.add(full)
+            candidates.append(full)
+    if not candidates:
+        raise RuntimeError("no /p/ post links found on homepage")
+    print(f"[neuron] found {len(candidates)} /p/ links, picking first as latest")
+    return candidates[0]
 
 
 def html_to_text(html):
     """Strip HTML chrome, return clean readable text capped at 50k chars."""
     soup = BeautifulSoup(html, "html.parser")
-    for tag in soup(["script", "style", "noscript", "svg"]):
+    for tag in soup(["script", "style", "nav", "footer", "header", "aside", "noscript", "svg"]):
         tag.decompose()
-    text = soup.get_text("\n", strip=True)
+    main = soup.find("article") or soup.find("main") or soup.body
+    text = main.get_text("\n", strip=True) if main else soup.get_text("\n", strip=True)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text[:50000]
+
+
+def extract_title_from_html(html):
+    """Pull the og:title or <title> from the issue page for use as original_title."""
+    soup = BeautifulSoup(html, "html.parser")
+    og = soup.find("meta", property="og:title")
+    if og and og.get("content"):
+        return og["content"].strip()
+    if soup.title and soup.title.string:
+        return soup.title.string.strip()
+    return ""
+
+
+def extract_published_date(html):
+    """Try to find the publish date from meta tags. Returns YYYY-MM-DD or empty."""
+    soup = BeautifulSoup(html, "html.parser")
+    for prop in ["article:published_time", "og:article:published_time"]:
+        m = soup.find("meta", property=prop)
+        if m and m.get("content"):
+            try:
+                # ISO 8601 — first 10 chars are YYYY-MM-DD
+                return m["content"][:10]
+            except Exception:
+                pass
+    return ""
 
 
 SYSTEM_PROMPT = """You extract structured data from issues of "The Neuron Daily", an AI newsletter.
@@ -166,7 +160,6 @@ def extract_structured(article_text, issue_url, pub_date, original_title):
     )
     raw_text = resp.content[0].text
     full = "{" + raw_text
-    # Cut at the first complete JSON object
     depth = 0
     end = -1
     for i, ch in enumerate(full):
@@ -184,15 +177,18 @@ def extract_structured(article_text, issue_url, pub_date, original_title):
 
 def main():
     try:
-        issue = fetch_latest_issue()
+        home_html = fetch(NEURON_HOME)
+    except Exception as e:
+        print(f"[neuron] FAIL: cannot fetch homepage: {e}", file=sys.stderr)
+        sys.exit(1)
+    print(f"[neuron] homepage: {len(home_html)} chars")
+
+    try:
+        issue_url = find_latest_issue_url(home_html)
     except Exception as e:
         print(f"[neuron] FAIL: {e}", file=sys.stderr)
         sys.exit(1)
-
-    issue_url = issue["issue_url"]
-    pub_date = issue["pub_date"]
-    print(f"[neuron] latest issue: {pub_date} | {issue['title'][:80]}")
-    print(f"[neuron] url: {issue_url}")
+    print(f"[neuron] latest issue URL: {issue_url}")
 
     # Skip if same issue already captured
     if NEURON_FILE.exists():
@@ -204,15 +200,26 @@ def main():
         except Exception:
             pass
 
-    article_text = html_to_text(issue["content_html"])
+    try:
+        issue_html = fetch(issue_url)
+    except Exception as e:
+        print(f"[neuron] FAIL: cannot fetch issue: {e}", file=sys.stderr)
+        sys.exit(1)
+    print(f"[neuron] issue page: {len(issue_html)} chars")
+
+    article_text = html_to_text(issue_html)
     print(f"[neuron] article text: {len(article_text)} chars")
     if len(article_text) < 500:
         print(f"[neuron] FAIL: article text too short ({len(article_text)} chars)", file=sys.stderr)
         sys.exit(1)
 
+    original_title = extract_title_from_html(issue_html)
+    pub_date = extract_published_date(issue_html) or datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    print(f"[neuron] date: {pub_date} | title: {original_title[:80]}")
+
     print(f"[neuron] extracting structured data via {MODEL}...")
     try:
-        data = extract_structured(article_text, issue_url, pub_date, issue["title"])
+        data = extract_structured(article_text, issue_url, pub_date, original_title)
     except json.JSONDecodeError as e:
         print(f"[neuron] FAIL: Haiku returned invalid JSON: {e}", file=sys.stderr)
         sys.exit(1)
@@ -220,7 +227,6 @@ def main():
         print(f"[neuron] FAIL: extraction error: {e}", file=sys.stderr)
         sys.exit(1)
 
-    # Sanity checks
     required = ["headline", "intro", "bullets", "main_story", "around_the_horn"]
     missing = [k for k in required if not data.get(k)]
     if missing:
@@ -230,7 +236,7 @@ def main():
         print("[neuron] FAIL: no bullets extracted", file=sys.stderr)
         sys.exit(1)
 
-    # Force trusted fields (defense against Haiku rewriting)
+    # Force trusted fields
     data["issue_url"] = issue_url
     data["date"] = pub_date
 
