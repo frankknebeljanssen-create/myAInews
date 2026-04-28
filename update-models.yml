@@ -1,0 +1,35 @@
+name: Update models
+on:
+  schedule:
+    - cron: '0 6 * * *'  # daily 06:00 UTC = 08:00 Berlin time
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: update-models
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - name: Install dependencies
+        run: pip install requests
+      - name: Run updater
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+        run: python update_models.py
+      - name: Commit + push results
+        run: |
+          git config user.name "myAInews bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add models.json
+          git diff --staged --quiet || git commit -m "auto: updated models $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
