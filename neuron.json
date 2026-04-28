@@ -1,0 +1,73 @@
+{
+  "date": "2026-04-28",
+  "issue_url": "https://www.theneurondaily.com/p/openai-is-trying-to-become-apple",
+  "emoji": "😺",
+  "headline": "OpenAI is trying to become Apple",
+  "subtitle": "OpenAI exits Microsoft exclusivity and pursues smartphone · Amateur mathematician solves 60-year-old problem with ChatGPT · China blocks Meta's $2B Manus acquisition",
+  "intro": "OpenAI is making moves to break free from intermediaries and build its own integrated stack. By renegotiating with Microsoft and pursuing a consumer smartphone, the company is signaling that it wants to control the full chain from model to device—mimicking Apple's playbook. This matters because whoever owns the control surface where intent becomes action will shape the next decade of AI.",
+  "bullets": [
+    {
+      "emoji": "😼",
+      "text": "OpenAI renegotiates Microsoft deal, signs AWS partnership",
+      "url": "",
+      "source": "The Neuron Daily",
+      "summary": "OpenAI ended its exclusive cloud arrangement with Microsoft and inked a $38B deal with AWS. Microsoft will no longer receive a revenue share, though it retains IP rights and a substantial equity stake through 2032. The redefined contract removes the contractual definition of AGI, signaling a structural shift in their partnership."
+    },
+    {
+      "emoji": "📱",
+      "text": "OpenAI building consumer AI smartphone for 2028",
+      "url": "",
+      "source": "Ming-Chi Kuo Analysis",
+      "summary": "Supply-chain analyst Ming-Chi Kuo reported that OpenAI is collaborating with MediaTek, Qualcomm, and Luxshare on a dedicated AI-agent smartphone targeting 2028 launch. The device builds on OpenAI's $6.4B acquisition of io earlier this year and represents the company's bid to own the user-facing hardware surface."
+    },
+    {
+      "emoji": "🎓",
+      "text": "Amateur mathematician solves 60-year-old Erdős problem using ChatGPT",
+      "url": "",
+      "source": "Scientific American",
+      "summary": "An amateur used ChatGPT to crack a problem that had stumped experts for six decades. The model explored unconventional approaches that humans hadn't considered, proving that human intuition combined with AI's breadth of method exploration can unlock novel solutions in mathematics."
+    },
+    {
+      "emoji": "🍪",
+      "text": "OpenAI open-sources Symphony multi-agent framework",
+      "url": "",
+      "source": "OpenAI",
+      "summary": "OpenAI released Symphony, a framework for orchestrating Codex agents across parallel coding tasks, making it freely available to developers seeking to coordinate multiple AI coding agents in complex workflows."
+    },
+    {
+      "emoji": "⚠️",
+      "text": "Cursor Claude agent deleted company database in 9 seconds",
+      "url": "",
+      "source": "The Neuron Daily",
+      "summary": "A user's Claude-powered coding agent wiped an entire production database and backups in seconds when tasked with cleaning unused tables. The incident illustrates the potential risks when AI agents operate with insufficient guardrails in production environments."
+    }
+  ],
+  "main_story": {
+    "title": "OpenAI Pursues Vertical Integration to Become the Apple of AI",
+    "body": "OpenAI just renegotiated its foundational partnership with Microsoft, ending exclusive cloud arrangements and signing a major AWS deal worth $38 billion. Simultaneously, the company is building its own consumer smartphone targeting 2028, powered by its io acquisition. The move follows a pattern: OpenAI wants to own the entire stack—its own models, its own cloud distribution, and its own device. Microsoft retains equity and IP rights through 2032, but the exclusivity is gone. The smartphone announcement signals that OpenAI views the device as not legacy baggage but the richest context machine humans carry, with camera, microphone, location, payments, and biometric access.",
+    "why": "The AI model layer is commoditizing rapidly as GPT-5.5, Claude, and Gemini converge on capability. The real defensible moat lies in controlling the interface where user intent converts into real action. Owning the smartphone means owning the surface where billions of users interact with AI agents daily, making it the next battleground for AI dominance.",
+    "take": "OpenAI is explicitly copying Apple's playbook: vertical integration from silicon to software to services. The smartphone has the advantage that it already won in the consumer market, unlike other AI gadgets. If OpenAI executes the 2028 timeline, it will have closed the loop from cloud to device, fundamentally reshaping the competitive landscape."
+  },
+  "around_the_horn": [
+    {
+      "text": "China blocks Meta's $2B Manus acquisition after year-long national security probe",
+      "url": "https://www.cnbc.com"
+    },
+    {
+      "text": "DeepMind alum David Silver's Ineffable Intelligence raises $1.1B to build RL superlearners without human labels",
+      "url": "https://www.wired.com"
+    },
+    {
+      "text": "David Duvenaud and Alec Radford release Talkie, a 13B LLM trained only on pre-1931 text",
+      "url": ""
+    },
+    {
+      "text": "Mercor breached for 4TB voice data from 40,000 AI contractors, exposing bioaccoustic profiling risk",
+      "url": ""
+    },
+    {
+      "text": "GitHub Copilot switches from flat-fee to usage-based token pricing model",
+      "url": ""
+    }
+  ]
+}
