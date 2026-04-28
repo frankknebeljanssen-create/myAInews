@@ -1,32 +1,34 @@
 """Update neuron.json — runs daily via GitHub Actions.
 
-Workflow:
-  1. Fetch theneurondaily.com homepage
-  2. Find the URL of the latest issue (most recent /p/ post)
-  3. Fetch that issue's full HTML, strip to article text
-  4. Use Haiku 4.5 to extract structured JSON matching the PWA schema
-  5. Compare to existing — skip write if same issue already captured
-  6. Write neuron.json (committed back to repo by workflow)
+Uses The Neuron's Beehiiv RSS feed (already proven to work in curate.py).
+Bypasses the homepage's Cloudflare protection entirely.
 
-Schema matches the embedded NEURON_FALLBACK in the PWA:
-  date, issue_url, emoji, headline, subtitle, intro,
-  bullets[{emoji, text, url, source, summary}],
-  main_story{title, body, why, take},
-  around_the_horn[{text, url}]
+Workflow:
+  1. Fetch RSS feed via feedparser
+  2. Pick newest entry (Beehiiv RSS is sorted newest-first)
+  3. Extract content:encoded HTML (full issue body)
+  4. Strip to clean text
+  5. Send to Haiku 4.5 to extract structured JSON matching the PWA schema
+  6. Compare to existing — skip if same issue_url
+  7. Write neuron.json
 """
 import os, sys, json, re
 from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
 from pathlib import Path
-import requests
+import feedparser
 from bs4 import BeautifulSoup
 from anthropic import Anthropic
 
 REPO_ROOT = Path(__file__).parent
 NEURON_FILE = REPO_ROOT / "neuron.json"
 
-NEURON_HOME = "https://www.theneurondaily.com/"
+NEURON_RSS = "https://www.theneurondaily.com/feed"
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 MODEL = "claude-haiku-4-5-20251001"
+
+# Use a realistic UA — feedparser default sometimes gets rate-limited
+feedparser.USER_AGENT = "Mozilla/5.0 (compatible; myAInews-bot/1.0; +https://github.com/frankknebeljanssen-create/myAInews)"
 
 if not ANTHROPIC_API_KEY:
     print("[neuron] FAIL: ANTHROPIC_API_KEY not set", file=sys.stderr)
@@ -35,40 +37,58 @@ if not ANTHROPIC_API_KEY:
 client = Anthropic(api_key=ANTHROPIC_API_KEY)
 
 
-def fetch(url):
-    headers = {
-        "User-Agent": "Mozilla/5.0 (compatible; myAInews-bot/1.0; +https://github.com/frankknebeljanssen-create/myAInews)",
-        "Accept": "text/html,application/xhtml+xml",
+def fetch_latest_issue():
+    """Parse RSS feed, return latest entry's URL, title, content HTML, and date."""
+    print(f"[neuron] fetching RSS feed: {NEURON_RSS}")
+    fp = feedparser.parse(NEURON_RSS)
+    if fp.bozo and not fp.entries:
+        raise RuntimeError(f"RSS parse error: {fp.bozo_exception}")
+    if not fp.entries:
+        raise RuntimeError("RSS feed has no entries")
+    latest = fp.entries[0]
+
+    issue_url = latest.get("link", "")
+    if not issue_url:
+        raise RuntimeError("latest entry has no link")
+
+    title = latest.get("title", "").strip()
+
+    # Beehiiv RSS includes content:encoded with full body
+    content_html = ""
+    if hasattr(latest, "content") and latest.content:
+        content_html = latest.content[0].get("value", "")
+    if not content_html and hasattr(latest, "summary"):
+        content_html = latest.summary
+    if not content_html and hasattr(latest, "description"):
+        content_html = latest.description
+    if not content_html:
+        raise RuntimeError("latest entry has no content/summary")
+
+    # pubDate is RFC2822, convert to YYYY-MM-DD
+    pub_date = ""
+    if hasattr(latest, "published"):
+        try:
+            dt = parsedate_to_datetime(latest.published)
+            pub_date = dt.strftime("%Y-%m-%d")
+        except Exception:
+            pass
+    if not pub_date:
+        pub_date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+
+    return {
+        "issue_url": issue_url,
+        "title": title,
+        "content_html": content_html,
+        "pub_date": pub_date,
     }
-    r = requests.get(url, headers=headers, timeout=30)
-    r.raise_for_status()
-    return r.text
 
 
-def find_latest_issue_url(home_html):
-    """Parse the homepage to find the URL of the latest issue (Beehiiv /p/ pattern)."""
-    soup = BeautifulSoup(home_html, "html.parser")
-    candidates = []
-    for a in soup.find_all("a", href=True):
-        href = a["href"]
-        if "/p/" not in href:
-            continue
-        full = href if href.startswith("http") else f"https://www.theneurondaily.com{href.lstrip('/')}"
-        # de-dup while preserving order
-        if full not in candidates:
-            candidates.append(full)
-    if not candidates:
-        raise RuntimeError("no /p/ post links found on homepage")
-    return candidates[0]  # most recent is typically first
-
-
-def extract_article_text(html):
+def html_to_text(html):
     """Strip HTML chrome, return clean readable text capped at 50k chars."""
     soup = BeautifulSoup(html, "html.parser")
-    for tag in soup(["script", "style", "nav", "footer", "header", "aside", "noscript", "svg"]):
+    for tag in soup(["script", "style", "noscript", "svg"]):
         tag.decompose()
-    main = soup.find("article") or soup.find("main") or soup.body
-    text = main.get_text("\n", strip=True) if main else soup.get_text("\n", strip=True)
+    text = soup.get_text("\n", strip=True)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text[:50000]
 
@@ -105,32 +125,33 @@ Output ONLY a single valid JSON object matching this exact schema. No markdown f
 }
 
 Hard rules:
-- Use the EXACT issue_url string provided by the user
-- date in YYYY-MM-DD format, taken from the issue itself
+- Use the EXACT issue_url string and date provided by the user (don't recompute)
 - bullets: 3-5 items, the main news roundup
 - around_the_horn: 3-6 items, the secondary mentions
-- All text fields must be PARAPHRASED in your own words — never copy direct quotes from the source longer than 8 words
+- All text fields must be PARAPHRASED in your own words — never copy direct quotes longer than 8 words
 - If a section is missing in the source, use empty string or empty array — never invent content
 - emoji must be a single Unicode emoji character, never text or shortcode"""
 
 
-def extract_structured(article_text, issue_url):
-    user_msg = f"Issue URL: {issue_url}\n\n--- ARTICLE TEXT ---\n\n{article_text}"
+def extract_structured(article_text, issue_url, pub_date, original_title):
+    user_msg = (
+        f"Issue URL: {issue_url}\n"
+        f"Date: {pub_date}\n"
+        f"Original title: {original_title}\n\n"
+        f"--- ARTICLE TEXT ---\n\n{article_text}"
+    )
     resp = client.messages.create(
         model=MODEL,
         max_tokens=4000,
         system=SYSTEM_PROMPT,
         messages=[
             {"role": "user", "content": user_msg},
-            {"role": "assistant", "content": "{"},  # prefill forces JSON output
+            {"role": "assistant", "content": "{"},
         ],
     )
     raw_text = resp.content[0].text
     full = "{" + raw_text
-    # Strip optional trailing fences just in case
-    full = re.sub(r"```\s*$", "", full).strip()
-    # If there's text after the closing brace, cut it
-    # Find the first complete JSON object
+    # Cut at the first complete JSON object
     depth = 0
     end = -1
     for i, ch in enumerate(full):
@@ -147,19 +168,16 @@ def extract_structured(article_text, issue_url):
 
 
 def main():
-    print(f"[neuron] fetching {NEURON_HOME}...")
     try:
-        home_html = fetch(NEURON_HOME)
+        issue = fetch_latest_issue()
     except Exception as e:
-        print(f"[neuron] FAIL: cannot fetch homepage: {e}", file=sys.stderr)
+        print(f"[neuron] FAIL: {e}", file=sys.stderr)
         sys.exit(1)
 
-    try:
-        issue_url = find_latest_issue_url(home_html)
-    except Exception as e:
-        print(f"[neuron] FAIL: cannot find latest issue: {e}", file=sys.stderr)
-        sys.exit(1)
-    print(f"[neuron] latest issue: {issue_url}")
+    issue_url = issue["issue_url"]
+    pub_date = issue["pub_date"]
+    print(f"[neuron] latest issue: {pub_date} | {issue['title'][:80]}")
+    print(f"[neuron] url: {issue_url}")
 
     # Skip if same issue already captured
     if NEURON_FILE.exists():
@@ -169,23 +187,17 @@ def main():
                 print("[neuron] same issue already in neuron.json, skipping")
                 return
         except Exception:
-            pass  # malformed existing file, continue and overwrite
+            pass
 
-    try:
-        issue_html = fetch(issue_url)
-    except Exception as e:
-        print(f"[neuron] FAIL: cannot fetch issue: {e}", file=sys.stderr)
-        sys.exit(1)
-    article_text = extract_article_text(issue_html)
+    article_text = html_to_text(issue["content_html"])
     print(f"[neuron] article text: {len(article_text)} chars")
-
     if len(article_text) < 500:
-        print(f"[neuron] FAIL: article text too short ({len(article_text)} chars), aborting", file=sys.stderr)
+        print(f"[neuron] FAIL: article text too short ({len(article_text)} chars)", file=sys.stderr)
         sys.exit(1)
 
     print(f"[neuron] extracting structured data via {MODEL}...")
     try:
-        data = extract_structured(article_text, issue_url)
+        data = extract_structured(article_text, issue_url, pub_date, issue["title"])
     except json.JSONDecodeError as e:
         print(f"[neuron] FAIL: Haiku returned invalid JSON: {e}", file=sys.stderr)
         sys.exit(1)
@@ -194,21 +206,22 @@ def main():
         sys.exit(1)
 
     # Sanity checks
-    required = ["date", "issue_url", "headline", "intro", "bullets", "main_story", "around_the_horn"]
+    required = ["headline", "intro", "bullets", "main_story", "around_the_horn"]
     missing = [k for k in required if not data.get(k)]
     if missing:
-        print(f"[neuron] FAIL: extracted data missing fields: {missing}", file=sys.stderr)
+        print(f"[neuron] FAIL: missing fields: {missing}", file=sys.stderr)
         sys.exit(1)
     if not isinstance(data.get("bullets"), list) or len(data["bullets"]) < 1:
         print("[neuron] FAIL: no bullets extracted", file=sys.stderr)
         sys.exit(1)
 
-    # Force the issue_url to match what we fetched (defense against Haiku rewriting it)
+    # Force trusted fields (defense against Haiku rewriting)
     data["issue_url"] = issue_url
+    data["date"] = pub_date
 
     NEURON_FILE.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
     print(f"[neuron] wrote {NEURON_FILE}")
-    print(f"[neuron] date: {data.get('date')} | headline: {data.get('headline')[:80]}")
+    print(f"[neuron] headline: {data.get('headline')[:80]}")
     print(f"[neuron] {len(data['bullets'])} bullets, {len(data.get('around_the_horn', []))} around-the-horn")
 
 
