@@ -55,7 +55,9 @@ def fetch_openrouter():
 
 
 def fmt_context(n):
-    """200000 -> '200k', 1000000 -> '1M', 2000000 -> '2M'"""
+    """Render context window size compactly + consistently.
+    200000 -> '200k', 1000000 -> '1M', 1048576 -> '1M' (snaps near-integers),
+    1500000 -> '1.5M', 2000000 -> '2M', 10000000 -> '10M'"""
     try:
         n = int(n)
     except (TypeError, ValueError):
@@ -64,7 +66,11 @@ def fmt_context(n):
         return "?"
     if n >= 1_000_000:
         v = n / 1_000_000
-        return f"{int(v)}M" if v.is_integer() else f"{v:.1f}M"
+        v_int = round(v)
+        # If close to a whole number (within 10%), show as integer — keeps "1M" not "1.0M"
+        if abs(v - v_int) < 0.1:
+            return f"{v_int}M"
+        return f"{v:.1f}M"
     if n >= 1000:
         return f"{int(round(n / 1000))}k"
     return str(n)
