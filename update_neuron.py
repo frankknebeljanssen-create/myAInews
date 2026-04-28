@@ -190,15 +190,18 @@ def main():
         sys.exit(1)
     print(f"[neuron] latest issue URL: {issue_url}")
 
-    # Skip if same issue already captured
+    # Read existing file once — used both for same-issue check AND for preserving as "previous"
+    existing = None
     if NEURON_FILE.exists():
         try:
             existing = json.loads(NEURON_FILE.read_text())
-            if existing.get("issue_url") == issue_url:
-                print("[neuron] same issue already in neuron.json, skipping")
-                return
         except Exception:
             pass
+
+    # Skip if same issue already captured
+    if existing and existing.get("issue_url") == issue_url:
+        print("[neuron] same issue already in neuron.json, skipping")
+        return
 
     try:
         issue_html = fetch(issue_url)
@@ -239,6 +242,11 @@ def main():
     # Force trusted fields
     data["issue_url"] = issue_url
     data["date"] = pub_date
+
+    # Preserve yesterday — take existing data (without its own nested previous) as "previous"
+    if existing and existing.get("issue_url") and existing.get("issue_url") != issue_url:
+        data["previous"] = {k: v for k, v in existing.items() if k != "previous"}
+        print(f"[neuron] preserved previous issue: {existing.get('date')} | {existing.get('headline','')[:60]}")
 
     NEURON_FILE.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
     print(f"[neuron] wrote {NEURON_FILE}")
