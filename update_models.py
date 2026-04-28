@@ -20,12 +20,25 @@ OPENROUTER_KEY = os.environ.get("OPENROUTER_API_KEY", "")
 # Big Five flagship models. Update IDs when a new flagship ships.
 # Verify current IDs at: https://openrouter.ai/models
 BIG_FIVE = [
-    {"id": "openai/gpt-5",                "provider": "OpenAI",    "color": "#10A37F"},
-    {"id": "anthropic/claude-opus-4.7",   "provider": "Anthropic", "color": "#D97757"},
-    {"id": "google/gemini-3-pro",         "provider": "Google",    "color": "#4285F4"},
-    {"id": "x-ai/grok-4",                 "provider": "xAI",       "color": "#6B7280"},
-    {"id": "deepseek/deepseek-v4",        "provider": "DeepSeek",  "color": "#4D6BFE"},
+    {"id": "openai/gpt-5",                 "provider": "OpenAI",    "color": "#10A37F"},
+    {"id": "anthropic/claude-opus-4.7",    "provider": "Anthropic", "color": "#D97757"},
+    {"id": "google/gemini-3.1-pro-preview","provider": "Google",    "color": "#4285F4"},
+    {"id": "x-ai/grok-4",                  "provider": "xAI",       "color": "#6B7280"},
+    {"id": "deepseek/deepseek-v4",         "provider": "DeepSeek",  "color": "#4D6BFE"},
 ]
+
+# When fuzzy-matching falls back, exclude IDs containing these markers —
+# they're variants/modalities, not text-flagship models.
+EXCLUDE_MARKERS = [
+    "-mini", "-free", "-nano", "-lite", "-tiny", "-flash", "-haiku", "-instant",
+    "image", "audio", "tts", "embedding", "video", "lyria", "veo", "imagen", "whisper",
+]
+
+
+def is_text_flagship(model_id):
+    """True if the ID looks like a text-flagship (no modality/variant markers)."""
+    lower = model_id.lower()
+    return not any(marker in lower for marker in EXCLUDE_MARKERS)
 
 
 def fetch_openrouter():
@@ -76,24 +89,27 @@ def fmt_price(p):
 
 
 def find_model(or_models, target_id):
-    """Find best match for target ID. Tries exact match, then fuzzy by author+slug prefix."""
-    # exact match
+    """Find best match for target ID. Tries exact match, then fuzzy by author+slug prefix.
+    Excludes image/audio/video/variant IDs to avoid matching wrong modalities."""
+    # exact match — always preferred
     for m in or_models:
         if m.get("id") == target_id:
             return m
-    # fuzzy: same author/, slug starts-with
+    # fuzzy: same author/, slug starts-with, but only text-flagship candidates
     author, _, slug = target_id.partition("/")
     if not author or not slug:
         return None
-    starts_with = [m for m in or_models if m.get("id", "").startswith(f"{author}/{slug}")]
+    starts_with = [
+        m for m in or_models
+        if m.get("id", "").startswith(f"{author}/{slug}") and is_text_flagship(m.get("id", ""))
+    ]
     if starts_with:
-        # prefer the shortest matching ID (likely base flagship, not variants like -mini, -free)
+        # prefer the shortest matching ID (likely base flagship, not variants)
         return sorted(starts_with, key=lambda m: len(m.get("id", "")))[0]
-    # fallback: any model from same author with reasonable name (avoid -mini, -free, etc.)
+    # final fallback: any text-flagship from same author
     same_author = [
         m for m in or_models
-        if m.get("id", "").startswith(f"{author}/")
-        and not any(s in m.get("id", "").lower() for s in ["-mini", "-free", "-nano", "-lite", "-tiny"])
+        if m.get("id", "").startswith(f"{author}/") and is_text_flagship(m.get("id", ""))
     ]
     return sorted(same_author, key=lambda m: len(m.get("id", "")))[0] if same_author else None
 
