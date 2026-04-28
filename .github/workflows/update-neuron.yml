@@ -1,0 +1,36 @@
+name: Update neuron
+on:
+  schedule:
+    # 14:00 UTC = 16:00 Berlin = 10:00 EDT — safely after The Neuron's morning publish
+    - cron: '0 14 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: update-neuron
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run updater
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python update_neuron.py
+      - name: Commit + push results
+        run: |
+          git config user.name "myAInews bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add neuron.json
+          git diff --staged --quiet || git commit -m "auto: updated neuron $(date -u +%Y-%m-%dT%H:%MZ)"
+          git push
