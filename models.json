@@ -1,0 +1,41 @@
+{
+  "updated": "2026-04-28",
+  "note": "Big Five frontier models. Auto-updated daily from OpenRouter /v1/models.",
+  "models": [
+    {
+      "provider": "OpenAI",
+      "model": "GPT-5",
+      "context": "400k",
+      "price": "$1.25/M",
+      "color": "#10A37F"
+    },
+    {
+      "provider": "Anthropic",
+      "model": "Claude Opus 4.7",
+      "context": "1M",
+      "price": "$5.00/M",
+      "color": "#D97757"
+    },
+    {
+      "provider": "Google",
+      "model": "Nano Banana Pro (Gemini 3 Pro Image Preview)",
+      "context": "66k",
+      "price": "$2.00/M",
+      "color": "#4285F4"
+    },
+    {
+      "provider": "xAI",
+      "model": "Grok 4",
+      "context": "256k",
+      "price": "$3.00/M",
+      "color": "#6B7280"
+    },
+    {
+      "provider": "DeepSeek",
+      "model": "DeepSeek V4 Pro",
+      "context": "1.0M",
+      "price": "$0.43/M",
+      "color": "#4D6BFE"
+    }
+  ]
+}
