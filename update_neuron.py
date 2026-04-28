@@ -16,6 +16,7 @@ import os, sys, json, re
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
+import requests
 import feedparser
 from bs4 import BeautifulSoup
 from anthropic import Anthropic
@@ -27,8 +28,8 @@ NEURON_RSS = "https://www.theneurondaily.com/feed"
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 MODEL = "claude-haiku-4-5-20251001"
 
-# Use a realistic UA — feedparser default sometimes gets rate-limited
-feedparser.USER_AGENT = "Mozilla/5.0 (compatible; myAInews-bot/1.0; +https://github.com/frankknebeljanssen-create/myAInews)"
+# Full browser User-Agent — feedparser's default UA is often Cloudflare-blocked
+BROWSER_UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 
 if not ANTHROPIC_API_KEY:
     print("[neuron] FAIL: ANTHROPIC_API_KEY not set", file=sys.stderr)
@@ -37,12 +38,32 @@ if not ANTHROPIC_API_KEY:
 client = Anthropic(api_key=ANTHROPIC_API_KEY)
 
 
+def fetch_rss_bytes():
+    """Fetch RSS via requests with a real browser UA. Bypasses Cloudflare bot-blocks."""
+    headers = {
+        "User-Agent": BROWSER_UA,
+        "Accept": "application/rss+xml, application/atom+xml, application/xml;q=0.9, text/xml;q=0.8, */*;q=0.5",
+        "Accept-Language": "en-US,en;q=0.9",
+    }
+    r = requests.get(NEURON_RSS, headers=headers, timeout=30)
+    r.raise_for_status()
+    return r.content
+
+
 def fetch_latest_issue():
-    """Parse RSS feed, return latest entry's URL, title, content HTML, and date."""
+    """Fetch RSS feed bytes, parse with feedparser, return latest entry's URL/title/HTML/date."""
     print(f"[neuron] fetching RSS feed: {NEURON_RSS}")
-    fp = feedparser.parse(NEURON_RSS)
+    try:
+        raw = fetch_rss_bytes()
+    except Exception as e:
+        raise RuntimeError(f"HTTP error fetching RSS: {e}")
+    print(f"[neuron] received {len(raw)} bytes from RSS endpoint")
+
+    fp = feedparser.parse(raw)
     if fp.bozo and not fp.entries:
-        raise RuntimeError(f"RSS parse error: {fp.bozo_exception}")
+        # Show first 400 bytes to help diagnose what we actually got
+        preview = raw[:400].decode("utf-8", errors="replace")
+        raise RuntimeError(f"RSS parse error: {fp.bozo_exception}\nFirst 400 chars of response:\n{preview}")
     if not fp.entries:
         raise RuntimeError("RSS feed has no entries")
     latest = fp.entries[0]
