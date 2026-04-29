@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-04-29T20:57:33.997784+00:00",
+  "generated_at": "2026-04-29T21:57:05.422965+00:00",
   "items": [
+    {
+      "id": "ea12b04b257a",
+      "url": "https://techcrunch.com/2026/04/29/google-gains-25m-subscriptions-in-q1-driven-by-youtube-and-google-one/",
+      "headline": "Google's 25M new subscriptions mask YouTube ad revenue weakness",
+      "body": "Alphabet added 25 million paid subscriptions in Q1, reaching 350 million across its service portfolio, but the growth obscures a structural shift in YouTube's business model. While the company beat overall revenue expectations at $109.9 billion, YouTube advertising revenue fell short of Wall Street forecasts, signaling that the platform's pivot toward premium subscriptions is eroding its traditional ad-supported business faster than replacements can compensate.\n\n## YouTube's Subscription Trade-Off\n\nYouTube generated $9.88 billion in ad revenue this quarter, missing analyst expectations of $9.99 billion. Though the figure represents 11% year-over-year growth, it reflects a visible deceleration from Q4 2025's $11.4 billion. CEO Sundar Pichai has explicitly warned investors to evaluate YouTube's future based on a combination of ads and subscriptions rather than ads alone, acknowledging that Premium subscriber conversion directly cannibalizes advertising revenue.\n\nThe subscription push is working: YouTube Premium drove a meaningful portion of the 25 million new paid subscriptions. Google One, which bundles cloud storage with advanced Gemini access, also contributed significantly to the growth. However, the company did not disclose how many of the 350 million total paid subscriptions are YouTube Premium users specifically, limiting visibility into the ad-to-subscription conversion rate.\n\n## Enterprise AI Gain, Consumer Uncertainty\n\nOn the AI front, Google reported a 40% quarter-over-quarter increase in Gemini's paid monthly active users in enterprise settings but declined to provide absolute figures. This suggests the enterprise Gemini install base remains modest relative to the free tier's 750 million users. Bundling Gemini into Google One plans may be accelerating paid adoption, but the strategy conflates cloud storage demand with genuine AI product interest.\n\nFor enterprise decision-makers evaluating Google's AI trajectory, the data points to strong momentum in B2B adoption while consumer-facing Gemini remains a distribution problem masked by bundling tactics. Alphabet's willingness to forgo specifics on Gemini subscriber counts indicates limited scale relative to marketing claims. The real signal: YouTube's subscription model is working operationally but creating financial headwinds Google must openly manage with investors. Expect this tension to shape product roadmap priorities.",
+      "source": "TechCrunch AI",
+      "published": "2026-04-29T20:59:00+00:00",
+      "curated_at": "2026-04-29T21:54:08.234832+00:00",
+      "original_title": "Google gains 25M subscriptions in Q1, driven by YouTube and Google One"
+    },
     {
       "id": "b4be4929fb74",
       "url": "https://www.wired.com/story/emergency-first-responders-say-waymos-are-getting-worse/",
@@ -290,16 +300,6 @@
       "published": "2026-04-28T18:15:00+00:00",
       "curated_at": "2026-04-28T19:22:31.409940+00:00",
       "original_title": "Google expands Pentagon’s access to its AI after Anthropic’s refusal"
-    },
-    {
-      "id": "3ef141beab0b",
-      "url": "https://arstechnica.com/ai/2026/04/japan-airlines-tests-having-robots-instead-of-humans-handle-travelers-luggage/",
-      "headline": "Japan Airlines Tests Humanoid Robots for Airport Cargo Handling",
-      "body": "Japan Airlines will begin deploying humanoid robots for baggage and cargo handling at Tokyo's Haneda Airport starting May 2026, testing whether AI-powered machines can operate effectively in unstructured human environments without major workplace modifications. The trial, running through 2028, reflects a deliberate pivot from the controlled settings where robotic arms have proven productive—assembly lines and warehouses—toward the inherent chaos of a major airport handling flights every two minutes.\n\n## The Deployment Plan\n\nJAL Ground Service has partnered with GMO AI & Robotics to test two models: the G1 from Unitree Robotics and the Walker E from UBTECH Robotics, both Chinese manufacturers. The G1 costs as low as $13,500 for baseline configurations, making humanoid robots substantially cheaper than past iterations while still representing significant capital per unit. Initial trials will focus on identifying safe zones within Haneda for robot operation before expanding to broader airport tasks, including aircraft cabin cleaning and ground support equipment handling.\n\nA demonstration video shows the limitations clearly: a humanoid robot made a pushing gesture at a cargo container that only moved when a human worker engaged the conveyor system. This underscores the gap between theoretical capability and practical performance in real-world conditions.\n\n## Why This Stress-Tests AI Robotics\n\nThe Tokyo experiment matters because it exposes what humanoid robots struggle with most—unpredictability and the need for real-time adaptation. Assembly lines are predictable; airports are not. Workers adapt to broken equipment, changing passenger flows, and operational exceptions through learned intuition. Humanoid robots must replicate this through software and hardware that currently lacks proven effectiveness outside controlled environments.\n\nJapan's labor shortage is acute. Ground crew numbers fell from 26,300 to 23,700 between March 2019 and September 2023. In December 2023, Narita Airport couldn't meet more than 30 percent of weekly cargo flight requests due to staffing gaps. This urgency drives investment, but it also means failure carries operational consequences.\n\nFor enterprises evaluating humanoid robot deployment, Haneda serves as a critical test case. Success would validate AI models' ability to generalize across variable environments—a prerequisite for broader industrial adoption. Failure would clarify which tasks remain better suited to specialized robotics or human workers. Either outcome will inform investment decisions for the next two years.",
-      "source": "Ars Technica AI",
-      "published": "2026-04-28T18:01:36+00:00",
-      "curated_at": "2026-04-28T19:22:39.045741+00:00",
-      "original_title": "Humanoid robots start sorting luggage in Tokyo airport test amid labor shortage"
     }
   ]
 }
