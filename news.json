@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-04-30T21:53:25.920174+00:00",
+  "generated_at": "2026-04-30T22:46:23.799749+00:00",
   "items": [
+    {
+      "id": "9c478a2d72d7",
+      "url": "https://techcrunch.com/2026/04/30/apple-was-surprised-by-ai-driven-demand-for-macs/",
+      "headline": "Apple's Mac sales surge on unexpected AI workload demand",
+      "body": "Apple's Mac business unexpectedly outperformed in its second fiscal quarter, driven by customer demand for running local AI models—a trend that caught the company off guard. Mac revenue hit $8.4 billion against Wall Street expectations of $8 billion, while year-over-year sales grew 6% despite predictions of flat performance. The result underscores a shifting dynamic in enterprise hardware preferences, where AI capability and local inference are becoming primary purchasing drivers.\n\n## Local AI Models Drive Hardware Refresh\n\nThe Mac mini and Mac Studio—Apple's compact desktop systems designed for developers and creative professionals—sold out in recent weeks as customers sought platforms for running local language models like OpenClaw. CEO Tim Cook attributed the stronger-than-expected demand explicitly to these machines' suitability for \"AI and agentic tools,\" noting that customer recognition of this capability \"is happening faster than what we had predicted.\" The Mac mini became the top-selling desktop in China, a market experiencing intense demand for local AI model deployment.\n\nThe newly launched MacBook Neo, which entered sale mid-March, also contributed to growth. Cook described customer demand as \"off the charts\" and higher than internal forecasts. Apple noted the Neo attracted a record number of new Mac customers in the quarter, though the product faced supply constraints and sold out in certain configurations.\n\n## Enterprise Adoption Signals Broader Shift\n\nBeyond consumer interest, enterprise customers are actively choosing Mac as their preferred platform for building AI applications. Perplexity, the AI search startup, selected Mac as its platform for enterprise-grade AI assistants. School systems, including Kansas City Public Schools, are switching from Chromebooks to the MacBook Neo, suggesting that AI capability now influences purchasing decisions across institutional segments.\n\nCook cautioned that reaching supply-demand balance on the Mac mini and Studio will take \"several months,\" emphasizing that the constraint stems from underestimating demand rather than production issues. Mac revenue remained flat quarter-over-quarter, indicating this wave of AI-driven demand has not yet scaled to sustainable levels.\n\nThe signal for enterprise buyers is clear: infrastructure decisions are increasingly tied to local AI inference capability. For organizations evaluating compute platforms, Apple's unexpected Mac surge demonstrates that workload requirements—particularly on-device model inference—now compete with traditional considerations like software ecosystem and price point.",
+      "source": "TechCrunch AI",
+      "published": "2026-04-30T22:12:52+00:00",
+      "curated_at": "2026-04-30T22:43:28.286915+00:00",
+      "original_title": "Apple was surprised by AI-driven demand for Macs"
+    },
     {
       "id": "f4d3c0050681",
       "url": "https://techcrunch.com/2026/04/30/legal-ai-startup-legora-hits-5-6-valuation-and-its-battle-with-harvey-just-got-hotter/",
@@ -290,16 +300,6 @@
       "published": "2026-04-30T00:14:23+00:00",
       "curated_at": "2026-04-30T02:07:00.606746+00:00",
       "original_title": "Amazon’s cloud business is surging — and so is its capital spending"
-    },
-    {
-      "id": "50738bf0cb2b",
-      "url": "https://techcrunch.com/2026/04/29/sources-anthropic-could-raise-a-new-50b-round-at-a-valuation-of-900b/",
-      "headline": "Anthropic's $50B Fundraise Could Push Valuation to $900B",
-      "body": "Anthropic is preparing to raise approximately $50 billion at a valuation between $850 billion and $900 billion, according to multiple sources familiar with the matter. The company expects to make a final decision on the round at a board meeting in May. This would represent a significant step toward what investors and the company view as a likely final private funding round before a potential public offering.\n\n## Revenue Growth Outpacing Valuation Increases\n\nAnthropic's annual revenue run rate has climbed to approximately $40 billion, up from $9 billion at the end of 2025—a roughly fourfold increase. The company announced publicly this month that its run rate had surpassed $30 billion. The bulk of this revenue stems from Claude's coding capabilities, particularly through Claude Code and Cowork platforms, which have driven rapid enterprise adoption across financial services, life sciences, and healthcare sectors.\n\nInvestor demand for the round significantly exceeds the target amount. One institutional investor prepared to commit $5 billion has yet to secure a meeting with Anthropic CFO Krishna Rao, illustrating the intensity of capital competition. Multiple preemptive offers have come in at valuations ranging from $850 billion to $900 billion—higher than earlier bids at $800 billion reported in April.\n\n## Competitive Positioning in AI Race\n\nA successful $50 billion round at $900 billion would more than double Anthropic's valuation from its previous round in February, when it raised capital at a $380 billion valuation. This trajectory would place Anthropic at parity with or above OpenAI's February valuation of $852 billion, though OpenAI's $122 billion funding round was substantially larger in absolute capital terms. The two companies now represent the most heavily capitalized AI labs, signaling investor conviction that frontier AI capabilities command venture-scale economics.\n\nFor enterprise decision-makers, Anthropic's rapid scaling suggests the company views its code generation and reasoning capabilities as sufficient to compete directly with OpenAI for institutional spending. The breadth of investor interest and size of committed capital indicates that major cloud providers, financial institutions, and technology firms are betting Claude will capture meaningful share of AI infrastructure spending. The May board decision will likely set the terms for an IPO timeline, making this valuation milestone a marker of how private investors are pricing AI platform risk and opportunity.",
-      "source": "TechCrunch AI",
-      "published": "2026-04-30T00:07:15+00:00",
-      "curated_at": "2026-04-30T02:07:08.486490+00:00",
-      "original_title": "Sources: Anthropic could raise a new $50B round at a valuation of $900B"
     }
   ]
 }
