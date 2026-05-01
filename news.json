@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T19:02:38.285974+00:00",
+  "generated_at": "2026-05-01T20:08:27.016665+00:00",
   "items": [
     {
       "id": "e0cc2e299c10",
@@ -40,6 +40,16 @@
       "published": "2026-05-01T14:09:56+00:00",
       "curated_at": "2026-05-01T14:17:51.976529+00:00",
       "original_title": "Pentagon strikes classified AI deals with OpenAI, Google, and Nvidia — but not Anthropic"
+    },
+    {
+      "id": "c62c13f0b3da",
+      "url": "https://techcrunch.com/video/musk-v-altman-is-just-getting-started/",
+      "headline": "Musk sues OpenAI over nonprofit-to-for-profit conversion",
+      "body": "Elon Musk spent three days on the witness stand this week in his lawsuit against OpenAI, arguing that Sam Altman's conversion of the company from nonprofit to for-profit structure violated the original charitable mission Musk funded. The case centers on a foundational claim: a nonprofit entity cannot be converted to a for-profit without betraying its donors' intent. Court filings have surfaced emails, texts, and Musk's own tweets as evidence. The lawsuit marks an escalation in the public dispute between two of AI's most prominent figures and raises questions about governance obligations in early-stage deep-tech ventures.\n\n## The Conversion and Core Allegation\n\nOpenAI was founded in 2015 as a nonprofit organization with the stated mission to develop AI for humanity's benefit. Musk was an early funder and board member. In 2023, OpenAI established a capped-profit subsidiary structure, allowing the nonprofit to take equity stakes in a for-profit entity while theoretically maintaining nonprofit governance. Musk claims this restructuring fundamentally violated the nonprofit charter and fiduciary duty owed to donors. His legal position rests on a straightforward argument: \"You can't steal a charity.\" The case has drawn testimony from multiple witnesses and will include testimony from Altman and other OpenAI leadership.\n\n## Implications for Tech Governance and Investor Relations\n\nThe lawsuit exposes structural vulnerabilities in how early AI companies balance nonprofit missions with commercial realities. As AI startups scale, pressure to raise capital and pursue aggressive commercialization often conflicts with founding principles. For enterprise decision-makers and investors, the case signals legal risk in nonprofit-to-profit conversions without explicit donor consent or governance mechanisms. The outcome could establish precedent for how courts evaluate founder intent versus organizational evolution, potentially affecting future governance structures in similarly positioned deep-tech ventures. Enterprise boards should examine their AI vendor relationships' foundational governance—particularly whether mission statements or nonprofit status influenced investment or partnership decisions. A ruling favoring Musk would strengthen donor rights in tech philanthropy; a ruling favoring OpenAI would reinforce organizational flexibility. Either way, the precedent will reshape how tech nonprofits navigate growth.",
+      "source": "TechCrunch AI",
+      "published": "2026-05-01T14:00:00+00:00",
+      "curated_at": "2026-05-01T20:06:00.693709+00:00",
+      "original_title": "Musk v. Altman is just getting started"
     },
     {
       "id": "6a8bb17a8d2e",
@@ -290,16 +300,6 @@
       "published": "2026-04-30T16:00:00+00:00",
       "curated_at": "2026-04-30T17:10:57.029432+00:00",
       "original_title": "Here&#8217;s how the new Microsoft and OpenAI deal breaks down"
-    },
-    {
-      "id": "23381db38087",
-      "url": "https://www.technologyreview.com/2026/04/30/1136721/this-startups-new-mechanistic-interpretability-tool-lets-you-debug-llms/",
-      "headline": "Goodfire's Silico Tool Brings Mechanistic Interpretability to Model Training",
-      "body": "Goodfire, a San Francisco startup, released Silico, a tool that lets researchers and engineers examine and adjust AI model parameters during training. The tool applies mechanistic interpretability—the practice of mapping neurons and their connections to understand how models work—to the development process itself, not just post-hoc audits. This addresses a fundamental problem: large language models achieve impressive results through processes their creators don't fully understand, making it difficult to fix flaws or prevent unwanted behaviors.\n\n## Inside the Black Box Made Adjustable\n\nSilico automates the complex work of tracing individual neurons and the pathways connecting them. Users can zoom in on specific neurons or groups, run experiments to see what activates them, and trace how they influence other neurons in the network. The tool applies primarily to open-source models; access to proprietary systems like ChatGPT or Gemini remains restricted.\n\nGoodfire demonstrated the approach with concrete examples. Researchers identified a neuron in Qwen 3 associated with the trolley problem; activating it reframed model responses as explicit moral dilemmas. In another case, they found that boosting neurons linked to transparency flipped a model's answer on AI disclosure from no to yes in nine of ten trials. The company also addressed a common quirk—models incorrectly ranking 9.11 as greater than 9.9—by identifying and retraining around neurons influenced by Bible verses or code repository numbering conventions.\n\n## Lowering Barriers to Model Development\n\nThe release democratizes techniques previously confined to major AI labs like Anthropic, OpenAI, and Google DeepMind. Smaller firms and research teams can now build or adapt open-source models with finer control over behavior. Goodfire charges on a case-by-case basis but hasn't disclosed pricing.\n\nA key take-away for enterprises: mechanistic interpretability remains imprecise. Leonard Bereska, a researcher at the University of Amsterdam, cautioned that the approach adds \"precision to the alchemy\" rather than transforming model building into true engineering. Still, tools that expose parameter adjustments during training could meaningfully shift how AI development happens—moving it from pure scaling assumptions toward targeted design. For organizations building custom models or deploying adaptations of open-source systems, this represents a step toward audit-friendly, behavior-controlled AI systems.",
-      "source": "MIT Technology Review AI",
-      "published": "2026-04-30T15:59:41+00:00",
-      "curated_at": "2026-04-30T17:11:04.420805+00:00",
-      "original_title": "This startup’s new mechanistic interpretability tool lets you debug LLMs"
     }
   ]
 }
