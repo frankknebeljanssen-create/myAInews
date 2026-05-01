@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-01T14:20:49.319066+00:00",
+  "generated_at": "2026-05-01T15:50:50.517323+00:00",
   "items": [
+    {
+      "id": "1a9031ae2aad",
+      "url": "https://arstechnica.com/ai/2026/05/amid-mythos-hyped-cybersecurity-prowess-researchers-find-gpt-5-5-is-just-as-good/",
+      "headline": "GPT-5.5 matches Mythos Preview's cybersecurity performance, undermining restricted release rationale",
+      "body": "New independent testing suggests Anthropic's decision to restrict its Mythos Preview model to \"critical industry partners\" may have been premature. The UK's AI Security Institute found that OpenAI's publicly available GPT-5.5 achieved comparable performance on cybersecurity tasks, raising questions about whether the cybersecurity risk differential justified the limited release.\n\n## The Performance Gap Narrows\n\nThe AISI evaluated both models on 95 Capture the Flag challenges covering reverse engineering, web exploitation, and cryptography. On the highest-difficulty \"Expert\" tasks, GPT-5.5 passed 71.4 percent compared to Mythos Preview's 68.6 percent—a difference within the margin of error. On \"The Last Ones,\" a simulated 32-step data extraction attack on a corporate network, GPT-5.5 succeeded 3 of 10 times versus Mythos Preview's 2 of 10. Neither model could crack the \"Cooling Tower\" test, which simulates attempts to disrupt power plant control software.\n\nThe practical economics underscore GPT-5.5's accessibility. On one particularly difficult task requiring a disassembler to decode Rust binaries, GPT-5.5 solved the challenge in 10 minutes 22 seconds with no human assistance for $1.73 in API costs. This combination of capability and affordability via public API access stands in sharp contrast to Mythos Preview's restricted availability.\n\n## Risk Assessment vs. Market Dynamics\n\nThe AISI's analysis suggests the performance gap reflects general architectural improvements rather than model-specific breakthroughs. Both systems show similar advances in long-horizon autonomy, reasoning, and coding—capabilities that will likely spread across competing models. This interpretation aligns with OpenAI CEO Sam Altman's recent criticism of what he calls \"fear-based marketing\" in limited model releases. Altman characterized the strategy as saying \"we have built a bomb\" before selling \"bomb shelters,\" while acknowledging that genuinely dangerous models will eventually require controlled deployment.\n\nThe practical implication for enterprise security teams is that cybersecurity risk assessment should track capability benchmarks rather than release strategies. OpenAI's tiered approach—including its Trusted Access for Cyber pilot program and targeted GPT-5.4-Cyber variant—attempts to balance public deployment with defensive prioritization. However, the AISI data suggests that capability advantages erode quickly as models mature across vendors.\n\nOrganizations should assume that frontier cybersecurity capabilities will reach broader availability within months, regardless of initial restrictions. The strategic value lies in establishing governance frameworks and detection systems that work with mature models in general circulation, not relying on supply-side scarcity.",
+      "source": "Ars Technica AI",
+      "published": "2026-05-01T15:32:27+00:00",
+      "curated_at": "2026-05-01T15:48:10.496445+00:00",
+      "original_title": "GPT-5.5 matches heavily hyped Mythos Preview in new cybersecurity tests"
+    },
     {
       "id": "ab5b9876bbc5",
       "url": "https://www.theverge.com/ai-artificial-intelligence/922113/pentagon-ai-classified-openai-google-nvidia",
@@ -290,16 +300,6 @@
       "published": "2026-04-30T13:42:29+00:00",
       "curated_at": "2026-04-30T15:01:30.408822+00:00",
       "original_title": "OpenAI talks about not talking about goblins"
-    },
-    {
-      "id": "038917a2d3ea",
-      "url": "https://www.theverge.com/tech/921048/verified-by-spotify-badge",
-      "headline": "Spotify Launches Verification Badge to Distinguish Human Artists From AI",
-      "body": "Spotify is rolling out a verification program designed to help listeners identify authentic human artists amid rising volumes of AI-generated music. The \"Verified by Spotify\" badge and green checkmark will appear on artist profiles after the company confirms a real person operates the account and uploads the music. The initiative addresses a concrete problem: AI music submissions have proliferated across streaming platforms, with competitor Deezer reporting that AI uploads nearly match human-created music on its service. Spotify says more than 99% of artists that listeners actively search for will receive verification at launch, including a significant portion of independent musicians alongside major-label acts.\n\n## Verification Criteria and Scope\n\nSpotify is not relying on traditional identity documents. Instead, the company cross-references activity across multiple channels: streaming engagement, social media presence, merchandise sales, and tour dates. Artists must demonstrate \"consistent listener activity and engagement over time,\" effectively creating a threshold that excludes low-traffic profiles. The company notes that artists below royalty-payment thresholds may not qualify for verification. At launch, AI personas and profiles primarily featuring AI-generated music are explicitly ineligible. However, Spotify has signaled openness to verifying AI acts in the future, acknowledging that \"the concept of artist authenticity is complex and quickly evolving.\"\n\n## The Broader Signal on AI Music Classification\n\nThe verification badge reflects streaming platforms' attempt to segment AI content without outright banning it. Spotify is running parallel initiatives—it already offers voluntary AI labels for songs and is beta-testing \"artist detail\" labels similar to nutritional information panels. This layered approach suggests platforms are moving toward transparency and curation rather than prohibition. For enterprises building music-related AI tools or content management systems, the signal is clear: platforms will increasingly demand disclosure and verifiable metadata. The openness to future AI verification also indicates that the industry has not settled on whether AI music should be treated as a separate category or integrated into standard discovery and credibility systems. Organizations planning to distribute AI-generated music should expect authentication requirements to tighten and expect that verification pathways—and their criteria—will evolve as listener expectations solidify.",
-      "source": "The Verge AI",
-      "published": "2026-04-30T13:08:23+00:00",
-      "curated_at": "2026-04-30T15:01:38.029442+00:00",
-      "original_title": "Verified by Spotify badge lets you know this artist isn&#8217;t AI"
     }
   ]
 }
