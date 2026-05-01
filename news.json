@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-01T12:05:20.100298+00:00",
+  "generated_at": "2026-05-01T13:02:08.610192+00:00",
   "items": [
     {
       "id": "6a8bb17a8d2e",
@@ -100,6 +100,16 @@
       "published": "2026-04-30T19:27:41+00:00",
       "curated_at": "2026-04-30T20:52:35.736009+00:00",
       "original_title": "After dissing Anthropic for limiting Mythos, OpenAI restricts access to Cyber, too"
+    },
+    {
+      "id": "814f8d51f603",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/920775/evidence-exhibits-elon-musk-sam-altman-openai-trial",
+      "headline": "Musk v. Altman trial reveals early OpenAI governance disputes",
+      "body": "A federal jury trial between Elon Musk and OpenAI's leadership is surfacing early emails and corporate documents that expose foundational tensions at the AI lab. The case centers on whether OpenAI abandoned its original mission to ensure artificial general intelligence benefits humanity broadly. Musk, who cofounded OpenAI and later departed, claims the company—now backed by Microsoft—deviated into profit-driven operations. The trial began Monday in California and will hinge on evidence from the company's first years, when its structure and governance were being established.\n\n## Musk's Central Role in Early Design\n\nIn June 2015, Sam Altman outlined OpenAI's founding plan to Musk in detail. The proposal called for a seven to ten-person lab focused on creating \"the first general AI\" with \"individual empowerment\" and safety as a first-class requirement. Altman proposed a five-person governance board including himself, Musk, Bill Gates, Pierre Omidyar, and Dustin Moskovitz, with technology owned by a foundation and deployed \"for the good of the world.\" Musk approved the plan entirely. By October 2015, Altman was requesting a $100 million initial commitment from Musk plus $30 million over five years, with discussions centering on governance structure as a critical point. Nvidia CEO Jensen Huang also provided the company with an in-demand supercomputer during this period. Early internal communications show OpenAI president Greg Brockman and researcher Ilya Sutskever expressed concerns about Musk's level of control, though documents suggest Musk emphasized the nonprofit structure's importance to the mission.\n\n## What's at Stake for AI Governance\n\nThe trial outcome will test whether founders and investors can enforce the terms of AI companies' stated missions through litigation. For enterprises and AI practitioners, the case signals that early governance documents carry legal weight—mission statements and structural choices become discoverable evidence in disputes. The case also demonstrates how quickly AI organizations can face internal conflicts over commercialization versus stated altruistic goals. With both OpenAI and SpaceX reportedly preparing public offerings this year, a jury decision could reshape how AI companies document and defend their governance structures. The takeaway: organizations building AI systems should ensure alignment between stated missions, formal governance documents, and actual operational decisions, as misalignment can become costly legal liability.",
+      "source": "The Verge AI",
+      "published": "2026-04-30T19:00:00+00:00",
+      "curated_at": "2026-05-01T12:59:09.894824+00:00",
+      "original_title": "All the evidence unveiled so far in Musk v. Altman"
     },
     {
       "id": "861ed0f86768",
@@ -290,16 +300,6 @@
       "published": "2026-04-30T12:14:15+00:00",
       "curated_at": "2026-04-30T15:01:45.104327+00:00",
       "original_title": "Enabling a new model for healthcare with AI co-clinician"
-    },
-    {
-      "id": "be1f1b354ae8",
-      "url": "https://techcrunch.com/2026/04/30/meta-says-its-business-ai-now-facilitates-10-million-conversations-a-week/",
-      "headline": "Meta's Business AI Hits 10M Weekly Conversations, Signals Shift Toward Monetization",
-      "body": "Meta's business AI assistant has grown tenfold in three months, reaching 10 million conversations per week as of late March, up from 1 million at the start of 2025. The company disclosed the metric during its first-quarter earnings call Wednesday, signaling that despite limited visibility in mainstream AI product discussions, Meta's enterprise tools are capturing significant adoption among small businesses. The expansion follows a beta program rollout across the U.S., EMEA, APAC, and LATAM regions.\n\n## Scaling Free Tools Before Charging\n\nMeta is currently offering its business AI capabilities for free to small businesses across its messaging apps—WhatsApp, Instagram, and Messenger—a deliberate strategy to build scale before establishing pricing models. CEO Mark Zuckerberg acknowledged this transition point during the earnings call, stating: \"Business AIs today are currently free for most businesses on our messaging apps, but as we make more progress, we expect that we will also work towards establishing a longer-term monetization model.\"\n\nThe business AI tools are being powered by Meta's new large language model, Muse Spark, released under the Meta Superintelligence Labs division created last year. Beyond conversation tools, Meta is also seeing strong traction with creative AI features. The company reported that more than 8 million advertisers are using at least one of its generative AI ad creative tools, with particularly strong adoption among small and medium-sized businesses. Notably, advertisers using the video generation feature have seen more than 3% higher conversion rates in tests. This week, Meta is launching the open beta of Meta Ads AI Connectors, which will let advertisers link their ad accounts to AI agents.\n\n## Enterprise AI's Revenue Inflection Point\n\nThe timing of monetization hints reveals Meta's confidence that enterprise AI has moved from novelty to necessity. The company reported $56.3 billion in total revenue for Q1, up 33% year-over-year, with $885 million specifically from apps revenue driven by WhatsApp paid messaging and subscriptions. This baseline is relevant because business AI currently generates zero revenue—a gap Meta expects to close within the next one to two years as tool adoption stabilizes.\n\nFor enterprise buyers, the implication is clear: free tools will not remain free indefinitely. Organizations currently adopting Meta's business AI should expect pricing announcements within the next 12-18 months, likely tiered by conversation volume or feature access. Early adopters have a window to lock in workflows before pricing structures are finalized.",
-      "source": "TechCrunch AI",
-      "published": "2026-04-30T12:08:45+00:00",
-      "curated_at": "2026-04-30T12:10:07.301758+00:00",
-      "original_title": "Meta says its business AI now facilitates 10 million conversations a week"
     }
   ]
 }
