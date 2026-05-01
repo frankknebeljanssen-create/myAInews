@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-01T02:14:00.997045+00:00",
+  "generated_at": "2026-05-01T06:11:20.012494+00:00",
   "items": [
+    {
+      "id": "76ebe16cdea6",
+      "url": "https://www.latent.space/p/ainews-agents-for-everything-else",
+      "headline": "OpenAI and Anthropic Expand Beyond Code as Cyber Capabilities Converge",
+      "body": "OpenAI and Anthropic shipped major product updates this week that signal a fundamental shift in how enterprise AI agents are being positioned. OpenAI launched Codex for Work—moving its agent beyond coding tasks into general computer automation—while Anthropic released Claude Security and expanded creative tool support. Simultaneously, GPT-5.5 closed a meaningful gap in offensive cyber automation benchmarks, eroding what had been Anthropic's perceived advantage in this high-stakes domain.\n\n## Codex Expands to Non-Technical Workflows\n\nOpenAI's Codex update includes 42% faster computer use execution, a responsive browser interface, and integration hooks into Microsoft, Google, and Salesforce suites. The onboarding now explicitly encourages non-coders to use the agent for spreadsheet work, document drafting, research, and task planning. The team chose a \"dynamic UI\" that routes interface design based on task type, rather than adopting toggle-based design patterns. This appears less about interface polish and more about engineering agents that adapt their own presentation layer depending on what they're automating.\n\nSam Altman and OpenAI leadership framed this as \"for everyone, for any task done with a computer\"—a clear statement that computer-use agents are no longer a specialist tool. The underlying capability improvement (20% faster execution, 42% faster computer use) matters less than the signal: OpenAI is productizing agent UX, not just publishing benchmark scores.\n\n## Cyber Parity and the Narrowing Gap\n\nGPT-5.5 now scores 71.4% on the UK AI Security Institute's multi-step cyber-attack simulation benchmarks, approaching Claude Mythos Preview's 68.6%. On specific tasks like the TLO chain, performance is near-equivalent (2/10 vs. 3/10 attempts). Artificial Analysis measured GPT-5.5 Pro achieving new SOTA on frontier-science evals while using roughly 60% lower cost and token consumption than prior versions.\n\nThe meaningful shift here is not raw capability but efficiency. Anthropic's prior lead in offensive cyber automation was framed as a unique safety/capability position. That narrative no longer holds. Both providers now credibly execute multi-step cyber workflows, and the economic advantage has flipped toward OpenAI on cost-per-output-token. For enterprises evaluating foundation models for high-value automation—whether that's financial analysis, security research, or structured reasoning—the decision tree has narrowed to reliability, integration depth, and price, not differentiated cyber capability.",
+      "source": "Latent Space",
+      "published": "2026-05-01T04:53:41+00:00",
+      "curated_at": "2026-05-01T06:08:19.734508+00:00",
+      "original_title": "[AINews] Agents for Everything Else: Codex for Knowledge Work, Claude for Creative Work"
+    },
     {
       "id": "caf280296532",
       "url": "https://techcrunch.com/2026/04/30/chatgpt-images-2-0-is-a-hit-in-india-but-not-a-big-winner-elsewhere-yet/",
@@ -290,16 +300,6 @@
       "published": "2026-04-30T11:38:26+00:00",
       "curated_at": "2026-04-30T12:10:14.909792+00:00",
       "original_title": "Meta lost 20 million users last quarter"
-    },
-    {
-      "id": "7ed1dee0a21a",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/921073/openai-sam-altman-new-cybersecurity-model-gpt-5-5-cyber",
-      "headline": "OpenAI restricts cybersecurity model to vetted defenders",
-      "body": "OpenAI is launching GPT-5.5-Cyber, a specialized AI model built for cybersecurity work, but will not release it to the public. CEO Sam Altman announced the limited rollout will begin within days, distributed only to vetted \"cyber defenders\" and institutions. The move reflects a widening industry pattern of gating access to frontier AI models deemed too risky for unrestricted use, even as competition intensifies to deploy advanced capabilities.\n\n## Controlled Rollout and Unclear Access Criteria\n\nOpenAI has not disclosed who qualifies as a trusted cyber defender or published technical specifications for the model. Altman said the company will work with \"the entire ecosystem and the government\" to determine access rules. Previous OpenAI \"trusted access\" programs have involved vetted professionals and institutions, but specifics remain opaque. GPT-5.5-Cyber is a specialized version of GPT-5.5, OpenAI's recently released flagship model. The company has staggered releases of earlier cybersecurity models and its life sciences model, GPT-Rosalind, which targets drug discovery and biology research.\n\nThe approach mirrors Anthropic's rollout of Claude Mythos this month, though Anthropic's execution faced public complications around secure distribution. White House officials have already taken interest in restricting Mythos access further, citing both cybersecurity risks from wider distribution and concern that demand surge would constrain government use of the system.\n\n## Industry Gatekeeping and Policy Tensions\n\nThe staggered-release strategy now functions as a competitive differentiator: vendors brand restricted models as too dangerous for public deployment, implicitly positioning them as more capable than freely available alternatives. This framing justifies premium pricing and government partnerships while sidestepping regulatory scrutiny that might otherwise apply to powerful dual-use tools.\n\nThe White House's involvement in model access decisions signals that AI governance is shifting toward direct government-vendor coordination on deployment, outside formal regulatory channels. This creates ambiguity for enterprises: access to frontier cybersecurity models may depend less on procurement capability than on government approval, and policy can shift based on shifting risk assessments. Organizations dependent on cutting-edge defense capabilities should monitor how access criteria evolve and whether alternative models from other vendors will be gated similarly. The precedent set by both OpenAI and Anthropic suggests restricted distribution will become standard for high-capability models, making vendor relationships and government standing material factors in AI strategy.",
-      "source": "The Verge AI",
-      "published": "2026-04-30T11:09:01+00:00",
-      "curated_at": "2026-04-30T12:10:22.898626+00:00",
-      "original_title": "OpenAI’s new security model is for ‘critical cyber defenders’ only"
     }
   ]
 }
