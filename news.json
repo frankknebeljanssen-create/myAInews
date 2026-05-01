@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-01T16:48:22.190447+00:00",
+  "generated_at": "2026-05-01T17:54:38.307615+00:00",
   "items": [
+    {
+      "id": "e0cc2e299c10",
+      "url": "https://arstechnica.com/tech-policy/2026/05/minnesota-set-to-be-first-state-to-ban-nudification-apps/",
+      "headline": "Minnesota Bans Nudification Apps, Sets $500K Fine Per Image",
+      "body": "Minnesota became the first state this week to pass legislation explicitly banning nudification apps—software that uses AI to generate non-consensual intimate images of real people. The state Senate voted 65–0 to approve the bill after swift House passage, with Governor Tim Walz expected to sign it into law. Enforcement begins in August. The law targets app developers and service providers whose tools are designed to \"undress\" or sexualize images, imposing civil liability, potential product blocking, and fines up to $500,000 per fake nude generated. Any collected fines fund victim services for sexual assault, domestic violence, and child abuse.\n\n## A Specific Harm, A Targeted Response\n\nThe bill originated after a Minnesota woman discovered a man in her social circle had used DeepSwap—an overseas app—to generate fake nudes of more than 80 women without consent. Senator Erin Maye Quade introduced the legislation after victims found no existing legal recourse: the images weren't shared (so revenge porn laws didn't apply) and proving intent was difficult. The app made the abuse frictionless—requiring minimal technical skill and no safeguards. RAINN, the National Sexual Assault Hotline nonprofit, consulted with tech companies during drafting to prevent collateral damage to legitimate tools like Photoshop, which require user expertise to alter images. The final law exempts products or services demanding \"technical skill\" to generate altered intimate imagery.\n\n## Enforcement Limits and Federal Gaps\n\nThe law's practical reach remains uncertain. DeepSwap operates from overseas locations including Hong Kong and Dublin, making state-level enforcement difficult or impossible. Advocates acknowledge that a federal ban would be more effective than relying on individual states to regulate foreign developers. There is also risk from federal deregulation: if the Trump administration blocks state AI safeguards as promised, Minnesota's law could become unenforceable. Domestically, US firms face exposure. Elon Musk's Grok AI has faced government probes and lawsuits over non-consensual intimate imagery and alleged child sexual abuse material; X claimed updates in January stopped undressing functionality, but NBC News found dozens of such images posted on the platform in recent weeks. Arrests linked to Grok abuse are mounting, signaling law enforcement is closing cases. For enterprise AI developers and platforms, the Minnesota precedent establishes that offering nudification functionality—whether intentionally or through inadequate safeguards—now carries concrete legal and financial risk.",
+      "source": "Ars Technica AI",
+      "published": "2026-05-01T17:36:29+00:00",
+      "curated_at": "2026-05-01T17:52:11.848465+00:00",
+      "original_title": "Minnesota passes ban on fake AI nudes; app makers risk $500K fines"
+    },
     {
       "id": "33c1ee68ad64",
       "url": "https://techcrunch.com/2026/05/01/pentagon-inks-deals-with-nvidia-microsoft-and-aws-to-deploy-ai-on-classified-networks/",
@@ -290,16 +300,6 @@
       "published": "2026-04-30T15:59:41+00:00",
       "curated_at": "2026-04-30T17:11:04.420805+00:00",
       "original_title": "This startup’s new mechanistic interpretability tool lets you debug LLMs"
-    },
-    {
-      "id": "eb2ddab5d7ad",
-      "url": "https://techcrunch.com/2026/04/30/x-announces-a-rebuilt-ad-platform-powered-by-ai/",
-      "headline": "X Rebuilds Ad Platform With AI to Recover Lost Revenue Ground",
-      "body": "X has begun rolling out a rebuilt advertising platform powered by AI-driven ranking and retrieval systems, marking a strategic push to accelerate ad revenue growth after years of decline under Elon Musk's ownership. The phased rollout targets marketers with tools for campaign creation, targeting, and optimization, positioning AI as the central mechanism for improving ad relevance and delivery. The move signals that X and its merged xAI subsidiary are treating ad platform modernization as a core priority rather than a secondary initiative.\n\n## Revenue Recovery in Motion\n\nX's ad business contracted sharply after Musk's 2022 acquisition, forcing the company to diversify into subscriptions and AI services. However, eMarketer forecasts show a turnaround underway: projected ad revenue of $2.26 billion in 2025 rising to $2.46 billion in 2026. While still representing roughly half of Twitter's 2021 peak, the trajectory reflects stabilization and incremental growth. The rebuilt platform aims to accelerate that recovery by enabling advertisers to create and control campaigns more efficiently while using AI to optimize performance automatically.\n\nMonique Pintarelli, head of global advertising at xAI, framed the rebuild as representative of the combined entity's capabilities: building complex systems rapidly with technical depth. The new stack is designed to support continuous feature releases and faster integration of emerging tools, suggesting X intends this platform as a foundation for iterative improvement rather than a one-time overhaul.\n\n## Where AI-Driven Adtech Creates Real Leverage\n\nThe broader tech industry has demonstrated that AI-powered advertising drives measurable results. Google, Meta, and others reported strong earnings this week, with AI automating critical ad functions—creation, targeting, measurement—across their platforms. This automation has lowered barriers for smaller advertisers, democratizing access to enterprise-grade tools. X's rebuild follows this proven pattern, betting that better AI infrastructure will attract spending from advertisers already seeing returns on AI-assisted campaigns elsewhere.\n\nFor enterprises evaluating X as an advertising channel, the key question is execution speed and competitive parity. X operates at a disadvantage: Meta and Google have years of AI optimization embedded in their ad systems, larger data sets, and deeper advertiser relationships. A rebuilt platform signals intent but not certainty. The concrete signal to watch is whether the phased rollout delivers measurable improvements in campaign performance and advertiser retention, not platform announcements.",
-      "source": "TechCrunch AI",
-      "published": "2026-04-30T15:14:55+00:00",
-      "curated_at": "2026-04-30T17:11:12.949081+00:00",
-      "original_title": "X announces a rebuilt ad platform powered by AI"
     }
   ]
 }
