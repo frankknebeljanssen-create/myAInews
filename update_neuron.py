@@ -56,7 +56,6 @@ def find_latest_issue_url(home_html):
         if "/p/" not in href:
             continue
         full = href if href.startswith("http") else f"https://www.theneurondaily.com{href if href.startswith('/') else '/' + href}"
-        # de-dup, preserve discovery order
         if full not in seen:
             seen.add(full)
             candidates.append(full)
@@ -95,7 +94,6 @@ def extract_published_date(html):
         m = soup.find("meta", property=prop)
         if m and m.get("content"):
             try:
-                # ISO 8601 — first 10 chars are YYYY-MM-DD
                 return m["content"][:10]
             except Exception:
                 pass
@@ -179,8 +177,17 @@ def main():
     try:
         home_html = fetch(NEURON_HOME)
     except Exception as e:
+        # ── Graceful skip on 403 / network block ─────────────────────────────
+        # The Neuron Daily uses Cloudflare Enterprise which blocks GitHub Actions
+        # IPs. Exit 0 so the workflow stays green and neuron.json is preserved.
+        status = getattr(getattr(e, 'response', None), 'status_code', None)
+        if status == 403:
+            print(f"[neuron] SKIP: homepage returned 403 (Cloudflare block) — keeping existing neuron.json", file=sys.stderr)
+            print(f"[neuron] Tip: consider switching to a non-Cloudflare source or a scraping proxy.")
+            sys.exit(0)
         print(f"[neuron] FAIL: cannot fetch homepage: {e}", file=sys.stderr)
         sys.exit(1)
+
     print(f"[neuron] homepage: {len(home_html)} chars")
 
     try:
@@ -190,7 +197,7 @@ def main():
         sys.exit(1)
     print(f"[neuron] latest issue URL: {issue_url}")
 
-    # Read existing file once — used both for same-issue check AND for preserving as "previous"
+    # Read existing file once
     existing = None
     if NEURON_FILE.exists():
         try:
@@ -206,8 +213,13 @@ def main():
     try:
         issue_html = fetch(issue_url)
     except Exception as e:
+        status = getattr(getattr(e, 'response', None), 'status_code', None)
+        if status == 403:
+            print(f"[neuron] SKIP: issue page returned 403 — keeping existing neuron.json", file=sys.stderr)
+            sys.exit(0)
         print(f"[neuron] FAIL: cannot fetch issue: {e}", file=sys.stderr)
         sys.exit(1)
+
     print(f"[neuron] issue page: {len(issue_html)} chars")
 
     article_text = html_to_text(issue_html)
@@ -243,7 +255,7 @@ def main():
     data["issue_url"] = issue_url
     data["date"] = pub_date
 
-    # Preserve yesterday — take existing data (without its own nested previous) as "previous"
+    # Preserve yesterday
     if existing and existing.get("issue_url") and existing.get("issue_url") != issue_url:
         data["previous"] = {k: v for k, v in existing.items() if k != "previous"}
         print(f"[neuron] preserved previous issue: {existing.get('date')} | {existing.get('headline','')[:60]}")
