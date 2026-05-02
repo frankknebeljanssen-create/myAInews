@@ -1,7 +1,6 @@
-name: Update neuron
+name: Update AItoday
 on:
   schedule:
-    # 14:00 UTC = 16:00 Berlin = 10:00 EDT — safely after The Neuron's morning publish
     - cron: '0 14 * * *'
   workflow_dispatch:
 permissions:
@@ -12,7 +11,7 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - name: Check out repo
         uses: actions/checkout@v4
@@ -22,12 +21,11 @@ jobs:
           python-version: '3.11'
           cache: 'pip'
       - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-          pip install cloudscraper
+        run: pip install -r requirements.txt
       - name: Run updater
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          SCRAPERAPI_KEY: ${{ secrets.SCRAPERAPI_KEY }}
         run: python update_AItoday.py
       - name: Commit + push results
         run: |
