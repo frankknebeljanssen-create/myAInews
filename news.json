@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-02T21:34:55.424870+00:00",
+  "generated_at": "2026-05-02T22:34:03.775858+00:00",
   "items": [
+    {
+      "id": "e4f386980be8",
+      "url": "https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars/",
+      "headline": "Academy Bars AI-Generated Performances and Scripts from Oscar Eligibility",
+      "body": "The Academy of Motion Picture Arts and Sciences has formally prohibited AI-generated actors and screenplays from Oscar consideration, establishing explicit eligibility rules that require human authorship and consent. The decision, announced Friday, signals how major industry institutions are responding to rapid advances in generative AI—setting legal and definitional boundaries where none existed before.\n\n## The Academy's New Standards\n\nPerformances must be \"credited in the film's legal billing and demonstrably performed by humans with their consent\" to qualify for Academy Awards. Screenplays must be \"human-authored.\" The Academy also reserved the right to request detailed documentation about a film's AI usage and to verify human authorship claims, effectively creating an audit mechanism for submissions.\n\nThe timing reflects mounting pressure on the film industry. An independent film in development features an AI-generated version of Val Kilmer. The AI actress Tilly Norwood has generated sustained media attention. Recent breakthroughs in video generation models have prompted some filmmakers to issue public warnings about the technology's implications. Perhaps more significantly, AI governance was a central dispute in the 2023 actors' and writers' strikes, with both guilds securing contractual protections around AI usage.\n\n## Broader Industry Precedent\n\nThe Academy's move extends a pattern already emerging across creative industries. Publishers have pulled novels over suspected AI usage. Writers' groups have declared AI-generated work ineligible for their awards. These decisions reflect a consensus among gatekeeping institutions that human creation—or at minimum, human authorship with consent—remains a prerequisite for professional recognition and competition.\n\nFor enterprises deploying or investing in generative AI for creative work, the ruling clarifies an emerging regulatory reality: major awards bodies and professional organizations are drawing hard lines around AI attribution and human involvement. This has practical implications for studios and production companies evaluating AI workflows. It also signals that \"AI-generated\" will likely become a distinct category with legal and contractual consequences, rather than a transparent substitute for human work. Organizations planning to use generative AI in film, television, or publishing should anticipate similar restrictions from other major institutions and prepare disclosure and attribution protocols accordingly.",
+      "source": "TechCrunch AI",
+      "published": "2026-05-02T21:54:58+00:00",
+      "curated_at": "2026-05-02T22:32:00.250542+00:00",
+      "original_title": "AI-generated actors and scripts are now ineligible for Oscars"
+    },
     {
       "id": "b9f936bf3b85",
       "url": "https://www.wired.com/story/security-news-this-week-disneyland-now-uses-face-recognition-on-visitors/",
@@ -290,16 +300,6 @@
       "published": "2026-04-30T17:46:54+00:00",
       "curated_at": "2026-04-30T19:08:26.568812+00:00",
       "original_title": "Google’s Gemini AI assistant is hitting the road in millions of vehicles"
-    },
-    {
-      "id": "ee1e0bceadca",
-      "url": "https://www.wired.com/story/elon-musk-distill-openai-models-partly-xai/",
-      "headline": "Musk Acknowledges xAI Used OpenAI Models for Training in Court",
-      "body": "During cross-examination in his ongoing legal battle with OpenAI, Elon Musk testified that xAI has used OpenAI's AI models to train its own systems. When pressed by OpenAI attorney William Savitt on whether xAI had employed distillation—a technique where one AI model trains a smaller, more efficient model—Musk initially deflected by noting that \"generally all the AI companies\" use this practice. He later acknowledged the practice as \"partly\" occurring at xAI and characterized using competitors' models to validate performance as \"standard practice\" in the industry.\n\n## Model Distillation and Competitive Pressure\n\nDistillation represents one of the fastest routes to capable AI systems: a company can reverse-engineer performance characteristics by observing how a larger model behaves, then build a smaller system that mimics that behavior at lower computational cost. Musk's testimony indicates xAI has relied on this approach using OpenAI technology. OpenAI has made clear it views this as a threat. In a February 2026 memo to Congress, the company said it had \"taken steps to protect and harden our models against distillation,\" explicitly mentioning concerns about Chinese labs like DeepSeek appropriating American AI innovation. The Trump administration has aligned with this position, with the White House committing to share intelligence with U.S. AI companies about foreign distillation attempts.\n\nThe competitive environment has hardened considerably. Anthropic blocked OpenAI's access to its Claude coding models in August 2025 after alleging terms-of-service violations, then cut off xAI's access entirely more recently. These walls suggest industry consensus that sharing models with competitors now poses unacceptable risk.\n\n## Strategic Implications for the Field\n\nMusk's court admission exposes the gap between industry rhetoric around openness and actual competitive practice. While companies defend distillation as legitimate technical validation, OpenAI's legal strategy and policy lobbying reveal it as strategically unacceptable once a company reaches market dominance. For enterprise practitioners, the takeaway is clear: assume your model outputs constitute competitive intelligence once released into any external environment. If proprietary performance matters, treat model access as tightly as source code. The regulatory environment—with government now tracking foreign distillation—suggests policy will increasingly codify which distillation is acceptable and which isn't, making access controls a compliance necessity rather than a courtesy.",
-      "source": "Wired AI",
-      "published": "2026-04-30T17:41:14+00:00",
-      "curated_at": "2026-04-30T19:08:34.254107+00:00",
-      "original_title": "Elon Musk Seemingly Admits xAI Has Used OpenAI’s Models to Train Its Own"
     }
   ]
 }
