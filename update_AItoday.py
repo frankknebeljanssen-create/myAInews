@@ -2,11 +2,11 @@
 
 Multi-source fetcher (in priority order):
   1. The Rundown AI  — homepage scraping (primary, exit 1 if fails)
-  2. TLDR AI         — tldr.tech/ai (no bot protection)
+  2. TLDR AI         — tldr.tech/ai/YYYY-MM-DD (no bot protection)
   3. Ben's Bites     — beehiiv/homepage scraping (bensbites.com)
   4. The Neuron      — ScraperAPI (optional, often blocked)
 
-Bullets are deduplicated across sources (~70% title similarity = same story).
+Bullets are deduplicated across sources (~55% title similarity = same story).
 The best-source version of each story is kept (Rundown > TLDR > Ben's > Neuron).
 """
 import os, sys, json, re, xml.etree.ElementTree as ET
@@ -74,7 +74,6 @@ def extract_meta(html, prop):
     return og["content"].strip() if og and og.get("content") else ""
 
 
-
 def is_article_url(url):
     """Returns False for bare domain roots — only keep real article URLs."""
     if not url: return False
@@ -82,17 +81,13 @@ def is_article_url(url):
         from urllib.parse import urlparse
         p = urlparse(url)
         path = p.path.rstrip('/')
-        # Bare domain: path is empty or just '/'
-        if not path or path == '': return False
-        # Very short path like /about /home = not an article
-        if len(path) < 4: return False
+        if not path or len(path) < 4: return False
         return True
     except Exception:
         return False
 
 
-def rss_latest_url(rss_urls, base):
-    """Try RSS/Atom feeds, return latest post URL or None."""
+def rss_latest_url(rss_urls):
     for rss_url in rss_urls:
         try:
             text = http_get(rss_url)
@@ -129,7 +124,7 @@ Output ONLY a single valid JSON object. No markdown fences, no commentary:
     {
       "emoji": "single Unicode emoji",
       "text": "story headline, paraphrased, under 80 chars",
-      "url": "source URL if available, else empty string",
+      "url": "URL of the original news article being reported (not the newsletter homepage), else empty string",
       "source": "SOURCE_NAME",
       "summary": "2-3 sentences in your own words, never directly quoted"
     }
@@ -150,7 +145,8 @@ Rules:
 - bullets: 3-6 items; around_the_horn: 3-6 items
 - All text PARAPHRASED — never copy quotes longer than 8 words
 - Missing sections → empty string / empty array, never invented
-- emoji = single Unicode character only"""
+- emoji = single Unicode character only
+- url in bullets = the external article URL, NOT the newsletter URL"""
 
 
 def extract_from_html(html, issue_url, source_name):
@@ -184,20 +180,17 @@ def extract_from_html(html, issue_url, source_name):
     data = json.loads(raw[:end] if end else raw)
     data["issue_url"] = issue_url
     data["date"]      = pub_date
-    # Strip bare domain URLs — only keep real article links
+    # Strip bare domain URLs
     for b in data.get("bullets", []):
-        if not is_article_url(b.get("url", "")):
-            b["url"] = ""
+        if not is_article_url(b.get("url", "")): b["url"] = ""
     for h in data.get("around_the_horn", []):
-        if not is_article_url(h.get("url", "")):
-            h["url"] = ""
+        if not is_article_url(h.get("url", "")): h["url"] = ""
     return data
 
 
 # ── Deduplication ──────────────────────────────────────────────────────────────
 
 def title_tokens(text):
-    """Lowercase words, no punctuation, no stop words."""
     stops = {"the","a","an","in","of","to","and","is","for","on","its","as",
              "at","by","with","from","that","this","how","why","are","will",
              "has","it","be","was","have","not","but","or","what","who","new"}
@@ -212,27 +205,22 @@ def similarity(a, b):
 
 
 def deduplicate(all_bullets, threshold=0.55):
-    """Keep first (highest-priority) version of each story."""
     kept = []
     for b in all_bullets:
-        is_dup = any(similarity(b["text"], k["text"]) >= threshold for k in kept)
-        if not is_dup:
+        if not any(similarity(b["text"], k["text"]) >= threshold for k in kept):
             kept.append(b)
     return kept
 
 
-# ── Individual source fetchers ────────────────────────────────────────────────
+# ── Source fetchers ────────────────────────────────────────────────────────────
 
 def fetch_rundown():
-    """PRIMARY — exits 1 on failure."""
-    rss_urls = [
+    url = rss_latest_url([
         "https://www.therundown.ai/feed",
         "https://www.therundown.ai/rss.xml",
         "https://www.therundown.ai/rss",
-    ]
-    url = rss_latest_url(rss_urls, "https://www.therundown.ai/")
+    ])
     if not url:
-        # Fallback: scrape homepage
         print("[rundown] RSS unavailable, scraping homepage…")
         home = http_get("https://www.therundown.ai/")
         soup = BeautifulSoup(home, "html.parser")
@@ -245,21 +233,19 @@ def fetch_rundown():
         print("[rundown] FAIL: cannot find latest issue", file=sys.stderr)
         sys.exit(1)
     print(f"[rundown] issue → {url}")
-    html = http_get(url)
-    data = extract_from_html(html, url, "The Rundown AI")
+    data = extract_from_html(http_get(url), url, "The Rundown AI")
     print(f"[rundown] ✓ {len(data['bullets'])} bullets | {data['headline'][:65]}")
     return data
 
 
 def fetch_tldr():
-    """TLDR AI — use today's date URL directly (tldr.tech/ai/YYYY-MM-DD)."""
     try:
         today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
         issue_url = f"https://tldr.tech/ai/{today}"
-        issue_html = http_get(issue_url)
-        if len(issue_html) < 2000:
-            raise RuntimeError(f"page too short ({len(issue_html)} chars) — issue may not be published yet")
-        data = extract_from_html(issue_html, issue_url, "TLDR AI")
+        html = http_get(issue_url)
+        if len(html) < 2000:
+            raise RuntimeError(f"page too short ({len(html)} chars) — not published yet")
+        data = extract_from_html(html, issue_url, "TLDR AI")
         print(f"[tldr] ✓ {len(data['bullets'])} bullets | {data['headline'][:65]}")
         return data
     except Exception as e:
@@ -268,37 +254,29 @@ def fetch_tldr():
 
 
 def fetch_bensbites():
-    """Ben's Bites — try multiple URLs including direct homepage scrape."""
     try:
-        # Try RSS feeds first
-        rss_urls = [
+        url = rss_latest_url([
             "https://bensbites.beehiiv.com/feed",
             "https://bensbites.com/feed",
             "https://www.bensbites.co/feed",
-        ]
-        url = rss_latest_url(rss_urls, "https://bensbites.beehiiv.com/")
+        ])
         if url:
-            html = http_get(url)
-            data = extract_from_html(html, url, "Ben's Bites")
+            data = extract_from_html(http_get(url), url, "Ben's Bites")
             print(f"[bensbites] ✓ {len(data['bullets'])} bullets | {data['headline'][:65]}")
             return data
-
-        # Fallback: scrape homepage for /p/ links
+        # Fallback: scrape homepage
         for home_url in ["https://bensbites.beehiiv.com/", "https://bensbites.com/"]:
             try:
-                home_html = http_get(home_url)
-                soup = BeautifulSoup(home_html, "html.parser")
+                soup = BeautifulSoup(http_get(home_url), "html.parser")
                 for a in soup.find_all("a", href=True):
                     href = a["href"]
                     if "/p/" not in href: continue
                     issue_url = href if href.startswith("http") else f"{home_url.rstrip('/')}{href}"
-                    html = http_get(issue_url)
-                    data = extract_from_html(html, issue_url, "Ben's Bites")
+                    data = extract_from_html(http_get(issue_url), issue_url, "Ben's Bites")
                     print(f"[bensbites] ✓ {len(data['bullets'])} bullets | {data['headline'][:65]}")
                     return data
             except Exception:
                 continue
-
         print("[bensbites] SKIP: all URLs failed")
         return None
     except Exception as e:
@@ -307,13 +285,11 @@ def fetch_bensbites():
 
 
 def fetch_neuron():
-    """The Neuron — via ScraperAPI (often blocked, always optional)."""
     if not SCRAPERAPI_KEY:
         print("[neuron] SKIP: no SCRAPERAPI_KEY")
         return None
     try:
-        home_html = scraperapi_get("https://www.theneurondaily.com/")
-        soup = BeautifulSoup(home_html, "html.parser")
+        soup = BeautifulSoup(scraperapi_get("https://www.theneurondaily.com/"), "html.parser")
         url = None
         for a in soup.find_all("a", href=True):
             href = a["href"]
@@ -321,36 +297,23 @@ def fetch_neuron():
             url = href if href.startswith("http") else f"https://www.theneurondaily.com{href if href.startswith('/') else '/'+href}"
             break
         if not url:
-            print("[neuron] SKIP: no /p/ links found")
-            return None
-        issue_html = scraperapi_get(url)
-        data = extract_from_html(issue_html, url, "The Neuron Daily")
+            print("[neuron] SKIP: no /p/ links found"); return None
+        data = extract_from_html(scraperapi_get(url), url, "The Neuron Daily")
         print(f"[neuron] ✓ {len(data['bullets'])} bullets | {data['headline'][:65]}")
         return data
     except Exception as e:
-        print(f"[neuron] SKIP: {e}")
-        return None
+        print(f"[neuron] SKIP: {e}"); return None
 
 
-# ── Merge + deduplicate ────────────────────────────────────────────────────────
+# ── Merge ──────────────────────────────────────────────────────────────────────
 
 def merge_all(sources):
-    """
-    sources = [primary_data, tldr_data|None, bensbites_data|None, neuron_data|None]
-    Primary headline + main_story always wins.
-    Bullets interleaved then deduplicated.
-    """
     primary = sources[0]
-    all_bullets = []
-    for s in sources:
-        if s and s.get("bullets"):
-            all_bullets.extend(s["bullets"])
-
-    unique_bullets = deduplicate(all_bullets)
-    print(f"[today] dedup: {len(all_bullets)} → {len(unique_bullets)} unique bullets")
-
+    all_bullets = [b for s in sources if s for b in s.get("bullets", [])]
+    unique = deduplicate(all_bullets)
+    print(f"[today] dedup: {len(all_bullets)} → {len(unique)} unique bullets")
     merged = dict(primary)
-    merged["bullets"] = unique_bullets
+    merged["bullets"] = unique
     merged["sources_fetched"] = [s["issue_url"].split("/")[2] for s in sources if s]
     return merged
 
@@ -365,8 +328,7 @@ def main():
         try: existing = json.loads(NEURON_FILE.read_text())
         except Exception: pass
 
-    # ── Fetch all sources ─────────────────────────────────────────────────────
-    rundown   = fetch_rundown()                    # exits 1 if fails
+    rundown   = fetch_rundown()
     tldr      = fetch_tldr()
     bensbites = fetch_bensbites()
     neuron    = fetch_neuron()
@@ -374,26 +336,23 @@ def main():
     fetched_count = sum(1 for s in [rundown, tldr, bensbites, neuron] if s)
     print(f"[today] {fetched_count}/4 sources fetched")
 
-    # ── Skip if already have same issue with same sources ─────────────────────
+    # Only skip if previous run already had MORE sources than now
     if existing and existing.get("issue_url") == rundown["issue_url"]:
-        prev_sources = set(existing.get("sources_fetched", []))
-        curr_sources = set(s["issue_url"].split("/")[2] for s in [rundown, tldr, bensbites, neuron] if s)
-        if prev_sources >= curr_sources:
-            print("[today] already have this issue with all available sources, skipping")
+        prev = set(existing.get("sources_fetched", []))
+        curr = set(s["issue_url"].split("/")[2] for s in [rundown, tldr, bensbites, neuron] if s)
+        if prev > curr:
+            print(f"[today] previous run had more sources ({len(prev)} vs {len(curr)}), skipping")
             return
+        print(f"[today] same issue, re-running with {len(curr)} sources")
 
-    # ── Merge & deduplicate ───────────────────────────────────────────────────
     data = merge_all([s for s in [rundown, tldr, bensbites, neuron] if s])
 
-    # ── Preserve previous ─────────────────────────────────────────────────────
     if existing and existing.get("issue_url") and existing.get("issue_url") != rundown["issue_url"]:
         data["previous"] = {k: v for k, v in existing.items() if k != "previous"}
         print(f"[today] preserved previous: {existing.get('date')} | {existing.get('headline','')[:55]}")
 
-    # ── Write ─────────────────────────────────────────────────────────────────
     NEURON_FILE.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
-    print(f"[today] wrote {NEURON_FILE}")
-    print(f"[today] headline: {data['headline'][:80]}")
+    print(f"[today] wrote {NEURON_FILE} | {data['headline'][:80]}")
     print(f"[today] {len(data['bullets'])} unique bullets from {fetched_count} sources")
 
 
