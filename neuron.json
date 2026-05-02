@@ -1,66 +1,73 @@
 {
   "date": "2026-05-02",
   "issue_url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight",
-  "emoji": "🔒",
-  "headline": "The White House rethinks its Anthropic fight",
-  "subtitle": "Government reverses Anthropic stance · Gemini arrives in Google cars · Stress-testing ideas with Perplexity",
-  "intro": "The White House is shifting its confrontational stance toward Anthropic, driven partly by the company's powerful Mythos AI capabilities and national security concerns. A new administration memo aims to walk back the Pentagon's hard line while securing better government access to the frontier model.",
+  "emoji": "🔄",
+  "headline": "White House recalibrates Anthropic strategy amid security shifts",
+  "subtitle": "Government reverses hardline stance · Gemini enters vehicles · ChatGPT's goblin mystery solved",
+  "intro": "The White House is shifting its aggressive posture toward Anthropic after the emergence of Mythos, a powerful AI with cyber capabilities that changed the calculus on national security. An upcoming policy memo will ease restrictions while maintaining government control, even as internal divisions persist over whether to fully reconcile with the AI company.",
   "bullets": [
     {
-      "emoji": "🔒",
-      "text": "White House limits Anthropic's private sector access expansion citing compute constraints",
+      "emoji": "⚖️",
+      "text": "White House blocks Anthropic's plan to expand Mythos access",
       "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight",
       "source": "The Rundown AI",
-      "summary": "The White House pushed back on Anthropic's plan to expand private sector access to Mythos from roughly 50 firms to 120, citing concerns about compute strains affecting government use. A national security memo will reportedly allow agencies to work around supply chain risk designations despite ongoing legal disputes."
+      "summary": "The government cited compute concerns when Anthropic sought to expand private sector access to Mythos from about 50 firms to nearly 120. A forthcoming national security memo will address the Pentagon dispute and allow agencies to work around supply chain risk designations, signaling a thaw in relations despite ongoing legal battles."
     },
     {
       "emoji": "🚗",
-      "text": "Google rolls out Gemini for vehicles, replacing Assistant with conversational AI",
+      "text": "Google deploys Gemini as next-gen automotive assistant",
       "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight",
       "source": "The Rundown AI",
-      "summary": "Google is upgrading its in-car AI system with Gemini, adding hands-free controls, navigation customization, and vehicle-specific assistance. The feature will roll out first to U.S. vehicles with Google built-in, including 4 million compatible General Motors vehicles from 2022 onward."
+      "summary": "Google is rolling out Gemini to replace Assistant in Google built-in vehicles, offering conversational controls for navigation, climate, music, and vehicle diagnostics. The upgrade includes beta Gemini Live mode for learning and brainstorming, with integrations for Gmail, Calendar, and Home coming later, and General Motors adding support for approximately 4 million vehicles from 2022 onward."
     },
     {
-      "emoji": "🤔",
-      "text": "Using Perplexity Deep Research to systematically evaluate business ideas",
+      "emoji": "🧪",
+      "text": "Perplexity Deep Research becomes quick idea validator",
       "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight",
       "source": "The Rundown AI",
-      "summary": "The newsletter shared a workflow for leveraging Perplexity's Deep Research mode to stress test startup concepts. Users can run the same prompt weekly on new ideas and generate validation slides in minutes, potentially accelerating idea evaluation significantly."
+      "summary": "The Rundown shared a workflow for using Perplexity's Deep Research mode to stress test business ideas with a custom prompt. Users can run queries five or six minutes to surface feasibility concerns, with the free tier allowing five queries daily, enabling rapid evaluation of multiple concepts weekly."
     },
     {
-      "emoji": "🧌",
-      "text": "OpenAI traces ChatGPT's goblin obsession to single personality reward signal",
+      "emoji": "👹",
+      "text": "OpenAI traces ChatGPT's goblin fixation to single personality",
       "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight",
       "source": "The Rundown AI",
-      "summary": "OpenAI discovered that its 'Nerdy' personality preset drove two-thirds of goblin mentions in user conversations, with the preference bleeding into other modes through fine-tuning loops. The company retired the personality and added explicit creature-blocking to GPT-5.5."
+      "summary": "OpenAI identified the source of ChatGPT's inexplicable creature mentions: a reward signal in the Nerdy personality preset that drove two-thirds of goblin references despite representing only 2.5 percent of traffic. Fine-tuning loops recycled creature-favored outputs into default responses until OpenAI retired Nerdy in March and deployed GPT-5.5 with explicit creature bans."
+    },
+    {
+      "emoji": "🔐",
+      "text": "Anthropic launches Claude Security for enterprise vulnerability scanning",
+      "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight",
+      "source": "The Rundown AI",
+      "summary": "Anthropic released Claude Security in public beta, leveraging Opus 4.7 to scan codebases for vulnerabilities and generate patches. The tool complements similar offerings like Cursor's Security Review, reflecting growing demand for AI-driven security automation in enterprise environments."
     }
   ],
   "main_story": {
-    "title": "White House recalibrates Anthropic strategy amid national security tensions",
-    "body": "After months of escalating conflict between the Pentagon and Anthropic, the White House is now attempting a delicate repositioning. The government wants better access to Anthropic's powerful Mythos model for national security purposes while simultaneously preventing the company from expanding private sector access due to compute constraints. A forthcoming national security memo will reportedly help agencies work around existing supply chain designations, effectively softening the administration's public hard line. This reversal appears driven partly by recognition that Mythos and competing frontier models like GPT 5.5 have reached cyber capabilities that make the government-vs-company conflict seem less strategically sound.",
-    "why": "The Mythos breakthrough in AI cyber capabilities has fundamentally altered the White House's calculus around Anthropic, transforming what seemed like a straightforward ideological or corporate disagreement into a complex national security optimization problem. Policymakers now face pressure to balance access needs against concerns about compute availability.",
-    "take": "The administration's pivot reveals that national security interests ultimately trump ideological opposition or corporate conflicts, though internal divisions remain visible with Pentagon officials still publicly critical of Anthropic's leadership."
+    "title": "White House recalibrates Anthropic relationship amid Mythos emergence",
+    "body": "The White House is navigating a complex policy reversal on Anthropic after the arrival of Mythos, an AI system with cyber capabilities potent enough to reshape national security calculations. The government blocked Anthropic's plan to expand private sector access to Mythos from 50 to 120 firms, citing compute concerns for federal use. An incoming national security memo will reportedly allow agencies to sidestep supply chain risk designations and pursue multi-vendor AI adoption, effectively de-escalating the Pentagon's earlier hard line while preserving government leverage over the technology.",
+    "why": "Mythos's power forced a reassessment of the initial adversarial stance toward Anthropic. The White House wants privileged access to the model for national security purposes without appearing to completely capitulate to Anthropic or alienate the Pentagon.",
+    "take": "The shift exposes deeper tensions between national security imperatives and ideological positioning, with Pentagon officials continuing public criticism even as policy reverses course. This pragmatic recalibration reflects how AI's rapid advancement can overtake bureaucratic feuds."
   },
   "around_the_horn": [
     {
-      "text": "Meta opens ads platform to AI agents via new MCP server for campaign management",
-      "url": ""
+      "text": "OpenAI exceeded 2029 Stargate compute goal with 10 GW, adding 3 GW in three months",
+      "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight"
     },
     {
-      "text": "OpenAI announces it has already exceeded 2029 compute goal with 10 GW secured",
-      "url": ""
+      "text": "Elon Musk testified xAI used distillation techniques trained on OpenAI models",
+      "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight"
     },
     {
-      "text": "Elon Musk reveals xAI trained on OpenAI models using distillation during trial testimony",
-      "url": ""
+      "text": "Meta opened ads platform to third-party AI tools via new MCP server",
+      "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight"
     },
     {
-      "text": "Anthropic launches Claude Security beta for vulnerability scanning and patching",
-      "url": ""
+      "text": "Cursor released Security Review for autonomous vulnerability detection and scanning",
+      "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight"
     },
     {
-      "text": "Cursor releases Security Review tool for autonomous codebase vulnerability detection",
-      "url": ""
+      "text": "Stripe launched wallet for AI agents with human approval on each purchase",
+      "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight"
     }
   ]
 }
