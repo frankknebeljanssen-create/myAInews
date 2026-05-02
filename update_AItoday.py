@@ -87,6 +87,27 @@ def is_article_url(url):
         return False
 
 
+
+def extract_links(html, base_domain=''):
+    """Extract all hyperlinks with anchor text from HTML — passed to Haiku so it can match stories to URLs."""
+    soup = BeautifulSoup(html, "html.parser")
+    links = []
+    seen = set()
+    for a in soup.find_all("a", href=True):
+        href = a["href"].strip()
+        text = a.get_text(" ", strip=True)
+        if not href or href.startswith("#") or href.startswith("mailto:"): continue
+        if not href.startswith("http"): continue
+        # Skip newsletter-internal links and social media
+        skip = ["unsubscribe","beehiiv.com","substack.com","twitter.com","linkedin.com",
+                "facebook.com","instagram.com","therundown.ai","bensbites","theneurondaily"]
+        if any(s in href for s in skip): continue
+        if href in seen: continue
+        seen.add(href)
+        if text and len(text) > 4:
+            links.append(f"[{text[:80]}] → {href}")
+    return links
+
 def rss_latest_url(rss_urls):
     for rss_url in rss_urls:
         try:
@@ -158,11 +179,14 @@ def extract_from_html(html, issue_url, source_name):
                 datetime.now(timezone.utc).strftime("%Y-%m-%d"))[:10]
     title = (extract_meta(html, "og:title") or
              getattr(BeautifulSoup(html,"html.parser").title, "string", "") or "")
-    print(f"[today] {source_name}: {len(text)} chars | {pub_date} | {title[:55]}")
+    links = extract_links(html)
+    links_section = ("\n\n--- HYPERLINKS IN ARTICLE (use these exact URLs in bullets) ---\n" +
+                     "\n".join(links[:60])) if links else ""
+    print(f"[today] {source_name}: {len(text)} chars | {len(links)} links | {pub_date} | {title[:55]}")
 
     prompt = SYSTEM_PROMPT.replace("SOURCE_NAME", source_name)
     user_msg = (f"Issue URL: {issue_url}\nDate: {pub_date}\n"
-                f"Original title: {title.strip()}\n\n--- ARTICLE TEXT ---\n\n{text}")
+                f"Original title: {title.strip()}\n\n--- ARTICLE TEXT ---\n\n{text}{links_section}")
     resp = client.messages.create(
         model=MODEL, max_tokens=4000, system=prompt,
         messages=[
