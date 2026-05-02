@@ -1,110 +1,117 @@
 {
   "date": "2026-05-02",
   "issue_url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight",
-  "emoji": "🔄",
-  "headline": "White House recalibrates Anthropic strategy amid Mythos threat",
-  "subtitle": "Government softens AI feud · Gemini enters vehicles · ChatGPT's goblin mystery solved",
-  "intro": "After months of escalating tensions with Anthropic, the White House is reconsidering its hard line now that Mythos has demonstrated advanced cyber capabilities. A new national security memo aims to thread the needle between accessing powerful AI models while maintaining public pressure.",
+  "emoji": "⚖️",
+  "headline": "White House shifts Anthropic stance amid security concerns",
+  "subtitle": "Mythos capabilities reshape policy · Gemini arrives in cars · ChatGPT's goblin mystery solved",
+  "intro": "The White House is reversing course on its Anthropic feud as Mythos emerges as a powerful cyber tool, forcing officials to balance national security access with private sector expansion. Meanwhile, Google brings conversational AI to vehicles and OpenAI reveals why ChatGPT kept mentioning goblins.",
   "bullets": [
     {
       "emoji": "🔒",
-      "text": "White House blocks Anthropic's plan to expand Mythos access",
+      "text": "White House blocks Anthropic's bid to expand Mythos access over compute concerns",
       "url": "",
       "source": "The Rundown AI",
-      "summary": "The administration is opposing Anthropic's proposal to increase private sector access to Mythos from roughly 50 to 120 companies, citing concerns about government compute availability. An upcoming national security memo will address some Pentagon grievances while allowing agencies to bypass supply chain restrictions."
+      "summary": "The White House is opposing Anthropic's plan to nearly double private sector access to Mythos from around 50 firms to 120, citing concerns about compute strain on government use. A forthcoming national security memo will address parts of the Pentagon feud while pushing multi-vendor AI adoption across agencies."
     },
     {
       "emoji": "🚗",
-      "text": "Google deploys Gemini across vehicle infotainment systems",
+      "text": "Google launches Gemini in cars as conversational AI assistant upgrade",
       "url": "",
       "source": "The Rundown AI",
-      "summary": "Google is rolling out Gemini in cars with Google built-in, replacing Assistant with conversational AI for navigation, climate control, and vehicle diagnostics. General Motors will add the feature to approximately 4 million vehicles starting with 2022 model years."
-    },
-    {
-      "emoji": "🤔",
-      "text": "Perplexity Deep Research helps validate business concepts",
-      "url": "",
-      "source": "The Rundown AI",
-      "summary": "Users can leverage Perplexity's Deep Research mode to systematically stress-test business ideas by running a reusable prompt that generates comprehensive market analysis and feasibility reports in minutes."
+      "summary": "Google is rolling out Gemini to replace Assistant in vehicles with Google built-in, offering conversational features for navigation, climate control, messaging, and hands-free commands. The update includes a beta Live mode for learning and brainstorming, with General Motors bringing the feature to approximately 4 million vehicles starting with 2022 models."
     },
     {
       "emoji": "🧌",
-      "text": "OpenAI traces ChatGPT's creature fixation to single reward signal",
+      "text": "OpenAI traces ChatGPT's goblin habit to single reward signal in Nerdy mode",
       "url": "",
       "source": "The Rundown AI",
-      "summary": "Investigation revealed ChatGPT's obsession with goblins and gremlins originated from the Nerdy personality preset, where creature mentions spiked 175% after ChatGPT-5.1 launch. OpenAI retired the problematic preset and deployed goblin-blocking prompts in GPT-5.5."
+      "summary": "OpenAI discovered that ChatGPT's persistent references to goblins, gremlins, and fantasy creatures stemmed from a reward signal in the Nerdy personality preset, which accounted for two-thirds of creature mentions despite representing only 2.5% of traffic. After retiring Nerdy in March, GPT-5.5 shipped with explicit prompts banning these creatures."
+    },
+    {
+      "emoji": "🤔",
+      "text": "Perplexity Deep Research tool helps validate business ideas systematically",
+      "url": "",
+      "source": "The Rundown AI",
+      "summary": "The Rundown provided a guide for using Perplexity's Deep Research mode to rapidly evaluate business concepts, allowing users to stress-test ideas weekly and validate feasibility. The free-tier feature generates research-backed slide decks in minutes, enabling entrepreneurs to evaluate a year's worth of half-formed ideas within a month."
     },
     {
       "emoji": "💳",
-      "text": "Stripe launches AI agent wallet with human transaction approval",
+      "text": "Stripe launches AI agent wallet with human approval for transactions",
       "url": "",
       "source": "The Rundown AI",
-      "summary": "Stripe introduced a new wallet system enabling AI agents to make purchases while requiring human approval on every transaction, bridging autonomous AI capability with necessary oversight."
+      "summary": "Stripe introduced a wallet system designed for AI agents that requires human approval before completing any purchase. This addresses the need for controlled spending when autonomous systems handle transactions on behalf of users or organizations."
     },
     {
       "emoji": "🔐",
-      "text": "Anthropic releases Claude Security for enterprise vulnerability scanning",
+      "text": "Anthropic releases Claude Security for enterprise code vulnerability scanning",
       "url": "",
       "source": "The Rundown AI",
-      "summary": "Claude Security beta allows enterprises to deploy Opus 4.7 for automated codebase vulnerability detection and patch generation, providing autonomous security assessment capabilities."
+      "summary": "Anthropic launched Claude Security in public beta, leveraging Opus 4.7 to identify and help patch code vulnerabilities for enterprises. The tool provides automated scanning capabilities designed to strengthen security posture across organizations."
     },
     {
       "emoji": "☁️",
-      "text": "Cloudflare lets agents provision accounts, buy domains, deploy",
-      "url": "https://www.cloudflare.com",
+      "text": "Cloudflare enables agents to create accounts and deploy autonomously",
+      "url": "",
       "source": "Ben's Bites",
-      "summary": "Agents can now complete account setup, subscription activation, domain registration and deployment autonomously while humans maintain final approval over permissions and terms. This removes tedious administrative overhead and makes infrastructure accessible to non-technical users."
+      "summary": "Cloudflare now allows agents to provision accounts, purchase domains, generate API tokens, and deploy services with human approval only for terms and permissions. This removes the complexity of navigating dashboards, making deployment accessible to non-technical users."
     },
     {
       "emoji": "💳",
-      "text": "Stripe releases agent-focused payments and commerce tools",
-      "url": "https://stripe.com",
+      "text": "Stripe announces agentic commerce tools at Sessions conference",
+      "url": "",
       "source": "Ben's Bites",
-      "summary": "Stripe announced an Agentic Commerce Suite with Link wallet support for agents and streaming payments. The new Link CLI provides one-time credentials for agents without exposing actual payment details, enabling safer autonomous transactions."
+      "summary": "Stripe introduced an Agentic Commerce Suite with Link wallet support for agents, streaming payments, and agent-ready Treasury accounts. The Link CLI provides one-time-use credentials, allowing agents to handle payments securely without exposing primary card details."
     },
     {
-      "emoji": "⚙️",
-      "text": "Cursor SDK enables building agents with Cursor's runtime",
-      "url": "https://cursor.sh",
+      "emoji": "🎯",
+      "text": "Cursor releases SDK for building agents with same runtime as IDE",
+      "url": "",
       "source": "Ben's Bites",
-      "summary": "Developers can now build agents using Cursor's same runtime, harness and models. Applications range from CI/CD pipeline automation to embedding agents directly into products and workflows."
+      "summary": "The Cursor SDK enables developers to build agents using Cursor's runtime and models. Agents can run from CI/CD pipelines, automate end-to-end workflows, or be embedded directly into products, standardizing the agent development experience."
     },
     {
-      "emoji": "🔧",
-      "text": "Warp open-sourced with OpenAI as founding sponsor",
-      "url": "https://github.com/warpdotdev/warp",
+      "emoji": "💾",
+      "text": "here.now adds private cloud storage for agent memory and files",
+      "url": "",
       "source": "Ben's Bites",
-      "summary": "Terminal tool Warp is now open-source with OpenAI backing the repo. The strategy leverages human contributors for design direction while agents handle implementation work at scale."
+      "summary": "The platform now supports private cloud storage for agents alongside instant web publishing. Ben synced 2.5k files to his agent drive with a single prompt, demonstrating seamless file management at scale."
     },
     {
-      "emoji": "💼",
-      "text": "Lightfield ships AI-native CRM with plain English workflows",
-      "url": "https://lightfield.ai",
+      "emoji": "🎨",
+      "text": "Lightfield ships AI-native CRM with plain-English workflow skills",
+      "url": "",
       "source": "Ben's Bites",
-      "summary": "New AI-native CRM now includes Skills feature allowing users to define workflows in natural language. Agents execute against full data graphs with code execution, web search and file I/O capabilities."
+      "summary": "Lightfield released Skills, allowing users to define workflows in plain English and trigger them conversationally. The agent executes against full data graphs with code execution, web search, and file I/O capabilities."
+    },
+    {
+      "emoji": "🔓",
+      "text": "Warp terminal goes open-source with OpenAI founding sponsorship",
+      "url": "",
+      "source": "Ben's Bites",
+      "summary": "Warp's terminal is now open-source with OpenAI as founding sponsor. The strategy leverages community contributions for direction while agents handle implementation work."
     }
   ],
   "main_story": {
-    "title": "White House rethinks adversarial stance toward Anthropic",
-    "body": "Months of Pentagon pressure against Anthropic has collided with geopolitical reality. The emergence of Mythos with sophisticated cyber capabilities has forced the White House to abandon its hardline approach and pursue a more pragmatic accommodation. A forthcoming national security memo will ostensibly address some of the department's concerns while allowing federal agencies to acquire Mythos access despite ongoing legal disputes. The administration is blocking Anthropic's plan to dramatically expand private sector access to Mythos, citing compute constraints that could impact government priorities. However, internal division persists—military officials continue attacking Anthropic's leadership while the broader security apparatus pushes for closer collaboration.",
-    "why": "Mythos's advanced capabilities make it strategically valuable for national security applications, forcing the government to recalibrate from confrontation to controlled cooperation. Balancing competition concerns against national security imperatives requires nuanced policy rather than the Pentagon's earlier scorched-earth approach.",
-    "take": "The White House faces an uncomfortable truth: technological leadership demands engaging with companies you might distrust. Maintaining an open adversarial posture while trying to monopolize access to breakthrough AI reveals the fundamental tension between ideology and pragmatism in tech policy."
+    "title": "White House reverses hardline stance on Anthropic as Mythos emerges",
+    "body": "After months of escalating conflict with Anthropic, the White House is reconsidering its adversarial position following the emergence of Mythos, an AI model with sophisticated cyber capabilities that rival competitors like GPT-5.5. The government now faces a strategic dilemma: securing privileged access to Mythos for national security purposes while limiting private sector use and preventing the appearance of a complete policy reversal. When Anthropic requested expanding private access from 50 firms to 120, the White House blocked the expansion citing compute constraints on government operations. A forthcoming national security memo is expected to address historical Pentagon grievances while allowing agencies to circumvent supply chain restrictions and pursue multi-vendor AI adoption strategies.",
+    "why": "Mythos's demonstrated cyber prowess has transformed the calculus around Anthropic from a policy disagreement into a national security asset question. The government's internal divisions—with Defense Secretary Hegseth publicly attacking Anthropic while White House officials seek closer ties—suggest ongoing tension between political ideology and pragmatic security interests.",
+    "take": "The White House's pivot reveals how capability leapfrogging forces policy reversals regardless of political positioning. Rather than achieve either victory or coherent policy, the administration is attempting an awkward middle path that satisfies neither its hardline critics nor its security needs."
   },
   "around_the_horn": [
     {
-      "text": "OpenAI exceeded its 2029 Stargate compute goal, securing 10 GW capacity",
+      "text": "Meta opens ad platform to third-party AI tools via new MCP server",
       "url": ""
     },
     {
-      "text": "Elon Musk revealed xAI used distillation techniques to train on OpenAI models",
+      "text": "OpenAI surpasses 2029 Stargate compute goal with 10 GW secured",
       "url": ""
     },
     {
-      "text": "Meta opened its ads platform to third-party AI agents via new MCP server",
+      "text": "Elon Musk reveals xAI used distillation to train on OpenAI models",
       "url": ""
     },
     {
-      "text": "Cursor released Security Review for automated vulnerability detection and patching",
+      "text": "Cursor releases Security Review for autonomous vulnerability scanning",
       "url": ""
     }
   ],
