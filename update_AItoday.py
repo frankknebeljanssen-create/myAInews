@@ -1,4 +1,4 @@
-"""Update neuron.json — runs daily via GitHub Actions.
+"""Update AItoday.json — runs daily via GitHub Actions.
 
 Dual-source fetcher:
   PRIMARY:   The Rundown AI — via RSS feed (stable, no bot protection)
