@@ -74,6 +74,23 @@ def extract_meta(html, prop):
     return og["content"].strip() if og and og.get("content") else ""
 
 
+
+def is_article_url(url):
+    """Returns False for bare domain roots — only keep real article URLs."""
+    if not url: return False
+    try:
+        from urllib.parse import urlparse
+        p = urlparse(url)
+        path = p.path.rstrip('/')
+        # Bare domain: path is empty or just '/'
+        if not path or path == '': return False
+        # Very short path like /about /home = not an article
+        if len(path) < 4: return False
+        return True
+    except Exception:
+        return False
+
+
 def rss_latest_url(rss_urls, base):
     """Try RSS/Atom feeds, return latest post URL or None."""
     for rss_url in rss_urls:
@@ -167,6 +184,13 @@ def extract_from_html(html, issue_url, source_name):
     data = json.loads(raw[:end] if end else raw)
     data["issue_url"] = issue_url
     data["date"]      = pub_date
+    # Strip bare domain URLs — only keep real article links
+    for b in data.get("bullets", []):
+        if not is_article_url(b.get("url", "")):
+            b["url"] = ""
+    for h in data.get("around_the_horn", []):
+        if not is_article_url(h.get("url", "")):
+            h["url"] = ""
     return data
 
 
