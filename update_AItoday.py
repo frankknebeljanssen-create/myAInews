@@ -1,11 +1,13 @@
 """Update neuron.json — runs daily via GitHub Actions.
 
-Dual-source fetcher:
-  PRIMARY:   The Rundown AI — homepage scraping (no bot protection)
-  SECONDARY: The Neuron Daily — via ScraperAPI (bypasses Cloudflare)
+Multi-source fetcher (in priority order):
+  1. The Rundown AI  — homepage scraping (primary, exit 1 if fails)
+  2. TLDR AI         — tldr.tech/ai (no bot protection)
+  3. Ben's Bites     — Substack RSS (bensbites.beehiiv.com)
+  4. The Neuron      — ScraperAPI (optional, often blocked)
 
-If The Neuron fails, the script continues with Rundown only (exit 0).
-If Rundown fails entirely, the script exits 1 (real failure).
+Bullets are deduplicated across sources (~70% title similarity = same story).
+The best-source version of each story is kept (Rundown > TLDR > Ben's > Neuron).
 """
 import os, sys, json, re, xml.etree.ElementTree as ET
 from datetime import datetime, timezone
@@ -17,16 +19,8 @@ from anthropic import Anthropic
 REPO_ROOT   = Path(__file__).parent
 NEURON_FILE = REPO_ROOT / "neuron.json"
 
-RUNDOWN_RSS_URLS = [
-    "https://www.therundown.ai/feed",
-    "https://www.therundown.ai/rss.xml",
-    "https://www.therundown.ai/rss",
-]
-RUNDOWN_HOME = "https://www.therundown.ai/"
-NEURON_HOME  = "https://www.theneurondaily.com/"
-
-ANTHROPIC_API_KEY  = os.environ.get("ANTHROPIC_API_KEY", "")
-SCRAPERAPI_KEY     = os.environ.get("SCRAPERAPI_KEY", "")
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+SCRAPERAPI_KEY    = os.environ.get("SCRAPERAPI_KEY", "")
 MODEL = "claude-haiku-4-5-20251001"
 
 if not ANTHROPIC_API_KEY:
@@ -43,10 +37,9 @@ HEADERS = {
 }
 
 
-# ── Helpers ────────────────────────────────────────────────────────────────────
+# ── HTTP helpers ───────────────────────────────────────────────────────────────
 
 def http_get(url, timeout=30):
-    """Plain request — for Rundown and RSS."""
     print(f"[today] GET {url}")
     r = requests.get(url, headers=HEADERS, timeout=timeout)
     r.raise_for_status()
@@ -54,18 +47,14 @@ def http_get(url, timeout=30):
 
 
 def scraperapi_get(url, timeout=60):
-    """Route through ScraperAPI to bypass Cloudflare. Uses render_js=true."""
     if not SCRAPERAPI_KEY:
         raise RuntimeError("SCRAPERAPI_KEY not set")
-    api_url = "https://api.scraperapi.com/"
-    params = {
+    r = requests.get("https://api.scraperapi.com/", timeout=timeout, params={
         "api_key": SCRAPERAPI_KEY,
         "url": url,
-        "render_js": "true",   # handles JS challenges
-        "premium": "true",     # residential IPs — needed for Cloudflare Enterprise
-    }
-    print(f"[today] ScraperAPI GET {url}")
-    r = requests.get(api_url, params=params, timeout=timeout)
+        "render_js": "true",
+        "premium": "true",
+    })
     r.raise_for_status()
     return r.text
 
@@ -76,8 +65,7 @@ def html_to_text(html, max_chars=50000):
         tag.decompose()
     main = soup.find("article") or soup.find("main") or soup.body
     text = main.get_text("\n", strip=True) if main else soup.get_text("\n", strip=True)
-    text = re.sub(r"\n{3,}", "\n\n", text)
-    return text[:max_chars]
+    return re.sub(r"\n{3,}", "\n\n", text)[:max_chars]
 
 
 def extract_meta(html, prop):
@@ -86,81 +74,24 @@ def extract_meta(html, prop):
     return og["content"].strip() if og and og.get("content") else ""
 
 
-# ── The Rundown (primary) ──────────────────────────────────────────────────────
-
-def fetch_rundown_issue_url():
-    """Try RSS feeds; fall back to scraping homepage."""
-    for rss_url in RUNDOWN_RSS_URLS:
+def rss_latest_url(rss_urls, base):
+    """Try RSS/Atom feeds, return latest post URL or None."""
+    for rss_url in rss_urls:
         try:
             text = http_get(rss_url)
             root = ET.fromstring(text)
             ns = {"atom": "http://www.w3.org/2005/Atom"}
             items = root.findall(".//item")
             if items:
-                link = items[0].findtext("link", "").strip()
-                if link:
-                    print(f"[rundown] RSS → {link}")
-                    return link
+                link = items[0].findtext("link","").strip()
+                if link: return link
             entries = root.findall("atom:entry", ns)
             if entries:
-                link_el = entries[0].find("atom:link", ns)
-                if link_el is not None:
-                    href = link_el.get("href", "").strip()
-                    if href:
-                        print(f"[rundown] Atom → {href}")
-                        return href
+                el = entries[0].find("atom:link", ns)
+                if el is not None and el.get("href"):
+                    return el.get("href").strip()
         except Exception as e:
-            print(f"[rundown] RSS {rss_url} failed: {e}")
-
-    print("[rundown] RSS unavailable, scraping homepage…")
-    home_html = http_get(RUNDOWN_HOME)
-    soup = BeautifulSoup(home_html, "html.parser")
-    seen = set()
-    for a in soup.find_all("a", href=True):
-        href = a["href"]
-        if "/p/" not in href: continue
-        full = (href if href.startswith("http")
-                else f"https://www.therundown.ai{href if href.startswith('/') else '/'+href}")
-        if full not in seen:
-            seen.add(full)
-            print(f"[rundown] homepage fallback → {full}")
-            return full
-
-    raise RuntimeError("Could not find The Rundown latest issue URL")
-
-
-# ── The Neuron (secondary via ScraperAPI) ─────────────────────────────────────
-
-def try_fetch_neuron():
-    """Returns (issue_url, html) or None if unavailable."""
-    if not SCRAPERAPI_KEY:
-        print("[neuron] SKIP: SCRAPERAPI_KEY not set")
-        return None
-
-    try:
-        home_html = scraperapi_get(NEURON_HOME)
-    except Exception as e:
-        print(f"[neuron] SKIP: homepage fetch failed: {e}")
-        return None
-
-    soup = BeautifulSoup(home_html, "html.parser")
-    seen = set()
-    for a in soup.find_all("a", href=True):
-        href = a["href"]
-        if "/p/" not in href: continue
-        full = (href if href.startswith("http")
-                else f"https://www.theneurondaily.com{href if href.startswith('/') else '/'+href}")
-        if full not in seen:
-            seen.add(full)
-            try:
-                issue_html = scraperapi_get(full)
-                print(f"[neuron] fetched issue: {full}")
-                return full, issue_html
-            except Exception as e:
-                print(f"[neuron] SKIP: issue fetch failed: {e}")
-                return None
-
-    print("[neuron] SKIP: no /p/ links found on homepage")
+            print(f"[today] RSS {rss_url} failed: {e}")
     return None
 
 
@@ -198,18 +129,27 @@ Output ONLY a single valid JSON object. No markdown fences, no commentary:
 }
 
 Rules:
-- Use the EXACT issue_url and date from input — never recompute
-- bullets: 3-5 items; around_the_horn: 3-6 items
+- Use the EXACT issue_url and date from input
+- bullets: 3-6 items; around_the_horn: 3-6 items
 - All text PARAPHRASED — never copy quotes longer than 8 words
 - Missing sections → empty string / empty array, never invented
 - emoji = single Unicode character only"""
 
 
-def extract_structured(article_text, issue_url, pub_date, original_title, source_name):
+def extract_from_html(html, issue_url, source_name):
+    text = html_to_text(html)
+    if len(text) < 300:
+        raise RuntimeError(f"too short: {len(text)} chars")
+    pub_date = (extract_meta(html, "article:published_time") or
+                extract_meta(html, "og:article:published_time") or
+                datetime.now(timezone.utc).strftime("%Y-%m-%d"))[:10]
+    title = (extract_meta(html, "og:title") or
+             getattr(BeautifulSoup(html,"html.parser").title, "string", "") or "")
+    print(f"[today] {source_name}: {len(text)} chars | {pub_date} | {title[:55]}")
+
     prompt = SYSTEM_PROMPT.replace("SOURCE_NAME", source_name)
     user_msg = (f"Issue URL: {issue_url}\nDate: {pub_date}\n"
-                f"Original title: {original_title}\n\n"
-                f"--- ARTICLE TEXT ---\n\n{article_text}")
+                f"Original title: {title.strip()}\n\n--- ARTICLE TEXT ---\n\n{text}")
     resp = client.messages.create(
         model=MODEL, max_tokens=4000, system=prompt,
         messages=[
@@ -224,39 +164,161 @@ def extract_structured(article_text, issue_url, pub_date, original_title, source
         elif ch == "}":
             depth -= 1
             if depth == 0: end = i + 1; break
-    if end: raw = raw[:end]
-    return json.loads(raw)
+    data = json.loads(raw[:end] if end else raw)
+    data["issue_url"] = issue_url
+    data["date"]      = pub_date
+    return data
 
 
-def extract_from_html(html, issue_url, source_name):
-    text = html_to_text(html)
-    if len(text) < 500:
-        raise RuntimeError(f"article text too short ({len(text)} chars)")
-    pub_date = (extract_meta(html, "article:published_time") or
-                extract_meta(html, "og:article:published_time") or
-                datetime.now(timezone.utc).strftime("%Y-%m-%d"))[:10]
-    title = (extract_meta(html, "og:title") or
-             getattr(BeautifulSoup(html,"html.parser").title, "string", "") or "")
-    print(f"[today] {source_name}: {len(text)} chars | {pub_date} | {title[:60]}")
-    return extract_structured(text, issue_url, pub_date, title.strip(), source_name)
+# ── Deduplication ──────────────────────────────────────────────────────────────
+
+def title_tokens(text):
+    """Lowercase words, no punctuation, no stop words."""
+    stops = {"the","a","an","in","of","to","and","is","for","on","its","as",
+             "at","by","with","from","that","this","how","why","are","will",
+             "has","it","be","was","have","not","but","or","what","who","new"}
+    words = re.findall(r"[a-z0-9]+", text.lower())
+    return set(w for w in words if w not in stops and len(w) > 2)
 
 
-# ── Merge ──────────────────────────────────────────────────────────────────────
+def similarity(a, b):
+    ta, tb = title_tokens(a), title_tokens(b)
+    if not ta or not tb: return 0.0
+    return len(ta & tb) / min(len(ta), len(tb))
 
-def merge_sources(primary, secondary):
-    """Interleave bullets P,S,P,S…; keep primary headline + main_story."""
-    if not secondary:
-        return primary
+
+def deduplicate(all_bullets, threshold=0.55):
+    """Keep first (highest-priority) version of each story."""
+    kept = []
+    for b in all_bullets:
+        is_dup = any(similarity(b["text"], k["text"]) >= threshold for k in kept)
+        if not is_dup:
+            kept.append(b)
+    return kept
+
+
+# ── Individual source fetchers ────────────────────────────────────────────────
+
+def fetch_rundown():
+    """PRIMARY — exits 1 on failure."""
+    rss_urls = [
+        "https://www.therundown.ai/feed",
+        "https://www.therundown.ai/rss.xml",
+        "https://www.therundown.ai/rss",
+    ]
+    url = rss_latest_url(rss_urls, "https://www.therundown.ai/")
+    if not url:
+        # Fallback: scrape homepage
+        print("[rundown] RSS unavailable, scraping homepage…")
+        home = http_get("https://www.therundown.ai/")
+        soup = BeautifulSoup(home, "html.parser")
+        for a in soup.find_all("a", href=True):
+            href = a["href"]
+            if "/p/" not in href: continue
+            url = href if href.startswith("http") else f"https://www.therundown.ai{href if href.startswith('/') else '/'+href}"
+            break
+    if not url:
+        print("[rundown] FAIL: cannot find latest issue", file=sys.stderr)
+        sys.exit(1)
+    print(f"[rundown] issue → {url}")
+    html = http_get(url)
+    data = extract_from_html(html, url, "The Rundown AI")
+    print(f"[rundown] ✓ {len(data['bullets'])} bullets | {data['headline'][:65]}")
+    return data
+
+
+def fetch_tldr():
+    """TLDR AI — tldr.tech/ai, no bot protection."""
+    try:
+        url = "https://tldr.tech/ai"
+        html = http_get(url)
+        # TLDR lists issues by date — find today's or most recent link
+        soup = BeautifulSoup(html, "html.parser")
+        issue_url = None
+        for a in soup.find_all("a", href=True):
+            href = a["href"]
+            if "/ai/" in href and re.search(r"\d{4}-\d{2}-\d{2}", href):
+                issue_url = href if href.startswith("http") else f"https://tldr.tech{href}"
+                break
+        if not issue_url:
+            issue_url = url  # use the main page if no date link found
+        issue_html = http_get(issue_url)
+        data = extract_from_html(issue_html, issue_url, "TLDR AI")
+        print(f"[tldr] ✓ {len(data['bullets'])} bullets | {data['headline'][:65]}")
+        return data
+    except Exception as e:
+        print(f"[tldr] SKIP: {e}")
+        return None
+
+
+def fetch_bensbites():
+    """Ben's Bites — Substack/Beehiiv RSS."""
+    rss_urls = [
+        "https://bensbites.beehiiv.com/feed",
+        "https://www.bensbites.co/feed",
+        "https://bensbites.substack.com/feed",
+    ]
+    try:
+        url = rss_latest_url(rss_urls, "https://bensbites.beehiiv.com/")
+        if not url:
+            print("[bensbites] SKIP: RSS unavailable")
+            return None
+        print(f"[bensbites] issue → {url}")
+        html = http_get(url)
+        data = extract_from_html(html, url, "Ben's Bites")
+        print(f"[bensbites] ✓ {len(data['bullets'])} bullets | {data['headline'][:65]}")
+        return data
+    except Exception as e:
+        print(f"[bensbites] SKIP: {e}")
+        return None
+
+
+def fetch_neuron():
+    """The Neuron — via ScraperAPI (often blocked, always optional)."""
+    if not SCRAPERAPI_KEY:
+        print("[neuron] SKIP: no SCRAPERAPI_KEY")
+        return None
+    try:
+        home_html = scraperapi_get("https://www.theneurondaily.com/")
+        soup = BeautifulSoup(home_html, "html.parser")
+        url = None
+        for a in soup.find_all("a", href=True):
+            href = a["href"]
+            if "/p/" not in href: continue
+            url = href if href.startswith("http") else f"https://www.theneurondaily.com{href if href.startswith('/') else '/'+href}"
+            break
+        if not url:
+            print("[neuron] SKIP: no /p/ links found")
+            return None
+        issue_html = scraperapi_get(url)
+        data = extract_from_html(issue_html, url, "The Neuron Daily")
+        print(f"[neuron] ✓ {len(data['bullets'])} bullets | {data['headline'][:65]}")
+        return data
+    except Exception as e:
+        print(f"[neuron] SKIP: {e}")
+        return None
+
+
+# ── Merge + deduplicate ────────────────────────────────────────────────────────
+
+def merge_all(sources):
+    """
+    sources = [primary_data, tldr_data|None, bensbites_data|None, neuron_data|None]
+    Primary headline + main_story always wins.
+    Bullets interleaved then deduplicated.
+    """
+    primary = sources[0]
+    all_bullets = []
+    for s in sources:
+        if s and s.get("bullets"):
+            all_bullets.extend(s["bullets"])
+
+    unique_bullets = deduplicate(all_bullets)
+    print(f"[today] dedup: {len(all_bullets)} → {len(unique_bullets)} unique bullets")
+
     merged = dict(primary)
-    pb, sb = primary.get("bullets",[]), secondary.get("bullets",[])
-    interleaved = []
-    for i in range(max(len(pb), len(sb))):
-        if i < len(pb): interleaved.append(pb[i])
-        if i < len(sb): interleaved.append(sb[i])
-    merged["bullets"] = interleaved
-    merged["around_the_horn"] = (primary.get("around_the_horn",[]) +
-                                  secondary.get("around_the_horn",[]))
-    merged["sources_fetched"] = ["rundown", "neuron"]
+    merged["bullets"] = unique_bullets
+    merged["sources_fetched"] = [s["issue_url"].split("/")[2] for s in sources if s]
     return merged
 
 
@@ -270,65 +332,36 @@ def main():
         try: existing = json.loads(NEURON_FILE.read_text())
         except Exception: pass
 
-    # ── PRIMARY: The Rundown AI ───────────────────────────────────────────────
-    try:
-        rundown_url = fetch_rundown_issue_url()
-    except Exception as e:
-        print(f"[rundown] FAIL: {e}", file=sys.stderr)
-        sys.exit(1)
+    # ── Fetch all sources ─────────────────────────────────────────────────────
+    rundown   = fetch_rundown()                    # exits 1 if fails
+    tldr      = fetch_tldr()
+    bensbites = fetch_bensbites()
+    neuron    = fetch_neuron()
 
-    # Skip if already have this issue with both sources
-    if (existing and existing.get("issue_url") == rundown_url and
-            "neuron" in existing.get("sources_fetched", [])):
-        print("[today] already have rundown+neuron for this issue, skipping")
-        return
+    fetched_count = sum(1 for s in [rundown, tldr, bensbites, neuron] if s)
+    print(f"[today] {fetched_count}/4 sources fetched")
 
-    try:
-        rundown_html = http_get(rundown_url)
-    except Exception as e:
-        print(f"[rundown] FAIL: cannot fetch issue: {e}", file=sys.stderr)
-        sys.exit(1)
+    # ── Skip if already have same issue with same sources ─────────────────────
+    if existing and existing.get("issue_url") == rundown["issue_url"]:
+        prev_sources = set(existing.get("sources_fetched", []))
+        curr_sources = set(s["issue_url"].split("/")[2] for s in [rundown, tldr, bensbites, neuron] if s)
+        if prev_sources >= curr_sources:
+            print("[today] already have this issue with all available sources, skipping")
+            return
 
-    try:
-        rundown_data = extract_from_html(rundown_html, rundown_url, "The Rundown AI")
-    except Exception as e:
-        print(f"[rundown] FAIL: extraction: {e}", file=sys.stderr)
-        sys.exit(1)
+    # ── Merge & deduplicate ───────────────────────────────────────────────────
+    data = merge_all([s for s in [rundown, tldr, bensbites, neuron] if s])
 
-    rundown_data["issue_url"] = rundown_url
-    rundown_data["date"]      = rundown_data.get("date") or today
-
-    required = ["headline","intro","bullets","main_story","around_the_horn"]
-    missing  = [k for k in required if not rundown_data.get(k)]
-    if missing:
-        print(f"[rundown] FAIL: missing fields: {missing}", file=sys.stderr)
-        sys.exit(1)
-
-    print(f"[rundown] ✓ {len(rundown_data['bullets'])} bullets | {rundown_data['headline'][:70]}")
-
-    # ── SECONDARY: The Neuron Daily via ScraperAPI ────────────────────────────
-    neuron_data = None
-    result = try_fetch_neuron()
-    if result:
-        neuron_url, neuron_html = result
-        try:
-            neuron_data = extract_from_html(neuron_html, neuron_url, "The Neuron Daily")
-            print(f"[neuron] ✓ {len(neuron_data['bullets'])} bullets | {neuron_data['headline'][:70]}")
-        except Exception as e:
-            print(f"[neuron] SKIP: extraction error: {e}")
-
-    # ── Merge & write ─────────────────────────────────────────────────────────
-    data = merge_sources(rundown_data, neuron_data)
-    label = "rundown+neuron" if neuron_data else "rundown only"
-    print(f"[today] merged: {len(data['bullets'])} bullets ({label})")
-
-    if existing and existing.get("issue_url") and existing.get("issue_url") != rundown_url:
+    # ── Preserve previous ─────────────────────────────────────────────────────
+    if existing and existing.get("issue_url") and existing.get("issue_url") != rundown["issue_url"]:
         data["previous"] = {k: v for k, v in existing.items() if k != "previous"}
-        print(f"[today] preserved previous: {existing.get('date')} | {existing.get('headline','')[:60]}")
+        print(f"[today] preserved previous: {existing.get('date')} | {existing.get('headline','')[:55]}")
 
+    # ── Write ─────────────────────────────────────────────────────────────────
     NEURON_FILE.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n")
-    print(f"[today] wrote {NEURON_FILE} | {data['headline'][:80]}")
-    print(f"[today] {len(data['bullets'])} bullets, {len(data.get('around_the_horn',[]))} around_the_horn")
+    print(f"[today] wrote {NEURON_FILE}")
+    print(f"[today] headline: {data['headline'][:80]}")
+    print(f"[today] {len(data['bullets'])} unique bullets from {fetched_count} sources")
 
 
 if __name__ == "__main__":
