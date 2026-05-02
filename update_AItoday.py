@@ -3,7 +3,7 @@
 Multi-source fetcher (in priority order):
   1. The Rundown AI  — homepage scraping (primary, exit 1 if fails)
   2. TLDR AI         — tldr.tech/ai (no bot protection)
-  3. Ben's Bites     — Substack RSS (bensbites.beehiiv.com)
+  3. Ben's Bites     — beehiiv/homepage scraping (bensbites.com)
   4. The Neuron      — ScraperAPI (optional, often blocked)
 
 Bullets are deduplicated across sources (~70% title similarity = same story).
@@ -228,21 +228,13 @@ def fetch_rundown():
 
 
 def fetch_tldr():
-    """TLDR AI — tldr.tech/ai, no bot protection."""
+    """TLDR AI — use today's date URL directly (tldr.tech/ai/YYYY-MM-DD)."""
     try:
-        url = "https://tldr.tech/ai"
-        html = http_get(url)
-        # TLDR lists issues by date — find today's or most recent link
-        soup = BeautifulSoup(html, "html.parser")
-        issue_url = None
-        for a in soup.find_all("a", href=True):
-            href = a["href"]
-            if "/ai/" in href and re.search(r"\d{4}-\d{2}-\d{2}", href):
-                issue_url = href if href.startswith("http") else f"https://tldr.tech{href}"
-                break
-        if not issue_url:
-            issue_url = url  # use the main page if no date link found
+        today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+        issue_url = f"https://tldr.tech/ai/{today}"
         issue_html = http_get(issue_url)
+        if len(issue_html) < 2000:
+            raise RuntimeError(f"page too short ({len(issue_html)} chars) — issue may not be published yet")
         data = extract_from_html(issue_html, issue_url, "TLDR AI")
         print(f"[tldr] ✓ {len(data['bullets'])} bullets | {data['headline'][:65]}")
         return data
@@ -252,22 +244,39 @@ def fetch_tldr():
 
 
 def fetch_bensbites():
-    """Ben's Bites — Substack/Beehiiv RSS."""
-    rss_urls = [
-        "https://bensbites.beehiiv.com/feed",
-        "https://www.bensbites.co/feed",
-        "https://bensbites.substack.com/feed",
-    ]
+    """Ben's Bites — try multiple URLs including direct homepage scrape."""
     try:
+        # Try RSS feeds first
+        rss_urls = [
+            "https://bensbites.beehiiv.com/feed",
+            "https://bensbites.com/feed",
+            "https://www.bensbites.co/feed",
+        ]
         url = rss_latest_url(rss_urls, "https://bensbites.beehiiv.com/")
-        if not url:
-            print("[bensbites] SKIP: RSS unavailable")
-            return None
-        print(f"[bensbites] issue → {url}")
-        html = http_get(url)
-        data = extract_from_html(html, url, "Ben's Bites")
-        print(f"[bensbites] ✓ {len(data['bullets'])} bullets | {data['headline'][:65]}")
-        return data
+        if url:
+            html = http_get(url)
+            data = extract_from_html(html, url, "Ben's Bites")
+            print(f"[bensbites] ✓ {len(data['bullets'])} bullets | {data['headline'][:65]}")
+            return data
+
+        # Fallback: scrape homepage for /p/ links
+        for home_url in ["https://bensbites.beehiiv.com/", "https://bensbites.com/"]:
+            try:
+                home_html = http_get(home_url)
+                soup = BeautifulSoup(home_html, "html.parser")
+                for a in soup.find_all("a", href=True):
+                    href = a["href"]
+                    if "/p/" not in href: continue
+                    issue_url = href if href.startswith("http") else f"{home_url.rstrip('/')}{href}"
+                    html = http_get(issue_url)
+                    data = extract_from_html(html, issue_url, "Ben's Bites")
+                    print(f"[bensbites] ✓ {len(data['bullets'])} bullets | {data['headline'][:65]}")
+                    return data
+            except Exception:
+                continue
+
+        print("[bensbites] SKIP: all URLs failed")
+        return None
     except Exception as e:
         print(f"[bensbites] SKIP: {e}")
         return None
