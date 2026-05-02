@@ -124,7 +124,7 @@ Output ONLY a single valid JSON object. No markdown fences, no commentary:
     {
       "emoji": "single Unicode emoji",
       "text": "story headline, paraphrased, under 80 chars",
-      "url": "URL of the original news article being reported (not the newsletter homepage), else empty string",
+      "url": "URL of the specific news article, blog post, or announcement being covered — must contain a path like /blog/... or /news/... or /p/... NOT a bare homepage like https://openai.com/ — leave empty string if no specific article URL is mentioned",
       "source": "SOURCE_NAME",
       "summary": "2-3 sentences in your own words, never directly quoted"
     }
@@ -146,7 +146,7 @@ Rules:
 - All text PARAPHRASED — never copy quotes longer than 8 words
 - Missing sections → empty string / empty array, never invented
 - emoji = single Unicode character only
-- url in bullets = the external article URL, NOT the newsletter URL"""
+- url in bullets = specific article URL with a real path (e.g. /blog/xyz) — NEVER a bare domain like https://openai.com/ or https://google.com/ — use empty string if no article URL is explicitly linked"""
 
 
 def extract_from_html(html, issue_url, source_name):
