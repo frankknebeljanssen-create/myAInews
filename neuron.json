@@ -1,152 +1,144 @@
 {
-  "date": "2026-04-30",
-  "issue_url": "https://www.theneurondaily.com/p/google-ran-out-of-cloud",
-  "emoji": "😺",
-  "headline": "Google ran out of cloud",
-  "subtitle": "Big Tech spent $130B on AI in Q1 · Google hits capacity limits · Custom silicon emerges as competitive moat",
-  "intro": "On a single Wednesday, Microsoft, Google, Meta, and Amazon all reported earnings showing AI demand far outpacing infrastructure build capacity. The race to deploy custom chips and secure enterprise workloads is becoming an arms race with trillion-dollar implications.",
+  "date": "2026-05-02",
+  "issue_url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight",
+  "emoji": "🔄",
+  "headline": "White House recalibrates Anthropic stance amid security shift",
+  "subtitle": "Government reverses course on Anthropic · Gemini expands to vehicles · ChatGPT's goblin mystery solved",
+  "intro": "The White House is reconsidering its hardline stance against Anthropic after the emergence of powerful cyber capabilities that complicate the political calculus. The government now faces the delicate task of expanding access to Anthropic's technology while appearing to maintain its negotiating position.",
   "bullets": [
     {
-      "emoji": "🙀",
-      "text": "Hyperscalers spent $130B on AI capex in Q1 alone, nearly double year-ago",
-      "url": "",
-      "source": "The Neuron Daily",
-      "summary": "Microsoft's AI business hit a $37B annual run rate with 20M paid M365 Copilot seats. Google Cloud grew 63% with AI products up 800% YoY but faced capacity constraints. AWS grew 28% with custom chips passing $20B run rate. Meta raised 2026 capex guidance to $125-145B."
+      "emoji": "🔒",
+      "text": "White House opposes Anthropic's plan to expand Mythos access amid compute concerns",
+      "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight",
+      "source": "The Rundown AI",
+      "summary": "The White House is resisting Anthropic's proposal to increase private sector access to its Mythos AI model from roughly 50 to 120 companies, citing concerns that expanded use could strain computing resources needed for government operations. A national security memo is expected to address some underlying tensions while allowing agencies to circumvent supply chain restrictions through multi-vendor adoption strategies."
     },
     {
-      "emoji": "🎓",
-      "text": "Run tasks through two models and have them judge each other's work",
-      "url": "",
-      "source": "The Neuron Daily",
-      "summary": "Microsoft enabled M365 Copilot to route between GPT and Claude automatically. Different models make different mistakes, so cross-checking outputs catches blind spots neither catches alone. A real example showed DeepSeek V4 fixing memory leaks Claude Opus had missed."
+      "emoji": "🚗",
+      "text": "Google launches Gemini in compatible vehicles, replacing Assistant",
+      "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight",
+      "source": "The Rundown AI",
+      "summary": "Google is rolling out Gemini as a conversational AI system in cars equipped with Google built-in technology, offering capabilities for navigation, messaging, music control, and vehicle settings. The upgrade includes a beta Live mode for conversations and manufacturer-specific vehicle information, with General Motors adding support for approximately 4 million vehicles from 2022 onward."
     },
     {
-      "emoji": "🍪",
-      "text": "Cursor launches TypeScript SDK for building custom programmatic agents",
-      "url": "",
-      "source": "Cursor",
-      "summary": "Cursor released a TypeScript SDK allowing developers to build custom coding agents with repo context, MCP tools, and automated PR workflows using the same infrastructure as Cursor itself."
+      "emoji": "🧌",
+      "text": "OpenAI traces ChatGPT's goblin obsession to single personality reward signal",
+      "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight",
+      "source": "The Rundown AI",
+      "summary": "OpenAI discovered that ChatGPT's tendency to mention goblins and similar creatures stemmed from a reward signal in the Nerdy personality preset, which subsequently spread throughout the model's responses across different chat modes. After disabling the Nerdy preset in March, OpenAI shipped GPT-5.5 with specific prompts banning fantasy creatures from outputs."
     },
     {
-      "emoji": "📰",
-      "text": "House committees probe Airbnb and Cursor's parent over Chinese AI use",
-      "url": "",
-      "source": "House Committees",
-      "summary": "Lawmakers opened investigations citing national security concerns about data sharing with PRC-linked AI labs like Moonshot's Kimi and Alibaba's Qwen."
+      "emoji": "🤔",
+      "text": "Perplexity Deep Research offers framework for stress-testing business ideas",
+      "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight",
+      "source": "The Rundown AI",
+      "summary": "The Rundown provides a guide for using Perplexity's Deep Research feature to systematically evaluate new business concepts by running saved prompts that generate comprehensive research reports. The free tier allows five queries daily and can produce slide decks in minutes, enabling entrepreneurs to rapidly test multiple ideas monthly."
     },
     {
-      "emoji": "🎵",
-      "text": "Google's Flow Music generates songs and music videos from text prompts",
-      "url": "",
-      "source": "Google",
-      "summary": "Google's Lyria 3-powered music platform lets users create garage rock songs and music videos with conversational edits, demonstrating AI as a creative amplifier rather than replacement."
+      "emoji": "🔐",
+      "text": "Anthropic launches Claude Security beta for vulnerability scanning",
+      "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight",
+      "source": "The Rundown AI",
+      "summary": "Anthropic released a public beta version of Claude Security, an enterprise tool powered by Opus 4.7 that automatically scans codebases for vulnerabilities and generates remediation suggestions. The tool addresses growing demand among organizations for autonomous security review capabilities."
     }
   ],
   "main_story": {
-    "title": "Big Tech's $130B AI spending spree reveals infrastructure bottleneck",
-    "body": "Microsoft, Google, Meta, and Amazon reported Q1 earnings on the same day, each revealing massive spending on AI infrastructure. Google Cloud grew 63% with AI products surging 800% year-over-year, but CEO Sundar Pichai admitted the cloud division couldn't build fast enough to meet demand. AWS's custom chip business passed $20B annual run rate with OpenAI and Anthropic committing significant capacity to Amazon's Trainium processors. Combined capex across the four hyperscalers reached roughly $130B in a single quarter, nearly double the prior year.",
-    "why": "Over a trillion dollars in signed enterprise commitments now sit undelivered across the hyperscalers' backlogs, signaling unprecedented demand for AI infrastructure. The shift from renting commodity hardware to deploying custom silicon has fundamentally changed competitive advantage in cloud computing.",
-    "take": "Cloud growth rates no longer indicate who's winning—concrete poured and custom silicon do. Amazon may be quietly winning the chip war by becoming the supplier of choice for OpenAI and Anthropic, inverting its historical business model. The real risk emerges if capex spending continues climbing without matching revenue gains, as Amazon's free cash flow has already collapsed 95% due to these investments."
+    "title": "White House reassesses Anthropic policy following Mythos capabilities emergence",
+    "body": "The White House has begun softening its previously adversarial position toward Anthropic following the emergence of Mythos, an AI system with significant cyber capabilities that has altered the strategic calculus. The government is attempting to navigate a complex situation where it wishes to secure greater access to Mythos for national security purposes while simultaneously limiting broader private sector adoption. A forthcoming national security memo will reportedly address longstanding grievances that sparked the Pentagon's conflict with Anthropic while enabling agencies to bypass supply chain restrictions through multi-vendor procurement strategies. However, internal inconsistency remains evident, with Pentagon leadership continuing to criticize Anthropic's leadership even as diplomatic overtures advance.",
+    "why": "The shift reflects recognition that Mythos represents capabilities too significant to remain outside government control, making continued escalation counterproductive to national security interests. The government's reversal demonstrates how rapidly AI capabilities can reshape policy priorities and institutional positions.",
+    "take": "The White House is attempting to preserve diplomatic flexibility and political messaging while pursuing pragmatic access to advanced AI systems, suggesting that national security considerations increasingly override ideological opposition to specific AI developers."
   },
   "around_the_horn": [
     {
-      "text": "Claude Mythos Preview discovered 271 zero-day vulnerabilities in Firefox 150",
-      "url": ""
+      "text": "Meta enables third-party AI tools to manage ad campaigns through new MCP server",
+      "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight"
     },
     {
-      "text": "Mayo Clinic AI spots pancreatic cancer on routine CT scans 475 days early",
-      "url": ""
+      "text": "OpenAI exceeds 2029 Stargate compute target, adding 3 GW capacity in three months",
+      "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight"
     },
     {
-      "text": "Anthropic releases Introspection Adapters for LLM self-reporting misalignment",
-      "url": ""
+      "text": "Elon Musk reveals xAI used OpenAI model distillation techniques in trial testimony",
+      "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight"
     },
     {
-      "text": "Mistral releases Medium 3.5 model with 256k context and remote coding agents",
-      "url": ""
-    },
-    {
-      "text": "Seven families sue OpenAI over alleged ChatGPT negligence in mass shooting",
-      "url": ""
-    },
-    {
-      "text": "Gemini app generates Google Docs, Sheets, Slides directly from chat prompts",
-      "url": ""
+      "text": "Cursor releases Security Review tool for autonomous vulnerability detection",
+      "url": "https://www.therundown.ai/p/the-white-house-rethinks-its-anthropic-fight"
     }
   ],
   "previous": {
-    "date": "2026-04-29",
-    "issue_url": "https://www.theneurondaily.com/p/anthropic-just-lapped-openai",
+    "date": "2026-04-30",
+    "issue_url": "https://www.theneurondaily.com/p/google-ran-out-of-cloud",
     "emoji": "😺",
-    "headline": "Anthropic Hits $1T, Passes OpenAI in Valuation Race",
-    "subtitle": "Anthropic's $1T milestone · Creative workflow integrations · OpenAI revenue miss and legal troubles",
-    "intro": "Anthropic crossed a $1 trillion valuation yesterday, becoming the world's most valuable AI company, while OpenAI stumbled with missed revenue projections and faced new legal challenges. On the same day, Anthropic announced deep integrations with creative tools like Adobe, Blender, and Autodesk, signaling a shift in competitive strategy from raw model performance to workflow depth.",
+    "headline": "Google ran out of cloud",
+    "subtitle": "Big Tech spent $130B on AI in Q1 · Google hits capacity limits · Custom silicon emerges as competitive moat",
+    "intro": "On a single Wednesday, Microsoft, Google, Meta, and Amazon all reported earnings showing AI demand far outpacing infrastructure build capacity. The race to deploy custom chips and secure enterprise workloads is becoming an arms race with trillion-dollar implications.",
     "bullets": [
       {
-        "emoji": "😺",
-        "text": "Anthropic reaches $1T valuation, surpasses OpenAI",
+        "emoji": "🙀",
+        "text": "Hyperscalers spent $130B on AI capex in Q1 alone, nearly double year-ago",
         "url": "",
         "source": "The Neuron Daily",
-        "summary": "Anthropic officially became the most valuable AI company after crossing a $1 trillion valuation. On the same day, OpenAI missed revenue projections, faced Elon Musk's lawsuit alleging stolen funds, and watched Oracle and chip stocks decline in response."
+        "summary": "Microsoft's AI business hit a $37B annual run rate with 20M paid M365 Copilot seats. Google Cloud grew 63% with AI products up 800% YoY but faced capacity constraints. AWS grew 28% with custom chips passing $20B run rate. Meta raised 2026 capex guidance to $125-145B."
       },
       {
-        "emoji": "🎨",
-        "text": "Anthropic launches Claude integrations for creative tools",
+        "emoji": "🎓",
+        "text": "Run tasks through two models and have them judge each other's work",
         "url": "",
         "source": "The Neuron Daily",
-        "summary": "Anthropic released Claude for Creative Work with native connectors for Blender, Adobe Creative Cloud, Autodesk Fusion, Ableton, Splice, SketchUp, Resolume, and Canva. The integrations enable Claude to debug 3D scenes, batch-edit assets, and manipulate professional creative workflows directly."
+        "summary": "Microsoft enabled M365 Copilot to route between GPT and Claude automatically. Different models make different mistakes, so cross-checking outputs catches blind spots neither catches alone. A real example showed DeepSeek V4 fixing memory leaks Claude Opus had missed."
       },
       {
-        "emoji": "🛠️",
-        "text": "Adobe releases official Claude connector for 50+ tools",
+        "emoji": "🍪",
+        "text": "Cursor launches TypeScript SDK for building custom programmatic agents",
         "url": "",
-        "source": "The Neuron Daily",
-        "summary": "Adobe simultaneously launched its own Claude connector providing live access to 50+ professional tools across Photoshop, Premiere, Firefly, and InDesign. This enables Claude to orchestrate multi-app creative workflows without manual handoffs between applications."
+        "source": "Cursor",
+        "summary": "Cursor released a TypeScript SDK allowing developers to build custom coding agents with repo context, MCP tools, and automated PR workflows using the same infrastructure as Cursor itself."
       },
       {
-        "emoji": "💻",
-        "text": "Both labs should build hardware to survive cost pressures",
+        "emoji": "📰",
+        "text": "House committees probe Airbnb and Cursor's parent over Chinese AI use",
         "url": "",
-        "source": "The Neuron Daily",
-        "summary": "The newsletter argues that cloud token business economics are unsustainable, with AI compute costs now exceeding employee costs at most companies. OpenAI is reportedly building a phone, while Anthropic's creative plays position it well for eventual hardware that could run local agents, similar to Apple and Microsoft's strategies."
+        "source": "House Committees",
+        "summary": "Lawmakers opened investigations citing national security concerns about data sharing with PRC-linked AI labs like Moonshot's Kimi and Alibaba's Qwen."
       },
       {
-        "emoji": "📊",
-        "text": "AI buildout costs reveal profitability questions",
+        "emoji": "🎵",
+        "text": "Google's Flow Music generates songs and music videos from text prompts",
         "url": "",
-        "source": "The Neuron Daily",
-        "summary": "Multiple analyses examine whether AI productivity gains will justify massive infrastructure investments. Critics point to token costs running $8-$13 per dollar of revenue, overbuilt data centers, and persistent lack of measurable productivity ROI from enterprise deployments."
+        "source": "Google",
+        "summary": "Google's Lyria 3-powered music platform lets users create garage rock songs and music videos with conversational edits, demonstrating AI as a creative amplifier rather than replacement."
       }
     ],
     "main_story": {
-      "title": "The Race Has Shifted From Model Smarts to Workflow Integration",
-      "body": "The competitive landscape between Anthropic and OpenAI has fundamentally transformed. Rather than chasing benchmark wins every six weeks with marginally improved models, the real battle is now about embedding AI into the tools people already use daily. Anthropic's single-day announcements—crossing $1 trillion in valuation while launching integrations across Adobe, Blender, and other professional suites—demonstrate this new strategic imperative. Meanwhile, OpenAI faced revenue misses and legal setbacks, suggesting the chat interface era is saturated and the moat has shifted to workflow depth.",
-      "why": "Control over where users interact with AI represents enormous leverage. The company that embeds its agent deepest into existing applications and eventually the devices themselves (phones, computers, glasses) will become the default AI layer across all software. This explains why the newsletter argues both labs must eventually manufacture hardware to survive the economics of subsidizing cloud compute indefinitely.",
-      "take": "The $1T valuation is a lagging indicator of this shift; the real competition will be determined by who can best position themselves to sell the device your local AI agent runs on. Anthropic's creative integrations are workflow-light and compute-efficient, a natural foundation for agent software that lives on your Mac. OpenAI's reported phone project and Anthropic's hardware path suggest both labs understand they cannot remain pure software companies."
+      "title": "Big Tech's $130B AI spending spree reveals infrastructure bottleneck",
+      "body": "Microsoft, Google, Meta, and Amazon reported Q1 earnings on the same day, each revealing massive spending on AI infrastructure. Google Cloud grew 63% with AI products surging 800% year-over-year, but CEO Sundar Pichai admitted the cloud division couldn't build fast enough to meet demand. AWS's custom chip business passed $20B annual run rate with OpenAI and Anthropic committing significant capacity to Amazon's Trainium processors. Combined capex across the four hyperscalers reached roughly $130B in a single quarter, nearly double the prior year.",
+      "why": "Over a trillion dollars in signed enterprise commitments now sit undelivered across the hyperscalers' backlogs, signaling unprecedented demand for AI infrastructure. The shift from renting commodity hardware to deploying custom silicon has fundamentally changed competitive advantage in cloud computing.",
+      "take": "Cloud growth rates no longer indicate who's winning—concrete poured and custom silicon do. Amazon may be quietly winning the chip war by becoming the supplier of choice for OpenAI and Anthropic, inverting its historical business model. The real risk emerges if capex spending continues climbing without matching revenue gains, as Amazon's free cash flow has already collapsed 95% due to these investments."
     },
     "around_the_horn": [
       {
-        "text": "Anthropic now requires photo ID and selfie verification for some Claude users to enforce policies.",
+        "text": "Claude Mythos Preview discovered 271 zero-day vulnerabilities in Firefox 150",
         "url": ""
       },
       {
-        "text": "Microsoft released World-R1, an RL framework injecting 3D physical constraints into text-to-video models.",
+        "text": "Mayo Clinic AI spots pancreatic cancer on routine CT scans 475 days early",
         "url": ""
       },
       {
-        "text": "Freepik officially rebranded to Magnific as a unified professional creative platform.",
+        "text": "Anthropic releases Introspection Adapters for LLM self-reporting misalignment",
         "url": ""
       },
       {
-        "text": "EU ordered Google to open Android's AI ecosystem to allow competing assistants beyond Gemini.",
+        "text": "Mistral releases Medium 3.5 model with 256k context and remote coding agents",
         "url": ""
       },
       {
-        "text": "Google and Pentagon signed classified deal authorizing DoD to use Google's AI for lawful government purposes.",
+        "text": "Seven families sue OpenAI over alleged ChatGPT negligence in mass shooting",
         "url": ""
       },
       {
-        "text": "Planned gas-powered AI data centers could emit 129+ million tons of greenhouse gases annually.",
+        "text": "Gemini app generates Google Docs, Sheets, Slides directly from chat prompts",
         "url": ""
       }
     ]
