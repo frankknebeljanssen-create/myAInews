@@ -1,20 +1,16 @@
-"""Update AItoday.json — runs daily via GitHub Actions.
+"""Update neuron.json — runs daily via GitHub Actions.
 
 Dual-source fetcher:
-  PRIMARY:   The Rundown AI — via RSS feed (stable, no bot protection)
-  SECONDARY: The Neuron Daily — via cloudscraper (may be Cloudflare-blocked)
+  PRIMARY:   The Rundown AI — homepage scraping (no bot protection)
+  SECONDARY: The Neuron Daily — via ScraperAPI (bypasses Cloudflare)
 
-If The Neuron returns 403, the script continues with Rundown only (exit 0).
+If The Neuron fails, the script continues with Rundown only (exit 0).
 If Rundown fails entirely, the script exits 1 (real failure).
-
-Output format is identical to the single-source schema — bullets are interleaved
-from both sources so the app needs zero changes.
 """
 import os, sys, json, re, xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 import requests
-import cloudscraper
 from bs4 import BeautifulSoup
 from anthropic import Anthropic
 
@@ -29,17 +25,16 @@ RUNDOWN_RSS_URLS = [
 RUNDOWN_HOME = "https://www.therundown.ai/"
 NEURON_HOME  = "https://www.theneurondaily.com/"
 
-ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+ANTHROPIC_API_KEY  = os.environ.get("ANTHROPIC_API_KEY", "")
+SCRAPERAPI_KEY     = os.environ.get("SCRAPERAPI_KEY", "")
 MODEL = "claude-haiku-4-5-20251001"
 
 if not ANTHROPIC_API_KEY:
     print("[today] FAIL: ANTHROPIC_API_KEY not set", file=sys.stderr)
     sys.exit(1)
 
-client  = Anthropic(api_key=ANTHROPIC_API_KEY)
-SCRAPER = cloudscraper.create_scraper(
-    browser={"browser": "chrome", "platform": "darwin", "desktop": True}
-)
+client = Anthropic(api_key=ANTHROPIC_API_KEY)
+
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                   "AppleWebKit/537.36 (KHTML, like Gecko) "
@@ -50,12 +45,27 @@ HEADERS = {
 
 # ── Helpers ────────────────────────────────────────────────────────────────────
 
-def http_get(url, use_scraper=False, timeout=30):
+def http_get(url, timeout=30):
+    """Plain request — for Rundown and RSS."""
     print(f"[today] GET {url}")
-    if use_scraper:
-        r = SCRAPER.get(url, timeout=timeout)
-    else:
-        r = requests.get(url, headers=HEADERS, timeout=timeout)
+    r = requests.get(url, headers=HEADERS, timeout=timeout)
+    r.raise_for_status()
+    return r.text
+
+
+def scraperapi_get(url, timeout=60):
+    """Route through ScraperAPI to bypass Cloudflare. Uses render_js=true."""
+    if not SCRAPERAPI_KEY:
+        raise RuntimeError("SCRAPERAPI_KEY not set")
+    api_url = "https://api.scraperapi.com/"
+    params = {
+        "api_key": SCRAPERAPI_KEY,
+        "url": url,
+        "render_js": "true",   # handles JS challenges
+        "premium": "true",     # residential IPs — needed for Cloudflare Enterprise
+    }
+    print(f"[today] ScraperAPI GET {url}")
+    r = requests.get(api_url, params=params, timeout=timeout)
     r.raise_for_status()
     return r.text
 
@@ -76,7 +86,7 @@ def extract_meta(html, prop):
     return og["content"].strip() if og and og.get("content") else ""
 
 
-# ── RSS parsing ────────────────────────────────────────────────────────────────
+# ── The Rundown (primary) ──────────────────────────────────────────────────────
 
 def fetch_rundown_issue_url():
     """Try RSS feeds; fall back to scraping homepage."""
@@ -85,14 +95,12 @@ def fetch_rundown_issue_url():
             text = http_get(rss_url)
             root = ET.fromstring(text)
             ns = {"atom": "http://www.w3.org/2005/Atom"}
-            # RSS 2.0
             items = root.findall(".//item")
             if items:
                 link = items[0].findtext("link", "").strip()
                 if link:
                     print(f"[rundown] RSS → {link}")
                     return link
-            # Atom
             entries = root.findall("atom:entry", ns)
             if entries:
                 link_el = entries[0].find("atom:link", ns)
@@ -104,15 +112,13 @@ def fetch_rundown_issue_url():
         except Exception as e:
             print(f"[rundown] RSS {rss_url} failed: {e}")
 
-    # Fallback: scrape homepage
     print("[rundown] RSS unavailable, scraping homepage…")
     home_html = http_get(RUNDOWN_HOME)
     soup = BeautifulSoup(home_html, "html.parser")
     seen = set()
     for a in soup.find_all("a", href=True):
         href = a["href"]
-        if "/p/" not in href:
-            continue
+        if "/p/" not in href: continue
         full = (href if href.startswith("http")
                 else f"https://www.therundown.ai{href if href.startswith('/') else '/'+href}")
         if full not in seen:
@@ -123,15 +129,18 @@ def fetch_rundown_issue_url():
     raise RuntimeError("Could not find The Rundown latest issue URL")
 
 
-# ── The Neuron (graceful) ──────────────────────────────────────────────────────
+# ── The Neuron (secondary via ScraperAPI) ─────────────────────────────────────
 
 def try_fetch_neuron():
-    """Returns (issue_url, html) or None if blocked."""
+    """Returns (issue_url, html) or None if unavailable."""
+    if not SCRAPERAPI_KEY:
+        print("[neuron] SKIP: SCRAPERAPI_KEY not set")
+        return None
+
     try:
-        home_html = http_get(NEURON_HOME, use_scraper=True)
+        home_html = scraperapi_get(NEURON_HOME)
     except Exception as e:
-        code = getattr(getattr(e, "response", None), "status_code", None)
-        print(f"[neuron] SKIP: homepage {'403 Cloudflare' if code==403 else e} — continuing without")
+        print(f"[neuron] SKIP: homepage fetch failed: {e}")
         return None
 
     soup = BeautifulSoup(home_html, "html.parser")
@@ -144,14 +153,14 @@ def try_fetch_neuron():
         if full not in seen:
             seen.add(full)
             try:
-                issue_html = http_get(full, use_scraper=True)
+                issue_html = scraperapi_get(full)
+                print(f"[neuron] fetched issue: {full}")
                 return full, issue_html
             except Exception as e:
-                code = getattr(getattr(e, "response", None), "status_code", None)
-                print(f"[neuron] SKIP: issue {'403' if code==403 else e}")
+                print(f"[neuron] SKIP: issue fetch failed: {e}")
                 return None
 
-    print("[neuron] SKIP: no /p/ links on homepage")
+    print("[neuron] SKIP: no /p/ links found on homepage")
     return None
 
 
@@ -297,7 +306,7 @@ def main():
 
     print(f"[rundown] ✓ {len(rundown_data['bullets'])} bullets | {rundown_data['headline'][:70]}")
 
-    # ── SECONDARY: The Neuron Daily ───────────────────────────────────────────
+    # ── SECONDARY: The Neuron Daily via ScraperAPI ────────────────────────────
     neuron_data = None
     result = try_fetch_neuron()
     if result:
