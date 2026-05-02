@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-02T09:00:18.186518+00:00",
+  "generated_at": "2026-05-02T10:51:49.469077+00:00",
   "items": [
+    {
+      "id": "b9f936bf3b85",
+      "url": "https://www.wired.com/story/security-news-this-week-disneyland-now-uses-face-recognition-on-visitors/",
+      "headline": "Disney Deploys Face Recognition at Parks Despite Privacy Trade-offs",
+      "body": "Walt Disney Company announced this week that visitors to Disneyland Park and Disney California Adventure Park can now enter through lanes equipped with face recognition technology. While Disney frames the system as \"entirely optional,\" the company acknowledges that visitors who use non-facial-recognition entry lanes \"may still have your image taken\"—effectively narrowing the practical choice to opt out. The system converts facial images into numerical identifiers for matching purposes, with Disney stating these values will be deleted after 30 days except where legal or fraud-prevention requirements apply.\n\n## How the System Works\n\nDisney's face recognition converts facial data into numerical values that enable matching against other captured images. The company has not detailed what fraud-prevention purposes might justify extended retention of facial data beyond the 30-day window, nor clarified which internal or external parties gain access to the numerical identifiers during that period. Face recognition technology has already moved beyond security checkpoints into routine commercial spaces—major airport terminals, NFL and MLB stadiums, and Madison Square MSG all deploy variants of the technology. The technology's proliferation reflects both operational convenience for venue operators and growing familiarity among the public.\n\n## Enterprise Surveillance Becomes Ambient\n\nThe Disney announcement signals an inflection point where biometric collection shifts from exceptional security measure to default operational practice at major venues. For enterprises deploying AI-driven systems, the announcement underscores both the technical feasibility and commercial viability of facial recognition as infrastructure. However, it also exposes the tension between stated optionality and actual choice architecture—presenting facial recognition as optional while still capturing images from visitors who decline the technology undermines meaningful consent. Organizations implementing similar systems should anticipate regulatory scrutiny around consent mechanisms and data retention practices. The key takeaway: facial recognition deployment is moving from controlled environments to high-traffic consumer spaces, making it increasingly difficult for individuals to avoid biometric data collection. Enterprises considering such systems should establish clear data governance policies, particularly regarding deletion timelines and permissible uses, before regulatory pressure mandates it.",
+      "source": "Wired AI",
+      "published": "2026-05-02T10:30:00+00:00",
+      "curated_at": "2026-05-02T10:49:32.420788+00:00",
+      "original_title": "Disneyland Now Uses Face Recognition on Visitors"
+    },
     {
       "id": "4f6e7b2863e1",
       "url": "https://techcrunch.com/2026/05/01/replits-amjad-masad-on-the-cursor-deal-fighting-apple-and-why-hed-rather-not-sell/",
@@ -290,16 +300,6 @@
       "published": "2026-04-30T17:41:14+00:00",
       "curated_at": "2026-04-30T19:08:34.254107+00:00",
       "original_title": "Elon Musk Seemingly Admits xAI Has Used OpenAI’s Models to Train Its Own"
-    },
-    {
-      "id": "aacf67027a7e",
-      "url": "https://www.wired.com/story/openai-chatgpt-codex-advanced-account-security/",
-      "headline": "OpenAI Adds High-Security Mode, Removes Support Access to Block Account Takeovers",
-      "body": "OpenAI launched Advanced Account Security on Thursday, an optional protection tier that eliminates passwords and support-assisted recovery in favor of hardware-based authentication. The move targets high-risk users—journalists, researchers, political dissidents, and elected officials—whose compromised accounts could expose sensitive personal and professional data. The feature reflects growing recognition that mainstream AI services now function as centralized repositories for sensitive information and connected workflows, making them attractive targets for sophisticated attackers.\n\n## Hardware Keys and No Support Backdoors\n\nUsers who enable Advanced Account Security must replace passwords with physical security keys or passkeys, eliminating a primary attack vector for phishing. The service removes email and SMS-based account recovery entirely, forcing users to rely instead on recovery keys, backup passkeys, or physical security keys. This architectural shift deliberately cuts off a common social engineering pathway: attackers can no longer contact support teams to regain access, since support personnel lose all recovery capabilities once the feature activates.\n\nOpenAI partnered with Yubico to provide discounted YubiKey bundles to enrolled users. The service also enforces shorter session windows and mandatory re-authentication on devices, while defaulting affected users to opt-out of conversation data being used for model training. Login alerts push users to review active sessions, creating visibility into account access patterns.\n\n## The High-Security Tradeoff\n\nThe security gains come with friction. Users lose the convenience of password-based access and support-assisted account recovery—a meaningful usability cost for the protection achieved. However, the requirement signals which organizations now recognize the stakes. OpenAI is mandating Advanced Account Security for members of its Trusted Access for Cyber program starting June 1, unless they can attest to equivalent phishing-resistant authentication through enterprise SSO systems.\n\nThis establishes a tiered security model: mainstream users continue with standard protections, while high-value or high-risk accounts migrate to hardware-dependent systems. The move aligns with decade-old practices at Google and Microsoft but represents overdue standardization as AI services consolidate access to critical workflows and sensitive information. For enterprises integrating ChatGPT or Codex into regulated environments, the model suggests OpenAI expects account compromise to remain a material risk that users—not the platform alone—must actively manage.",
-      "source": "Wired AI",
-      "published": "2026-04-30T17:30:39+00:00",
-      "curated_at": "2026-04-30T19:08:42.337175+00:00",
-      "original_title": "OpenAI Rolls Out ‘Advanced’ Security Mode for At-Risk Accounts"
     }
   ]
 }
