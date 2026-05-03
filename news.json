@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-03T11:38:24.142839+00:00",
+  "generated_at": "2026-05-03T12:52:52.168481+00:00",
   "items": [
+    {
+      "id": "32370471ff09",
+      "url": "https://www.theverge.com/column/921599/ai-music-is-flooding-streaming-services-but-who-wants-it",
+      "headline": "Streaming platforms label AI music but won't ban it—and users aren't buying",
+      "body": "Streaming services are drowning in machine-generated music. Deezer now receives 75,000 AI-generated tracks daily, accounting for a third of all uploads. Spotify removed 75 million spam tracks in 12 months. Yet the industry's response has been uniform: detection and labeling rather than enforcement. The result is a fragmented approach where some platforms demonetize AI content while others leave it visible, untouched, and profitable.\n\n## The volume and platform response\n\nAI music became accessible to anyone with a text prompt after Suno launched in December 2023 and Udio followed in April 2024. Within months, the flood was undeniable. By end of 2025, AI-generated uploads exceeded 50,000 daily tracks on Deezer, representing 34 percent of all content. Deezer moved first with a detection system that labels AI content, prevents algorithmic recommendation, and demonetizes 85 percent of streams. Qobuz followed with its own detection and published an AI charter emphasizing human curation. Apple, Spotify, and Google all opted for voluntary labeling systems—relying largely on creators and labels to self-report. Spotify is working with standards body DDEX to create granular labeling (lyrics, vocals, backing music separately). Google requires disclosure on YouTube and YouTube Music, with potential penalties for non-compliance. Apple's approach, by contrast, defers enforcement to content providers.\n\n## What listeners actually want\n\nPublic rejection of AI music is consistent and substantial. A Deezer and Ipsos study found 51 percent of respondents believe AI music will create more low-quality, generic content. A Hollywood Reporter and Frost School of Music poll showed 66 percent never knowingly listen to AI-generated music. More pointedly, 52 percent said they would not listen to their favorite artist's music if they knew AI was involved in its creation.\n\nThe gap between platform policy and user sentiment reveals an unresolved tension. Streaming services cannot afford to alienate major rights holders and artists demanding action, yet they also cannot fully alienate users uploading content or the AI music vendors themselves. The result is a middle ground—labeling without banning—that satisfies neither creators losing royalties nor listeners tired of low-quality content flooding their feeds. For enterprise stakeholders in music technology, this signals that adoption of AI generation tools faces a fundamental consumer trust problem that no labeling system alone can solve.",
+      "source": "The Verge AI",
+      "published": "2026-05-03T12:00:00+00:00",
+      "curated_at": "2026-05-03T12:50:40.671255+00:00",
+      "original_title": "AI music is flooding streaming services — but who wants it?"
+    },
     {
       "id": "e4f386980be8",
       "url": "https://techcrunch.com/2026/05/02/ai-generated-actors-and-scripts-are-now-ineligible-for-oscars/",
@@ -290,16 +300,6 @@
       "published": "2026-04-30T17:53:53+00:00",
       "curated_at": "2026-04-30T19:08:17.316357+00:00",
       "original_title": "FDA approval, fundraising, and the reality of building in healthcare according to BioticsAI founder"
-    },
-    {
-      "id": "aadb61ccb4b1",
-      "url": "https://techcrunch.com/2026/04/30/googles-gemini-ai-assistant-is-hitting-the-road-in-millions-of-vehicles/",
-      "headline": "Google Rolls Gemini AI Into Millions of Vehicles, Starting With GM Cars",
-      "body": "Google announced Thursday that it will begin deploying Gemini, its advanced conversational AI model, to vehicles equipped with Google built-in—a substantial step up from the Google Assistant currently in use. General Motors revealed separately that Gemini will reach approximately 4 million vehicles from model year 2022 onward across Cadillac, Chevrolet, Buick, and GMC. Google's broader announcement suggests the rollout extends beyond GM, though the company did not name additional automakers at this time.\n\n## Deployment Scope and Capabilities\n\nThe rollout begins in the U.S. with English-language support, with expansion planned over coming months. Notably, Gemini won't be limited to new vehicles—existing compatible cars can receive the upgrade via software update. Drivers signed into Google accounts will be prompted to enable the feature, accessible via voice commands, on-screen microphone, or steering wheel controls.\n\nGemini in vehicles supports context-aware, multi-turn interactions that the existing Assistant cannot match. A driver could request a highly-rated sit-down restaurant with outdoor seating along their route, and Gemini can surface options via Google Maps, then handle follow-up queries about parking, menu options, and dietary restrictions. The system also handles conventional tasks—adjusting climate controls, providing directions, recommending music, retrieving vehicle diagnostics, and summarizing incoming messages.\n\nGoogle is also testing Gemini Live, a beta feature enabling more open-ended, real-time conversations. Drivers activate it by tapping an interface button or saying \"Hey Google, let's talk,\" unlocking brainstorming and discussion capabilities during drives.\n\n## The Automotive AI Inflection Point\n\nThe move reflects a broader industry shift toward replacing task-specific voice assistants with generative AI models capable of understanding nuance and maintaining conversational context. For Google, the automotive vertical represents a captive, safety-sensitive user base where its core services—Maps, Search, Gmail, Calendar—can integrate seamlessly with vehicle operations.\n\nThe deployment also signals Google's intent to deepen integration with its broader service ecosystem. The company stated that future updates will extend Gemini's connection to Gmail, Google Calendar, and Google Home, creating a coherent data environment across devices and contexts.\n\nFor enterprise stakeholders, the automotive deployment represents a high-stakes testing ground for conversational AI in safety-critical, multi-modal environments. As Google expands language and regional support, the infrastructure and integration patterns established now will shape how it monetizes and evolves AI in transportation for years ahead.",
-      "source": "TechCrunch AI",
-      "published": "2026-04-30T17:46:54+00:00",
-      "curated_at": "2026-04-30T19:08:26.568812+00:00",
-      "original_title": "Google’s Gemini AI assistant is hitting the road in millions of vehicles"
     }
   ]
 }
