@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-04T19:18:06.151515+00:00",
+  "generated_at": "2026-05-04T21:01:30.905572+00:00",
   "items": [
     {
       "id": "864b2e49a316",
@@ -192,6 +192,16 @@
       "original_title": "A Dark-Money Campaign Is Paying Influencers to Frame Chinese AI as a Threat"
     },
     {
+      "id": "814f8d51f603",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/920775/evidence-exhibits-elon-musk-sam-altman-openai-trial",
+      "headline": "Musk lawsuit reveals OpenAI's founding tensions over control and mission",
+      "body": "Court exhibits in the Musk v. Altman trial are surfacing early communications that detail OpenAI's founding structure and the competing priorities that shaped the organization. The lawsuit, which began jury proceedings in May 2026, centers on whether OpenAI abandoned its original mission to ensure artificial general intelligence benefits humanity broadly. Emails dating back to 2015 show how the lab's governance, funding model, and leadership were negotiated among cofounders—and where friction emerged almost immediately.\n\n## Early governance design and funding\n\nIn June 2015, Sam Altman outlined a five-part plan to Musk proposing a nonprofit structure with technology owned by the foundation and decisions about its use made by a five-person board including Altman, Musk, Bill Gates, Pierre Omidyar, and Dustin Moskovitz. The plan called for seven to ten researchers initially, housed in a Y Combinator building in Mountain View, with competitive salaries and Y Combinator equity to align incentives without tying compensation to specific projects. By October 2015, Altman was requesting a $100 million commitment from Musk upfront and an additional $30 million over five years. Musk agreed to the broad strokes but flagged governance as \"critical,\" stating plainly: \"I don't want to fund something that goes in what turns out to be the wrong direction.\"\n\nInternal concerns emerged quickly. Greg Brockman and Ilya Sutskever expressed worry about Musk's level of control over the company, according to exhibits. Meanwhile, Nvidia CEO Jensen Huang provided the organization with in-demand supercomputing resources—a material advantage in the early AI race.\n\n## What the evidence signals for enterprise stakeholders\n\nThese exchanges reveal structural tensions that have persisted through OpenAI's evolution: disagreement over how much influence founders retain, how nonprofits scale with mission integrity, and whether external stakeholders can enforce fidelity to stated principles. Musk's insistence on governance control and his emphasis on safety-first design contrasts with what emerged as Altman's focus on rapid scaling and Y Combinator connections. The discovery materials suggest these weren't afterthoughts but fundamental design choices that shaped OpenAI's trajectory toward commercialization.\n\nFor enterprise AI leaders, the trial outcome matters because it tests whether founding charters and mission statements carry enforceable weight as organizations grow. If courts find that OpenAI materially deviated from its charitable trust, it creates precedent for how other AI organizations will be held accountable to their stated principles—or reveals that scaling concerns routinely override founding commitments.",
+      "source": "The Verge AI",
+      "published": "2026-05-01T19:14:51+00:00",
+      "curated_at": "2026-05-04T21:00:05.954150+00:00",
+      "original_title": "All the evidence revealed so far in Musk v. Altman"
+    },
+    {
       "id": "e0cc2e299c10",
       "url": "https://arstechnica.com/tech-policy/2026/05/minnesota-set-to-be-first-state-to-ban-nudification-apps/",
       "headline": "Minnesota Bans Nudification Apps, Sets $500K Fine Per Image",
@@ -290,16 +300,6 @@
       "published": "2026-04-30T23:00:51+00:00",
       "curated_at": "2026-04-30T23:43:52.446512+00:00",
       "original_title": "Good Luck Getting a Mac Mini for the Next ‘Several Months’"
-    },
-    {
-      "id": "9c478a2d72d7",
-      "url": "https://techcrunch.com/2026/04/30/apple-was-surprised-by-ai-driven-demand-for-macs/",
-      "headline": "Apple's Mac sales surge on unexpected AI workload demand",
-      "body": "Apple's Mac business unexpectedly outperformed in its second fiscal quarter, driven by customer demand for running local AI models—a trend that caught the company off guard. Mac revenue hit $8.4 billion against Wall Street expectations of $8 billion, while year-over-year sales grew 6% despite predictions of flat performance. The result underscores a shifting dynamic in enterprise hardware preferences, where AI capability and local inference are becoming primary purchasing drivers.\n\n## Local AI Models Drive Hardware Refresh\n\nThe Mac mini and Mac Studio—Apple's compact desktop systems designed for developers and creative professionals—sold out in recent weeks as customers sought platforms for running local language models like OpenClaw. CEO Tim Cook attributed the stronger-than-expected demand explicitly to these machines' suitability for \"AI and agentic tools,\" noting that customer recognition of this capability \"is happening faster than what we had predicted.\" The Mac mini became the top-selling desktop in China, a market experiencing intense demand for local AI model deployment.\n\nThe newly launched MacBook Neo, which entered sale mid-March, also contributed to growth. Cook described customer demand as \"off the charts\" and higher than internal forecasts. Apple noted the Neo attracted a record number of new Mac customers in the quarter, though the product faced supply constraints and sold out in certain configurations.\n\n## Enterprise Adoption Signals Broader Shift\n\nBeyond consumer interest, enterprise customers are actively choosing Mac as their preferred platform for building AI applications. Perplexity, the AI search startup, selected Mac as its platform for enterprise-grade AI assistants. School systems, including Kansas City Public Schools, are switching from Chromebooks to the MacBook Neo, suggesting that AI capability now influences purchasing decisions across institutional segments.\n\nCook cautioned that reaching supply-demand balance on the Mac mini and Studio will take \"several months,\" emphasizing that the constraint stems from underestimating demand rather than production issues. Mac revenue remained flat quarter-over-quarter, indicating this wave of AI-driven demand has not yet scaled to sustainable levels.\n\nThe signal for enterprise buyers is clear: infrastructure decisions are increasingly tied to local AI inference capability. For organizations evaluating compute platforms, Apple's unexpected Mac surge demonstrates that workload requirements—particularly on-device model inference—now compete with traditional considerations like software ecosystem and price point.",
-      "source": "TechCrunch AI",
-      "published": "2026-04-30T22:12:52+00:00",
-      "curated_at": "2026-04-30T22:43:28.286915+00:00",
-      "original_title": "Apple was surprised by AI-driven demand for Macs"
     }
   ]
 }
