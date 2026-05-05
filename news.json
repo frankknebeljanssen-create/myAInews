@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-05T02:03:34.521256+00:00",
+  "generated_at": "2026-05-05T05:35:49.155311+00:00",
   "items": [
     {
       "id": "e3a9e6d92e42",
@@ -10,6 +10,16 @@
       "published": "2026-05-04T21:53:21+00:00",
       "curated_at": "2026-05-04T22:05:24.934539+00:00",
       "original_title": "OpenAI’s cozy partner Cerebras is on track for a blockbuster IPO"
+    },
+    {
+      "id": "9807ae0752f7",
+      "url": "https://openai.com/index/openai-pwc-finance-collaboration",
+      "headline": "OpenAI and PwC Build Finance AI Agents From Real Workflows",
+      "body": "OpenAI and PwC are collaborating to deploy AI agents across core finance operations, moving beyond prototype work to production systems in actual enterprise environments. The partnership centers on automating repeatable finance tasks—from procurement and payments to forecasting and tax—while maintaining governance and human oversight. PwC will handle finance transformation and implementation expertise, while OpenAI provides the underlying models and product capabilities for building and managing agent workflows.\n\n## From Internal Use to Enterprise Scale\n\nOpenAI's own finance organization is serving as the test bed for this work. The company has already deployed AI agents across investor relations, treasury, tax, reporting, and contract review. Results include using Codex to process five times more contracts with the same team size and managing over 200 investor interactions during a recent fundraise using IR-GPT. PwC and OpenAI are now building a procurement agent within OpenAI's finance function to validate enterprise-scale workflows and human-agent collaboration patterns before broader rollout.\n\nThe agents will handle specific operational tasks: monitoring payments and flagging exceptions, reviewing contracts and invoices against policy, updating forecasts as business conditions shift, preparing reporting materials, and surfacing risks ahead of close periods. Codex can build or adapt underlying tools like dashboards and spend trackers, while Workspace Agents make workflows repeatable across systems finance teams already use. Skills and Connectors ensure agents follow approved processes and maintain proper enterprise context.\n\n## Finance Operations at an Inflection Point\n\nThe collaboration signals a shift in how CFO offices operate. Rather than optimizing existing processes, the focus moves toward decision-centric operations where AI surfaces insights and manages routine work at scale. Tyson Cornell, US Advisory Leader at PwC, noted that organizations are transitioning from \"process efficiency to intelligent, decision-centric operations.\"\n\nFor enterprises, the practical implication is clearer: AI agents in finance require governance infrastructure alongside deployment. Finance teams will need visibility into AI usage, token consumption, and projected spend to manage agentic workflows like other operating costs. This collaboration between a foundational model company and a major consulting firm suggests that production-ready finance AI requires both cutting-edge capabilities and implementation discipline—neither alone is sufficient for enterprise adoption at scale.",
+      "source": "OpenAI Blog",
+      "published": "2026-05-04T21:00:00+00:00",
+      "curated_at": "2026-05-05T05:34:47.852932+00:00",
+      "original_title": "OpenAI and PwC collaborate to reimagine the office of the CFO"
     },
     {
       "id": "864b2e49a316",
@@ -290,16 +300,6 @@
       "published": "2026-05-01T02:00:00+00:00",
       "curated_at": "2026-05-01T02:11:01.161910+00:00",
       "original_title": "ChatGPT Images 2.0 is a hit in India, but not a big winner elsewhere, yet"
-    },
-    {
-      "id": "b51b3e3060b2",
-      "url": "https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/",
-      "headline": "Anthropic seeks $900B+ valuation in final private round before IPO",
-      "body": "Anthropic is moving quickly to close what is likely its last major private funding round before going public. The AI company is asking investors to commit capital within 48 hours for a round expected to raise approximately $50 billion, with a targeted close within two weeks. The round values the company at roughly $900 billion—more than double its February valuation of $380 billion—though sources indicate investor demand may push the final valuation higher.\n\n## The Capital Push\n\nAnthropic's aggressive timeline reflects the scale of investor appetite for stakes in the leading AI company. The fundraise also underscores the capital intensity of the large language model business: the company announced this month that its annual revenue run rate has surpassed $30 billion, though sources close to the financials indicate the figure is actually closer to $40 billion. The company is raising primarily to fund its substantial computing infrastructure needs.\n\nAt $900 billion, Anthropic would surpass OpenAI, which closed a record $122 billion round in 2024 at an $852 billion post-money valuation. Notably, some early investors—particularly those who entered in 2024 or earlier—are sitting out this round, betting that cashing out during an anticipated IPO later this year will prove more advantageous than participating in the final private round.\n\n## What The Momentum Signals\n\nThe valuation jump and investor competition reflect confidence in Anthropic's near-term commercial trajectory, particularly its ability to convert rising usage into revenue at scale. The $30-40 billion revenue run rate demonstrates the company has moved beyond pure research positioning into genuine revenue generation—a critical distinction that justifies the nine-figure valuations now commanding venture capital.\n\nThe compressed timeline and investor willingness to deploy $50 billion capital raises questions about capital allocation in the AI sector more broadly. At these valuations, even substantial revenue growth must be weighed against whether the returns will justify the investment. For enterprises evaluating AI partnerships, the fundraising activity signals these companies are well-capitalized for sustained R&D and infrastructure investment, reducing near-term execution risk around model development and API availability.",
-      "source": "TechCrunch AI",
-      "published": "2026-04-30T23:07:56+00:00",
-      "curated_at": "2026-04-30T23:43:44.363478+00:00",
-      "original_title": "Sources: Anthropic potential $900B+ valuation round could happen within 2 weeks"
     }
   ]
 }
