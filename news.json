@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-06T19:27:40.023250+00:00",
+  "generated_at": "2026-05-06T21:06:10.655450+00:00",
   "items": [
+    {
+      "id": "987ff63a1291",
+      "url": "https://www.theverge.com/column/925487/david-sacks-trump-administration-ai-model-review",
+      "headline": "Trump AI Policy Shifts as Sacks Loses White House Influence",
+      "body": "The Trump administration has reversed course on AI regulation, moving toward pre-market government review of AI models—a stark departure from its 2025 deregulation stance. The shift reflects three converging pressures: a legitimate national security concern triggered by Anthropic's leaked Mythos model, emerging international AI regulatory frameworks, and the removal of David Sacks as AI and crypto czar. The changes signal that Silicon Valley's direct pipeline to Trump policy has narrowed considerably.\n\n## Sacks' Exit and Policy Reversal\n\nSacks, a billionaire venture capitalist and Trump fundraiser, served as a special government employee for a full year despite a supposed 130-day commitment. During his tenure, he aggressively pushed pro-industry positions, including two failed attempts to get Congress to pass a federal moratorium on state AI laws and an executive order that would have allowed the administration to sue states for AI regulation. His tactics alienated Republican allies and Trump's base alike. When White House officials recently pressured red states to drop pending AI legislation, four GOP state lawmakers publicly contradicted the claim in the Wall Street Journal that such action aligned with Trump's agenda.\n\nSacks' departure removes a key mechanism for funneling industry-friendly, \"innovation-at-all-costs\" messaging directly to Trump. The administration's new stance on pre-market AI model review marks a fundamental policy reversal that wouldn't have occurred while Sacks maintained influence.\n\n## Security Imperatives Override Deregulation\n\nThe catalyst for the policy shift was the leak of Anthropic's Mythos—an AI model so capable at identifying cybersecurity vulnerabilities that Anthropic itself refused public release. The model's potential to enable large-scale cyberattacks spooked the Treasury Department, Commerce Department, and the National Security Council. Treasury Secretary Scott Bessent and Chief of Staff Susie Wiles meeting directly with Anthropic CEO Dario Amodei in April signaled the severity of the concern and overrode earlier Pentagon recommendations to ban Anthropic from government contracts for alleged \"wokeness.\"\n\nFor enterprises and AI practitioners, the takeaway is clear: national security concerns now outweigh deregulation ideology in Trump administration policy. Pre-market review requirements will likely reshape product timelines and deployment strategies. More significantly, the administration's shifting calculus suggests that AI governance will continue evolving based on demonstrated security risks rather than political philosophy—a framework that may prove more durable across administrations.",
+      "source": "The Verge AI",
+      "published": "2026-05-06T20:18:00+00:00",
+      "curated_at": "2026-05-06T21:04:01.712733+00:00",
+      "original_title": "How David Sacks crashed and burned in the White House"
+    },
     {
       "id": "9e232da26dd9",
       "url": "https://www.wired.com/story/anthropic-spacex-compute-deal-colossus/",
@@ -290,16 +300,6 @@
       "published": "2026-05-05T20:56:41+00:00",
       "curated_at": "2026-05-05T21:55:56.185308+00:00",
       "original_title": "Apple plans to make iOS 27 a Choose Your Own Adventure of AI models"
-    },
-    {
-      "id": "f738ab468359",
-      "url": "https://www.latent.space/p/lupsasca",
-      "headline": "GPT-5.2 Solves Year-Old Physics Problem in One Week",
-      "body": "OpenAI's GPT-5.2 has derived a previously unknown result in theoretical physics, marking the first documented instance of a large language model generating novel scientific findings that advance an active research domain. The result emerged from work by physicist Alex Lupsasca, now at OpenAI's Science team, who posed an unsolved problem in quantum gravity to the model. What distinguishes this outcome from earlier AI applications in science is not merely speed—though that matters—but that the model identified solution strategies unfamiliar to the domain experts themselves.\n\n## The Problem and Its Solution\n\nLupsasca's team, collaborating with researchers from Harvard, Cambridge, Vanderbilt, and the Institute for Advanced Study, had spent over a year investigating \"single-minus gluon tree amplitudes\"—mathematical quantities in quantum field theory that were believed to always equal zero under certain conditions. The researchers developed a formula suggesting these amplitudes could be non-zero in specific cases, but the equation proved intractable. The key formula spans a quarter page with 32 terms, each containing multiple nested products encoding complex relationships. Manual computation was prohibitively labor-intensive.\n\nAfter an initial conversation about the problem, GPT-5.2 solved it within a week—before a visiting collaborator's plane landed. Critically, the model discovered a limiting case (the \"half-collinear regime\") that collapsed the unwieldy formula into an elegant, intuitive result. The team then prompted the model to prove this simplified formula, and GPT-5.2 produced a proof using a mathematical technique none of the researchers had considered. The work appears in a peer-reviewed preprint with institutional affiliations, establishing basic reproducibility standards.\n\n## What This Signals for AI Capability\n\nThe episode illustrates a meaningful gap between AI performance on routine tasks and performance at research frontiers. Lupsasca noted that when GPT-5 launched, Twitter reception was lukewarm—observers noted the model showed no dramatic improvement at writing emails. But at the science frontier, capabilities had advanced substantially. GPT-5 could reproduce one of his published papers in 30 minutes; a year later, GPT-5.2 could generate genuinely novel results.\n\nFor enterprises and practitioners, this suggests the capability ceiling is higher than headline benchmarks indicate, particularly for specialized, reasoning-intensive work. The practical implication: domain experts pushing these models beyond standard use cases are discovering substantially different performance profiles. The finding also underscores that breakthrough capability in AI x science may depend less on raw model scale than on effective prompting strategies—the \"priming\" technique of warming up the model with simpler problems proved essential to unlocking the solution.",
-      "source": "Latent Space",
-      "published": "2026-05-05T20:34:11+00:00",
-      "curated_at": "2026-05-05T20:55:08.558352+00:00",
-      "original_title": "🔬Doing Vibe Physics — Alex Lupsasca, OpenAI"
     }
   ]
 }
