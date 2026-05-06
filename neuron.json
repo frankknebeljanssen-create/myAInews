@@ -3,347 +3,192 @@
   "issue_url": "https://www.therundown.ai/p/openai-ai-phone-just-jumped-the-line",
   "emoji": "📱",
   "headline": "OpenAI's AI phone just jumped the line",
-  "subtitle": "OpenAI accelerates phone launch · Anthropic expands finance agents · Mini data centers go residential",
-  "intro": "OpenAI is fast-tracking its AI agent phone for mass production in the first half of 2027, a full year ahead of schedule. The move signals intensifying competition with Anthropic and broader ambitions to control both hardware and software for true agentic experiences.",
+  "subtitle": "AI agent phone fast-tracked to 2027 · Anthropic launches finance agents · Mini home data centers coming",
+  "intro": "OpenAI is accelerating its first AI phone to launch in the first half of 2027—a year earlier than expected. The device aims to leverage enhanced visual processing and dual AI chips, while competitors like Anthropic move aggressively into specialized domains like finance.",
   "bullets": [
     {
       "emoji": "📱",
-      "text": "OpenAI accelerates AI phone to 2027 with enhanced vision capabilities",
+      "text": "OpenAI accelerates AI phone for 2027 launch",
       "url": "https://x.com/mingchikuo/status/2051523855286776034?s=20",
       "source": "The Rundown AI",
-      "summary": "OpenAI is advancing its first AI phone for mass production in early 2027, a year faster than previously reported. The device will feature an enhanced image signal processor for improved AI visual sensing, with MediaTek as the sole chip supplier and dual AI processors handling vision and language tasks simultaneously."
+      "summary": "OpenAI is speeding up development of its first AI phone to reach mass production by mid-2027, driven by IPO ambitions and competition. The device will feature an enhanced image signal processor for better visual sensing, use MediaTek chips, and dual AI processors for vision and language tasks."
     },
     {
       "emoji": "🤑",
-      "text": "Anthropic launches 10 ready-made AI agents for finance and insurance",
+      "text": "Anthropic launches 10 AI agents for finance",
       "url": "https://www.anthropic.com/news/finance-agents",
       "source": "The Rundown AI",
-      "summary": "Anthropic unveiled pre-built AI agents tailored for financial services, capable of handling pitchbooks, KYC screening, earnings reviews, and valuations. Each agent comes with domain-specific instructions, data connectors, and customizable models, integrating with Claude Cowork, Claude Code, or as managed agents."
+      "summary": "Anthropic released ready-to-run AI agents designed for financial services, capable of building pitchbooks, screening KYC files, and reviewing earnings. The agents integrate with Claude Cowork and include connectors to data sources from partners like Dun & Bradstreet and Verisk."
     },
     {
       "emoji": "🏘",
-      "text": "Span teams with Nvidia to install mini data centers on home walls",
+      "text": "Span and Nvidia build residential mini data centers",
       "url": "https://www.businesswire.com/news/home/20260414372626/en/SPAN-Announces-XFRA-a-Distributed-Data-Center-Solution-to-Close-the-Speed-to-Power-Gap-for-AI-Compute-Demand",
       "source": "The Rundown AI",
-      "summary": "Span and Nvidia are deploying XFRA compute nodes on residential and small business walls to tap unused grid capacity for AI workloads. Equipped with liquid-cooled Nvidia GPUs, these boxes can be installed 6x faster and at one-fifth the cost of traditional centralized data centers."
+      "summary": "California startup Span partnered with Nvidia to mount small compute nodes on home and small business exterior walls. The XFRA boxes use liquid-cooled Nvidia GPUs and can be installed six times faster and at one-fifth the cost of traditional centralized data centers."
+    },
+    {
+      "emoji": "🚀",
+      "text": "GPT-5.5-Instant rolls out with improved performance",
+      "url": "https://openai.com/index/gpt-5-5-instant/",
+      "source": "The Rundown AI",
+      "summary": "OpenAI began rolling out GPT-5.5-Instant to all ChatGPT users, featuring improved performance, stronger memory, and more personalized responses. The update aims to deliver faster, more contextual interactions."
+    },
+    {
+      "emoji": "💼",
+      "text": "Microsoft expands Copilot Cowork to mobile devices",
+      "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/05/05/copilot-cowork-from-conversation-to-action-across-skills-integrations-and-devices/",
+      "source": "The Rundown AI",
+      "summary": "Microsoft extended its Copilot Cowork agentic system to iOS and Android platforms, adding built-in skills for common tasks and data plugins for business systems. The expansion makes agentic workflows accessible across more devices."
+    },
+    {
+      "emoji": "🧠",
+      "text": "Perplexity launches Professional Finance with workflows",
+      "url": "https://x.com/perplexity_ai/status/2051693893473935372?s=20",
+      "source": "The Rundown AI",
+      "summary": "Perplexity AI released Computer for Professional Finance, featuring licensed financial data and 35 dedicated workflows for analysts. The agentic system helps professionals automate routine finance tasks."
+    },
+    {
+      "emoji": "⚡",
+      "text": "OpenAI debuts GPT-5.5 Instant for faster, cheaper inference",
+      "url": "https://openai.com/index/gpt-5-5-instant/?utm_source=tldrai",
+      "source": "TLDR AI",
+      "summary": "OpenAI has released GPT-5.5 Instant, focusing on speed and cost efficiency for real-time applications. The model represents a shift toward optimizing inference performance rather than pure capability scaling."
+    },
+    {
+      "emoji": "🧠",
+      "text": "Subquadratic achieves 12-million-token context window breakthrough",
+      "url": "https://thenewstack.io/subquadratic-12-million-context-window/?utm_source=tldrai",
+      "source": "TLDR AI",
+      "summary": "Subquadratic has demonstrated a working 12-million-token context window, dramatically expanding what AI models can process in a single request. This breaks previous limitations on how much information models can reason about simultaneously."
+    },
+    {
+      "emoji": "🚀",
+      "text": "Google announces upgrades coming to Gemini Flash model",
+      "url": "https://www.testingcatalog.com/google-prepares-new-upgrades-for-gemini-flash-model/?utm_source=tldrai",
+      "source": "TLDR AI",
+      "summary": "Google is preparing enhanced versions of its Gemini Flash model with performance improvements and new capabilities. The upgrades aim to make the model more competitive in speed and quality metrics."
     },
     {
       "emoji": "🤖",
-      "text": "Notion agent workflow guide enables autonomous daily task planning",
-      "url": "",
-      "source": "The Rundown AI",
-      "summary": "A new guide reveals how to create autonomous Notion agents that execute scheduled tasks and generate reports. Users can set up daily summaries, weekly reports, and email automations by configuring templates with task instructions and triggering the agent through duplication."
+      "text": "Meta develops advanced agentic AI assistant for consumers",
+      "url": "https://www.reuters.com/business/meta-plans-advanced-agentic-ai-assistant-users-ft-reports-2026-05-05/?utm_source=tldrai",
+      "source": "TLDR AI",
+      "summary": "Meta is building an autonomous AI assistant capable of taking actions on behalf of users. The system represents the company's push into agentic AI that can operate more independently than current chatbots."
     },
     {
-      "emoji": "⚡",
-      "text": "Lambda benchmarks reveal GPU efficiency losses in large-scale training",
-      "url": "",
-      "source": "The Rundown AI",
-      "summary": "Lambda's engineers identified why most training runs operate at only 35-45% Model FLOPS Utilization, wasting compute resources. Memory overhead, misaligned parallelism strategies, and serialized communication were traced as root causes of efficiency loss in NVIDIA Blackwell GPU clusters."
+      "emoji": "💰",
+      "text": "Study shows computer use costs 45x more than APIs",
+      "url": "https://reflex.dev/blog/computer-use-is-45x-more-expensive-than-structured-apis/?utm_source=tldrai",
+      "source": "TLDR AI",
+      "summary": "Research demonstrates that having AI systems interact with UIs costs significantly more than using structured APIs. This highlights efficiency tradeoffs when agents operate through visual interfaces versus direct integrations."
+    },
+    {
+      "emoji": "🎬",
+      "text": "Google launches $3.5M film competition for AI creativity",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/future-vision-film-competition-xprize/?utm_source=tldrai",
+      "source": "TLDR AI",
+      "summary": "Google is sponsoring a competition with $3.5 million in prizes for filmmakers using AI tools. The initiative aims to showcase creative applications of AI in entertainment and storytelling."
     },
     {
       "emoji": "🔄",
-      "text": "OpenAI makes Codex migration easy with settings and plugin imports",
+      "text": "OpenAI adds import tools and work features to Codex",
       "url": "https://chatgpt.com/codex/switch-to-codex/",
       "source": "Ben's Bites",
-      "summary": "OpenAI is lowering barriers to switching to Codex by letting users import settings, plugins, agents, and project configuration from competing tools. They're also improving everyday work features like slide and sheet creation alongside UI refinements."
+      "summary": "Users can now migrate settings, plugins, and configurations from other tools like Claude Cowork into Codex. The platform is also improving core work features like slide and sheet creation alongside friendlier UI updates to make onboarding non-technical users easier."
     },
     {
       "emoji": "💬",
-      "text": "New iMessage skill keeps Codex conversations in Apple Messages app",
-      "url": "https://github.com/gragland/codex-imessage-handoff",
-      "source": "Ben's Bites",
-      "summary": "A new skill enables messaging Codex directly through iMessage by keeping a persistent thread open. Users can paste links in Codex and it guides them through tasks, though the long-awaited native mobile app still hasn't arrived."
-    },
-    {
-      "emoji": "⚡",
-      "text": "Grok 4.3 API launches with 1M context at cheaper rates than Claude",
+      "text": "Grok 4.3 API available with 1M context window",
       "url": "https://docs.x.ai/developers/models/grok-4.3",
       "source": "Ben's Bites",
-      "summary": "X's Grok 4.3 is now available in API with million-token context window, text and image inputs, reasoning capabilities, and December 2025 knowledge. At $1.25/$2.50 per million tokens, it undercuts Claude Sonnet 4.6 while offering comparable performance."
+      "summary": "X released Grok 4.3 with 1M context length, text and image support, and reasoning capabilities using a December 2025 knowledge cutoff. At $1.25/$2.50 per million tokens, it undercuts Sonnet 4.6 while delivering comparable performance."
     },
     {
-      "emoji": "🛠️",
-      "text": "Entire releases git-sync and Dispatches for developer workflows",
+      "emoji": "🔧",
+      "text": "Entire launches git-sync and Dispatches features",
       "url": "https://github.com/entireio/git-sync",
       "source": "Ben's Bites",
-      "summary": "GitHub's ex-CEO's company Entire launched two tools: git-sync mirrors repositories without local cloning, and Dispatches auto-generates release notes from commits and agent sessions by date range and repository."
+      "summary": "GitHub's ex-CEO's company released two tools: git-sync mirrors repositories without local cloning, and Dispatches generates release notes automatically from commits and agent sessions by repository and date range."
     },
     {
       "emoji": "🔐",
-      "text": "OpenAI adds optional Advanced Account Security feature to ChatGPT",
+      "text": "OpenAI adds opt-in advanced security for Codex",
       "url": "https://openai.com/index/advanced-account-security/",
       "source": "Ben's Bites",
-      "summary": "OpenAI introduced an opt-in Advanced Account Security feature for ChatGPT and Codex users, enhancing protection for accounts and data."
+      "summary": "ChatGPT and Codex users can now enable Advanced Account Security as an optional feature to better protect their accounts."
+    },
+    {
+      "emoji": "📢",
+      "text": "Honeycomb's Innovation Week explores observability for agents",
+      "url": "https://fandf.co/3QVdYGu",
+      "source": "Ben's Bites",
+      "summary": "A virtual 3-day event May 12-14 featuring Charity Majors and Christine Yen discussing how engineering teams can handle observability as AI agents become more prevalent."
     },
     {
       "emoji": "🎤",
-      "text": "OpenAI shares architecture for delivering low-latency voice AI at scale",
+      "text": "OpenAI shares low-latency voice AI delivery at scale",
       "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale/",
       "source": "Ben's Bites",
-      "summary": "OpenAI published insights into how they built and deployed low-latency voice AI systems to handle production-scale traffic and maintain responsive user experiences."
+      "summary": "OpenAI published technical insights on their infrastructure and methods for delivering voice AI with minimal latency across large user populations."
     },
     {
       "emoji": "🙀",
       "text": "Subquadratic launches SubQ with 12M-token context at 1/5 frontier cost",
       "url": "",
       "source": "The Neuron Daily",
-      "summary": "The startup debuted SubQ, built on Subquadratic Selective Attention, a sub-quadratic architecture that runs 52× faster than FlashAttention at 1M tokens. The 12M-token context window costs roughly $8 versus $2,600 on frontier models, with 97% accuracy on long-context benchmarks and an API plus CLI code agent live today."
+      "summary": "SubQ uses a sub-quadratic selective attention architecture that scales linearly instead of quadratically with input length. The 12M-token model runs 52× faster than FlashAttention at 1M tokens and achieved 97% on long-context benchmarks for roughly $8 versus $2,600 on competing models. The lab raised $25M in seed funding with backing from SoftBank and Tinder co-founder Justin Mateen."
     },
     {
-      "emoji": "⚖️",
-      "text": "AI faces dual lawsuits for misidentification and medical impersonation",
+      "emoji": "📰",
+      "text": "AI faced two lawsuits in one day; Google and Character.AI named",
       "url": "",
       "source": "The Neuron Daily",
-      "summary": "Google faced a $1.5M lawsuit from musician Ashley MacIsaac after AI Overview falsely identified him as a sex offender, prompting a concert cancellation. Character.AI was sued by Pennsylvania after one chatbot posed as a licensed psychiatrist with a fabricated medical license number in the state's first AI medical-impersonation lawsuit."
+      "summary": "A Cape Breton fiddler sued Google for $1.5M after AI Overview falsely identified him as a convicted sex offender, prompting a concert cancellation. Hours later, Pennsylvania sued Character.AI after one of its chatbots impersonated a licensed psychiatrist and fabricated credentials, marking the state's first AI medical-impersonation lawsuit."
     },
     {
       "emoji": "🍪",
-      "text": "GPT-5.5 Instant cuts ChatGPT hallucinations by 52% on high-stakes queries",
+      "text": "GPT-5.5 Instant reduces hallucinations by 52% on high-stakes prompts",
       "url": "",
       "source": "The Neuron Daily",
-      "summary": "OpenAI's new ChatGPT default reduces hallucinated claims on medicine, law, and finance prompts by 52% while delivering 30% more concise responses. The model is free to try for all ChatGPT users."
+      "summary": "OpenAI's new ChatGPT default delivers 52% fewer hallucinated claims on medicine, law, and finance prompts while providing 30% more concise responses. The model is free to try for all ChatGPT users and represents improved accuracy for professional use cases."
     },
     {
-      "emoji": "🤖",
-      "text": "Meta building Hatch consumer AI agent with Instagram shopping integration",
+      "emoji": "📖",
+      "text": "NBER paper: automating AI research could trigger singularity in ~6 years",
       "url": "",
       "source": "The Neuron Daily",
-      "summary": "The Information reported Meta is developing Hatch, a consumer AI agent paired with an agentic Instagram shopping tool as the company's answer to OpenClaw. Google is simultaneously testing Remy, a 24/7 Gemini-powered agent that proactively monitors and learns user preferences across Google services."
+      "summary": "Anton Korinek's research suggests that automating software R&D plus just 5% automation elsewhere could overcome diminishing returns and produce explosive growth within six years using empirically grounded models. The analysis explores how AI automation of AI research itself could accelerate capabilities exponentially."
     }
   ],
   "main_story": {
-    "title": "OpenAI accelerates AI phone to 2027, raising questions about Jony Ive partnership",
-    "body": "Supply chain analyst Ming-Chi Kuo reports that OpenAI has fast-tracked its first AI phone for mass production in the first half of 2027, a full year earlier than previously expected. The acceleration is likely driven by OpenAI's IPO ambitions and competitive pressure from rising AI phone development elsewhere. The device will feature an enhanced image signal processor with HDR improvements for better AI visual sensing, dual AI processors from MediaTek to handle vision and language tasks in parallel, and potential shipments of 30 million units by 2027-28 if development stays on schedule.",
-    "why": "Controlling hardware and operating systems could be critical to delivering truly autonomous AI agents that can perceive and act in the real world. However, this raises uncertainty about OpenAI's separate device partnership with Jony Ive's io, which was acquired last year to 'go beyond screens' but has produced no concrete announcements.",
-    "take": "The timeline acceleration shows OpenAI's commitment to hardware as a competitive moat in AI, but the foggy relationship with io suggests the company may be hedging bets or pursuing multiple form factors to capture different market segments."
+    "title": "OpenAI's AI phone accelerates to 2027",
+    "body": "OpenAI is fast-tracking development of its first AI phone for mass production in the first half of 2027—a full year earlier than previous reports. Supply chain analyst Ming-Chi Kuo attributes the timeline acceleration to OpenAI's IPO ambitions and rising competition in AI phones. The standout specification is an advanced image signal processor with enhanced HDR capabilities to improve how AI agents perceive the real world. MediaTek will be the sole chip supplier, with the device using two dedicated AI processors to handle vision and language tasks simultaneously. If development stays on track, combined shipments for 2027–28 could reach 30 million units.",
+    "why": "Controlling both hardware and software could be crucial to delivering a truly agentic phone experience. However, the accelerated timeline raises questions about OpenAI's ongoing partnership with Jony Ive's io, which it acquired to move beyond screens but has produced limited public updates.",
+    "take": "OpenAI's aggressive push signals that AI phones are becoming a central battleground alongside software competition. The move suggests hardware integration may be essential for AI agents to reach mainstream adoption and transform how users interact with AI daily."
   },
   "around_the_horn": [
     {
-      "text": "GPT-5.5-Instant rolling out to all ChatGPT users with improved memory",
-      "url": "https://openai.com/index/gpt-5-5-instant/"
-    },
-    {
-      "text": "Microsoft expands Copilot Cowork to iOS and Android with built-in skills",
-      "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/05/05/copilot-cowork-from-conversation-to-action-across-skills-integrations-and-devices/"
-    },
-    {
-      "text": "Apple settles Siri lawsuit for $250M over misleading AI claims",
+      "text": "Apple settled iPhone lawsuit for $250M over Siri AI claims",
       "url": "https://www.bbc.com/news/articles/c0j2nydnzy7o"
-    },
-    {
-      "text": "Perplexity launches finance-focused system with licensed data and 35 workflows",
-      "url": "https://x.com/perplexity_ai/status/2051693893473935372?s=20"
     },
     {
       "text": "Anthropic commits $200B to Google cloud and chips over five years",
       "url": "https://www.theinformation.com/articles/anthropic-commits-spending-200-billion-googles-cloud-chips"
     },
     {
-      "text": "Coinbase cuts 14% of workforce to shift toward AI-native operations",
+      "text": "Coinbase cuts 14% of workforce to shift to AI-native operations",
       "url": ""
+    },
+    {
+      "text": "Make Notion agents more autonomous with daily task automation",
+      "url": "https://www.rundown.ai/guides"
     }
   ],
   "sources_fetched": [
     "www.therundown.ai",
+    "tldr.tech",
     "www.bensbites.com",
     "www.theneurondaily.com"
-  ],
-  "previous": {
-    "date": "2026-05-04",
-    "issue_url": "https://www.therundown.ai/p/ai-shows-its-skills-in-the-emergency-room",
-    "emoji": "🏥",
-    "headline": "AI outperforms ER doctors in Harvard diagnostic study",
-    "subtitle": "OpenAI's o1-preview beats physicians · Pentagon adds 8 AI partners · Claude Design tool launches",
-    "intro": "An older OpenAI model just demonstrated it can diagnose emergency room patients more accurately than attending physicians in a real-world Harvard study. The findings suggest AI is ready for a more formal clinical role, even as millions already use AI for health advice daily.",
-    "bullets": [
-      {
-        "emoji": "🏥",
-        "text": "OpenAI's o1-preview outdiagnoses ER physicians in Harvard trial",
-        "url": "https://www.science.org/doi/10.1126/science.adz4433",
-        "source": "The Rundown AI",
-        "summary": "The 2024-released o1-preview model correctly diagnosed 67.1% of 76 real emergency cases compared to 55.3% and 50.0% for two attending physicians. In one instance, the AI identified a rare flesh-eating infection roughly 12-24 hours before the treating doctor, using only raw electronic health records."
-      },
-      {
-        "emoji": "🛡️",
-        "text": "Pentagon adds 8 AI partners while keeping Anthropic blacklisted",
-        "url": "https://www.washingtonpost.com/technology/2026/05/01/pentagon-ai-deals-microsoft-amazon-google-classified-military/",
-        "source": "The Rundown AI",
-        "summary": "The Department of Defense approved SpaceX, OpenAI, Google, Nvidia, Reflection, Microsoft, AWS, and Oracle for classified networks despite Anthropic facing exclusion. The Pentagon cited Anthropic's Mythos model as a separate security concern amid White House pressure over compute resource allocation."
-      },
-      {
-        "emoji": "🎨",
-        "text": "Claude Design lets you build landing pages with AI variations",
-        "url": "",
-        "source": "The Rundown AI",
-        "summary": "Anthropic's new Claude Design tool generates multiple high-converting landing page mockups through a simple interface. Users describe their product and target audience, provide competitor examples, and Claude creates variations that can be refined through comments and deployed directly to code."
-      },
-      {
-        "emoji": "🗣️",
-        "text": "OpenAI ships Codex Pets for tracking agent task progress",
-        "url": "https://developers.openai.com/codex/app/settings#codex-pets",
-        "source": "The Rundown AI",
-        "summary": "OpenAI released Codex Pets, animated desktop companions that display agent workflow progress without requiring users to switch windows. The feature integrates with existing ChatGPT subscriptions through OpenClaw, representing OpenAI's stance against Anthropic's AI access restrictions."
-      },
-      {
-        "emoji": "⚖️",
-        "text": "Maryland becomes first US state to ban AI-driven price discrimination",
-        "url": "https://www.nytimes.com/2026/05/01/business/surveillance-pricing-groceries-maryland.html",
-        "source": "The Rundown AI",
-        "summary": "Maryland enacted legislation prohibiting retailers from using personalized shopper data for algorithmic price markups, with penalties reaching $25,000 per violation. The law marks the first state-level regulation specifically targeting AI-powered dynamic grocery pricing tactics."
-      },
-      {
-        "emoji": "🤝",
-        "text": "SAG-AFTRA secures AI guardrails in new four-year studio contract",
-        "url": "https://deadline.com/2026/05/sag-aftra-studios-reach-new-bigger-deal-amptp-1236879157/",
-        "source": "The Rundown AI",
-        "summary": "The actors' union negotiated stronger AI protections in its latest studio agreement, with leadership refusing to finalize terms until Hollywood made meaningful concessions on digital likeness and voice usage protections."
-      },
-      {
-        "emoji": "🧠",
-        "text": "Anthropic prepares Jupiter-v1-p model for potential launch",
-        "url": "https://www.testingcatalog.com/anthropic-tests-jupiter-v1-p-before-potential-launch-on-may-6/?utm_source=tldrai",
-        "source": "TLDR AI",
-        "summary": "Anthropic is testing its Jupiter-v1-p model ahead of what could be a May 6 developer conference launch. The timing suggests the company is preparing a significant announcement around the new model."
-      },
-      {
-        "emoji": "🎬",
-        "text": "Google tests new Omni model for video generation",
-        "url": "https://www.testingcatalog.com/google-is-testing-new-omni-model-for-video-generation-ahead-of-i-o/?utm_source=tldrai",
-        "source": "TLDR AI",
-        "summary": "Google is experimenting with a new Omni model focused on video generation capabilities ahead of its I/O conference. This reflects the industry's broader push into multimodal AI systems."
-      },
-      {
-        "emoji": "🐾",
-        "text": "OpenAI adds animated pets and config imports to Codex",
-        "url": "https://www.testingcatalog.com/openai-adds-animated-pets-and-config-imports-to-codex/?utm_source=tldrai",
-        "source": "TLDR AI",
-        "summary": "OpenAI is expanding Codex with new features including animated pets and configuration import functionality. These additions make the platform more engaging and flexible for users."
-      },
-      {
-        "emoji": "💼",
-        "text": "Replit CEO discusses competitive dynamics and Cursor",
-        "url": "https://techcrunch.com/2026/05/01/replits-amjad-masad-on-the-cursor-deal-fighting-apple-and-why-hed-rather-not-sell/?utm_source=tldrai",
-        "source": "TLDR AI",
-        "summary": "Replit's Amjad Masad spoke about the company's position relative to Cursor and broader market competition. He discussed why Replit remains independent and confident in its long-term strategy."
-      },
-      {
-        "emoji": "🛡️",
-        "text": "Top AI companies agree to Pentagon deals for classified work",
-        "url": "https://www.wsj.com/tech/ai/top-ai-companies-agree-to-pentagon-deals-for-classified-work-9c621e78?st=wk1err&reflink=desktopwebshare_permalink&mod=tldr&utm_source=tldrai",
-        "source": "TLDR AI",
-        "summary": "Major AI firms are moving into defense applications with classified government contracts. This signals growing integration of AI capabilities into national security infrastructure."
-      },
-      {
-        "emoji": "💰",
-        "text": "Anthropic nears $1.5B joint venture with Wall Street",
-        "url": "https://www.wsj.com/business/deals/anthropic-nears-1-5-billion-joint-venture-with-wall-street-firms-8f5448ee?st=aQK9fx&reflink=desktopwebshare_permalink&mod=tldr&utm_source=tldrai",
-        "source": "TLDR AI",
-        "summary": "Anthropic is in talks to create a major joint venture with prominent Wall Street firms for approximately $1.5 billion. This move underscores the financial industry's interest in AI infrastructure."
-      },
-      {
-        "emoji": "☁️",
-        "text": "Cloudflare lets agents provision accounts, domains, and deployments autonomously",
-        "url": "https://blog.cloudflare.com/agents-stripe-projects/",
-        "source": "Ben's Bites",
-        "summary": "Cloudflare now enables agents to create accounts, subscribe, register domains, and deploy without manual dashboard work. Humans still approve permissions, but the setup process is now readable and executable by AI systems, lowering barriers for non-technical builders."
-      },
-      {
-        "emoji": "💳",
-        "text": "Stripe launches agentic commerce suite with agent-ready payments and accounts",
-        "url": "https://stripe.com/blog/everything-we-announced-at-sessions-2026",
-        "source": "Ben's Bites",
-        "summary": "Stripe announced new tools including Link wallet for agents, streaming payments, and Treasury accounts designed for agent interactions. The Link CLI gives agents one-time-use payment credentials without exposing real card details, opening commerce automation to non-humans."
-      },
-      {
-        "emoji": "🎯",
-        "text": "Cursor SDK enables building agents with Cursor's runtime and models directly",
-        "url": "https://cursor.com/blog/typescript-sdk",
-        "source": "Ben's Bites",
-        "summary": "Cursor released an SDK letting developers build agents using the same runtime and models powering Cursor itself. This allows embedding agents in CI/CD pipelines, automations, and third-party products like Gmail integrations."
-      },
-      {
-        "emoji": "🌐",
-        "text": "Warp terminal goes open-source with OpenAI as founding sponsor",
-        "url": "https://www.warp.dev/blog/warp-is-now-open-source",
-        "source": "Ben's Bites",
-        "summary": "Warp released its source code publicly with OpenAI's backing, betting that community contributors provide direction while agents handle implementation. This shifts developer tooling toward AI-assisted iteration."
-      },
-      {
-        "emoji": "⚙️",
-        "text": "Lightfield AI-native CRM ships Skills for plain-English workflow automation",
-        "url": "https://lightfield.app/blog/meet-skills?utm_source=newsletter&utm_medium=paid&utm_campaign=bens_bites&utm_content=secondary_4-30-2026",
-        "source": "Ben's Bites",
-        "summary": "Lightfield launched Skills, letting users define workflows in plain English and execute them via voice commands. Agents execute across the full data graph with code execution, web search, and file I/O capabilities."
-      },
-      {
-        "emoji": "🔧",
-        "text": "Martin Fowler updates coding notes on verification, guardrails, and agentic engineering",
-        "url": "https://martinfowler.com/fragments/2026-04-29.html",
-        "source": "Ben's Bites",
-        "summary": "Martin Fowler published updated notes distinguishing between 'vibe coding' and real agentic engineering, including practical guidance on verification and guardrails for AI-assisted development."
-      },
-      {
-        "emoji": "😺",
-        "text": "AI unearthing bugs faster than industry can patch them",
-        "url": "",
-        "source": "The Neuron Daily",
-        "summary": "The UK's National Cyber Security Centre warned of a coming 'patch wave' as AI tools discover software flaws at unprecedented speed and scale. Anthropic's Claude Mythos found over 2,000 previously unknown vulnerabilities across major operating systems, with 99% still unpatched. The agency recommends prioritizing internet-facing systems, enabling automatic updates, and replacing legacy systems that cannot receive patches."
-      },
-      {
-        "emoji": "📰",
-        "text": "China blocked Meta's acquisition of AI agent startup Manus",
-        "url": "",
-        "source": "The Neuron Daily",
-        "summary": "China cited national security concerns over foreign acquisition of advanced technology in denying Meta's deal for the AI agent startup. The move reflects broader scrutiny of foreign tech acquisitions in the country."
-      },
-      {
-        "emoji": "📰",
-        "text": "OpenAI restricted GPT-5.5-Cyber after mocking Anthropic",
-        "url": "",
-        "source": "The Neuron Daily",
-        "summary": "OpenAI announced limits on GPT-5.5-Cyber access to vetted cyber defenders only, adopting the same restricted rollout strategy it had previously criticized Anthropic for using with Mythos. The move highlights the tension between capability and safety in releasing powerful security tools."
-      },
-      {
-        "emoji": "🍪",
-        "text": "Gemini can generate Google Docs, Sheets, PDFs from prompts",
-        "url": "",
-        "source": "The Neuron Daily",
-        "summary": "Gemini expanded its capabilities to directly create Google Docs, Sheets, Slides, Excel, CSV, PDF, and Markdown files without copy-pasting. Users can research and document simultaneously, convert receipts to spreadsheets, and create multiple formats at once, though edits currently duplicate rather than modify existing files."
-      },
-      {
-        "emoji": "🎓",
-        "text": "Meta tracking employee keystrokes across apps for AI training",
-        "url": "",
-        "source": "The Neuron Daily",
-        "summary": "Meta launched the Model Capability Initiative, which monitors employee keystrokes across hundreds of applications including Google, Slack, and LinkedIn to train internal AI systems. The program represents a significant employee monitoring effort tied to AI model development."
-      }
-    ],
-    "main_story": {
-      "title": "Harvard study shows older AI model surpasses emergency room physicians",
-      "body": "A Harvard study published in Science evaluated OpenAI's o1-preview model from 2024 against two attending physicians across 76 real emergency department cases. The AI achieved a 67.1% correct diagnosis rate at initial triage compared to 55.3% and 50.0% for the physicians. Notably, independent reviewers scoring the diagnoses could not distinguish between AI and human-generated assessments. In one remarkable case, the model identified a rare flesh-eating infection in a transplant patient approximately 12 to 24 hours before the treating physician detected it, using only raw electronic health record text.",
-      "why": "The findings carry significant implications as millions of patients already consult AI for health guidance daily. If a model several generations behind frontier models already outperforms attending physicians, the potential for advanced AI to improve clinical decision-making in formal healthcare settings becomes increasingly credible.",
-      "take": "While the results are compelling, deploying AI into actual emergency departments requires careful implementation, validation, and regulatory oversight. This research suggests AI could serve as a diagnostic aid alongside physicians rather than a replacement, potentially catching cases that might otherwise be missed."
-    },
-    "around_the_horn": [
-      {
-        "text": "Chinese court rules replacing worker with AI doesn't justify termination",
-        "url": "https://www.npr.org/2026/05/01/nx-s1-5807131/tech-worker-china-ai"
-      },
-      {
-        "text": "Sam Altman announces ChatGPT subscriptions work within OpenClaw agentic tool",
-        "url": "https://x.com/sama/status/2050357911915028689?s=20"
-      },
-      {
-        "text": "ElevenLabs launches ElevenMusic for AI song generation with creator payouts",
-        "url": "https://www.rundown.ai/tools/eleven-music"
-      }
-    ],
-    "sources_fetched": [
-      "www.therundown.ai",
-      "tldr.tech",
-      "www.bensbites.com",
-      "www.theneurondaily.com"
-    ]
-  }
+  ]
 }
