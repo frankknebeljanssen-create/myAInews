@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-05T23:43:49.342078+00:00",
+  "generated_at": "2026-05-06T02:03:51.938472+00:00",
   "items": [
+    {
+      "id": "beac6a64e473",
+      "url": "https://techcrunch.com/2026/05/05/sap-bets-1-16b-on-18-month-old-german-ai-lab-and-says-yes-to-nemoclaw/",
+      "headline": "SAP acquires German AI lab to compete on structured data, locks out rival agents",
+      "body": "SAP is betting $1.16 billion over four years on Prior Labs, an 18-month-old German startup focused on tabular foundation models—AI systems trained on the databases and tables where enterprise data actually lives. The acquisition, pending regulatory approval, marks a significant move by the software giant to shore up its AI capabilities at a moment when its stock has declined amid what observers call the \"SaaSpocalypse.\" Sources told Pathfounders that SAP paid well over half a billion dollars in upfront cash to the startup's three founders: Frank Hutter, Noah Hollmann, and Sauraj Gambhir.\n\n## The Tabular AI Bet\n\nPrior Labs' core technology is TabPFN, a model series designed for prediction tasks on structured data rather than text. The startup's open-source models have been downloaded over three million times since its February 2025 pre-seed round of $9.3 million. For SAP—whose core products in accounting, HR, and procurement rely on databases—this represents a more targeted approach than the language models that have dominated enterprise AI investment. SAP plans to operate Prior Labs as an independent research unit while integrating its models into SAP's AI Core and Business Data Cloud infrastructure.\n\nThe move signals that SAP has determined the greatest AI opportunity for enterprises isn't large language models but rather AI built for the structured data running business operations. This aligns with earlier moves by SAP, including backing Anthropic and developing its own relational pretrained transformer, SAP-RPT-1.\n\n## Gating the Agent Ecosystem\n\nSAP is simultaneously taking a restrictive stance on AI agents accessing its platform. The company has explicitly prohibited third-party agents—including OpenAI's OpenClaw—unless they meet \"SAP-endorsed architectures.\" The only authorized external agent toolkit is Nvidia's NemoClaw, built on Nvidia's Agent Toolkit, which SAP's own Joule Agents product supports.\n\nThis approach differs sharply from Salesforce, which is allowing customers to select any agent, including OpenClaw, through its new Headless 360 architecture. For enterprises considering SAP, the message is clear: agent extensibility will be tightly controlled. The strategy protects SAP's position but constrains customer choice during a period when agentic AI is becoming central to enterprise strategy. Organizations evaluating SAP should expect to work within the company's approved agent framework rather than integrate their preferred tools independently.",
+      "source": "TechCrunch AI",
+      "published": "2026-05-05T23:50:10+00:00",
+      "curated_at": "2026-05-06T02:01:33.129003+00:00",
+      "original_title": "SAP bets $1.16B on 18-month-old German AI lab and says yes to NemoClaw"
+    },
     {
       "id": "18557eb1abee",
       "url": "https://techcrunch.com/2026/05/05/altara-secures-7m-to-bridge-the-data-gap-thats-slowing-down-physical-sciences/",
@@ -290,16 +300,6 @@
       "published": "2026-05-05T10:00:00+00:00",
       "curated_at": "2026-05-05T17:16:02.795091+00:00",
       "original_title": "GPT-5.5 Instant: smarter, clearer, and more personalized"
-    },
-    {
-      "id": "76cbe027f6a8",
-      "url": "https://openai.com/index/gpt-5-5-instant-system-card",
-      "headline": "OpenAI Flags GPT-5.5 Instant as High-Risk for Dual-Use Threats",
-      "body": "OpenAI has designated GPT-5.5 Instant as a high-capability model in cybersecurity and biological/chemical preparedness categories, marking the first time an Instant-class model receives this classification. The company published a system card on May 5, 2026, outlining safety mitigations developed in response to the model's elevated risk profile in these domains.\n\n## Capability Shift in Faster Models\n\nGPT-5.5 Instant represents a capability threshold change within OpenAI's product line. The model uses the same safety mitigation framework as previous Instant variants, but the company has implemented additional safeguards appropriate to its high-capability designation. This distinction matters because Instant models are designed for lower-latency, cost-efficient inference—traditionally positioned for less sensitive use cases. GPT-5.5 Instant breaks that pattern by demonstrating sufficient capability in dual-use domains to warrant heightened scrutiny.\n\nThe system card does not detail specific incident triggers or performance benchmarks that prompted the high-capability classification. OpenAI references a companion blog post that presumably provides technical context, though that content is not included in the source material. The company notes that there is no GPT-5.4 Instant model, positioning GPT-5.5 Instant as the baseline for comparison against its predecessor, GPT-5.3 Instant.\n\n## Implications for Deployment and Governance\n\nThe designation signals that enterprises deploying GPT-5.5 Instant cannot treat it as a generic, lower-risk inference engine. Organizations using the model for sensitive applications—or considering it for such use—will need to account for the dual-use safeguards in their own access controls and usage policies. The cybersecurity and bio/chem classifications suggest the model performs sufficiently well at tasks like vulnerability discovery, code exploitation, or synthesis of dangerous materials that unrestricted access poses material risk.\n\nThis creates a practical compliance challenge: fast, cheap models are attractive for high-volume applications, but the safety overhead of a high-capability designation may require architectural changes to implementation or additional review layers before deployment. The key takeaway is that capability and inference speed no longer correlate with risk tier in OpenAI's product taxonomy—teams should verify the safety classification of any new model variant before assuming it fits existing deployment patterns.",
-      "source": "OpenAI Blog",
-      "published": "2026-05-05T10:00:00+00:00",
-      "curated_at": "2026-05-05T19:11:30.116236+00:00",
-      "original_title": "GPT-5.5 Instant System Card"
     }
   ]
 }
