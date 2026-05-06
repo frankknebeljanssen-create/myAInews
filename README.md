@@ -1,118 +1,74 @@
-# myAInews
+# Phase B — Daily auto-update for myAInews
 
-Automated AI news curator for the myAI app.
+These files belong in your **`frankknebeljanssen-create/myAInews`** GitHub repo (the one
+that hosts `news.json` / `neuron.json` on GitHub Pages), not in the myAI app folder.
 
-Runs hourly on GitHub Actions, fetches 13 AI feeds, filters and curates with Claude Haiku 4.5, publishes `news.json`. The myAI app reads that single JSON instead of fetching 20 RSS feeds itself.
+## Layout to copy
 
----
+Copy the contents of this directory into the **root of your `myAInews` repo**:
 
-## What's in this repo
-
-| File | Purpose |
-|------|---------|
-| `feeds.yml` | The 13 sources + curation config — edit this to add/remove feeds |
-| `curate.py` | Main curator script (Python) |
-| `requirements.txt` | Python deps |
-| `.github/workflows/curate.yml` | Hourly cron + manual trigger |
-| `dashboard.html` | Web dashboard (password-gated) |
-| `news.json` | Output, regenerated each run, served via GitHub Pages |
-| `run_log.json` | Last 200 runs (cost, kept/dropped counts) |
-
----
-
-## Setup — once
-
-1. **Upload all files** to this repo (drag & drop in browser):
-   - On the repo's Code tab, click **"Add file" → "Upload files"**
-   - Drag the entire contents of the unzipped folder, **including the `.github` folder**, into the upload area
-   - Commit message: `initial curator setup` → **Commit changes**
-   - GitHub will preserve the folder structure (`.github/workflows/curate.yml`)
-   - If `.github` doesn't upload via drag-drop, use **"Add file → Create new file"** with filename `.github/workflows/curate.yml` and paste the contents
-
-2. **Verify Pages is live**: visit `https://frankknebeljanssen-create.github.io/myAInews/news.json` → should return JSON (initially empty `items: []`)
-
-3. **Trigger the first run manually**:
-   - Go to the **Actions** tab of this repo
-   - Left sidebar → click **"Curate news"**
-   - Right side → **"Run workflow"** dropdown → green **"Run workflow"** button
-   - Wait 1–3 minutes; reload the page; the run appears with a green check (or red X if something broke)
-
-4. **Open the dashboard**: `https://frankknebeljanssen-create.github.io/myAInews/dashboard.html` → enter password → see curated items
-
-After this, the workflow runs every hour at :00 automatically. You can re-trigger manually anytime via the Actions tab.
-
----
-
-## Cost
-
-- Caching by URL: items already curated cost **$0** on subsequent runs
-- New items: ~$0.01 (filter) + ~$0.04 (400-word body) = **~$0.05 per kept item**
-- Typical day: 5–15 new AI items across 13 feeds → **~$0.25–$0.75/day**, **~$8–$15/month**
-- First run is the most expensive (~$1) because all 30 items are "new"
-- Hard cap: max 30 new items processed per run (in `feeds.yml` → `max_new_per_run`)
-
-Track actual cost in the dashboard's "Cost 24h / 30d" tiles.
-
----
-
-## Editing feeds
-
-Just edit `feeds.yml` directly in the GitHub web editor. The next run picks it up automatically — no redeploy needed.
-
-To add a feed:
-```yaml
-- name: My New Source
-  url: https://example.com/rss
-  weight: medium
+```
+myAInews/
+├── .github/
+│   └── workflows/
+│       └── daily-update.yml      ← new
+├── scripts/
+│   ├── requirements.txt          ← new
+│   ├── generate_news.py          ← new
+│   └── generate_neuron.py        ← new
+├── news.json                      (existing — will be overwritten daily)
+└── neuron.json                    (existing — will be overwritten daily)
 ```
 
-To prioritize specific topics (always keep, skip filter LLM call):
-```yaml
-- name: Some Source
-  url: ...
-  priority_keywords:
-    - "what happened in ai today"
-    - "weekly recap"
-```
+## What it does
 
----
+* **Schedule**: runs every day at **05:00 UTC** (= 06:00 CET / 07:00 CEST), shortly
+  before morning users open the app.
+* **`generate_news.py`** fetches RSS from 13 AI sources (Anthropic, OpenAI, Google AI,
+  DeepMind, MIT Tech Review, VentureBeat, TechCrunch, Import AI, The Neuron, Mistral,
+  Meta AI, Hugging Face, AI Index). Filters non-AI items by keyword, deduplicates by
+  URL, sorts newest-first, keeps top 30. Writes `news.json`.
+* **`generate_neuron.py`** fetches the latest issue of *The Neuron Daily* via its RSS
+  feed, parses the HTML (BeautifulSoup), extracts emoji + headline + bullets +
+  main_story (title / body / why / take). Promotes the previous day's bullets into a
+  `previous` block. Writes `neuron.json`.
+* **Commit step** auto-commits any changes back to the repo as user `myai-bot`.
+  GitHub Pages picks up the new files within ~60 seconds.
 
-## Troubleshooting
+## One-time setup
 
-**A feed shows errors in the run log.** RSS URLs change. Open the run output (Actions tab → click the run → curator step), find the failing feed, update its URL in `feeds.yml`. Bad feeds don't break the run — they're skipped and logged.
+1. Drop these files into the `myAInews` repo (mirror the structure above).
+2. `git add . && git commit -m "ci: add daily news+neuron auto-update" && git push`
+3. On GitHub: **Settings → Actions → General → Workflow permissions** must be
+   *"Read and write permissions"* (so the workflow can `git push` back). If it is
+   currently *"Read-only"*, switch to read-write.
+4. Test it once manually: **Actions → Daily news + neuron update → Run workflow**.
+   Verify that `news.json` and `neuron.json` got updated and the commit appears in
+   the repo's history.
 
-**The workflow fails with "permission denied" on push.** Repo → Settings → Actions → General → scroll to "Workflow permissions" → set to **"Read and write permissions"** → Save.
+## Customisation
 
-**Dashboard shows "no runs yet"** but Actions show successful runs. Hard-reload (Cmd+Shift+R) to bust the browser cache. Each successful run commits new `news.json` and `run_log.json`.
+* **Add / remove news sources** → edit the `SOURCES` list at the top of
+  `generate_news.py`.
+* **Change schedule** → edit the `cron` line in `daily-update.yml`. GitHub Actions
+  uses standard cron syntax (UTC).
+* **Change item caps** → `MAX_ITEMS_TOTAL` and `MAX_ITEMS_PER_FEED` constants in
+  `generate_news.py`.
+* **Twice a day** → add a second `cron` entry (e.g. one at 05:00, one at 17:00 UTC).
 
-**Costs higher than expected.** Check the dashboard's run table — if "new items" is consistently >20, lower `max_new_per_run` in `feeds.yml`, or tighten filter strictness in `curate.py`.
+## Failure modes
 
----
+* **Source RSS feed dies** → that source's entries vanish from news.json silently;
+  other sources still come through. No crash.
+* **Neuron RSS dies** → workflow logs the error but doesn't block (uses
+  `continue-on-error: true`). The existing `neuron.json` stays as-is.
+* **HTML structure of Neuron changes** → `generate_neuron.py` may extract garbage.
+  Add defensive checks if you see weird output.
 
-## App integration
+## Monitoring
 
-The myAI app reads:
-```
-https://frankknebeljanssen-create.github.io/myAInews/news.json
-```
-
-JSON shape:
-```json
-{
-  "generated_at": "2026-04-27T14:00:00Z",
-  "items": [
-    {
-      "id": "abc123def456",
-      "url": "https://...",
-      "headline": "...",
-      "body": "...400 words...",
-      "source": "Anthropic News",
-      "published": "2026-04-27T13:30:00Z",
-      "curated_at": "2026-04-27T14:00:23Z",
-      "original_title": "..."
-    }
-  ]
-}
-```
-
-User-side date filter (default 60 days) and pin logic (max 2 items in `localStorage`) live in the app, not here.
+* GitHub Actions has email notifications on workflow failure (configurable in
+  account settings). 
+* In the app: the staleness badge `⚠ Nd` shows when the Today-in-AI data is older
+  than 2 days. If you see that, the cron probably failed for ≥2 days — check the
+  Actions tab.
