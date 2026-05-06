@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-06T17:26:39.678150+00:00",
+  "generated_at": "2026-05-06T19:27:40.023250+00:00",
   "items": [
+    {
+      "id": "9e232da26dd9",
+      "url": "https://www.wired.com/story/anthropic-spacex-compute-deal-colossus/",
+      "headline": "Anthropic Taps SpaceX's AI Supercomputer to Ease Claude Capacity Crunch",
+      "body": "Anthropic has signed an agreement to draw computing resources from Colossus 1, a supercomputer operated by SpaceXAI in Memphis, Tennessee. The partnership addresses a pressing constraint facing the company: developers using Claude Code regularly hit rate limits and experience service disruptions. The deal will provide Anthropic access to more than 300 megawatts of capacity—roughly 220,000 Nvidia GPUs—intended to expand availability for Claude Pro and Claude Max subscribers.\n\n## Computing Power in Tight Supply\n\nColossus 1, built on a former manufacturing site in 2024, houses approximately 220,000 Nvidia GPUs spanning H100, H200, and the newer GB200 chips. SpaceXAI, formed when Elon Musk merged xAI and SpaceX earlier this year, completed construction in 122 days. The facility operates at scale comparable to the largest AI supercomputers globally, though local residents have filed complaints about emissions from the data center's gas turbines.\n\nThe timing aligns with SpaceXAI's anticipated initial public offering next month. Anthropic's partnership signals customer demand for additional data center capacity, potentially strengthening investor narratives around future infrastructure expansion. SpaceXAI's blog post notably mentioned Anthropic has \"expressed interest\" in developing \"orbital AI compute capacity\"—data centers positioned in space—a speculative venture that could justify substantial capital raising.\n\n## Why Capacity Matters Now\n\nThe AI industry faces a genuine bottleneck. According to Anthropic, developers average 20 hours per week running Claude Code. As more users adopt agentic applications and long-running computational tasks, existing infrastructure cannot keep pace. A recent report indicated that Anthropic and OpenAI together account for more than half of the $2 trillion in cloud backlogs at Amazon, Microsoft, and Google—illustrating how concentrated demand has become among a few providers.\n\nThis partnership reflects a broader shift in how AI companies secure compute. Anthropic has committed $200 billion to Google's cloud services and TPU chips while pledging over $100 billion to Amazon technologies over the next decade. By diversifying into SpaceXAI's infrastructure, Anthropic reduces reliance on any single cloud provider while securing dedicated capacity. For enterprise teams, the practical implication is clearer: expect improved Claude availability in the near term, though long-term pricing and access terms remain undisclosed.",
+      "source": "Wired AI",
+      "published": "2026-05-06T18:28:52+00:00",
+      "curated_at": "2026-05-06T19:25:31.697704+00:00",
+      "original_title": "Anthropic Gets in Bed With SpaceX as the AI Race Turns Weird"
+    },
     {
       "id": "5b4c238ff41c",
       "url": "https://techcrunch.com/2026/05/06/spacex-may-spend-up-to-119-billion-on-terafab-chip-factory-in-texas/",
@@ -290,16 +300,6 @@
       "published": "2026-05-05T20:34:11+00:00",
       "curated_at": "2026-05-05T20:55:08.558352+00:00",
       "original_title": "🔬Doing Vibe Physics — Alex Lupsasca, OpenAI"
-    },
-    {
-      "id": "8f1b3d6208c1",
-      "url": "https://techcrunch.com/2026/05/05/asml-ceo-christophe-fouquet-no-one-is-coming-for-us/",
-      "headline": "ASML Dismisses Startup Rivals as Chip Monopoly Widens",
-      "body": "ASML's new CEO Christophe Fouquet said this week that no competitor poses a meaningful threat to the Dutch company's stranglehold on advanced chip manufacturing equipment, even as startups backed by prominent venture capitalists claim they can break the monopoly. The remarks signal confidence bordering on indifference at a company whose machines are the irreplaceable bottleneck in global AI infrastructure—and underscore the structural moat protecting the world's most valuable European company.\n\n## The Bottleneck Deepens\n\nASML manufactures the only machines capable of extreme ultraviolet lithography (EUV), the process required to print the microscopic patterns on silicon wafers that define the most advanced semiconductors. Each machine costs $200 million to $400 million, takes months to assemble, and involves hundreds of suppliers. The company's latest high-NA EUV systems command $350 million or more per unit. With Microsoft, Meta, Amazon, and Google alone committing over $600 billion to AI infrastructure spending this year, chip demand has created a supply crisis expected to persist for three to five years, according to Fouquet. ASML itself acknowledges the world will lack sufficient chips for years ahead.\n\nFouquet addressed criticism from TSMC about high-NA pricing by noting that while the new machines cost more upfront, they reduce per-wafer manufacturing costs by 20 to 30 percent on advanced layers. He suggested complaints about price reflect market immaturity, pointing to identical press coverage of earlier EUV generations that eventually became standard.\n\n## Why Rivals Face Structural Barriers\n\nFouquet dismissed Substrate, a San Francisco startup valued over $1 billion and claiming to build a rival EUV machine, as operating in a realm of \"wanting to have it and having it.\" He emphasized that lithography requires not just producing an image but doing so at scale, low cost, at high speed, and with nanometer accuracy. ASML spent 20 years solving the physics of EUV light generation alone—a problem it could only tackle because 80 percent of the foundational technology already existed from prior products. Substrate and other competitors starting from scratch face \"enormous\" challenges, Fouquet argued.\n\nFor enterprises purchasing or consuming advanced chips, the outlook remains constrained. ASML's practical monopoly, buttressed by decades of accumulated expertise and supply chain integration, shows no signs of eroding in the medium term. Startups and foreign attempts at reverse-engineering represent longer-term risks but pose no immediate threat to pricing power or supply control. Plan chip purchases and AI infrastructure investments assuming ASML equipment scarcity will persist through 2028 or beyond.",
-      "source": "TechCrunch AI",
-      "published": "2026-05-05T20:06:40+00:00",
-      "curated_at": "2026-05-05T20:55:17.733687+00:00",
-      "original_title": "ASML CEO Christophe Fouquet on his company’s monopoly: no one is coming for us"
     }
   ]
 }
