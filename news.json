@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-06T11:00:54.578895+00:00",
+  "generated_at": "2026-05-06T12:30:16.846079+00:00",
   "items": [
+    {
+      "id": "f6e064821d2f",
+      "url": "https://www.theverge.com/tech/924931/microsoft-office-copilot-windows-reorg-shuffle",
+      "headline": "Microsoft restructures experiences org as Jha retires after 35 years",
+      "body": "Microsoft has dismantled the organizational structure that Rajesh Jha built over 35 years, distributing his responsibilities across four executives who will report directly to CEO Satya Nadella by June 30th. The reshuffle, triggered by Jha's retirement announcement in March, represents a significant realignment of how the company manages its most strategically important divisions: Office, Teams, Windows, Copilot, and Microsoft 365.\n\n## Four new power centers emerge\n\nRyan Roslansky, who leads LinkedIn and recently took on Office responsibilities, now heads a new Work Experiences Group that includes Teams. Charles Lamanna has risen to lead the Copilot, Agents, and Platform (CAP) team, absorbing critical Microsoft 365 and Dynamics 365 services, along with vault executives Jeff Teper and Kirk Koenigsbauer reporting to him. Pavan Davuluri continues leading Windows and Devices, now with the addition of Intentional Software—the 2017 acquisition housing Excel and Word co-creator Charles Simonyi. Perry Clarke, departing a decade-long tenure running Microsoft 365 Core, becomes CTO of Application Systems, focusing on architecture across Microsoft 365 and Copilot. These structural changes take effect this week, with Nadella reporting relationships beginning June 30th.\n\n## What the shift signals about Microsoft's AI strategy\n\nThe reorganization prioritizes AI integration over traditional productivity software silos. Lamanna's expanded CAP group consolidates the infrastructure needed to embed Copilot across enterprise services—a consolidation that suggests Microsoft views agents and AI models as inseparable from core productivity tools rather than bolt-on features. Roslansky's expanded remit over Teams and Office reflects Microsoft's bet that workplace communication and document collaboration are now the primary surfaces for AI interaction, not ancillary to it. The timing matters: this restructuring happens as Microsoft prepares a voluntary retirement program for long-serving employees, signaling potential headcount adjustments as the company optimizes for its AI-centric organizational model. For enterprises tracking Microsoft's strategic direction, this signals a sustained focus on embedding AI into workflow rather than shipping AI as separate products.",
+      "source": "The Verge AI",
+      "published": "2026-05-06T11:45:41+00:00",
+      "curated_at": "2026-05-06T12:27:22.339656+00:00",
+      "original_title": "Microsoft’s Office and LinkedIn chief now runs Teams in latest reshuffle"
+    },
     {
       "id": "deddf021f410",
       "url": "https://www.wired.com/story/apple-will-pay-dollar250-million-to-settle-lawsuit-over-siris-ai-features/",
@@ -290,16 +300,6 @@
       "published": "2026-05-05T13:42:18+00:00",
       "curated_at": "2026-05-05T15:36:15.963929+00:00",
       "original_title": "What an AI-designed car looks like"
-    },
-    {
-      "id": "31790b569e89",
-      "url": "https://techcrunch.com/2026/05/05/indias-first-genai-unicorn-shifts-to-cloud-services-as-ai-model-ambitions-face-reality/",
-      "headline": "India's AI Unicorn Pivots to Cloud Infrastructure After Model Ambitions Stall",
-      "body": "Krutrim, which secured $1 billion unicorn status in January 2024 as India's leading GenAI startup, is abandoning its core mission to build competitive large language models in favor of cloud services. The shift follows a late-2025 business overhaul that included staff cuts exceeding 200 roles, capital reallocation, and the pause of chip design efforts. The move signals that the economics of building foundational AI systems—even with venture backing and ecosystem support—remain prohibitively difficult outside the U.S. incumbent players.\n\n## From Model Builder to Infrastructure Provider\n\nKrutrim, founded by Bhavish Aggarwal (who also leads Ola and Ola Electric), released its Krutrim-2 base model over a year ago but has since gone quiet on product development. The startup did not participate in India's AI Impact Summit in New Delhi, where competitors like Sarvam showcased new open-source models and partnerships. In contrast, Krutrim now claims over 25 enterprise customers across telecom, financial services, and healthcare, with most of its GPU compute capacity already allocated to external workloads. The company reported ₹3 billion ($31.5 million) in revenue for fiscal year 2026, a threefold jump from the prior year, though earlier reports indicated roughly 90% of FY25 revenue came from group companies rather than external customers.\n\nThe startup also pulled its Kruti AI assistant app from app stores in April, cementing the retreat from consumer-facing applications. Krutrim declined to clarify the breakdown of current revenue between internal and external sources or provide specifics on its enterprise customer base.\n\n## Infrastructure as Near-Term Reality Check\n\nThe pivot reflects a widening gap between AI ambition and commercial viability in India. While companies like OpenAI and Anthropic can absorb massive training losses through successive funding rounds, Krutrim's path to scale proved constrained by capital availability, talent concentration in the U.S., and the computational costs of competing with established models. Cloud services—renting GPU capacity and providing managed inference—require lower R&D investment and generate immediate revenue without requiring breakthrough model performance.\n\nSanchit Vir Gogia, chief analyst at Greyhound Research, noted the move is \"commercially sensible\" but cautioned that Krutrim's profitability claims need verification: \"The standard of proof must rise with the claim.\" For enterprise AI buyers, this underscores a practical reality: India's AI infrastructure may deliver value faster than homegrown foundation models, even as long-term ambitions for competitive model development persist. The question for buyers evaluating vendors is whether Krutrim's cloud services can compete on cost, reliability, and customization—metrics where infrastructure plays have traction regardless of the company's earlier unicorn valuation.",
-      "source": "TechCrunch AI",
-      "published": "2026-05-05T13:18:50+00:00",
-      "curated_at": "2026-05-05T15:36:25.670557+00:00",
-      "original_title": "India’s first GenAI unicorn shifts to cloud services as AI model ambitions face reality"
     }
   ]
 }
