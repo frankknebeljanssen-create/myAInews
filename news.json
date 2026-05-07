@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-07T05:56:29.766892+00:00",
+  "generated_at": "2026-05-07T08:21:18.050730+00:00",
   "items": [
+    {
+      "id": "8422ffc1b238",
+      "url": "https://www.latent.space/p/ainews-anthropic-spacexais-300mw5byr",
+      "headline": "Anthropic Gains Full Access to SpaceX's Colossus Cluster in $5B Annual Deal",
+      "body": "Anthropic announced a compute partnership with SpaceX that grants it access to Colossus 1, xAI's flagship inference cluster, in what industry estimates place at roughly $5 billion annually. The arrangement marks a significant infrastructure shift for Anthropic, which has faced unexpected compute constraints despite rapid scaling. Anthropic CTO Tom Brown indicated Claude inference would begin ramping on Colossus within days of the announcement at the company's developer event on May 7, 2026.\n\n## The Capacity Expansion\n\nThe deal translates immediately into higher usage limits across Claude's product tiers. Anthropic doubled Claude Code's 5-hour rate limits for Pro, Max, Team, and Enterprise plans. It also removed peak-hours limit reductions on Claude Code for Pro and Max users, and substantially increased Opus API rate limits. Weekly limits remain unchanged for now, though product lead Amol Avasare noted that only a small percentage of users currently hit weekly ceilings, while a much larger percentage encounter 5-hour limits. The company signaled further adjustments as new compute capacity lands.\n\nThe infrastructure move underscores how quickly Anthropic's usage has grown. Discourse around the announcement suggested compute bottlenecks were more severe than many observers had assumed, driven partly by unexpected demand patterns.\n\n## Why This Matters\n\nAccess to dedicated inference capacity addresses a real constraint for Claude's competitive position. Compute availability directly affects response latency, pricing flexibility, and the ability to support new product features. For enterprises evaluating Claude versus competitors, immediate capacity gains translate to lower-latency inferences and higher rate limits for mission-critical workloads.\n\nThe partnership also signals a shift in how AI infrastructure is allocated. With xAI functioning as a \"neocloud\" provider and Anthropic taking operational control of Colossus 1's inference layer, the arrangement resembles traditional cloud vendor relationships more than peer collaboration. For practitioners, this means Claude's capacity ceiling is now tied to SpaceX's hardware deployment cadence rather than Anthropic's internal buildout alone.\n\nThe timing—announced as Elon Musk's OpenAI lawsuit enters trial—adds a strategic dimension, though the partnership's technical substance is independent of litigation. The practical takeaway: enterprises should expect Claude's throughput and cost-per-inference to improve measurably over the next quarter as the Colossus integration completes.",
+      "source": "Latent Space",
+      "published": "2026-05-07T05:57:14+00:00",
+      "curated_at": "2026-05-07T08:18:28.835418+00:00",
+      "original_title": "[AINews] Anthropic-SpaceXai's 300MW/$5B/yr deal for Colossus I, ARR growth is 8000% annualized"
+    },
     {
       "id": "7be8dfa76af0",
       "url": "https://techcrunch.com/2026/05/06/five-architects-of-the-ai-economy-explain-where-the-wheels-are-coming-off/",
@@ -290,16 +300,6 @@
       "published": "2026-05-06T06:47:12+00:00",
       "curated_at": "2026-05-06T08:10:06.775599+00:00",
       "original_title": "Peter Sarlin’s QuTwo reaches $380M valuation in angel round"
-    },
-    {
-      "id": "7ae4ba12b486",
-      "url": "https://techcrunch.com/2026/05/05/marc-lore-says-that-ai-will-soon-enable-anyone-open-a-restaurant/",
-      "headline": "Wonder's AI-Generated Restaurants Test Ghost Kitchen 2.0",
-      "body": "Marc Lore is expanding his vertically integrated food platform Wonder with an AI system that generates restaurant concepts, menus, pricing, and branding in under a minute. Wonder Create, announced earlier this year and detailed this week at the Wall Street Journal's Future of Everything conference, allows anyone—from food entrepreneurs to social media influencers—to launch a restaurant brand across Wonder's network of automated kitchen locations without designing operations from scratch. The move represents a significant bet that AI can overcome the structural failures that plagued ghost kitchens in the early 2020s.\n\n## The Infrastructure Play\n\nWonder operates 120 \"programmable cooking platforms\" across shared kitchen locations, with plans to expand to 400 by next year. These kitchens house up to 12 staff members alongside robotic arms, conveyor systems, and recently acquired bowl-making automation from Spice Robotics. The company maintains a 700-ingredient library and plans to deploy an \"infinite sauce machine\" capable of producing roughly 80 percent of internet recipes' sauces. Each 2,500-square-foot location can simultaneously operate multiple restaurant brands under different menus and pricing structures. Lore projects current throughput of 7 million meals annually per kitchen could reach 20 million with additional robotics, while eventually hosting 1,000 distinct restaurant concepts from a single location.\n\nWonder Create functions as a prompt-based interface where users describe their desired restaurant concept and receive AI-generated name, branding, descriptions, imagery, pricing, nutritional information, and recipes. Users can refine outputs before launching across all available Wonder locations. The company has paired this with acquisitions of Grubhub (for 250 million annual deliveries), Blue Apron (meal kit infrastructure), and established brands like Blue Ribbon Fried Chicken, which Lore acquired for $6.5 million in February.\n\n## Where Ghost Kitchens Failed\n\nEarly ghost kitchen operators like MrBeast Burger faced widespread complaints about inconsistent food quality when relying on dozens of contracted kitchens and staff. Wonder's centralized, increasingly automated model is explicitly designed to solve consistency through standardization and control. However, Lore acknowledged material constraints: the system cannot handle operations requiring hand-stretching pizza dough or rolling sushi, limiting focus to burgers, chicken, bowls, and fried items. The fundamental question remains whether enough potential restaurateurs actually want to experiment with low-risk virtual brands, or whether the 2020s ghost kitchen failures reflected deeper demand problems rather than operational ones.",
-      "source": "TechCrunch AI",
-      "published": "2026-05-06T06:34:32+00:00",
-      "curated_at": "2026-05-06T08:10:15.256613+00:00",
-      "original_title": "Marc Lore says that AI will soon enable anyone open a restaurant"
     }
   ]
 }
