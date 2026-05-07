@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-07T08:21:18.050730+00:00",
+  "generated_at": "2026-05-07T11:05:21.013171+00:00",
   "items": [
+    {
+      "id": "e41b9b9c2133",
+      "url": "https://openai.com/index/parloa",
+      "headline": "Parloa moves voice agents from rule-based scripts to LLM-driven production systems",
+      "body": "Parloa, a Berlin-based startup, has shifted its approach to enterprise voice customer service from rigid rule-based systems to a platform built on large language models. The company's AI Agent Management Platform (AMP) lets non-technical teams design, simulate, and deploy voice agents that handle real production conversations—password resets, policy questions, account changes—at scale. The platform runs on OpenAI models including GPT-5.4 and emphasizes production reliability over benchmark performance.\n\n## Design without code\n\nAMP allows subject matter experts to define agent behavior in natural language rather than through coded intent trees or rigid decision flows. Teams specify an agent's role, instructions, tools, and boundaries; the platform then uses that configuration to prompt the model and control behavior in live conversations. Before deployment, agents are tested through simulation, where one LLM acts as a customer and another runs the configured agent. Teams inspect these interactions, test against realistic scenarios, and iterate. After each live conversation, OpenAI-powered workflows summarize interactions, classify intent, and evaluate performance against defined rules.\n\nAs agent complexity grew, Parloa introduced modular sub-agents for distinct tasks like authentication or booking changes, reducing the side effects that plagued monolithic prompts. The platform balances conversational flexibility with deterministic controls—structured API chains and event-based logic ensure critical steps execute in the right order where reliability matters most.\n\n## Evaluation-first model selection\n\nParloa's core distinction is its refusal to rely on abstract benchmarks. When new models are released, the company runs its entire production agent fleet through simulation and evaluation pipelines, measuring instruction-following reliability, API-calling consistency, latency, and real-world performance. Only models demonstrating clear gains across actual use cases are deployed to production.\n\nThis approach reflects an enterprise reality: once a system works in production, customers keep it stable. Migration costs are high, so switching models requires demonstrable improvement. The result is predictable behavior at scale. In one documented case, a global travel company reduced human agent requests by 80% after deploying a Parloa system. Across millions of interactions, most conversations resolve without escalation.\n\nFor AI practitioners, the signal is clear: simulation and evaluation against production scenarios, not theoretical benchmarks, determines readiness. Enterprise deployments require this rigor. The models themselves matter only if they survive contact with real customers.",
+      "source": "OpenAI Blog",
+      "published": "2026-05-07T11:00:00+00:00",
+      "curated_at": "2026-05-07T11:02:33.611018+00:00",
+      "original_title": "Parloa builds service agents customers want to talk to"
+    },
     {
       "id": "8422ffc1b238",
       "url": "https://www.latent.space/p/ainews-anthropic-spacexais-300mw5byr",
@@ -290,16 +300,6 @@
       "published": "2026-05-06T10:13:09+00:00",
       "curated_at": "2026-05-06T10:58:32.953399+00:00",
       "original_title": "Chrome’s AI features may be hogging 4GB of your computer storage"
-    },
-    {
-      "id": "604a9b96d7c3",
-      "url": "https://techcrunch.com/2026/05/05/peter-sarlins-qutwo-reaches-380m-valuation-in-angel-round/",
-      "headline": "QuTwo Raises $29M Angel Round at $380M Valuation",
-      "body": "QuTwo, a Finnish AI lab founded by Peter Sarlin (former CEO of Silo AI), has closed a €25 million ($29 million) angel round that values the company at €325 million ($380 million). The funding marks a deliberate alternative to the mega-rounds dominating the AI funding landscape, with Sarlin choosing a focused group of angel investors over venture capital. The move reflects both confidence in the company's trajectory and a strategic bet on European AI sovereignty at a moment when geopolitical dynamics are shifting capital allocation.\n\n## The Product and Market Position\n\nQuTwo builds an orchestration layer called QuTwo OS that routes computational tasks across classical, quantum, and hybrid architectures. Despite its name's quantum nod, the company positions itself as firmly AI-focused, betting that most enterprise problems are best solved through \"quantum-inspired\" computing—using classical hardware to simulate quantum behavior with greater reliability. Sarlin has been explicit: quantum is simply a new compute type, not the company's core mission.\n\nThe enterprise wedge is already generating traction. QuTwo has secured $23 million in committed revenue through design partnerships, including work with retail giant Zalando on AI assistants. The company recently expanded into Sweden and has hired roughly 50 quantum and AI scientists, including two repeat founders: Kaj-Mikael Björk (Sarlin's former Silo cofounder) and Kuan Yen Tan (cofounder of Finnish quantum startup IQM, which is preparing an IPO).\n\n## Strategy Over Scale\n\nSarlin's decision to pursue an angel round rather than venture funding signals a deliberate philosophy: long-term R&D ambition over near-term growth pressure. He explicitly declined larger checks from VCs and strategics, instead assembling a group of angels including Yuri Milner, Xavier Niel, Nico Rosberg, and founders from companies like Skype, Wolt, and Supercell. These investors double as networks—potential doors into European enterprises across automotive, life sciences, and gaming sectors.\n\nThis contrasts with Sarlin's previous exit: when Silo AI was acquired by AMD for $665 million in 2024, he had rejected offers to pour capital into making it \"Europe's OpenAI.\" QuTwo reflects the same conviction—building for a five-to-ten-year horizon in quantum and next-generation AI, rather than chasing immediate scale. For enterprise buyers, this suggests a vendor willing to invest in ambitious R&D partnerships rather than optimizing for quarterly metrics. The concrete take-away: in a market saturated with venture-backed speed plays, QuTwo is positioning itself as infrastructure for Europe's long-term competitive play in AI and quantum.",
-      "source": "TechCrunch AI",
-      "published": "2026-05-06T06:47:12+00:00",
-      "curated_at": "2026-05-06T08:10:06.775599+00:00",
-      "original_title": "Peter Sarlin’s QuTwo reaches $380M valuation in angel round"
     }
   ]
 }
