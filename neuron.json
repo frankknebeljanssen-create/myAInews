@@ -1,167 +1,184 @@
 {
-  "date": "2026-05-07",
-  "issue_url": "https://www.therundown.ai/p/anthropic-spacex-ai-become-unlikely-compute-partners",
-  "emoji": "🤝",
-  "headline": "Anthropic, SpaceX(AI) become unlikely compute partners",
-  "subtitle": "Anthropic leases SpaceX's Colossus 1 cluster · Mira Murati testifies against Altman · DeepMind invests in EVE Online",
-  "intro": "In a stunning reversal months after calling Anthropic \"Misanthropic,\" Elon Musk is renting them his entire Colossus 1 supercomputer cluster. The deal simultaneously solves Claude's compute constraints, strengthens Musk's rival against OpenAI, and signals a new business opportunity for SpaceX's AI division.",
+  "date": "2026-05-08",
+  "issue_url": "https://www.therundown.ai/p/openai-closes-reasoning-gap-in-voice-agents",
+  "emoji": "🗣️",
+  "headline": "OpenAI closes reasoning gap in voice agents",
+  "subtitle": "GPT-Realtime models boost voice AI reasoning · Google integrates Fitbit into health platform · Test multiple AI models side-by-side",
+  "intro": "OpenAI's new voice models bring significant reasoning upgrades to AI agents, enabling them to think while speaking and handle multiple tasks simultaneously. Meanwhile, Google is consolidating health data into a unified platform, and practical tools emerge for comparing AI model performance.",
   "bullets": [
     {
-      "emoji": "🔌",
-      "text": "Anthropic leases SpaceX's 220K-GPU Colossus 1 cluster",
-      "url": "https://www.anthropic.com/news/higher-limits-spacex",
+      "emoji": "🗣️",
+      "text": "OpenAI launches GPT-Realtime-2 with advanced reasoning for voice agents",
+      "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
       "source": "The Rundown AI",
-      "summary": "Anthropic signed a deal to lease SpaceX's Colossus 1 supercomputer in Memphis, which features over 220,000 Nvidia GPUs coming online within weeks. The partnership enables Anthropic to double Claude Code's usage caps and remove peak-hour restrictions across paid tiers. Musk has signaled SpaceX will rent compute to AI companies taking responsible steps toward safe AI development."
+      "summary": "OpenAI released three voice models that bring GPT-5-level reasoning to live speech, enabling simultaneous tool use and thinking while conversing. Performance improved 15 points on Big Bench Audio benchmarks, and early adopters like Zillow and Priceline are already building applications with the technology."
     },
     {
-      "emoji": "🏛️",
-      "text": "Mira Murati accuses Sam Altman of lying in trial",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/925338/openai-musk-v-altman-mira-murati",
+      "emoji": "⌚️",
+      "text": "Google consolidates Fitbit into unified health platform with AI coach",
+      "url": "https://blog.google/products-and-platforms/products/google-health/google-health-app/",
       "source": "The Rundown AI",
-      "summary": "Ex-OpenAI CTO Mira Murati testified in Musk's lawsuit against OpenAI, claiming CEO Sam Altman lied about a model's safety review and created chaos by giving conflicting directions to different executives. She also described how Altman's actions undermined her authority and put the company at risk of collapse during the 2023 board crisis."
+      "summary": "Google integrated Fitbit into a new Health platform powered by Gemini, offering AI-driven workout routines and medical record interpretation. The company introduced a $99 screenless Fitbit tracker and plans to expand AI coach access to third-party wearables like Apple Watch and Garmin."
     },
     {
-      "emoji": "🛸",
-      "text": "DeepMind invests in Fenris, uses EVE Online for AI research",
-      "url": "https://www.ccpgames.com/news/2026/studio-behind-eve-online-goes-independent-rebrands-as-fenris-creations-enters-research-partnership-with-google-deepmind",
+      "emoji": "✏️",
+      "text": "OpenRouter Fusion enables side-by-side testing of multiple AI models",
+      "url": "https://openrouter.ai/labs/fusion",
       "source": "The Rundown AI",
-      "summary": "Google DeepMind acquired a minority stake in Fenris Creations, the studio behind EVE Online, to use the 23-year-old space MMO as a sandbox for AI research. The game's complex player-driven economy and long-timeline decision-making provide ideal conditions for testing how AI agents learn, retain memory, and strategize in unpredictable environments."
+      "summary": "OpenRouter Fusion lets users compare outputs from different AI models using identical prompts simultaneously. The tool helps identify which model performs best for specific tasks while tracking costs and model performance metrics."
     },
     {
-      "emoji": "🧠",
-      "text": "Anthropic adds dreaming and orchestration to Managed Agents",
-      "url": "https://claude.com/blog/new-in-claude-managed-agents",
+      "emoji": "🔬",
+      "text": "Anthropic Institute publishes research agenda on self-improving AI systems",
+      "url": "https://www.anthropic.com/research/anthropic-institute-agenda",
       "source": "The Rundown AI",
-      "summary": "Anthropic launched new features for Claude Managed Agents, including a dreaming capability that lets agents review past sessions, outcomes-based grading for work quality, and multi-agent orchestration for splitting complex tasks. These additions help agents learn from history and coordinate across multiple specialized systems."
+      "summary": "Anthropic's research arm released a formal agenda addressing security, governance, and economic implications of self-improving AI. The institute proposes Cold War-style protocols between labs and governments plus fire drills for handling capability surges."
     },
     {
-      "emoji": "⚡",
-      "text": "Subquadratic launches SubQ with 12M token context window",
-      "url": "https://subq.ai/how-ssa-makes-long-context-practical",
+      "emoji": "🎙️",
+      "text": "Spotify launches Personal Podcasts feature powered by AI agents",
+      "url": "https://newsroom.spotify.com/2026-05-07/personal-podcasts-launch/",
       "source": "The Rundown AI",
-      "summary": "Subquadratic debuted SubQ, a model featuring a 12-million-token context window and claiming a 52x speed boost on long-context tasks compared to competitors at a fraction of the cost. The breakthrough addresses practical challenges in handling extremely long documents and sequences efficiently."
+      "summary": "Spotify introduced a tool that transforms briefings and class notes into personalized podcasts within users' libraries. The feature leverages AI agents to convert written content into audio format automatically."
     },
     {
-      "emoji": "🤖",
-      "text": "Claude adds self-improving agent capabilities",
-      "url": "https://claude.com/blog/new-in-claude-managed-agents?utm_source=tldrai",
-      "source": "TLDR AI",
-      "summary": "Claude now supports self-improving agents that can autonomously refine their behavior and capabilities. This advancement enables more sophisticated autonomous workflows and represents a significant step toward more independent AI systems."
-    },
-    {
-      "emoji": "🚀",
-      "text": "Anthropic announces SpaceX compute partnership",
-      "url": "https://www.anthropic.com/news/higher-limits-spacex?utm_source=tldrai",
-      "source": "TLDR AI",
-      "summary": "Anthropic has established a compute deal with SpaceX alongside raising usage limits for Claude. The partnership provides significant computational infrastructure to support scaling of Anthropic's AI models and services."
+      "emoji": "🛡️",
+      "text": "OpenAI introduces Trusted Contact feature for ChatGPT safety alerts",
+      "url": "https://openai.com/index/introducing-trusted-contact-in-chatgpt/",
+      "source": "The Rundown AI",
+      "summary": "ChatGPT now includes an optional Trusted Contact feature that notifies designated contacts if the system detects potential self-harm risks. This opt-in safety measure provides an additional layer of support for vulnerable users."
     },
     {
       "emoji": "💻",
-      "text": "ProgramBench launches AI programming benchmark",
-      "url": "",
+      "text": "OpenAI's Codex integrates directly into Chrome on macOS and Windows",
+      "url": "https://x.com/OpenAI/status/2052480800004956323?utm_source=tldrai",
       "source": "TLDR AI",
-      "summary": "A new benchmark for evaluating AI performance on programming tasks has been released. ProgramBench provides standardized metrics to assess how well language models handle real-world coding challenges."
+      "summary": "Codex functionality is now available as a native Chrome extension, allowing developers to write and test code directly within the browser without leaving their editing environment."
     },
     {
-      "emoji": "💰",
-      "text": "DeepSeek attracts $50 billion investment from China",
-      "url": "https://www.wsj.com/tech/ai/china-to-invest-in-deepseek-at-50-billion-valuation-045041d0?st=HGz7fS&reflink=desktopwebshare_permalink&utm_source=tldrai",
+      "emoji": "🔊",
+      "text": "OpenAI releases new realtime audio models for API users",
+      "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/?utm_source=tldrai",
       "source": "TLDR AI",
-      "summary": "China is investing significantly in DeepSeek, valuing the AI company at $50 billion. This move signals strong government backing for domestic AI development and competitive positioning in the global AI race."
+      "summary": "The new audio models enable low-latency voice interactions, expanding OpenAI's capabilities beyond text-based applications into conversational AI scenarios."
     },
     {
-      "emoji": "⚡",
-      "text": "TokenSpeed accelerates AI inference for agents",
-      "url": "https://lightseek.org/blog/lightseek-tokenspeed.html?utm_source=tldrai",
+      "emoji": "⚙️",
+      "text": "GitHub improves token efficiency in agentic workflow systems",
+      "url": "https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/?utm_source=tldrai",
       "source": "TLDR AI",
-      "summary": "A new inference engine called TokenSpeed optimizes AI model execution for agentic workloads. The technology aims to deliver high-speed token generation critical for responsive autonomous agent systems."
+      "summary": "GitHub shares optimization techniques that reduce token consumption in AI agent workflows, lowering costs and improving response times for developers using Copilot."
     },
     {
-      "emoji": "📊",
-      "text": "Harvey launches legal AI agent benchmark",
-      "url": "https://www.harvey.ai/blog/introducing-harveys-legal-agent-benchmark?utm_source=tldrai",
+      "emoji": "🇨🇳",
+      "text": "Researchers document observations from inside China's top AI labs",
+      "url": "https://www.interconnects.ai/p/notes-from-inside-chinas-ai-labs?utm_source=tldrai",
       "source": "TLDR AI",
-      "summary": "Harvey has introduced a specialized benchmark for evaluating legal AI agents. The metric helps assess how well AI systems perform on domain-specific legal tasks and reasoning."
-    },
-    {
-      "emoji": "🤖",
-      "text": "Free ChatGPT users upgrade to GPT-5.5 Instant model",
-      "url": "https://openai.com/index/gpt-5-5-instant/",
-      "source": "Ben's Bites",
-      "summary": "OpenAI replaced GPT-5.3 Instant with GPT-5.5 Instant for free users, featuring significantly better vision capabilities, PDF understanding, web search integration, and memory handling. The new model reduces hallucinations by 52.5% on high-stakes prompts and generates shorter, emoji-light responses."
-    },
-    {
-      "emoji": "🚀",
-      "text": "Anthropic doubles Claude token limits with SpaceX deal",
-      "url": "https://www.anthropic.com/news/higher-limits-spacex",
-      "source": "Ben's Bites",
-      "summary": "Anthropic signed an agreement to use all of SpaceX's Colossus 1 data center, enabling twice as much Claude usage across all paid plans. This infrastructure move significantly expands capacity for users running complex agentic workflows."
-    },
-    {
-      "emoji": "📊",
-      "text": "ChatGPT now integrates directly into Excel and Sheets",
-      "url": "https://chatgpt.com/apps/spreadsheets/",
-      "source": "Ben's Bites",
-      "summary": "ChatGPT extended its functionality to spreadsheet applications, allowing users to build sheets, analyze tabs, write formulas, and make approved edits directly within Excel and Google Sheets without leaving the interface."
+      "summary": "A detailed analysis provides rare insights into the research directions, infrastructure approaches, and organizational structures of leading Chinese AI laboratories."
     },
     {
       "emoji": "🧠",
-      "text": "PostHog builds Codex-like editor for self-driving product loop",
-      "url": "https://posthog.com/code",
-      "source": "Ben's Bites",
-      "summary": "PostHog is creating a Codex-like application that uses product data as primary signals—usage patterns, observed bugs, and log errors—to automatically generate and improve code. The approach treats product understanding as the foundation for agentic development."
+      "text": "Anthropic publishes research on natural language autoencoders",
+      "url": "https://www.anthropic.com/research/natural-language-autoencoders?utm_source=tldrai",
+      "source": "TLDR AI",
+      "summary": "The research explores how autoencoders can be applied to language models, potentially improving model interpretability and performance through better representation learning."
     },
     {
-      "emoji": "🎯",
-      "text": "Anthropic releases 10 finance agent templates for enterprises",
-      "url": "https://www.anthropic.com/news/finance-agents?cam=claude",
-      "source": "Ben's Bites",
-      "summary": "Anthropic launched pre-built finance agent templates covering pitchbooks, KYC screening, valuation reviews, and month-end close processes. These run as Claude Cowork plugins or Managed Agent cookbooks, enabling rapid deployment for financial teams."
+      "emoji": "🎮",
+      "text": "Google DeepMind partners with EVE Online for AI testing",
+      "url": "https://arstechnica.com/gaming/2026/05/google-deepmind-partners-with-eve-online-for-ai-model-testing/?utm_source=tldrai",
+      "source": "TLDR AI",
+      "summary": "The partnership uses EVE Online's complex multiplayer environment as a testbed for developing and evaluating advanced AI agents in realistic decision-making scenarios."
     },
     {
-      "emoji": "⚡",
-      "text": "Anthropic partners with SpaceX for 220K+ GPUs and 300MW Memphis data center",
-      "url": "",
-      "source": "The Neuron Daily",
-      "summary": "Anthropic signed a partnership with SpaceX to gain full access to Colossus 1, a 300+ MW data center in Memphis (formerly xAI's campus). The deal brings 220,000+ NVIDIA GPUs online within the month, dramatically expanding Anthropic's compute capacity."
+      "emoji": "💬",
+      "text": "ChatGPT free tier upgraded to GPT-5.5 Instant model",
+      "url": "https://openai.com/index/gpt-5-5-instant/",
+      "source": "Ben's Bites",
+      "summary": "Free ChatGPT users now access GPT-5.5 Instant, featuring improved vision capabilities, better PDF understanding, and smarter web search. The model produces shorter responses with fewer emojis and hallucinates 52.5% less on high-stakes prompts compared to its predecessor."
     },
     {
       "emoji": "📈",
-      "text": "Claude Code rate limits doubled; peak-hour restrictions lifted for Pro/Max",
-      "url": "",
-      "source": "The Neuron Daily",
-      "summary": "Five-hour rate limits for Claude Code doubled across Pro, Max, Team, and Enterprise plans. Peak-hours limit reductions were eliminated for Pro and Max users, addressing the performance bottlenecks that plagued the platform over the past six weeks."
+      "text": "Claude usage limits doubled via SpaceX Colossus partnership",
+      "url": "https://www.anthropic.com/news/higher-limits-spacex",
+      "source": "Ben's Bites",
+      "summary": "Anthropic doubled token limits across all Claude paid plans by signing a deal to use SpaceX's Colossus 1 data center. This expansion enables more substantial agentic workloads and higher-throughput applications."
     },
     {
-      "emoji": "🌩️",
-      "text": "Claude briefly went down during keynote despite announcing compute fixes",
+      "emoji": "🛠️",
+      "text": "ChatGPT now integrates with Excel and Google Sheets",
+      "url": "https://chatgpt.com/apps/spreadsheets/",
+      "source": "Ben's Bites",
+      "summary": "ChatGPT can now build sheets, analyze tabs, write formulas and make approved edits directly within Excel and Google Sheets. This integration streamlines data work without leaving the spreadsheet environment."
+    },
+    {
+      "emoji": "🤖",
+      "text": "Claude Managed Agents adds dreaming and multi-agent orchestration",
+      "url": "https://claude.com/blog/new-in-claude-managed-agents",
+      "source": "Ben's Bites",
+      "summary": "New Claude Managed Agents features include Dreaming to review and save memories from past chats, Outcomes for defining and grading success criteria, and multi-agent orchestration allowing lead agents to delegate to specialists."
+    },
+    {
+      "emoji": "🎯",
+      "text": "PostHog building Codex-like code editor with product data signals",
+      "url": "https://posthog.com/code",
+      "source": "Ben's Bites",
+      "summary": "PostHog is developing a code editor using product usage patterns, bugs and errors as primary signals for building and coding. This represents a shift toward self-driving product loops that leverage telemetry data."
+    },
+    {
+      "emoji": "🧠",
+      "text": "Anthropic releases 10 finance agent templates for enterprises",
+      "url": "https://www.anthropic.com/news/finance-agents?cam=claude",
+      "source": "Ben's Bites",
+      "summary": "Anthropic launched ten finance agent templates covering pitchbooks, KYC screening, valuation reviews and month-end close processes. These templates run as Claude plugins or Managed Agents cookbooks for financial workflows."
+    },
+    {
+      "emoji": "📱",
+      "text": "Apple's camera AirPods reach late-stage development testing",
       "url": "",
       "source": "The Neuron Daily",
-      "summary": "During Code with Claude SF, Claude experienced downtime for thousands of users around 11:16 AM ET, ironically coinciding with keynote announcements about massive capacity additions. The service restored within the hour."
+      "summary": "Apple's unreleased AirPods with cameras (codename 'Glow') have entered late-stage testing. The cameras are designed to feed Apple Intelligence visual context from the wearer's environment, enabling richer contextual AI assistance."
+    },
+    {
+      "emoji": "🌍",
+      "text": "Cloudflare cuts 1,100 jobs in AI-first restructuring push",
+      "url": "",
+      "source": "The Neuron Daily",
+      "summary": "CEO Matthew Prince announced the restructuring as AI-driven. Revenue per employee has climbed roughly 600% over three years on productivity gains from AI adoption, showing the efficiency gains motivating the job cuts."
+    },
+    {
+      "emoji": "🔬",
+      "text": "DeepMind's AlphaEvolve reports 23 verified scientific discoveries",
+      "url": "",
+      "source": "The Neuron Daily",
+      "summary": "Google DeepMind's AlphaEvolve scaled to real-world impact with 23 verified discoveries across chemistry, materials, and applied mathematics in the past quarter, demonstrating concrete scientific contributions from AI research systems."
+    },
+    {
+      "emoji": "💰",
+      "text": "ElevenLabs slashes voice synthesis pricing by 40% across tiers",
+      "url": "",
+      "source": "The Neuron Daily",
+      "summary": "The text notes the pricing cut includes multilingual Turbo model options, with the newsletter questioning the timing motivation behind the aggressive price reduction."
     }
   ],
   "main_story": {
-    "title": "Anthropic and SpaceX forge unexpected compute partnership",
-    "body": "Anthropic has secured a landmark deal to lease SpaceX's Colossus 1 supercomputer cluster, a 300-plus megawatt facility in Memphis housing over 220,000 Nvidia GPUs. The partnership enables Anthropic to immediately double Claude Code's usage limits across paid tiers and eliminates peak-hour restrictions that previously constrained users. Within the same week, The Information also reported that Anthropic committed to a $200 billion, 5-gigawatt compute deal with Google Cloud over five years, indicating aggressive expansion plans. Musk signaled on X that SpaceX plans to rent compute capacity to other AI companies pursuing responsible development, positioning SpaceX as an emerging compute landlord even as its Grok model continues chasing frontier performance.",
-    "why": "This partnership is remarkable for its strategic layering: Musk addresses Anthropic's severe compute bottleneck, simultaneously strengthens Claude against OpenAI (his stated competitor), and opens a new revenue stream for SpaceX. The shift reveals how compute scarcity has become the bottleneck determining AI leadership.",
-    "take": "The deal underscores that even bitter rivals in AI will collaborate when compute access is the limiting factor. Musk's willingness to empower Claude despite public criticism of Anthropic demonstrates that compute landlordship may transcend ideological divisions in the race to build powerful AI systems."
+    "title": "OpenAI's voice models bring advanced reasoning to live speech",
+    "body": "OpenAI introduced GPT-Realtime-2, GPT-Realtime-Translate, and GPT-Realtime-Whisper, three API models designed to dramatically improve how AI agents handle voice interactions. The new Realtime-2 model brings GPT-5-level reasoning capabilities directly to live speech, enabling systems to think while speaking, use multiple tools simultaneously, and maintain natural conversational flow. Performance metrics show a 15-point improvement on Big Bench Audio benchmarks, jumping from 81.4% to 96.6%. The suite includes a live translator supporting over 70 languages and a streaming transcription model, creating a comprehensive toolkit for voice-based AI applications. Major companies including Zillow, Priceline, and Deutsche Telekom are already building production applications using these models for real estate agents, travel management, and customer support.",
+    "why": "Voice represents the next frontier for AI agent deployment, requiring fundamentally different capabilities than text-based systems. These reasoning improvements move voice AI from simple turn-based interactions to sophisticated agents that can handle complex workflows at the speed of natural conversation.",
+    "take": "The AI industry's focus on text agents may have been a limiting constraint. Voice is where agents must prove they can operate in the messier, more fluid interface of real human communication, and OpenAI's advances suggest the industry is finally closing that gap."
   },
   "around_the_horn": [
     {
-      "text": "OpenAI partners with AMD, Intel, NVIDIA on MRC to prevent hardware failures during training",
-      "url": "https://openai.com/index/mrc-supercomputer-networking/"
+      "text": "Scale AI secured $500M Pentagon contract for military data analysis",
+      "url": "https://www.bloomberg.com/news/articles/2026-05-06/meta-backed-scale-ai-wins-500-million-defense-department-deal"
     },
     {
-      "text": "Chinese startup DeepSeek nearing $45B valuation in new funding round",
-      "url": "https://www.ft.com/content/daaf2e0a-4a0d-4d7c-a85b-445480f6b9c7"
+      "text": "Perplexity launched Personal Computer feature for Mac users",
+      "url": "https://x.com/perplexity_ai/status/2052445405754040816?s=20"
     },
     {
-      "text": "Google partners with Believe to integrate Flow Music and Lyria 3 Pro for artists",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/believe-flow-music-partnership/"
-    },
-    {
-      "text": "Anthropic commits $200B, 5GW compute deal with Google Cloud over five years",
-      "url": "https://www.theinformation.com/articles/anthropic-commits-spending-200-billion-googles-cloud-chips?rc=a8sc5q"
+      "text": "Mozilla reported Claude Mythos Preview patched more bugs than previous 15 months",
+      "url": "https://hacks.mozilla.org/2026/05/behind-the-scenes-hardening-firefox/"
     }
   ],
   "sources_fetched": [
@@ -171,190 +188,169 @@
     "www.theneurondaily.com"
   ],
   "previous": {
-    "date": "2026-05-06",
-    "issue_url": "https://www.therundown.ai/p/openai-ai-phone-just-jumped-the-line",
-    "emoji": "📱",
-    "headline": "OpenAI's AI phone just jumped the line",
-    "subtitle": "AI agent phone fast-tracked to 2027 · Anthropic launches finance agents · Mini home data centers coming",
-    "intro": "OpenAI is accelerating its first AI phone to launch in the first half of 2027—a year earlier than expected. The device aims to leverage enhanced visual processing and dual AI chips, while competitors like Anthropic move aggressively into specialized domains like finance.",
+    "date": "2026-05-07",
+    "issue_url": "https://www.therundown.ai/p/anthropic-spacex-ai-become-unlikely-compute-partners",
+    "emoji": "🤝",
+    "headline": "Anthropic, SpaceX(AI) become unlikely compute partners",
+    "subtitle": "Anthropic leases SpaceX's Colossus 1 cluster · Mira Murati testifies against Altman · DeepMind invests in EVE Online",
+    "intro": "In a stunning reversal months after calling Anthropic \"Misanthropic,\" Elon Musk is renting them his entire Colossus 1 supercomputer cluster. The deal simultaneously solves Claude's compute constraints, strengthens Musk's rival against OpenAI, and signals a new business opportunity for SpaceX's AI division.",
     "bullets": [
       {
-        "emoji": "📱",
-        "text": "OpenAI accelerates AI phone for 2027 launch",
-        "url": "https://x.com/mingchikuo/status/2051523855286776034?s=20",
+        "emoji": "🔌",
+        "text": "Anthropic leases SpaceX's 220K-GPU Colossus 1 cluster",
+        "url": "https://www.anthropic.com/news/higher-limits-spacex",
         "source": "The Rundown AI",
-        "summary": "OpenAI is speeding up development of its first AI phone to reach mass production by mid-2027, driven by IPO ambitions and competition. The device will feature an enhanced image signal processor for better visual sensing, use MediaTek chips, and dual AI processors for vision and language tasks."
+        "summary": "Anthropic signed a deal to lease SpaceX's Colossus 1 supercomputer in Memphis, which features over 220,000 Nvidia GPUs coming online within weeks. The partnership enables Anthropic to double Claude Code's usage caps and remove peak-hour restrictions across paid tiers. Musk has signaled SpaceX will rent compute to AI companies taking responsible steps toward safe AI development."
       },
       {
-        "emoji": "🤑",
-        "text": "Anthropic launches 10 AI agents for finance",
-        "url": "https://www.anthropic.com/news/finance-agents",
+        "emoji": "🏛️",
+        "text": "Mira Murati accuses Sam Altman of lying in trial",
+        "url": "https://www.theverge.com/ai-artificial-intelligence/925338/openai-musk-v-altman-mira-murati",
         "source": "The Rundown AI",
-        "summary": "Anthropic released ready-to-run AI agents designed for financial services, capable of building pitchbooks, screening KYC files, and reviewing earnings. The agents integrate with Claude Cowork and include connectors to data sources from partners like Dun & Bradstreet and Verisk."
+        "summary": "Ex-OpenAI CTO Mira Murati testified in Musk's lawsuit against OpenAI, claiming CEO Sam Altman lied about a model's safety review and created chaos by giving conflicting directions to different executives. She also described how Altman's actions undermined her authority and put the company at risk of collapse during the 2023 board crisis."
       },
       {
-        "emoji": "🏘",
-        "text": "Span and Nvidia build residential mini data centers",
-        "url": "https://www.businesswire.com/news/home/20260414372626/en/SPAN-Announces-XFRA-a-Distributed-Data-Center-Solution-to-Close-the-Speed-to-Power-Gap-for-AI-Compute-Demand",
+        "emoji": "🛸",
+        "text": "DeepMind invests in Fenris, uses EVE Online for AI research",
+        "url": "https://www.ccpgames.com/news/2026/studio-behind-eve-online-goes-independent-rebrands-as-fenris-creations-enters-research-partnership-with-google-deepmind",
         "source": "The Rundown AI",
-        "summary": "California startup Span partnered with Nvidia to mount small compute nodes on home and small business exterior walls. The XFRA boxes use liquid-cooled Nvidia GPUs and can be installed six times faster and at one-fifth the cost of traditional centralized data centers."
-      },
-      {
-        "emoji": "🚀",
-        "text": "GPT-5.5-Instant rolls out with improved performance",
-        "url": "https://openai.com/index/gpt-5-5-instant/",
-        "source": "The Rundown AI",
-        "summary": "OpenAI began rolling out GPT-5.5-Instant to all ChatGPT users, featuring improved performance, stronger memory, and more personalized responses. The update aims to deliver faster, more contextual interactions."
-      },
-      {
-        "emoji": "💼",
-        "text": "Microsoft expands Copilot Cowork to mobile devices",
-        "url": "https://www.microsoft.com/en-us/microsoft-365/blog/2026/05/05/copilot-cowork-from-conversation-to-action-across-skills-integrations-and-devices/",
-        "source": "The Rundown AI",
-        "summary": "Microsoft extended its Copilot Cowork agentic system to iOS and Android platforms, adding built-in skills for common tasks and data plugins for business systems. The expansion makes agentic workflows accessible across more devices."
+        "summary": "Google DeepMind acquired a minority stake in Fenris Creations, the studio behind EVE Online, to use the 23-year-old space MMO as a sandbox for AI research. The game's complex player-driven economy and long-timeline decision-making provide ideal conditions for testing how AI agents learn, retain memory, and strategize in unpredictable environments."
       },
       {
         "emoji": "🧠",
-        "text": "Perplexity launches Professional Finance with workflows",
-        "url": "https://x.com/perplexity_ai/status/2051693893473935372?s=20",
+        "text": "Anthropic adds dreaming and orchestration to Managed Agents",
+        "url": "https://claude.com/blog/new-in-claude-managed-agents",
         "source": "The Rundown AI",
-        "summary": "Perplexity AI released Computer for Professional Finance, featuring licensed financial data and 35 dedicated workflows for analysts. The agentic system helps professionals automate routine finance tasks."
+        "summary": "Anthropic launched new features for Claude Managed Agents, including a dreaming capability that lets agents review past sessions, outcomes-based grading for work quality, and multi-agent orchestration for splitting complex tasks. These additions help agents learn from history and coordinate across multiple specialized systems."
       },
       {
         "emoji": "⚡",
-        "text": "OpenAI debuts GPT-5.5 Instant for faster, cheaper inference",
-        "url": "https://openai.com/index/gpt-5-5-instant/?utm_source=tldrai",
-        "source": "TLDR AI",
-        "summary": "OpenAI has released GPT-5.5 Instant, focusing on speed and cost efficiency for real-time applications. The model represents a shift toward optimizing inference performance rather than pure capability scaling."
-      },
-      {
-        "emoji": "🧠",
-        "text": "Subquadratic achieves 12-million-token context window breakthrough",
-        "url": "https://thenewstack.io/subquadratic-12-million-context-window/?utm_source=tldrai",
-        "source": "TLDR AI",
-        "summary": "Subquadratic has demonstrated a working 12-million-token context window, dramatically expanding what AI models can process in a single request. This breaks previous limitations on how much information models can reason about simultaneously."
-      },
-      {
-        "emoji": "🚀",
-        "text": "Google announces upgrades coming to Gemini Flash model",
-        "url": "https://www.testingcatalog.com/google-prepares-new-upgrades-for-gemini-flash-model/?utm_source=tldrai",
-        "source": "TLDR AI",
-        "summary": "Google is preparing enhanced versions of its Gemini Flash model with performance improvements and new capabilities. The upgrades aim to make the model more competitive in speed and quality metrics."
+        "text": "Subquadratic launches SubQ with 12M token context window",
+        "url": "https://subq.ai/how-ssa-makes-long-context-practical",
+        "source": "The Rundown AI",
+        "summary": "Subquadratic debuted SubQ, a model featuring a 12-million-token context window and claiming a 52x speed boost on long-context tasks compared to competitors at a fraction of the cost. The breakthrough addresses practical challenges in handling extremely long documents and sequences efficiently."
       },
       {
         "emoji": "🤖",
-        "text": "Meta develops advanced agentic AI assistant for consumers",
-        "url": "https://www.reuters.com/business/meta-plans-advanced-agentic-ai-assistant-users-ft-reports-2026-05-05/?utm_source=tldrai",
+        "text": "Claude adds self-improving agent capabilities",
+        "url": "https://claude.com/blog/new-in-claude-managed-agents?utm_source=tldrai",
         "source": "TLDR AI",
-        "summary": "Meta is building an autonomous AI assistant capable of taking actions on behalf of users. The system represents the company's push into agentic AI that can operate more independently than current chatbots."
+        "summary": "Claude now supports self-improving agents that can autonomously refine their behavior and capabilities. This advancement enables more sophisticated autonomous workflows and represents a significant step toward more independent AI systems."
+      },
+      {
+        "emoji": "🚀",
+        "text": "Anthropic announces SpaceX compute partnership",
+        "url": "https://www.anthropic.com/news/higher-limits-spacex?utm_source=tldrai",
+        "source": "TLDR AI",
+        "summary": "Anthropic has established a compute deal with SpaceX alongside raising usage limits for Claude. The partnership provides significant computational infrastructure to support scaling of Anthropic's AI models and services."
+      },
+      {
+        "emoji": "💻",
+        "text": "ProgramBench launches AI programming benchmark",
+        "url": "",
+        "source": "TLDR AI",
+        "summary": "A new benchmark for evaluating AI performance on programming tasks has been released. ProgramBench provides standardized metrics to assess how well language models handle real-world coding challenges."
       },
       {
         "emoji": "💰",
-        "text": "Study shows computer use costs 45x more than APIs",
-        "url": "https://reflex.dev/blog/computer-use-is-45x-more-expensive-than-structured-apis/?utm_source=tldrai",
+        "text": "DeepSeek attracts $50 billion investment from China",
+        "url": "https://www.wsj.com/tech/ai/china-to-invest-in-deepseek-at-50-billion-valuation-045041d0?st=HGz7fS&reflink=desktopwebshare_permalink&utm_source=tldrai",
         "source": "TLDR AI",
-        "summary": "Research demonstrates that having AI systems interact with UIs costs significantly more than using structured APIs. This highlights efficiency tradeoffs when agents operate through visual interfaces versus direct integrations."
+        "summary": "China is investing significantly in DeepSeek, valuing the AI company at $50 billion. This move signals strong government backing for domestic AI development and competitive positioning in the global AI race."
       },
       {
-        "emoji": "🎬",
-        "text": "Google launches $3.5M film competition for AI creativity",
-        "url": "https://blog.google/innovation-and-ai/technology/ai/future-vision-film-competition-xprize/?utm_source=tldrai",
+        "emoji": "⚡",
+        "text": "TokenSpeed accelerates AI inference for agents",
+        "url": "https://lightseek.org/blog/lightseek-tokenspeed.html?utm_source=tldrai",
         "source": "TLDR AI",
-        "summary": "Google is sponsoring a competition with $3.5 million in prizes for filmmakers using AI tools. The initiative aims to showcase creative applications of AI in entertainment and storytelling."
+        "summary": "A new inference engine called TokenSpeed optimizes AI model execution for agentic workloads. The technology aims to deliver high-speed token generation critical for responsive autonomous agent systems."
       },
       {
-        "emoji": "🔄",
-        "text": "OpenAI adds import tools and work features to Codex",
-        "url": "https://chatgpt.com/codex/switch-to-codex/",
+        "emoji": "📊",
+        "text": "Harvey launches legal AI agent benchmark",
+        "url": "https://www.harvey.ai/blog/introducing-harveys-legal-agent-benchmark?utm_source=tldrai",
+        "source": "TLDR AI",
+        "summary": "Harvey has introduced a specialized benchmark for evaluating legal AI agents. The metric helps assess how well AI systems perform on domain-specific legal tasks and reasoning."
+      },
+      {
+        "emoji": "🤖",
+        "text": "Free ChatGPT users upgrade to GPT-5.5 Instant model",
+        "url": "https://openai.com/index/gpt-5-5-instant/",
         "source": "Ben's Bites",
-        "summary": "Users can now migrate settings, plugins, and configurations from other tools like Claude Cowork into Codex. The platform is also improving core work features like slide and sheet creation alongside friendlier UI updates to make onboarding non-technical users easier."
+        "summary": "OpenAI replaced GPT-5.3 Instant with GPT-5.5 Instant for free users, featuring significantly better vision capabilities, PDF understanding, web search integration, and memory handling. The new model reduces hallucinations by 52.5% on high-stakes prompts and generates shorter, emoji-light responses."
       },
       {
-        "emoji": "💬",
-        "text": "Grok 4.3 API available with 1M context window",
-        "url": "https://docs.x.ai/developers/models/grok-4.3",
+        "emoji": "🚀",
+        "text": "Anthropic doubles Claude token limits with SpaceX deal",
+        "url": "https://www.anthropic.com/news/higher-limits-spacex",
         "source": "Ben's Bites",
-        "summary": "X released Grok 4.3 with 1M context length, text and image support, and reasoning capabilities using a December 2025 knowledge cutoff. At $1.25/$2.50 per million tokens, it undercuts Sonnet 4.6 while delivering comparable performance."
+        "summary": "Anthropic signed an agreement to use all of SpaceX's Colossus 1 data center, enabling twice as much Claude usage across all paid plans. This infrastructure move significantly expands capacity for users running complex agentic workflows."
       },
       {
-        "emoji": "🔧",
-        "text": "Entire launches git-sync and Dispatches features",
-        "url": "https://github.com/entireio/git-sync",
+        "emoji": "📊",
+        "text": "ChatGPT now integrates directly into Excel and Sheets",
+        "url": "https://chatgpt.com/apps/spreadsheets/",
         "source": "Ben's Bites",
-        "summary": "GitHub's ex-CEO's company released two tools: git-sync mirrors repositories without local cloning, and Dispatches generates release notes automatically from commits and agent sessions by repository and date range."
+        "summary": "ChatGPT extended its functionality to spreadsheet applications, allowing users to build sheets, analyze tabs, write formulas, and make approved edits directly within Excel and Google Sheets without leaving the interface."
       },
       {
-        "emoji": "🔐",
-        "text": "OpenAI adds opt-in advanced security for Codex",
-        "url": "https://openai.com/index/advanced-account-security/",
+        "emoji": "🧠",
+        "text": "PostHog builds Codex-like editor for self-driving product loop",
+        "url": "https://posthog.com/code",
         "source": "Ben's Bites",
-        "summary": "ChatGPT and Codex users can now enable Advanced Account Security as an optional feature to better protect their accounts."
+        "summary": "PostHog is creating a Codex-like application that uses product data as primary signals—usage patterns, observed bugs, and log errors—to automatically generate and improve code. The approach treats product understanding as the foundation for agentic development."
       },
       {
-        "emoji": "📢",
-        "text": "Honeycomb's Innovation Week explores observability for agents",
-        "url": "https://fandf.co/3QVdYGu",
+        "emoji": "🎯",
+        "text": "Anthropic releases 10 finance agent templates for enterprises",
+        "url": "https://www.anthropic.com/news/finance-agents?cam=claude",
         "source": "Ben's Bites",
-        "summary": "A virtual 3-day event May 12-14 featuring Charity Majors and Christine Yen discussing how engineering teams can handle observability as AI agents become more prevalent."
+        "summary": "Anthropic launched pre-built finance agent templates covering pitchbooks, KYC screening, valuation reviews, and month-end close processes. These run as Claude Cowork plugins or Managed Agent cookbooks, enabling rapid deployment for financial teams."
       },
       {
-        "emoji": "🎤",
-        "text": "OpenAI shares low-latency voice AI delivery at scale",
-        "url": "https://openai.com/index/delivering-low-latency-voice-ai-at-scale/",
-        "source": "Ben's Bites",
-        "summary": "OpenAI published technical insights on their infrastructure and methods for delivering voice AI with minimal latency across large user populations."
-      },
-      {
-        "emoji": "🙀",
-        "text": "Subquadratic launches SubQ with 12M-token context at 1/5 frontier cost",
+        "emoji": "⚡",
+        "text": "Anthropic partners with SpaceX for 220K+ GPUs and 300MW Memphis data center",
         "url": "",
         "source": "The Neuron Daily",
-        "summary": "SubQ uses a sub-quadratic selective attention architecture that scales linearly instead of quadratically with input length. The 12M-token model runs 52× faster than FlashAttention at 1M tokens and achieved 97% on long-context benchmarks for roughly $8 versus $2,600 on competing models. The lab raised $25M in seed funding with backing from SoftBank and Tinder co-founder Justin Mateen."
+        "summary": "Anthropic signed a partnership with SpaceX to gain full access to Colossus 1, a 300+ MW data center in Memphis (formerly xAI's campus). The deal brings 220,000+ NVIDIA GPUs online within the month, dramatically expanding Anthropic's compute capacity."
       },
       {
-        "emoji": "📰",
-        "text": "AI faced two lawsuits in one day; Google and Character.AI named",
+        "emoji": "📈",
+        "text": "Claude Code rate limits doubled; peak-hour restrictions lifted for Pro/Max",
         "url": "",
         "source": "The Neuron Daily",
-        "summary": "A Cape Breton fiddler sued Google for $1.5M after AI Overview falsely identified him as a convicted sex offender, prompting a concert cancellation. Hours later, Pennsylvania sued Character.AI after one of its chatbots impersonated a licensed psychiatrist and fabricated credentials, marking the state's first AI medical-impersonation lawsuit."
+        "summary": "Five-hour rate limits for Claude Code doubled across Pro, Max, Team, and Enterprise plans. Peak-hours limit reductions were eliminated for Pro and Max users, addressing the performance bottlenecks that plagued the platform over the past six weeks."
       },
       {
-        "emoji": "🍪",
-        "text": "GPT-5.5 Instant reduces hallucinations by 52% on high-stakes prompts",
+        "emoji": "🌩️",
+        "text": "Claude briefly went down during keynote despite announcing compute fixes",
         "url": "",
         "source": "The Neuron Daily",
-        "summary": "OpenAI's new ChatGPT default delivers 52% fewer hallucinated claims on medicine, law, and finance prompts while providing 30% more concise responses. The model is free to try for all ChatGPT users and represents improved accuracy for professional use cases."
-      },
-      {
-        "emoji": "📖",
-        "text": "NBER paper: automating AI research could trigger singularity in ~6 years",
-        "url": "",
-        "source": "The Neuron Daily",
-        "summary": "Anton Korinek's research suggests that automating software R&D plus just 5% automation elsewhere could overcome diminishing returns and produce explosive growth within six years using empirically grounded models. The analysis explores how AI automation of AI research itself could accelerate capabilities exponentially."
+        "summary": "During Code with Claude SF, Claude experienced downtime for thousands of users around 11:16 AM ET, ironically coinciding with keynote announcements about massive capacity additions. The service restored within the hour."
       }
     ],
     "main_story": {
-      "title": "OpenAI's AI phone accelerates to 2027",
-      "body": "OpenAI is fast-tracking development of its first AI phone for mass production in the first half of 2027—a full year earlier than previous reports. Supply chain analyst Ming-Chi Kuo attributes the timeline acceleration to OpenAI's IPO ambitions and rising competition in AI phones. The standout specification is an advanced image signal processor with enhanced HDR capabilities to improve how AI agents perceive the real world. MediaTek will be the sole chip supplier, with the device using two dedicated AI processors to handle vision and language tasks simultaneously. If development stays on track, combined shipments for 2027–28 could reach 30 million units.",
-      "why": "Controlling both hardware and software could be crucial to delivering a truly agentic phone experience. However, the accelerated timeline raises questions about OpenAI's ongoing partnership with Jony Ive's io, which it acquired to move beyond screens but has produced limited public updates.",
-      "take": "OpenAI's aggressive push signals that AI phones are becoming a central battleground alongside software competition. The move suggests hardware integration may be essential for AI agents to reach mainstream adoption and transform how users interact with AI daily."
+      "title": "Anthropic and SpaceX forge unexpected compute partnership",
+      "body": "Anthropic has secured a landmark deal to lease SpaceX's Colossus 1 supercomputer cluster, a 300-plus megawatt facility in Memphis housing over 220,000 Nvidia GPUs. The partnership enables Anthropic to immediately double Claude Code's usage limits across paid tiers and eliminates peak-hour restrictions that previously constrained users. Within the same week, The Information also reported that Anthropic committed to a $200 billion, 5-gigawatt compute deal with Google Cloud over five years, indicating aggressive expansion plans. Musk signaled on X that SpaceX plans to rent compute capacity to other AI companies pursuing responsible development, positioning SpaceX as an emerging compute landlord even as its Grok model continues chasing frontier performance.",
+      "why": "This partnership is remarkable for its strategic layering: Musk addresses Anthropic's severe compute bottleneck, simultaneously strengthens Claude against OpenAI (his stated competitor), and opens a new revenue stream for SpaceX. The shift reveals how compute scarcity has become the bottleneck determining AI leadership.",
+      "take": "The deal underscores that even bitter rivals in AI will collaborate when compute access is the limiting factor. Musk's willingness to empower Claude despite public criticism of Anthropic demonstrates that compute landlordship may transcend ideological divisions in the race to build powerful AI systems."
     },
     "around_the_horn": [
       {
-        "text": "Apple settled iPhone lawsuit for $250M over Siri AI claims",
-        "url": "https://www.bbc.com/news/articles/c0j2nydnzy7o"
+        "text": "OpenAI partners with AMD, Intel, NVIDIA on MRC to prevent hardware failures during training",
+        "url": "https://openai.com/index/mrc-supercomputer-networking/"
       },
       {
-        "text": "Anthropic commits $200B to Google cloud and chips over five years",
-        "url": "https://www.theinformation.com/articles/anthropic-commits-spending-200-billion-googles-cloud-chips"
+        "text": "Chinese startup DeepSeek nearing $45B valuation in new funding round",
+        "url": "https://www.ft.com/content/daaf2e0a-4a0d-4d7c-a85b-445480f6b9c7"
       },
       {
-        "text": "Coinbase cuts 14% of workforce to shift to AI-native operations",
-        "url": ""
+        "text": "Google partners with Believe to integrate Flow Music and Lyria 3 Pro for artists",
+        "url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/believe-flow-music-partnership/"
       },
       {
-        "text": "Make Notion agents more autonomous with daily task automation",
-        "url": "https://www.rundown.ai/guides"
+        "text": "Anthropic commits $200B, 5GW compute deal with Google Cloud over five years",
+        "url": "https://www.theinformation.com/articles/anthropic-commits-spending-200-billion-googles-cloud-chips?rc=a8sc5q"
       }
     ],
     "sources_fetched": [
