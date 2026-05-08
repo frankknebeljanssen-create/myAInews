@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-08T13:14:32.054510+00:00",
+  "generated_at": "2026-05-08T15:17:37.799964+00:00",
   "items": [
+    {
+      "id": "c9f68565ae53",
+      "url": "https://www.wired.com/story/tom-steyer-proposes-jobs-guarantee-to-protect-california-workers-from-ai/",
+      "headline": "California Candidate Proposes Job Guarantee Fund Backed by AI Tax",
+      "body": "Billionaire Tom Steyer, a Democratic candidate for California governor, has unveiled a proposal to guarantee jobs with benefits for workers displaced by artificial intelligence—the first statewide candidate to make such a pledge. The plan centers on a \"token tax\" that would charge tech companies a fraction of a cent for every unit of data processed for AI training. Revenue would fund a Golden State Sovereign Wealth Fund, with portions directed toward job creation in housing, healthcare, and energy infrastructure modernization.\n\n## The Funding Mechanism and New Agency\n\nSteyer's proposal includes establishing an AI Worker Protection Administration (AIWPA) staffed by union leaders, academics, and technologists to set rules protecting worker rights. The plan also expands unemployment insurance and invests in training and apprenticeship programs statewide. According to Steyer, California would become \"the first major economy in the world\" to guarantee good-paying jobs for AI-displaced workers.\n\nThe token tax concept has precedent within tech leadership itself. Dario Amodei, CEO of Anthropic, endorsed a similar tax last year despite acknowledging it runs counter to his economic interests. OpenAI recently proposed a comparable public wealth fund model. In parallel policy movement, New Jersey state senator Troy Singleton introduced a bill requiring companies that replace workers with AI to fund retraining programs. At the federal level, lawmakers have proposed grants and tax credits incentivizing corporate AI training initiatives.\n\n## Political Stakes and Regulatory Headwinds\n\nSteyer's announcement arrives amid intensifying tensions between AI regulation and federal pressure. President Trump signed an executive order in December threatening to revoke federal broadband funding from states approving \"onerous\" AI laws. Silicon Valley-backed super PACs have already targeted AI-regulation advocates in local races, including Manhattan congressional candidate Alex Bores.\n\nThe proposal signals an emerging divide in how Democratic candidates approach AI's labor impact. Steyer's rival Xavier Becerra, the former HHS secretary, released his own AI plan emphasizing \"workforce investment and transition support,\" but without specifying a funding mechanism. For enterprise stakeholders, the divergence matters: Steyer's approach imposes a direct tax on AI processing, while Becerra's relies on legislative partnerships and existing public education systems. Steyer frames the choice starkly: \"Not regulating AI doesn't seem remotely reasonable,\" he said. \"If California wants to lead, we've got to have a vision that includes something beyond letting entrepreneurs get rich at everyone else's expense.\" Whether such state-level action survives federal regulatory pressure remains unclear.",
+      "source": "Wired AI",
+      "published": "2026-05-08T15:00:00+00:00",
+      "curated_at": "2026-05-08T15:15:10.257515+00:00",
+      "original_title": "There's a Long Shot Proposal to Protect California Workers From AI"
+    },
     {
       "id": "3f7b1254bcde",
       "url": "https://www.wired.com/story/the-new-wild-west-of-ai-kids-toys/",
@@ -290,16 +300,6 @@
       "published": "2026-05-07T05:57:14+00:00",
       "curated_at": "2026-05-07T08:18:28.835418+00:00",
       "original_title": "[AINews] Anthropic-SpaceXai's 300MW/$5B/yr deal for Colossus I, ARR growth is 8000% annualized"
-    },
-    {
-      "id": "7be8dfa76af0",
-      "url": "https://techcrunch.com/2026/05/06/five-architects-of-the-ai-economy-explain-where-the-wheels-are-coming-off/",
-      "headline": "AI Supply Chain Hits Physical Limits: Chips, Energy, and Architecture",
-      "body": "Five senior executives across the AI supply chain acknowledged this week that the sector is colliding with hard constraints that won't be solved by throwing more capital at the problem. Speaking at the Milken Global Conference, leaders from chip manufacturing, cloud infrastructure, physical AI, search, and experimental AI architectures detailed bottlenecks ranging from silicon scarcity to energy demands to potential fundamental flaws in how the industry builds systems.\n\n## The Chip and Data Shortage\n\nASML CEO Christophe Fouquet stated plainly that chip supply will remain constrained for two to five years despite accelerating manufacturing efforts. The hyperscalers—Google, Microsoft, Amazon, Meta—will not receive all the silicon they've purchased. Google Cloud's COO Francis deSouza underscored the scale of the problem: the division crossed $20 billion in quarterly revenue with 63% year-over-year growth, yet its backlog nearly doubled in a single quarter from $250 billion to $460 billion in committed but undelivered revenue.\n\nFor companies building physical AI systems, the constraint is different. Qasar Younis, CEO of Applied Intuition, which develops autonomy systems for vehicles, drones, and mining equipment, emphasized that the real bottleneck is real-world data. Synthetic simulation cannot fully replace the data gathered by deploying machines into actual environments. \"There will be a long time before you can fully train models that run on the physical world synthetically,\" he said.\n\n## Energy as the Next Crisis\n\nEnergy consumption now shadows chip availability as the primary limiting factor. DeSouza confirmed Google is exploring orbital data centers as a serious response, citing access to more abundant energy in space. However, orbital constraints are their own engineering challenge: without convection in a vacuum, heat dissipation relies solely on radiation, a far slower and more difficult process than current air and liquid cooling systems.\n\nThe takeaway from industry leaders is that efficiency through vertical integration—where companies design chips, software, and models as a unified stack—yields measurable gains in computation per watt that off-the-shelf configurations cannot match. Yet even optimized systems face a fundamental economic reality: more compute means more energy, and energy has a price that will eventually constrain growth.",
-      "source": "TechCrunch AI",
-      "published": "2026-05-07T05:25:10+00:00",
-      "curated_at": "2026-05-07T05:53:53.334287+00:00",
-      "original_title": "Five architects of the AI economy explain where the wheels are coming off"
     }
   ]
 }
