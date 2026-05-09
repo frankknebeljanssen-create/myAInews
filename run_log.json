@@ -2104,5 +2104,18 @@
     "output_tokens": 8675,
     "cost_usd": 0.0702,
     "total_in_news": 30
+  },
+  {
+    "timestamp": "2026-05-09T18:48:49.804070+00:00",
+    "feeds_checked": 13,
+    "items_fetched": 147,
+    "new_items": 30,
+    "kept": 15,
+    "dropped": 15,
+    "errors": 0,
+    "input_tokens": 44381,
+    "output_tokens": 8817,
+    "cost_usd": 0.0708,
+    "total_in_news": 30
   }
 ]
