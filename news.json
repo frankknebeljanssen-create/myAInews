@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-11T02:16:44.345742+00:00",
+  "generated_at": "2026-05-11T06:32:27.965735+00:00",
   "items": [
+    {
+      "id": "4ca12da2ae6a",
+      "url": "https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai",
+      "headline": "Trust and Workflow Design, Not Speed, Drive Enterprise AI Scale",
+      "body": "Enterprise leaders scaling AI successfully are rejecting the premise that faster deployment equals better outcomes. Research from interviews with executives at Philips, BBVA, Mirakl, Scout24, JetBrains, and Scania reveals a consistent pattern: organizations pulling ahead treat AI as an operating layer embedded in deliberate workflow redesign, not as a feature to be rolled out. The distinction matters because it shifts the burden of success from IT speed to organizational readiness—culture, governance, and quality control.\n\n## Five Patterns From Leading Enterprises\n\nThe research identified repeating themes across organizations managing scaled AI deployments. Culture and literacy came before tooling; teams that invested in employee confidence and permission to experiment saw faster adoption than those that led with technology. Governance proved an accelerant rather than a brake—when security, legal, compliance, and IT engaged as design partners early, teams moved faster later with fewer reversals. Ownership emerged as critical: teams that could redesign workflows and build with AI, rather than passively consume it, drove sustainable adoption. Organizations also delayed launches when quality metrics fell short, and the most durable gains came from hybrid workflows that augmented expert reasoning rather than automating it away.\n\n## Where This Takes Enterprise AI\n\nThe shift signals a maturation in how organizations think about AI ROI. Rather than measuring success by feature adoption or cost reduction per transaction, leaders are now mapping AI into end-to-end workflows where human oversight remains embedded. This requires defining what \"good\" looks like before scaling, investing in evaluation frameworks, and treating AI governance as a competitive advantage, not a compliance checkbox.\n\nFor enterprises planning scaled deployments, the implication is structural: trust and ownership cannot be retrofitted after rollout. Organizations need to build literacy and judgment-preserving workflows into the design phase, not treat them as post-launch concerns. The practical takeaway is to audit your current readiness across accountability, trust, workflow fit, and quality before expanding AI use beyond pockets of early adoption.",
+      "source": "OpenAI Blog",
+      "published": "2026-05-11T10:00:00+00:00",
+      "curated_at": "2026-05-11T06:30:25.039687+00:00",
+      "original_title": "How enterprises are scaling AI"
+    },
     {
       "id": "9f58cd996763",
       "url": "https://techcrunch.com/2026/05/10/anthropic-says-evil-portrayals-of-ai-were-responsible-for-claudes-blackmail-attempts/",
@@ -290,16 +300,6 @@
       "published": "2026-05-07T19:21:21+00:00",
       "curated_at": "2026-05-07T20:08:49.929110+00:00",
       "original_title": "Elon Musk’s lawsuit is putting OpenAI’s safety record under the microscope"
-    },
-    {
-      "id": "4827140096bf",
-      "url": "https://arstechnica.com/information-technology/2026/05/mozilla-says-271-vulnerabilities-found-by-mythos-have-almost-no-false-positives/",
-      "headline": "Mozilla's AI Vulnerability Tool Found 271 Firefox Bugs With Minimal False Positives",
-      "body": "Mozilla has released detailed findings from its two-month trial of Anthropic's Mythos, an AI model designed to detect software vulnerabilities. The company discovered 271 security flaws in Firefox, with Mozilla engineers claiming the results contained \"almost no false positives\"—a significant departure from earlier AI-assisted vulnerability detection efforts that typically produced large volumes of hallucinated findings.\n\n## The Agent Harness Breakthrough\n\nMozilla's success hinged on building what Distinguished Engineer Brian Grinstead called an \"agent harness\"—custom code that wraps around the LLM to guide it through specific tasks. Rather than simply prompting the model to analyze code blocks, the harness provides Mythos with access to the same tools Firefox developers use, including their sanitizer build for testing. When analyzing a file, the model crafts test cases, runs them through existing fuzzing systems, and receives deterministic feedback on whether it has found a genuine issue.\n\nA critical second step involved a second LLM that grades the first model's output, providing developers confidence levels equivalent to traditionally discovered vulnerabilities. Of the 271 bugs found, 180 were classified as sec-high (exploitable through normal user behavior like web browsing), 80 as sec-moderate, and 11 as sec-low. Mozilla has published full Bugzilla reports for 12 of these vulnerabilities with reproducible test cases, all meeting the company's standard criteria for security classification.\n\n## Clearing the Hype-to-Reality Gap\n\nThe findings matter because they address a central problem with enterprise AI adoption: most AI-assisted discovery produces voluminous but unreliable outputs. Earlier attempts at AI vulnerability detection generated plausible-sounding reports that required significant manual investigation to verify, often revealing hallucinated details. Mozilla's approach reverses this burden by building verification into the workflow rather than treating it as a downstream cleanup task.\n\nThe agent harness model offers a template for other organizations deploying AI in technical domains where ground truth can be verified programmatically. When success criteria are deterministic—a test crashes or it doesn't, a security check passes or fails—the loop becomes tractable at scale. Enterprises evaluating AI-assisted security tools should evaluate whether vendors are implementing similar feedback mechanisms, not simply counting raw findings. Mozilla's disclosure of specific, reproducible bugs suggests the distinction between usable results and marketing metrics is measurable and worth demanding.",
-      "source": "Ars Technica AI",
-      "published": "2026-05-07T19:18:16+00:00",
-      "curated_at": "2026-05-07T20:08:58.455488+00:00",
-      "original_title": "Mozilla says 271 vulnerabilities found by Mythos have \"almost no false positives\""
     }
   ]
 }
