@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-11T13:41:55.348509+00:00",
+  "generated_at": "2026-05-11T16:27:34.135734+00:00",
   "items": [
+    {
+      "id": "eb9a6b2347db",
+      "url": "https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped",
+      "headline": "Google Halts Zero-Day Attack Built With AI, Detects LLM Fingerprints in Code",
+      "body": "Google researchers have identified and disrupted a zero-day exploit developed with AI assistance, marking the first documented case of the company detecting AI involvement in an active cyberattack. The vulnerability targeted an unnamed open-source web administration tool and was designed to bypass two-factor authentication, enabling what attackers planned as a mass exploitation event. Google's Threat Intelligence Group discovered the scheme before the attack launched and found telltale signs of LLM involvement embedded directly in the exploit code.\n\n## AI Signatures in Attack Code\n\nThe Python script contained artifacts consistent with large language model generation, including a fabricated CVSS vulnerability score and verbose, textbook-style formatting typical of LLM training data. These hallucinations—instances where AI generates plausible but incorrect information—pointed researchers toward the exploit's origins. The underlying vulnerability itself exploited a logic flaw where developers had hardcoded a trust assumption in the platform's authentication system, a semantic error that suggests an AI model may have identified and weaponized a subtle design weakness.\n\nGoogle's researchers were clear that Gemini, Google's own AI model, was not the tool used. Instead, the evidence suggests attackers deployed one of several publicly available security-focused AI systems to locate the vulnerability and generate functional exploit code. This follows recent disclosures of Linux vulnerabilities discovered with AI assistance and ongoing concern about specialized cybersecurity models like Anthropic's Mythos.\n\n## Emerging Pattern of AI-Assisted Attacks\n\nThe discovery signals a shift in threat actor methodology. Google's report indicates that adversaries are increasingly using AI to find vulnerabilities and refine exploits, employing techniques like persona-driven jailbreaking—instructing models to assume the role of security experts—to bypass safety guidelines. Attackers are also feeding entire vulnerability databases into AI systems and using tools like OpenClaw to test and improve AI-generated payloads in controlled environments before deployment.\n\nBeyond attack generation, the report flags a secondary threat: adversaries are now targeting the components that give AI systems their power, including autonomous skills and third-party data connectors. For enterprise security teams, the implication is direct: defenders must assume that attackers have access to the same AI capabilities used for legitimate security research, and that exploit sophistication will increase accordingly. Organizations should prioritize identifying and patching logic flaws in authentication systems and validate that trust assumptions in critical code are justified.",
+      "source": "The Verge AI",
+      "published": "2026-05-11T16:09:42+00:00",
+      "curated_at": "2026-05-11T16:25:27.408640+00:00",
+      "original_title": "Google stopped a zero-day hack that it says was developed with AI"
+    },
     {
       "id": "a8f0b4d6be96",
       "url": "https://www.technologyreview.com/2026/05/11/1136786/implementing-advanced-ai-technologies-in-finance/",
@@ -290,16 +300,6 @@
       "published": "2026-05-07T21:02:11+00:00",
       "curated_at": "2026-05-07T21:48:05.840779+00:00",
       "original_title": "Voi founders’ new AI startup Pit has become the latest rising star out of Stockholm"
-    },
-    {
-      "id": "6e49f98bfd82",
-      "url": "https://www.wired.com/story/you-can-disable-gemini-in-chrome-if-its-freaking-you-out/",
-      "headline": "Chrome's Silent AI Model Download Raises Questions on User Control",
-      "body": "Google's Chrome browser has been automatically downloading a 4 GB file containing the Gemini Nano AI model to users' computers since 2024, often without their explicit awareness. The company built the model directly into the browser to power on-device security features and developer APIs, but the lack of prominent notification about the installation has prompted scrutiny about informed consent and user control over local AI processing.\n\n## How Chrome Integrated Gemini Nano\n\nGoogle announced the Gemini Nano integration publicly and discussed it in blog posts, but the rollout strategy created a visibility problem. The model began downloading automatically to Chrome desktop users in 2024, yet Google did not release a user-facing toggle to disable it until February of this year. Users can now disable the feature by navigating to Chrome Settings > System > On-device AI and toggling it off. A Google spokesperson stated that once disabled, the model will not download or update, and the system is designed to automatically uninstall Gemini Nano if device storage runs low.\n\nSecurity consultant Davi Ottenheimer, who tracks Chrome updates closely, acknowledged he could have easily missed the integration. The delayed introduction of controls suggests that, at least initially, the feature was not designed as something users would actively manage. This gap between deployment and user control options has become a focal point for privacy advocates and enterprise security teams.\n\n## Trade-offs Between Privacy and Functionality\n\nDisabling Gemini Nano comes with concrete operational consequences. Removing the model eliminates on-device scam detection capabilities and breaks local AI processing APIs that third-party developers have integrated into websites. Google confirmed that sites using on-device APIs \"will behave differently\" when the feature is disabled, though the company did not specify whether this means degraded functionality or complete non-operation.\n\nLocal processing is inherently more private than cloud-based alternatives, making Gemini Nano's presence potentially beneficial for users concerned about data transmission. However, the automatic installation without granular opt-in creates friction between privacy preferences and security capabilities. Enterprise IT teams evaluating Chrome deployments must now weigh whether to allow the model for built-in scam detection or disable it to maintain tighter control over what software runs on endpoints. The absence of mid-level controls—such as disabling cloud features while keeping local processing—leaves organizations with an all-or-nothing decision.",
-      "source": "Wired AI",
-      "published": "2026-05-07T20:31:57+00:00",
-      "curated_at": "2026-05-07T21:48:13.658819+00:00",
-      "original_title": "How to Disable Google's Gemini in Chrome"
     }
   ]
 }
