@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-11T23:54:10.269787+00:00",
+  "generated_at": "2026-05-12T02:12:14.574857+00:00",
   "items": [
     {
       "id": "2801e9858940",
@@ -10,6 +10,16 @@
       "published": "2026-05-11T23:05:01+00:00",
       "curated_at": "2026-05-11T23:51:42.031831+00:00",
       "original_title": "OpenAI just released its answer to Claude Mythos"
+    },
+    {
+      "id": "7224de2c82ef",
+      "url": "https://techcrunch.com/2026/05/11/gm-just-laid-off-hundreds-of-it-workers-to-hire-those-with-stronger-ai-skills/",
+      "headline": "GM cuts 600 IT workers, rehires for AI engineering roles",
+      "body": "General Motors has laid off more than 600 salaried IT employees—roughly 10% of its information technology department—in a deliberate workforce restructuring aimed at replacing legacy technical skills with AI-focused engineering capabilities. The automaker confirmed the layoffs to TechCrunch, characterizing the move as necessary to \"better position the company for the future.\" Critically, these are not simple headcount reductions; GM is simultaneously hiring for different roles within IT, signaling a strategic skills swap rather than across-the-board cost-cutting.\n\n## The Skills Shift\n\nThe positions GM is actively recruiting for reveal where the company sees its technical priorities. Most sought-after capabilities include AI-native development, data engineering and analytics, cloud-based infrastructure, and agent and model development. The automaker is also hiring for prompt engineering and new AI workflow design. In practical terms, GM is seeking engineers who can architect AI systems from inception—designing infrastructure, training models, and building data pipelines—rather than those who treat AI as a productivity overlay on existing work.\n\nThis restructuring follows a broader pattern of white-collar consolidation at GM over the past 18 months. The company cut approximately 1,000 software workers in August 2024, part of a larger effort to concentrate resources on high-priority initiatives centered on AI. Leadership changes have accelerated the shift. Sterling Anderson, co-founder of autonomous trucking startup Aurora, joined as chief product officer in May 2025 and began consolidating GM's fragmented technology organizations. Three senior software executives departed last November as Anderson restructured the division, including Barak Turovsky, who served only nine months as chief AI officer.\n\n## What This Signals About Enterprise AI\n\nGM's restructuring offers a concrete case study in how large enterprises are actually adopting AI—not as a tool bolted onto existing teams, but as a driver of workforce transformation. The specific technical roles being filled—agent development, model engineering, AI-native architecture—directly correspond to where major enterprise demand is moving. This is not a one-time adjustment but a fundamental reorientation of technical capability.\n\nThe hires GM is making underscore this direction. Behrad Toghi, formerly of Apple, joined as AI lead in October. Rashed Haq, who spent five years at Cruise as head of AI and robotics, was brought on as VP of autonomous vehicles. For enterprises evaluating their own AI strategies, GM's approach signals that meaningful transformation requires more than training existing staff—it often demands recruiting engineers with fundamentally different technical DNA. Organizations without clear hiring plans for AI-native roles may find their technical teams increasingly misaligned with actual product development.",
+      "source": "TechCrunch AI",
+      "published": "2026-05-11T23:04:10+00:00",
+      "curated_at": "2026-05-12T02:09:53.515499+00:00",
+      "original_title": "GM just laid off hundreds of IT workers to hire those with stronger AI skills"
     },
     {
       "id": "7be23ac9118d",
@@ -290,16 +300,6 @@
       "published": "2026-05-08T15:00:00+00:00",
       "curated_at": "2026-05-08T15:15:10.257515+00:00",
       "original_title": "There's a Long Shot Proposal to Protect California Workers From AI"
-    },
-    {
-      "id": "91ec1ce9a5cf",
-      "url": "https://openai.com/index/running-codex-safely",
-      "headline": "OpenAI Details Sandbox Controls and Audit Logs for Autonomous Codex Agents",
-      "body": "As coding agents move from experimental tools to production deployments, OpenAI has published its operational security model for Codex—detailing how it constrains agent autonomy, requires human approval for risky actions, and maintains audit trails. The framework addresses a core challenge in enterprise AI: how to let agents operate efficiently on routine tasks while forcing review of consequential decisions and preserving visibility into what happened and why.\n\n## Layered Approval and Execution Boundaries\n\nOpenAI deploys Codex with three overlapping control mechanisms. Sandboxing defines technical execution boundaries—specifying which directories Codex can write to, whether network access is permitted, and which filesystem paths remain protected. Approval policies determine when Codex must pause and request human sign-off before proceeding. The company uses an auto-review mode that delegates low-risk approvals to a subagent, eliminating friction on routine operations like reading GitHub PRs or inspecting Kubernetes resources while still blocking shell commands that fall outside an allowed list.\n\nNetwork access is restricted to managed destinations. Codex cannot make arbitrary outbound requests; instead, it operates against an allowlist of known domains (login.microsoftonline.com, OpenAI subdomains) and a blocklist of forbidden ones (pastebin.com). Unfamiliar domains require explicit approval. Credentials for CLI and OAuth connections are stored in the OS keyring rather than files, and authentication routes through ChatGPT's enterprise workspace, tying all agent activity to workspace-level compliance logging.\n\n## Why Agent-Aware Telemetry Matters\n\nTraditional security logs show what happened—a process executed, a file changed—but leave defenders guessing at intent. OpenAI's approach adds agent-native telemetry: structured logs that capture not just actions but the reasoning behind them. Codex exports OpenTelemetry events for major decision points, allowing security teams to audit both the action and the agent's context.\n\nThis distinction matters as coding agents become routine in development workflows. Teams need to explain to compliance auditors, incident responders, and security reviewers not just that Codex accessed a repository, but why it did so and what it intended to accomplish. The framework—combining managed configuration, constrained execution, network policies, and structured logging—establishes a pattern that enterprises deploying autonomous agents will likely need to implement themselves. The takeaway: governance of agentic systems requires controls at multiple layers (execution, network, approval, identity) plus audit instrumentation designed from the agent's perspective, not just from the operating system's.",
-      "source": "OpenAI Blog",
-      "published": "2026-05-08T12:30:00+00:00",
-      "curated_at": "2026-05-08T20:50:26.938948+00:00",
-      "original_title": "Running Codex safely at OpenAI"
     }
   ]
 }
