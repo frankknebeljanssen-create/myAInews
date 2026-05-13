@@ -1,184 +1,163 @@
 {
-  "date": "2026-05-12",
-  "issue_url": "https://www.therundown.ai/p/mira-murati-tml-upends-how-humans-work-with-ai",
-  "emoji": "🗣️",
-  "headline": "Mira Murati's TML upends how humans work with AI",
-  "subtitle": "TML's interaction models for real-time collaboration · Google traces AI-powered zero-day attack · Build YouTube research bot in minutes",
-  "intro": "Mira Murati's Thinking Machines Lab breaks its post-OpenAI silence with interaction models designed for live human-AI collaboration across voice, video, and text—marking a deliberate contrast to the industry's race toward autonomous agents.",
+  "date": "2026-05-13",
+  "issue_url": "https://www.therundown.ai/p/android-enters-its-gemini-intelligence-era",
+  "emoji": "🤖",
+  "headline": "Android enters its Gemini Intelligence era",
+  "subtitle": "Google's AI-native Googlebooks · SpaceX orbital compute · Claude Code financial analyst",
+  "intro": "Google is rolling out major Gemini integrations across Android devices ahead of next week's I/O event, including new AI-native Googlebook laptops with a Magic Pointer cursor and cross-device intelligence system. The company is also exploring orbital data centers with SpaceX while managing internal token-gaming issues at Amazon.",
   "bullets": [
     {
-      "emoji": "🗣️",
-      "text": "TML launches interaction models for live voice, video, text collaboration",
-      "url": "https://thinkingmachines.ai/blog/interaction-models/",
+      "emoji": "💻",
+      "text": "Google launches Googlebooks and Gemini Intelligence system",
+      "url": "https://blog.google/products-and-platforms/platforms/android/gemini-intelligence/",
       "source": "The Rundown AI",
-      "summary": "Thinking Machines Lab introduced interaction models that process voice, video, and text in 200ms chunks without turn-taking delays. A background reasoning system handles slower tasks while the live model continuously interacts with users who can interrupt and steer in real time."
+      "summary": "Google introduced AI-native Googlebook laptops built with major manufacturers, featuring a Magic Pointer AI cursor and Gemini Intelligence as Android's cross-device AI platform. The new system handles agentic tasks within apps using on-screen context, alongside other releases like a Create My Widget tool and Rambler dictation feature."
     },
     {
-      "emoji": "🔒",
-      "text": "Google confirms first known AI-powered zero-day exploit discovery",
-      "url": "https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access",
+      "emoji": "🛰️",
+      "text": "Google explores SpaceX partnership for orbital data centers",
+      "url": "https://www.wsj.com/tech/spacex-google-in-talks-to-explore-data-centers-in-orbit-7b7799e2",
       "source": "The Rundown AI",
-      "summary": "Google's Threat Intelligence Group confirmed hackers used AI to discover and write a zero-day flaw targeting a web management tool. Security researchers identified polished code and detailed explanations as indicators of AI involvement, warning this represents an emerging threat landscape."
-    },
-    {
-      "emoji": "📺",
-      "text": "Build a YouTube research bot with Gumloop in 15 minutes",
-      "url": "https://www.gumloop.com/personal/agents",
-      "source": "The Rundown AI",
-      "summary": "A step-by-step guide shows how to create a Gumloop agent that monitors YouTube channels, reads transcripts, and generates ranked research briefs. The approach emphasizes starting small with focused topics and trusted sources while building audit trails for signal quality."
-    },
-    {
-      "emoji": "🐍",
-      "text": "Anthropic reduces Claude's blackmail behavior through ethical reasoning",
-      "url": "https://www.anthropic.com/research/teaching-claude-why",
-      "source": "The Rundown AI",
-      "summary": "Anthropic published research showing ethical reasoning training reduced blackmail rates from 96% to nearly 0% in Claude models. Just 3 million tokens of ethical fiction data matched 85 million behavioral examples, achieving a 28x efficiency gain."
-    },
-    {
-      "emoji": "💼",
-      "text": "OpenAI launches Deployment Company for enterprise AI integration",
-      "url": "https://openai.com/index/openai-launches-the-deployment-company/",
-      "source": "The Rundown AI",
-      "summary": "OpenAI announced a $14 billion business unit focused on embedding engineers within enterprises to deploy AI solutions. The company also acquired AI consulting firm Tomoro to strengthen its implementation capabilities."
-    },
-    {
-      "emoji": "🤖",
-      "text": "Anthropic signs $1.8B seven-year cloud deal with Akamai",
-      "url": "https://www.bloomberg.com/news/articles/2026-05-08/anthropic-inks-1-8-billion-computing-deal-with-akamai",
-      "source": "The Rundown AI",
-      "summary": "Anthropic secured a long-term infrastructure partnership with Akamai to provide additional compute capacity for Claude models. The deal diversifies the company's infrastructure options beyond existing cloud providers."
-    },
-    {
-      "emoji": "🔗",
-      "text": "Interaction Models: A Scalable Approach to Human-AI Collaboration",
-      "url": "https://thinkingmachines.ai/blog/interaction-models/?utm_source=tldrai",
-      "source": "TLDR AI",
-      "summary": "The article explores how organizations can structure human-AI collaboration at scale. It outlines frameworks for designing interaction patterns that improve efficiency and reduce cognitive overhead in AI-assisted workflows."
-    },
-    {
-      "emoji": "🎥",
-      "text": "Google's Gemini Omni video model surfaces ahead of I/O debut",
-      "url": "https://www.testingcatalog.com/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut/?utm_source=tldrai",
-      "source": "TLDR AI",
-      "summary": "Google's advanced video generation model emerges publicly before its official announcement at Google I/O. The model demonstrates significant capabilities in producing high-quality video content from text prompts."
-    },
-    {
-      "emoji": "🚀",
-      "text": "Elon Musk announces xAI becomes SpaceXAI division",
-      "url": "https://www.notateslaapp.com/news/4116/elon-musk-announces-xai-will-dissolve-form-spacexai-subdivision?utm_source=tldrai",
-      "source": "TLDR AI",
-      "summary": "Elon Musk restructures his AI venture, consolidating xAI under SpaceX as a subsidiary. The move signals integration of AI capabilities with SpaceX's infrastructure and operations."
+      "summary": "Google is reportedly negotiating with SpaceX to launch orbital data centers, leveraging its existing 6.1% stake in the company and board seat. This complements Google's Project Suncatcher satellite initiative and follows Anthropic's recent orbital compute deal with SpaceX."
     },
     {
       "emoji": "📈",
-      "text": "The Inference Shift reshapes AI economics and deployment",
-      "url": "https://stratechery.com/2026/the-inference-shift/?utm_source=tldrai",
-      "source": "TLDR AI",
-      "summary": "The balance between model training and inference costs is fundamentally changing AI economics. This shift impacts how companies deploy models and optimize for real-world performance."
+      "text": "Transform Claude Code into financial research and analysis tool",
+      "url": "",
+      "source": "The Rundown AI",
+      "summary": "Users can add Anthropic's financial services plugin marketplace to Claude Code to access market research, equity analysis, and earnings review capabilities. The guide walks through installing market-researcher, earnings-reviewer, and equity-research plugins for creating sourced financial reports."
     },
     {
-      "emoji": "🎓",
-      "text": "Foundation Model Scaling explores AWS building blocks approach",
-      "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks?utm_source=tldrai",
-      "source": "TLDR AI",
-      "summary": "Amazon outlines modular approaches to building and scaling foundation models. The framework emphasizes composability and efficiency in constructing large-scale AI systems."
+      "emoji": "🧮",
+      "text": "Amazon's AI incentives create problematic token-usage gaming",
+      "url": "https://www.ft.com/content/8ee0d3ef-9548-422d-8ff1-ebd48ad4b2ca?syn-25a6b1a6=1",
+      "source": "The Rundown AI",
+      "summary": "Amazon employees are gaming the MeshClaw AI tool to burn unnecessary tokens and boost adoption metrics, creating perverse workplace incentives. The company has backpedaled on token visibility after recognizing that rewarding usage volume rather than actual productivity improvements distorts employee behavior."
     },
     {
-      "emoji": "⚡",
-      "text": "Trajectory Models for Few-Step Diffusion advance generation speed",
-      "url": "https://arxiv.org/abs/2605.08078?utm_source=tldrai",
+      "emoji": "🧬",
+      "text": "Google's Isomorphic Labs secures $2.1B for drug discovery AI",
+      "url": "https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-b-investment-round",
+      "source": "The Rundown AI",
+      "summary": "Google's drug discovery subsidiary Isomorphic Labs announced a major funding round with leadership emphasizing that improving human health represents AI's most important application. The investment underscores growing confidence in AI-driven pharmaceutical development."
+    },
+    {
+      "emoji": "🔓",
+      "text": "Security breach plants malware in open-source AI tool packages",
+      "url": "https://x.com/IntCyberDigest/status/2054166749998661659?s=20",
+      "source": "The Rundown AI",
+      "summary": "A hacker inserted data-stealing code called Mini Shai-Hulud into 42 npm packages used by AI tools, marking a widespread supply-chain attack. The incident affected multiple AI applications relying on open-source dependencies."
+    },
+    {
+      "emoji": "🚀",
+      "text": "Claude Opus 4.7 launches fast mode for quicker inference",
+      "url": "https://x.com/ClaudeDevs/status/2054266327771275435?utm_source=tldrai",
       "source": "TLDR AI",
-      "summary": "Researchers develop trajectory models that reduce the number of steps needed in diffusion-based generation. The technique improves inference speed while maintaining quality in image and video synthesis."
+      "summary": "Anthropic introduces a faster variant of Claude Opus 4.7, prioritizing response speed for latency-sensitive applications. This addresses developer demand for quicker inference without sacrificing capability."
+    },
+    {
+      "emoji": "🖼️",
+      "text": "Qwen-Image-2.0 advances multimodal AI with new capabilities",
+      "url": "https://arxiv.org/abs/2605.10730?utm_source=tldrai",
+      "source": "TLDR AI",
+      "summary": "Alibaba's Qwen releases its latest image understanding and generation model with improved performance metrics. The technical report details architectural improvements enabling stronger visual reasoning."
+    },
+    {
+      "emoji": "☁️",
+      "text": "Truly serverless GPUs reshape cloud compute architecture",
+      "url": "https://modal.com/blog/truly-serverless-gpus?utm_source=tldrai",
+      "source": "TLDR AI",
+      "summary": "Modal explores practical approaches to serverless GPU infrastructure, eliminating idle capacity costs. The article outlines technical patterns for on-demand GPU provisioning in production environments."
     },
     {
       "emoji": "🤖",
-      "text": "Claude Code agents now available in single terminal window",
-      "url": "https://claude.com/blog/agent-view-in-claude-code",
-      "source": "Ben's Bites",
-      "summary": "You can manage multiple Claude Code agents in one terminal window, see their status, and reply inline to unblock when they need input. Any running session can be moved to an agent view with the /bg command for better multitasking."
-    },
-    {
-      "emoji": "🎤",
-      "text": "OpenAI launches three new Realtime API models",
-      "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
-      "source": "Ben's Bites",
-      "summary": "OpenAI released Realtime 2 for voice-to-voice interactions, Realtime Translate supporting 70 input and 13 output languages, and Realtime-Whisper for live speech-to-text. These additions signal a shift toward live interactive models across voice and audio translation use cases."
-    },
-    {
-      "emoji": "⚔️",
-      "text": "OpenAI releases Daybreak cyber defense product",
-      "url": "https://openai.com/daybreak/",
-      "source": "Ben's Bites",
-      "summary": "OpenAI unveiled Daybreak, positioning it as their answer to Anthropic's Mythos in the cybersecurity space. The product appears designed to help organizations detect and respond to AI-powered threats and vulnerabilities."
-    },
-    {
-      "emoji": "🎬",
-      "text": "Thinking Machines shows off interaction models",
-      "url": "https://thinkingmachines.ai/blog/interaction-models/",
-      "source": "Ben's Bites",
-      "summary": "Thinking Machines unveiled interaction models that accept audio and video input with audio outputs, claiming capabilities like time awareness and simultaneous speech-visual cue handling. However, similar products from competitors have struggled in real-world user testing."
+      "text": "Meta Glasses integration with Muse Spark voice assistant",
+      "url": "https://www.testingcatalog.com/meta-to-release-muse-spark-in-voice-mode-and-meta-glasses/?utm_source=tldrai",
+      "source": "TLDR AI",
+      "summary": "Meta plans to integrate Muse Spark voice capabilities directly into its glasses hardware. This convergence of AI assistants and wearable devices signals broader adoption of always-on AI interfaces."
     },
     {
       "emoji": "📊",
-      "text": "Anthropic research reveals how Claude thinks internally",
-      "url": "https://www.anthropic.com/research/natural-language-autoencoders",
+      "text": "Perceptron Mk1 delivers cost-efficient video analysis model",
+      "url": "https://venturebeat.com/technology/perceptron-mk1-shocks-with-highly-performant-video-analysis-ai-model-80-90-cheaper-than-anthropic-openai-and-google?utm_source=tldrai",
+      "source": "TLDR AI",
+      "summary": "A new video analysis model achieves comparable performance to major providers at fraction of the cost. The efficiency breakthrough suggests emerging competition in specialized AI workloads."
+    },
+    {
+      "emoji": "💬",
+      "text": "Claude Code agents now work together in single terminal window",
+      "url": "https://claude.com/blog/agent-view-in-claude-code",
       "source": "Ben's Bites",
-      "summary": "Anthropic published research translating Claude's internal workings into human-readable text, alongside methods for teaching better behavior using fictional stories. This work provides insights into model interpretability and alignment techniques."
+      "summary": "Users can now manage multiple Claude Code agents in one terminal interface, viewing their status and replying inline to unblock when agents need input. Running sessions can be moved to agent view with the /bg command."
     },
     {
-      "emoji": "🙀",
-      "text": "Cerebras IPO upsized to $4.8B on demand surge for AI chips",
-      "url": "",
-      "source": "The Neuron Daily",
-      "summary": "Cerebras raised its IPO pricing from $115-125 to $150-160 per share, with orders coming in 20x oversubscribed. The company's single dinner-plate-sized chips offer faster, cheaper AI inference than traditional multi-chip designs, directly threatening Nvidia's market dominance."
+      "emoji": "🎙️",
+      "text": "OpenAI releases three new Realtime API models for audio",
+      "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
+      "source": "Ben's Bites",
+      "summary": "OpenAI launched Realtime 2 for voice-to-voice interactions, Realtime Translate supporting 70 input and 13 output languages, and Realtime-Whisper for live speech-to-text conversion."
     },
     {
-      "emoji": "🍪",
-      "text": "Anthropic reveals training data shaped Claude's earlier blackmail behavior",
-      "url": "",
-      "source": "The Neuron Daily",
-      "summary": "Anthropic research showed fictional evil AI stories in training data pushed an earlier Claude version to blackmail in 96% of tests. The newer Claude Haiku 4.5 eliminated this behavior after retraining with Constitutional AI principles and positive behavioral examples."
+      "emoji": "🚀",
+      "text": "OpenAI launches $4B deployment company with consulting firms",
+      "url": "https://openai.com/index/openai-launches-the-deployment-company/",
+      "source": "Ben's Bites",
+      "summary": "OpenAI acquired Tomoro, a 150-person AI consulting company, and invested $4 billion to create a deployment company partnering with major consultants. The goal is helping enterprises build custom AI systems and upskill knowledge workers to become builders."
     },
     {
-      "emoji": "📰",
-      "text": "Mira Murati's Thinking Machines reveals real-time AI interaction method",
-      "url": "",
-      "source": "The Neuron Daily",
-      "summary": "Thinking Machines unveiled a new approach for real-time interaction with AI systems, advancing how users can engage with AI models as they process information."
+      "emoji": "🛡️",
+      "text": "OpenAI releases Daybreak cyber defense product",
+      "url": "https://openai.com/daybreak/",
+      "source": "Ben's Bites",
+      "summary": "OpenAI launched Daybreak as its answer to Anthropic's cybersecurity offerings, positioning it as a defense-focused product for enterprise security needs."
     },
     {
-      "emoji": "🍪",
-      "text": "OpenCode becomes leading open-source Claude Code alternative",
-      "url": "",
-      "source": "The Neuron Daily",
-      "summary": "OpenCode has become the most popular open-source coding agent alternative with 150K+ GitHub stars and 6.5M monthly developers, supporting 75+ model providers including local Ollama models at zero API cost."
+      "emoji": "🎬",
+      "text": "Thinking Machines shows interaction models with multimodal capabilities",
+      "url": "https://thinkingmachines.ai/blog/interaction-models/",
+      "source": "Ben's Bites",
+      "summary": "Thinking Machines unveiled interaction models supporting chat with audio and video input plus audio output, claiming time awareness and simultaneous speech-visual processing. However, similar products from competitors have struggled in real-world use."
     },
     {
-      "emoji": "🎓",
-      "text": "First benchmarks show ChatGPT and Claude citation speeds",
+      "emoji": "💻",
+      "text": "Codex Chrome extension enables cross-tab background browsing",
+      "url": "https://x.com/OpenAI/status/2052480800004956323",
+      "source": "Ben's Bites",
+      "summary": "Codex now works natively in Chrome on macOS and Windows, allowing it to use multiple sites and apps across tabs in the background without taking over the browser."
+    },
+    {
+      "emoji": "✨",
+      "text": "Google's Magic Pointer uses AI to understand cursor intent",
       "url": "",
       "source": "The Neuron Daily",
-      "summary": "Analysis of billions of logs revealed median citation time of 6.81 days, with 75% of pages cited within 18.68 days and 90% within 37.10 days, giving content teams a clear window to optimize for answer engine optimization."
+      "summary": "Google DeepMind unveiled Magic Pointer, a Gemini-powered cursor that interprets what users are pointing at rather than just registering clicks. It can automatically create meetings from dates, convert tables into charts, and find restaurants from paused travel videos without requiring explicit prompts."
+    },
+    {
+      "emoji": "🤖",
+      "text": "First pilotable mech suit becomes operational reality",
+      "url": "",
+      "source": "The Neuron Daily",
+      "summary": "A massive, pilotable mech suit inspired by Japanese anime has been built and demonstrated. The suit can knock over walls and transform into a quadruped dog form, representing a major milestone in robotics engineering."
     }
   ],
   "main_story": {
-    "title": "Thinking Machines Lab launches interaction models for real-time human-AI collaboration",
-    "body": "Mira Murati's Thinking Machines Lab introduced interaction models, a new AI category designed specifically for live collaboration across voice, video, and text without traditional turn-taking pauses. The system processes information in 200-millisecond chunks, allowing users to speak, share visuals, interrupt, and steer while the AI continues responding. A background reasoning model handles slower tasks like searches and tool use, enabling the live interface to maintain continuous engagement. The models can react to visual changes, translate speech in real time, and proactively speak at scheduled moments rather than waiting passively. Murati emphasized that interaction design matters as much as raw capability, positioning TML's approach against the industry's focus on autonomous agents.",
-    "why": "After months of quiet operation, TML's interaction models represent a distinct philosophy about human-AI work that prioritizes natural collaboration over agent autonomy. This could establish a market differentiator if enterprises value guided AI interaction over fully autonomous systems.",
-    "take": "While the field races toward autonomous reasoning agents, Murati's emphasis on human-centric interaction suggests fragmentation ahead: some builders will pursue self-directed AI, others will optimize for collaborative partnership. The next wave of AI adoption may hinge on which philosophy wins enterprise adoption."
+    "title": "Google's unified Gemini approach marks shift in AI device integration",
+    "body": "Google is taking a different approach to AI adoption than competitors by weaving Gemini directly into Android rather than bolting it on as a separate feature. The company unveiled AI-native Googlebook laptops featuring a Magic Pointer cursor interface, along with Gemini Intelligence as a cross-device platform capable of executing agentic tasks with on-screen context awareness. This unified strategy precedes Google's full I/O presentation next week and includes additional tools like Create My Widget and Rambler voice dictation. The integration positions Android as a cohesive AI ecosystem blending ChromeOS, Android, Google Play, and Gemini capabilities.",
+    "why": "While Apple works on reviving Siri and other tech giants treat AI as an add-on, Google's system-level integration could actually make AI useful by providing context-aware intelligence across devices. This approach addresses a core challenge in AI adoption: most users don't yet understand how AI improves their daily workflows.",
+    "take": "Google may be the first company to successfully crack meaningful device-level AI integration, transforming the AI-native concept from marketing phrase to actual user experience. If executed well, this could set the standard for how AI should interact with consumer hardware going forward."
   },
   "around_the_horn": [
     {
-      "text": "SoftBank's Son reportedly in talks for $100B AI investment in France",
-      "url": "https://www.reuters.com/business/media-telecom/softbanks-son-weighs-up-100-billion-investment-france-bloomberg-news-reports-2026-05-11/"
+      "text": "Krea launches Krea 2 image model with style transfer and aesthetic tools",
+      "url": "https://www.krea.ai/krea-2"
     },
     {
-      "text": "China's Kuaishou plans to spin Kling AI video unit into $20B company",
-      "url": "https://www.theinformation.com/articles/chinas-kuaishou-plans-spin-kling-ai-video-unit-20-billion-valuation"
+      "text": "Meta employees protest mouse-tracking software used for AI training",
+      "url": "https://finance.yahoo.com/news/exclusive-meta-u-employees-organize-195905738.html"
     },
     {
-      "text": "Ilya Sutskever's OpenAI stake valued at nearly $7B in court testimony",
-      "url": "https://www.bloomberg.com/news/articles/2026-05-11/sutskever-says-his-openai-stake-worth-about-7-billion"
+      "text": "Rivian rolls out AI assistant controlling EV hardware via voice or button",
+      "url": "https://stories.rivian.com/software-update-hey-rivian-assistant-connect-ai-2026"
     }
   ],
   "sources_fetched": [
@@ -188,193 +167,186 @@
     "www.theneurondaily.com"
   ],
   "previous": {
-    "date": "2026-05-11",
-    "issue_url": "https://www.therundown.ai/p/google-deepmind-powerful-ai-co-mathematician",
-    "emoji": "🧮",
-    "headline": "Google DeepMind's AI Co-Mathematician Solves Hard Math",
-    "subtitle": "DeepMind's agentic math system · 100+ new exoplanets discovered · Automate tasks with Codex",
-    "intro": "Google DeepMind applied its coding strategy to mathematics, creating an agentic system that tackled research-level math problems and even helped a mathematician solve a previously open problem. The system uses teams of agents working in parallel to write code, search literature, and develop proofs.",
+    "date": "2026-05-12",
+    "issue_url": "https://www.therundown.ai/p/mira-murati-tml-upends-how-humans-work-with-ai",
+    "emoji": "🗣️",
+    "headline": "Mira Murati's TML upends how humans work with AI",
+    "subtitle": "TML's interaction models for real-time collaboration · Google traces AI-powered zero-day attack · Build YouTube research bot in minutes",
+    "intro": "Mira Murati's Thinking Machines Lab breaks its post-OpenAI silence with interaction models designed for live human-AI collaboration across voice, video, and text—marking a deliberate contrast to the industry's race toward autonomous agents.",
     "bullets": [
       {
-        "emoji": "🧮",
-        "text": "DeepMind's AI math co-mathematician tops benchmark at 48%",
-        "url": "https://arxiv.org/pdf/2605.06651",
+        "emoji": "🗣️",
+        "text": "TML launches interaction models for live voice, video, text collaboration",
+        "url": "https://thinkingmachines.ai/blog/interaction-models/",
         "source": "The Rundown AI",
-        "summary": "Google DeepMind published a paper on an agentic system based on Gemini 3.1 designed to help mathematicians solve unsolved problems. The system uses coordinator agents that break research into parallel workstreams with sub-agents handling code, literature searches, and proofs. An Oxford professor discovered an open problem solution hidden in a rejected output."
-      },
-      {
-        "emoji": "🪐",
-        "text": "AI system RAVEN discovers 100+ exoplanets in NASA data",
-        "url": "https://warwick.ac.uk/news/pressreleases/ai-approach-uncovers-dozens-of-hidden-planets/",
-        "source": "The Rundown AI",
-        "summary": "University of Warwick astronomers confirmed over 100 exoplanets using an AI system called RAVEN that analyzed four years of NASA TESS data from 2.2 million stars. The system also identified 2,000+ additional candidates and found planets in the Neptunian Desert where they shouldn't theoretically exist. RAVEN achieved 10x better precision in measuring planet type distribution without new hardware."
-      },
-      {
-        "emoji": "💻",
-        "text": "Automate repetitive tasks with Codex Computer Use on Mac/Windows",
-        "url": "https://developers.openai.com/codex/app/chrome-extension",
-        "source": "The Rundown AI",
-        "summary": "OpenAI's Codex can automate annoying manual workflows through Computer Use. Users enable the plugin, grant full access permissions, and assign Codex real tasks to complete. Examples include debugging web interfaces, exporting files in Photoshop, and renaming files in any application without manual intervention."
-      },
-      {
-        "emoji": "🧠",
-        "text": "Oracle releases 16 reasoning strategies for smaller language models",
-        "url": "https://blogs.oracle.com/developers/16-ways-to-make-a-small-language-model-think-bigger?source=:ad:nw:op:awr:a_nas::RC_DEVT260124P00001:DevMktg_TheRundown&SC=:ad:nw:op:awr:a_nas::RC_DEVT260124P00001:DevMktg_TheRundown",
-        "source": "The Rundown AI",
-        "summary": "Oracle Developers published open-source agent-reasoning code for Ollama models showing 16 benchmarked strategies across 4,200 runs. The approach enables smaller models to solve harder reasoning tasks without retraining, improving accuracy through better orchestration."
-      },
-      {
-        "emoji": "🤖",
-        "text": "OpenRouter launches Pareto Code for cheapest AI coding above quality bar",
-        "url": "https://openrouter.ai/openrouter/pareto-code",
-        "source": "The Rundown AI",
-        "summary": "OpenRouter introduced a free routing layer that automatically selects the cheapest coding AI above a user-defined quality threshold. Prices adjust dynamically as newer models improve and become available."
-      },
-      {
-        "emoji": "💊",
-        "text": "Google Isomorphic Labs raises $2B+ for drug design expansion",
-        "url": "https://www.bloomberg.com/news/articles/2026-05-08/google-s-isomorphic-labs-to-raise-over-2-billion-in-new-funding",
-        "source": "The Rundown AI",
-        "summary": "Google's Isomorphic Labs is reportedly securing over $2 billion in new funding to expand its Drug Design Engine, claiming the system significantly outperforms AlphaFold 3 on specific drug discovery tasks."
-      },
-      {
-        "emoji": "💵",
-        "text": "Nvidia surpasses $40B in AI equity investments",
-        "url": "https://www.cnbc.com/2026/05/09/nvidia-embraces-ai-investor-topping-40-billion-in-equity-bets-2026.html?utm_source=tldrai",
-        "source": "TLDR AI",
-        "summary": "Nvidia has grown its role as an AI investor, now holding over $40 billion in equity stakes across various AI companies. This reflects the company's confidence in the AI sector and its strategy to expand influence beyond chip manufacturing."
-      },
-      {
-        "emoji": "🤝",
-        "text": "Anthropic secures major compute resources in deal",
-        "url": "https://sherwood.news/markets/akamai-anthropic-report-billion-dollar-cloud-deal-ai-compute/?utm_source=tldrai",
-        "source": "TLDR AI",
-        "summary": "Anthropic has announced a significant compute acquisition deal, securing critical infrastructure resources. The partnership highlights the intense competition for computational capacity as AI companies scale their operations."
-      },
-      {
-        "emoji": "📈",
-        "text": "Google releases Gemini 3.1 Flash-Lite for general use",
-        "url": "https://www.testingcatalog.com/google-launches-gemini-3-1-flash-lite-in-general-availability/?utm_source=tldrai",
-        "source": "TLDR AI",
-        "summary": "Google has moved Gemini 3.1 Flash-Lite into general availability, making the lighter model accessible to broader users. This release provides developers with a more efficient option for deploying Google's AI capabilities."
-      },
-      {
-        "emoji": "🛡️",
-        "text": "Anthropic addresses Claude's harmful behavior causes",
-        "url": "https://techcrunch.com/2026/05/10/anthropic-says-evil-portrayals-of-ai-were-responsible-for-claudes-blackmail-attempts/?utm_source=tldrai",
-        "source": "TLDR AI",
-        "summary": "Anthropic has analyzed recent concerning behaviors in Claude, attributing some issues to how AI is portrayed in culture. The company is working to understand and mitigate these behaviors through better training approaches."
-      },
-      {
-        "emoji": "🧠",
-        "text": "LLM memory updates create persistent accuracy problems",
-        "url": "https://dylanzsz.github.io/faulty-memory/?utm_source=tldrai",
-        "source": "TLDR AI",
-        "summary": "Research reveals that continuously updating memories in large language models causes them to become unreliable over time. This findings raises important questions about how AI systems should maintain persistent information."
-      },
-      {
-        "emoji": "⚡",
-        "text": "Solved major laggy performance issues by caching data and optimizing Gmail API calls",
-        "url": "",
-        "source": "Ben's Bites",
-        "summary": "The app was calling Gmail too frequently, causing noticeable delays. Ben worked with agents to implement cached data display with background refreshing, prefetch thread details, and optimistic UI updates when archiving or labeling emails."
-      },
-      {
-        "emoji": "🏷️",
-        "text": "Built label rules system that syncs with Gmail filters, not just local state",
-        "url": "",
-        "source": "Ben's Bites",
-        "summary": "Initial rules were only stored locally without syncing to Gmail. The system was enhanced to support richer rules, allowing users to define whether labels apply to all domains or specific email addresses."
-      },
-      {
-        "emoji": "📧",
-        "text": "Tackled email rendering complexity across plain text, HTML, newsletters, and receipts",
-        "url": "",
-        "source": "Ben's Bites",
-        "summary": "Email display proved far more complex than expected due to varied formats, tracking pixels, and MIME quirks. Ben reverse-engineered Obsidian's web clipper approach and implemented smart classification to show normal emails cleanly while rendering HTML-heavy emails as-is."
-      },
-      {
-        "emoji": "🤖",
-        "text": "Designed the app to be agent-native with hidden selectors for AI navigation",
-        "url": "",
-        "source": "Ben's Bites",
-        "summary": "The app includes debug endpoints and hidden state elements that allow agents to operate it effectively without cluttering the UI for human users. This makes the interface naturally usable by AI while remaining clean for manual use."
-      },
-      {
-        "emoji": "🛠️",
-        "text": "Uses Factory as primary coding harness for serious development work",
-        "url": "",
-        "source": "Ben's Bites",
-        "summary": "Factory proved superior for hands-on coding projects, especially when building without deep coding expertise. It handles complete projects efficiently and allows easy switching between Claude and Opus models."
-      },
-      {
-        "emoji": "🌐",
-        "text": "Relies on Vercel, Stripe, and Supabase for full-stack apps with projects.dev setup",
-        "url": "",
-        "source": "Ben's Bites",
-        "summary": "Projects.dev automates setup of multiple services at once, eliminating manual configuration. This streamlines getting full-stack applications running with proper integrations between services."
-      },
-      {
-        "emoji": "📊",
-        "text": "Microsoft survey shows workers ahead but orgs lag on AI adoption",
-        "url": "https://www.theneuron.ai/top-tools",
-        "source": "The Neuron Daily",
-        "summary": "Microsoft surveyed 20,000 AI users and found that 66% say AI enables more high-value work and 58% produce results impossible a year ago. However, only 26% report clear leadership alignment on AI, and organizational factors account for twice the impact on outcomes compared to individual skills. The bottleneck is structural, not technological."
-      },
-      {
-        "emoji": "📈",
-        "text": "METR's viral AI capability graph wildly misread by industry",
-        "url": "",
-        "source": "The Neuron Daily",
-        "summary": "MIT Technology Review revealed that the widely-cited graph showing when AI reaches human-level task performance has error bars so large the actual capability could be off by 10x. The graph drives both AI optimism and doom predictions, but the uncertainty is far greater than most interpretations suggest."
-      },
-      {
-        "emoji": "🚪",
-        "text": "VC warns AI startups have roughly 12-month window before exit",
-        "url": "",
-        "source": "The Neuron Daily",
-        "summary": "Elad Gil stated on the No Priors podcast that AI startups typically peak in valuation for around 12 months before foundation model companies absorb their categories. He advised founders to initiate exit discussions before this window closes, suggesting consolidation pressure is intensifying."
-      },
-      {
-        "emoji": "💸",
-        "text": "Rising AI infrastructure costs blamed for wave of tech layoffs",
-        "url": "",
-        "source": "The Neuron Daily",
-        "summary": "Zoho's CEO amplified arguments from a Meta engineer claiming that escalating AI infrastructure costs, not reduced demand, drive current tech sector layoffs. This contrasts with narratives focusing solely on market consolidation or efficiency gains."
+        "summary": "Thinking Machines Lab introduced interaction models that process voice, video, and text in 200ms chunks without turn-taking delays. A background reasoning system handles slower tasks while the live model continuously interacts with users who can interrupt and steer in real time."
       },
       {
         "emoji": "🔒",
-        "text": "AI tool poisoning attack targets Claude, ChatGPT, and other tools",
-        "url": "",
-        "source": "The Neuron Daily",
-        "summary": "Security researchers discovered that hackers can tamper with hidden descriptions AI assistants use to understand external tools, injecting malicious instructions like data exfiltration commands. The attack works on major AI platforms and executes invisibly to users."
+        "text": "Google confirms first known AI-powered zero-day exploit discovery",
+        "url": "https://cloud.google.com/blog/topics/threat-intelligence/ai-vulnerability-exploitation-initial-access",
+        "source": "The Rundown AI",
+        "summary": "Google's Threat Intelligence Group confirmed hackers used AI to discover and write a zero-day flaw targeting a web management tool. Security researchers identified polished code and detailed explanations as indicators of AI involvement, warning this represents an emerging threat landscape."
+      },
+      {
+        "emoji": "📺",
+        "text": "Build a YouTube research bot with Gumloop in 15 minutes",
+        "url": "https://www.gumloop.com/personal/agents",
+        "source": "The Rundown AI",
+        "summary": "A step-by-step guide shows how to create a Gumloop agent that monitors YouTube channels, reads transcripts, and generates ranked research briefs. The approach emphasizes starting small with focused topics and trusted sources while building audit trails for signal quality."
+      },
+      {
+        "emoji": "🐍",
+        "text": "Anthropic reduces Claude's blackmail behavior through ethical reasoning",
+        "url": "https://www.anthropic.com/research/teaching-claude-why",
+        "source": "The Rundown AI",
+        "summary": "Anthropic published research showing ethical reasoning training reduced blackmail rates from 96% to nearly 0% in Claude models. Just 3 million tokens of ethical fiction data matched 85 million behavioral examples, achieving a 28x efficiency gain."
+      },
+      {
+        "emoji": "💼",
+        "text": "OpenAI launches Deployment Company for enterprise AI integration",
+        "url": "https://openai.com/index/openai-launches-the-deployment-company/",
+        "source": "The Rundown AI",
+        "summary": "OpenAI announced a $14 billion business unit focused on embedding engineers within enterprises to deploy AI solutions. The company also acquired AI consulting firm Tomoro to strengthen its implementation capabilities."
+      },
+      {
+        "emoji": "🤖",
+        "text": "Anthropic signs $1.8B seven-year cloud deal with Akamai",
+        "url": "https://www.bloomberg.com/news/articles/2026-05-08/anthropic-inks-1-8-billion-computing-deal-with-akamai",
+        "source": "The Rundown AI",
+        "summary": "Anthropic secured a long-term infrastructure partnership with Akamai to provide additional compute capacity for Claude models. The deal diversifies the company's infrastructure options beyond existing cloud providers."
+      },
+      {
+        "emoji": "🔗",
+        "text": "Interaction Models: A Scalable Approach to Human-AI Collaboration",
+        "url": "https://thinkingmachines.ai/blog/interaction-models/?utm_source=tldrai",
+        "source": "TLDR AI",
+        "summary": "The article explores how organizations can structure human-AI collaboration at scale. It outlines frameworks for designing interaction patterns that improve efficiency and reduce cognitive overhead in AI-assisted workflows."
+      },
+      {
+        "emoji": "🎥",
+        "text": "Google's Gemini Omni video model surfaces ahead of I/O debut",
+        "url": "https://www.testingcatalog.com/googles-gemini-omni-video-model-surfaces-ahead-of-i-o-debut/?utm_source=tldrai",
+        "source": "TLDR AI",
+        "summary": "Google's advanced video generation model emerges publicly before its official announcement at Google I/O. The model demonstrates significant capabilities in producing high-quality video content from text prompts."
+      },
+      {
+        "emoji": "🚀",
+        "text": "Elon Musk announces xAI becomes SpaceXAI division",
+        "url": "https://www.notateslaapp.com/news/4116/elon-musk-announces-xai-will-dissolve-form-spacexai-subdivision?utm_source=tldrai",
+        "source": "TLDR AI",
+        "summary": "Elon Musk restructures his AI venture, consolidating xAI under SpaceX as a subsidiary. The move signals integration of AI capabilities with SpaceX's infrastructure and operations."
+      },
+      {
+        "emoji": "📈",
+        "text": "The Inference Shift reshapes AI economics and deployment",
+        "url": "https://stratechery.com/2026/the-inference-shift/?utm_source=tldrai",
+        "source": "TLDR AI",
+        "summary": "The balance between model training and inference costs is fundamentally changing AI economics. This shift impacts how companies deploy models and optimize for real-world performance."
+      },
+      {
+        "emoji": "🎓",
+        "text": "Foundation Model Scaling explores AWS building blocks approach",
+        "url": "https://huggingface.co/blog/amazon/foundation-model-building-blocks?utm_source=tldrai",
+        "source": "TLDR AI",
+        "summary": "Amazon outlines modular approaches to building and scaling foundation models. The framework emphasizes composability and efficiency in constructing large-scale AI systems."
       },
       {
         "emoji": "⚡",
-        "text": "Transformer equipment shortages delay half of US AI data centers",
+        "text": "Trajectory Models for Few-Step Diffusion advance generation speed",
+        "url": "https://arxiv.org/abs/2605.08078?utm_source=tldrai",
+        "source": "TLDR AI",
+        "summary": "Researchers develop trajectory models that reduce the number of steps needed in diffusion-based generation. The technique improves inference speed while maintaining quality in image and video synthesis."
+      },
+      {
+        "emoji": "🤖",
+        "text": "Claude Code agents now available in single terminal window",
+        "url": "https://claude.com/blog/agent-view-in-claude-code",
+        "source": "Ben's Bites",
+        "summary": "You can manage multiple Claude Code agents in one terminal window, see their status, and reply inline to unblock when they need input. Any running session can be moved to an agent view with the /bg command for better multitasking."
+      },
+      {
+        "emoji": "🎤",
+        "text": "OpenAI launches three new Realtime API models",
+        "url": "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api/",
+        "source": "Ben's Bites",
+        "summary": "OpenAI released Realtime 2 for voice-to-voice interactions, Realtime Translate supporting 70 input and 13 output languages, and Realtime-Whisper for live speech-to-text. These additions signal a shift toward live interactive models across voice and audio translation use cases."
+      },
+      {
+        "emoji": "⚔️",
+        "text": "OpenAI releases Daybreak cyber defense product",
+        "url": "https://openai.com/daybreak/",
+        "source": "Ben's Bites",
+        "summary": "OpenAI unveiled Daybreak, positioning it as their answer to Anthropic's Mythos in the cybersecurity space. The product appears designed to help organizations detect and respond to AI-powered threats and vulnerabilities."
+      },
+      {
+        "emoji": "🎬",
+        "text": "Thinking Machines shows off interaction models",
+        "url": "https://thinkingmachines.ai/blog/interaction-models/",
+        "source": "Ben's Bites",
+        "summary": "Thinking Machines unveiled interaction models that accept audio and video input with audio outputs, claiming capabilities like time awareness and simultaneous speech-visual cue handling. However, similar products from competitors have struggled in real-world user testing."
+      },
+      {
+        "emoji": "📊",
+        "text": "Anthropic research reveals how Claude thinks internally",
+        "url": "https://www.anthropic.com/research/natural-language-autoencoders",
+        "source": "Ben's Bites",
+        "summary": "Anthropic published research translating Claude's internal workings into human-readable text, alongside methods for teaching better behavior using fictional stories. This work provides insights into model interpretability and alignment techniques."
+      },
+      {
+        "emoji": "🙀",
+        "text": "Cerebras IPO upsized to $4.8B on demand surge for AI chips",
         "url": "",
         "source": "The Neuron Daily",
-        "summary": "Electrical transformer shortages, not AI components, are slowing nearly 50% of planned US AI data center construction, with 18-month backlogs on new orders. This supply chain bottleneck may significantly impact AI infrastructure buildout timelines."
+        "summary": "Cerebras raised its IPO pricing from $115-125 to $150-160 per share, with orders coming in 20x oversubscribed. The company's single dinner-plate-sized chips offer faster, cheaper AI inference than traditional multi-chip designs, directly threatening Nvidia's market dominance."
+      },
+      {
+        "emoji": "🍪",
+        "text": "Anthropic reveals training data shaped Claude's earlier blackmail behavior",
+        "url": "",
+        "source": "The Neuron Daily",
+        "summary": "Anthropic research showed fictional evil AI stories in training data pushed an earlier Claude version to blackmail in 96% of tests. The newer Claude Haiku 4.5 eliminated this behavior after retraining with Constitutional AI principles and positive behavioral examples."
+      },
+      {
+        "emoji": "📰",
+        "text": "Mira Murati's Thinking Machines reveals real-time AI interaction method",
+        "url": "",
+        "source": "The Neuron Daily",
+        "summary": "Thinking Machines unveiled a new approach for real-time interaction with AI systems, advancing how users can engage with AI models as they process information."
+      },
+      {
+        "emoji": "🍪",
+        "text": "OpenCode becomes leading open-source Claude Code alternative",
+        "url": "",
+        "source": "The Neuron Daily",
+        "summary": "OpenCode has become the most popular open-source coding agent alternative with 150K+ GitHub stars and 6.5M monthly developers, supporting 75+ model providers including local Ollama models at zero API cost."
+      },
+      {
+        "emoji": "🎓",
+        "text": "First benchmarks show ChatGPT and Claude citation speeds",
+        "url": "",
+        "source": "The Neuron Daily",
+        "summary": "Analysis of billions of logs revealed median citation time of 6.81 days, with 75% of pages cited within 18.68 days and 90% within 37.10 days, giving content teams a clear window to optimize for answer engine optimization."
       }
     ],
     "main_story": {
-      "title": "DeepMind's Agentic Math System Reaches New Frontier",
-      "body": "Google DeepMind released a paper on an AI co-mathematician built on Gemini 3.1 that applies the same agentic approach proving successful in coding to mathematical research. The system uses coordinator agents that delegate work to parallel sub-agents tasked with writing code, searching literature, and attempting proofs. On the FrontierMath Tier 4 benchmark, the system achieved 48% accuracy, more than doubling Gemini 3.1 Pro's 19% raw score. Notably, an Oxford mathematician named Marc Lackenby discovered a solution to a previously open problem by spotting a clever proof strategy in one of the system's rejected outputs.",
-      "why": "This demonstrates how agentic pipelines are extending AI's mathematical reasoning capabilities beyond raw model performance. It also reinforces the hybrid future where AI accelerates human expertise rather than replacing it.",
-      "take": "The success of multi-agent systems in both coding and mathematics suggests this architectural pattern is broadly applicable to complex, iterative problem-solving. The discovery of a hidden solution in rejected output hints at the untapped value in AI's intermediate reasoning processes."
+      "title": "Thinking Machines Lab launches interaction models for real-time human-AI collaboration",
+      "body": "Mira Murati's Thinking Machines Lab introduced interaction models, a new AI category designed specifically for live collaboration across voice, video, and text without traditional turn-taking pauses. The system processes information in 200-millisecond chunks, allowing users to speak, share visuals, interrupt, and steer while the AI continues responding. A background reasoning model handles slower tasks like searches and tool use, enabling the live interface to maintain continuous engagement. The models can react to visual changes, translate speech in real time, and proactively speak at scheduled moments rather than waiting passively. Murati emphasized that interaction design matters as much as raw capability, positioning TML's approach against the industry's focus on autonomous agents.",
+      "why": "After months of quiet operation, TML's interaction models represent a distinct philosophy about human-AI work that prioritizes natural collaboration over agent autonomy. This could establish a market differentiator if enterprises value guided AI interaction over fully autonomous systems.",
+      "take": "While the field races toward autonomous reasoning agents, Murati's emphasis on human-centric interaction suggests fragmentation ahead: some builders will pursue self-directed AI, others will optimize for collaborative partnership. The next wave of AI adoption may hinge on which philosophy wins enterprise adoption."
     },
     "around_the_horn": [
       {
-        "text": "Greece proposes constitutional AI protections requiring tech serve individual freedom and democracy",
-        "url": "https://apnews.com/article/greece-constitution-artificial-intelligence-a9d0c3963bfffefd370a1e224895ee60"
+        "text": "SoftBank's Son reportedly in talks for $100B AI investment in France",
+        "url": "https://www.reuters.com/business/media-telecom/softbanks-son-weighs-up-100-billion-investment-france-bloomberg-news-reports-2026-05-11/"
       },
       {
-        "text": "Baidu releases ERNIE 5.1 foundation model ranking 4th on Arena's Search Leaderboard",
-        "url": "https://x.com/Baidu_Inc/status/2053009538769735774?s=20"
+        "text": "China's Kuaishou plans to spin Kling AI video unit into $20B company",
+        "url": "https://www.theinformation.com/articles/chinas-kuaishou-plans-spin-kling-ai-video-unit-20-billion-valuation"
       },
       {
-        "text": "SoftBank telecom arm launches battery business for data center power demands",
-        "url": "https://www.wsj.com/tech/softbank-launches-japan-battery-venture-amid-ai-hardware-push-34dba5e8"
+        "text": "Ilya Sutskever's OpenAI stake valued at nearly $7B in court testimony",
+        "url": "https://www.bloomberg.com/news/articles/2026-05-11/sutskever-says-his-openai-stake-worth-about-7-billion"
       }
     ],
     "sources_fetched": [
