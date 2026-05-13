@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-13T06:21:47.703419+00:00",
+  "generated_at": "2026-05-13T09:39:24.199381+00:00",
   "items": [
+    {
+      "id": "cef662ce22a5",
+      "url": "https://www.theverge.com/ai-artificial-intelligence/928963/data-center-rural-america-jobs-jay-maine",
+      "headline": "Rural Data Centers Promise Jobs They Won't Deliver",
+      "body": "Maine's governor vetoed the nation's first data center moratorium last month, citing job creation as the decisive factor. The proposed facility at a shuttered paper mill in Jay would bring 125 to 150 permanent positions to a town that lost its largest employer in 2020. But early evidence suggests this calculus is backwards: data centers are promising rural communities stable employment while delivering industrial facilities that operate with skeleton crews.\n\n## The Jay Mill Conversion\n\nThe Androscoggin paper mill, which once employed 1,500 people, closed after a pulp digester explosion in 2020. Developers purchased and cleaned the 1.4 million-square-foot site, eventually striking a deal with Sentinel Data Centers to convert it into a neocloud facility—a specialized data center designed for GPU-intensive AI and machine learning workloads. The project would require over 100 kilowatts of energy per rack and substantial water resources for cooling systems.\n\nGovernor Janet Mills rejected an 18-month moratorium bill that would have paused permits for data centers consuming more than 20 megawatts of power. Mills cited the promised 125 to 150 jobs as overriding reason. Meanwhile, the state legislature passed a separate law excluding data centers from some tax breaks, though it left municipalities free to negotiate their own incentives—a structure that could pressure cash-strapped rural towns into bidding against themselves.\n\n## The Employment Reality Gap\n\nAcross the country, 67 percent of planned data centers are heading to rural areas, with 39 percent targeting counties that currently have none. Over 35 states are offering incentives to attract them. Yet research into actual employment outcomes remains sparse. What limited early reports exist suggest that massive data center facilities create roughly as many permanent jobs as a midsize restaurant—far below the 150-job baseline used to justify the Jay project.\n\nRural communities often lack the governmental expertise to assess data center impacts before signing agreements. As hyperscale AI infrastructure scales rapidly, the pattern is becoming clear: towns are trading permanent local control of land and water resources for temporary construction activity and a small permanent workforce, often hired from outside the region. Enterprise decision-makers evaluating data center locations should recognize that local economic justifications frequently rest on inflated job projections rather than sustainable regional development.",
+      "source": "The Verge AI",
+      "published": "2026-05-13T09:00:00+00:00",
+      "curated_at": "2026-05-13T09:37:03.315480+00:00",
+      "original_title": "Data centers are coming for rural America"
+    },
     {
       "id": "b99040181a65",
       "url": "https://www.latent.space/p/ainews-the-end-of-finetuning",
@@ -290,16 +300,6 @@
       "published": "2026-05-12T00:00:00+00:00",
       "curated_at": "2026-05-12T22:05:57.818757+00:00",
       "original_title": "How NVIDIA engineers and researchers build with Codex"
-    },
-    {
-      "id": "8a196e8c3ae2",
-      "url": "https://openai.com/index/autoscout24",
-      "headline": "AutoScout24 cuts development cycles to days with Codex-powered engineering",
-      "body": "AutoScout24 Group, which operates Europe's largest online car marketplace alongside AutoTrader.ca, has accelerated its software delivery by an order of magnitude through systematic integration of OpenAI's Codex and ChatGPT into engineering workflows. The company reduced development timelines from two to three weeks down to two to three days for select projects—a shift driven by embedding AI directly into how 1,000 engineers write, review, and test code. With 2,000 employees globally and mounting pressure to innovate faster across legacy systems and large-scale migrations, the company treated AI adoption not as an experiment but as a structural change to how software gets built.\n\n## Dual adoption strategy and measured rollout\n\nAutoScout24 deployed ChatGPT broadly across all 2,000 employees to establish baseline AI literacy, while concentrating Codex into daily engineering workflows where measurable productivity gains were most feasible. The rollout followed a rigorous three-month evaluation that prioritized workflow compatibility and code quality metrics over adoption speed. The company equipped approximately 1,000 builder roles—engineers, data specialists, and product staff—with Codex integrated into their development environments rather than as a separate tool.\n\nTo sustain momentum, the company established an AI Champions network that created feedback loops between central leadership and individual teams. This cross-functional layer translated AI capabilities into concrete use cases rather than treating adoption as a top-down mandate. Codex proved particularly effective for automated pull request reviews, large-scale refactoring, technical documentation generation, and post-incident analysis. Beyond engineering, non-technical roles gained the ability to prototype and validate concepts independently, widening innovation capacity across the organization.\n\n## Why engineering velocity matters at scale\n\nFor a marketplace platform serving 30 million monthly users and 45,000 dealer partners, the shift from weeks to days in development cycles directly impacts competitive position and user experience. AutoScout24's experience illustrates a practical lesson: AI tooling works best when integrated into existing workflows rather than layered on top as novelty. The company's emphasis on rigorous evaluation and organic adoption—paired with explicit focus on augmentation rather than replacement—signals a mature approach that other large enterprises are beginning to replicate. The metric-driven validation of Codex across engineering teams provides concrete evidence for CFOs and engineering leaders evaluating similar tools: improved code quality, reduced manual review overhead, and measurable throughput gains justify the investment.",
-      "source": "OpenAI Blog",
-      "published": "2026-05-12T00:00:00+00:00",
-      "curated_at": "2026-05-12T22:06:05.552681+00:00",
-      "original_title": "AutoScout24 scales engineering with AI-powered workflows"
     }
   ]
 }
