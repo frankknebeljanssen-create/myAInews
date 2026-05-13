@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-13T02:17:27.393619+00:00",
+  "generated_at": "2026-05-13T06:21:47.703419+00:00",
   "items": [
+    {
+      "id": "b99040181a65",
+      "url": "https://www.latent.space/p/ainews-the-end-of-finetuning",
+      "headline": "OpenAI Kills Finetuning APIs as Industry Shifts Strategy",
+      "body": "OpenAI has deprecated its finetuning APIs, marking a symbolic end to a capability the company spent years promoting as a cost-effective alternative to using larger models. The move reflects a broader industry reorientation: as GPU constraints tighten and base model performance improves, the marginal value of task-specific finetuning has eroded. What was once positioned as a core part of the AI engineering toolkit is now treated as a casualty of resource allocation priorities, with Sora already cut from the 2026 product lineup.\n\n## The Divergence Between Tiers\n\nFinetuning's decline does not signal uniform abandonment across the industry. Top-tier AI development shops—including Cursor and Cognition, backed by a now-public $25 billion funding round—have actually increased their use of open-model finetuning and RLFT (reinforcement learning from training feedback). These firms appear to be banking on custom ASIC deployment or inference disaggregation strategies where proprietary model variants justify the computational investment. Meanwhile, the modal 80 percent of AI engineering teams are trending toward simpler alternatives: very long context windows and in-context instruction, exemplified by Anthropic's Constitutional AI approach, which bake task-specific behavior into prompts rather than model weights.\n\nThe practical implication is widening divergence. High-resource teams building frontier applications continue to finetuning as a competitive lever. Everyone else is consolidating around prompt engineering and retrieval-augmented generation on standard model APIs. Jeremy Howard flagged this inflection as early as 2023, and the market is now pricing it in.\n\n## What This Means for Enterprise Builders\n\nFor most enterprise AI teams, OpenAI's move removes a decision from the table. You are no longer choosing between finetuning and prompting; the API surface now pushes toward longer prompts and structured retrieval. This simplifies the operational surface—fewer custom model artifacts to manage, fewer checkpoint versioning problems—but shifts the engineering burden to prompt design, data pipeline hygiene, and search relevance.\n\nThe broader signal is that base model capability has crossed a threshold where marginal task-specific gains no longer justify bespoke training infrastructure for the majority of use cases. If you need differentiation through model adaptation, you are now either large enough to own inference infrastructure, or you are competing on application logic and data retrieval quality instead. For enterprise adopters still evaluating finetuning investments, the answer has clarified: invest in retrieval and reasoning, not weights.",
+      "source": "Latent Space",
+      "published": "2026-05-13T02:47:22+00:00",
+      "curated_at": "2026-05-13T06:19:32.292346+00:00",
+      "original_title": "[AINews] The End of Finetuning"
+    },
     {
       "id": "9f51a76b447c",
       "url": "https://techcrunch.com/2026/05/12/medicares-new-payment-model-is-built-for-ai-and-most-of-the-tech-world-has-no-idea/",
@@ -290,16 +300,6 @@
       "published": "2026-05-12T00:00:00+00:00",
       "curated_at": "2026-05-12T22:06:05.552681+00:00",
       "original_title": "AutoScout24 scales engineering with AI-powered workflows"
-    },
-    {
-      "id": "2801e9858940",
-      "url": "https://www.theverge.com/ai-artificial-intelligence/928342/openai-daybreak-security-ai",
-      "headline": "OpenAI launches Daybreak to counter Anthropic's security AI push",
-      "body": "OpenAI has released Daybreak, a security-focused initiative designed to identify and patch code vulnerabilities before attackers exploit them. The move comes roughly five weeks after Anthropic announced Claude Mythos, a security-specialized model that the company deemed too risky for public release and distributed only through its Project Glasswing program. The competitive timing underscores how major AI labs are treating vulnerability detection as a differentiator in enterprise security.\n\n## Technical Architecture and Components\n\nDaybreak integrates multiple OpenAI models and tools rather than relying on a single system. The core offering combines GPT-5.5 with Trusted Access for Cyber, GPT-5.5-Cyber (both launched last week), and Codex Security, an AI agent that debuted in March. The system works by building threat models based on an organization's codebase, mapping potential attack paths, validating likely vulnerabilities, and automating detection of higher-risk exposures. OpenAI noted it is collaborating with unnamed industry and government partners as it prepares to deploy increasingly advanced cyber-capable models.\n\nUnlike Anthropic's approach with Claude Mythos—where access remains restricted to prevent misuse—OpenAI has not explicitly stated similar constraints on Daybreak's availability. Anthropic's strategy proved porous; despite positioning Mythos as dangerous enough to withhold, unauthorized parties obtained access to the model within weeks.\n\n## Competitive Positioning in Enterprise AI Security\n\nThe near-simultaneous launches reveal how AI security capabilities have become a focal point for enterprise differentiation. Anthropic framed Mythos as too powerful for unrestricted release, leveraging safety concerns as a marketing mechanism. OpenAI's response—a multi-component system backed by partnerships—suggests a different philosophy: distribute capability through controlled channels with institutional safeguards rather than through scarcity alone.\n\nFor enterprise practitioners, the implication is straightforward: security-focused AI tooling is moving from specialist niche to mainstream competitive offering. Both OpenAI and Anthropic are signaling that vulnerability detection will be table stakes in their enterprise portfolios. Organizations evaluating AI-assisted security should now expect these capabilities from major vendors and assess integration with existing code analysis pipelines, not just model capability alone.",
-      "source": "The Verge AI",
-      "published": "2026-05-11T23:05:01+00:00",
-      "curated_at": "2026-05-11T23:51:42.031831+00:00",
-      "original_title": "OpenAI just released its answer to Claude Mythos"
     }
   ]
 }
