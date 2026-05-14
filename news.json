@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-14T00:00:19.893169+00:00",
+  "generated_at": "2026-05-14T03:24:27.511928+00:00",
   "items": [
     {
       "id": "5502a50a46d6",
@@ -110,6 +110,16 @@
       "published": "2026-05-13T16:00:00+00:00",
       "curated_at": "2026-05-13T17:10:36.835063+00:00",
       "original_title": "Anthropic courts a new kind of customer: small business owners"
+    },
+    {
+      "id": "f997a4857c32",
+      "url": "https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit",
+      "headline": "Musk's OpenAI lawsuit enters final phase as witness testimony closes",
+      "body": "The high-stakes trial between Elon Musk and OpenAI reached its penultimate stage this week as both sides completed witness testimony and prepared closing arguments. The case centers on Musk's 2024 claim that OpenAI abandoned its founding mission to develop AI for humanity's benefit in favor of profit maximization. The trial's third week featured testimony from Microsoft CEO Satya Nadella, former OpenAI chief scientist Ilya Sutskever, and OpenAI CEO Sam Altman, with Microsoft CTO Kevin Scott testifying on the final day. Notably, Musk left the country for Beijing despite a judge's order keeping him on recall status, a move that drew criticism from the bench.\n\n## The Core Dispute\n\nMusk is seeking removal of Altman and OpenAI president Greg Brockman, the dissolution of OpenAI's public benefit corporation status, and up to $150 billion in damages to the nonprofit arm. OpenAI's defense centers on characterizing the lawsuit as a \"baseless and jealous bid to derail a competitor,\" pointing to Musk's competing ventures—his xAI company and its Grok chatbot—as motivation. The structural question at the trial's heart involves whether OpenAI's for-profit entity should have grown larger than its nonprofit parent, a tension that expert witnesses addressed directly. Daniel Hemel, a NYU law professor, testified that for-profit affiliates of large nonprofits are standard practice, citing the Mozilla Foundation and Corporation as precedent. John Coates, OpenAI's expert witness, systematically dismantled Musk's legal team's \"museum gift shop\" analogy, noting that such shops are typically part of the nonprofit, not separate entities, and that OpenAI's for-profit structure directly enables the nonprofit's mission.\n\n## What the Trial Signals for Enterprise AI\n\nThe trial outcome will likely influence how AI organizations structure their governance and corporate relationships. A ruling favoring Musk could constrain the ability of nonprofit AI entities to build for-profit operational arms—a model increasingly adopted across the sector. Conversely, a decision for OpenAI would effectively ratify hybrid nonprofit-for-profit structures as legally defensible when tied to mission delivery. For enterprise leaders evaluating partnerships with AI research organizations, the verdict will clarify the legal status of mission statements and governance commitments. The case also underscores the operational risk when founders exit companies but retain legal leverage; how courts interpret contractual obligations and mission drift will set precedent for future governance disputes in the AI space.",
+      "source": "The Verge AI",
+      "published": "2026-05-13T15:28:21+00:00",
+      "curated_at": "2026-05-14T03:22:34.144824+00:00",
+      "original_title": "Live updates from Elon Musk and Sam Altman’s court battle over the future of OpenAI"
     },
     {
       "id": "b6e87bdbc9f1",
@@ -290,16 +300,6 @@
       "published": "2026-05-12T17:01:00+00:00",
       "curated_at": "2026-05-12T18:51:55.595556+00:00",
       "original_title": "Everything Google announced at its Android Show, from Googlebooks to vibe-coded widgets"
-    },
-    {
-      "id": "780f797a29d7",
-      "url": "https://arstechnica.com/gadgets/2026/05/googles-android-powered-laptops-are-called-googlebooks-and-theyre-coming-this-year/",
-      "headline": "Google launches Android-powered Googlebooks laptops with Gemini AI integration",
-      "body": "Google is shipping a new line of Android-powered laptops called Googlebooks later this year, marking a significant pivot from its decade-old Chromebook strategy. Rather than building its own devices, Google will work with existing Chromebook manufacturers—Acer, Asus, Dell, HP, and Lenovo—to produce Googlebooks with varying hardware configurations and price points. The move represents Google's bet that Android's native app ecosystem and deep AI integration can succeed where Chrome OS struggled to gain traction outside education and enterprise segments.\n\n## Gemini-first design and AI features\n\nGooglebooks are built around Google's Gemini AI assistant from the ground up. The centerpiece is \"Magic Pointer,\" a feature that activates a full-screen Gemini experience when users wiggle their cursor back and forth. The system can see what's displayed on screen and make contextual suggestions—such as proposing calendar appointments by pointing at dates in emails, or combining multiple images with image-editing tools. Google-generated AI widgets, previously available on Android phones, will also appear on Googlebooks' home screen, creating personalized dashboards that pull data from the web and Google apps.\n\nThe devices will include Magic Cue, a contextual recommendation feature that has been available on Pixel phones since last year. Googlebooks will also feature deep integration with Android phones, allowing users to stream phone apps directly to their laptop via a dedicated taskbar button and transfer files seamlessly between devices.\n\n## Execution risks and the Android app question\n\nGoogle's success here hinges on whether its AI features prove more useful than predecessors like Microsoft's Recall—which faced privacy backlash—or Magic Cue on phones, which has seen limited user adoption. The company has been vague about which apps will be available at launch, stating only that it will announce \"app ecosystem partners\" closer to release. Google is simultaneously certifying third-party Android app stores while restricting sideloaded APKs, leaving the openness of Googlebooks' app environment unclear.\n\nThe devices will carry a \"Glowbar\" design element on the lid, similar to older Google hardware like the Pixel C tablet, though Google has not yet explained its functionality beyond describing it as \"functional and beautiful.\" For enterprises evaluating these devices, the critical unknowns remain: app ecosystem depth, pricing, hardware durability, and whether Gemini's screen-aware features will deliver productivity gains sufficient to justify switching from established Windows or MacOS workflows.",
-      "source": "Ars Technica AI",
-      "published": "2026-05-12T17:00:49+00:00",
-      "curated_at": "2026-05-12T18:52:04.608159+00:00",
-      "original_title": "Google's Android-powered laptops are called Googlebooks, and they're coming this year"
     }
   ]
 }
