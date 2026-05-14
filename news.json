@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-14T11:47:18.824644+00:00",
+  "generated_at": "2026-05-14T13:49:37.819566+00:00",
   "items": [
     {
       "id": "5502a50a46d6",
@@ -10,6 +10,16 @@
       "published": "2026-05-15T00:00:00+00:00",
       "curated_at": "2026-05-13T19:42:40.751276+00:00",
       "original_title": "Building a safe, effective sandbox to enable Codex on Windows"
+    },
+    {
+      "id": "f0532953c28c",
+      "url": "https://www.technologyreview.com/2026/05/14/1137034/data-readiness-for-agentic-ai-in-financial-services/",
+      "headline": "Financial Services Firms Must Fix Data Quality Before Deploying AI Agents",
+      "body": "Financial services companies are moving toward autonomous AI systems that can plan and execute tasks independently, but success hinges on a prerequisite most organizations haven't fully addressed: data readiness. More than half of financial services teams have already implemented or plan to implement agentic AI, according to Gartner, yet the sector's strict regulatory environment and real-time market dynamics mean these systems amplify both the strengths and weaknesses of underlying data. Without properly indexed, secured, and contextualized information, autonomous AI agents will lag, produce inconsistent results, and create audit trails that regulators cannot trace.\n\n## The Data Fragmentation Problem\n\nFinancial institutions typically operate legacy systems accumulated over decades. A bank that has operated for 50 years may store the same information across 60 different PDF formats, alongside spreadsheets and databases created in different eras. This fragmentation makes it nearly impossible for AI agents to access complete, reliable information at scale. A Forrester study found that 57% of financial organizations are still developing the internal capabilities needed to fully leverage agentic AI, largely because they lack centralized data governance. The challenge intensifies when agents must process unstructured data—customer emails, trade documentation, policy notes—which requires more extensive cleaning and standardization than structured spreadsheet data.\n\nRegulation demands accountability for every decision an AI system makes. Companies cannot simply explain data inputs and outputs; they must provide auditable, governable explanations of what information the model accessed and why that data was correct for the next step. In financial services, there is no tolerance for error, including the AI hallucinations that plagued early deployments.\n\n## Why Search Infrastructure Becomes Critical\n\nThe solution requires a trusted, centralized data store with powerful search capabilities that can index both structured and unstructured information across organizational silos. Search platforms function as the foundational layer—the \"authoritative context and memory stores,\" as Elastic's Steve Mayzak describes them—that allow AI agents to operate with speed and accuracy simultaneously.\n\nOnce properly implemented, agentic AI can automate high-stakes workflows: continuously scanning transactions and market signals to detect emerging client risks, identifying trade discrepancies across different formats, and generating regulatory reports while tracking the provenance of every output. These applications exist today but remain manual and fragmented. The real competitive advantage goes to firms that solve data readiness first, before deploying autonomous systems. Without that groundwork, even sophisticated AI agents will fail to deliver reliable results at scale.",
+      "source": "MIT Technology Review AI",
+      "published": "2026-05-14T13:00:00+00:00",
+      "curated_at": "2026-05-14T13:47:57.521652+00:00",
+      "original_title": "Data readiness for agentic AI in financial services"
     },
     {
       "id": "c4e224504660",
@@ -290,16 +300,6 @@
       "published": "2026-05-13T00:00:00+00:00",
       "curated_at": "2026-05-14T06:41:50.069912+00:00",
       "original_title": "Our response to the TanStack npm supply chain attack"
-    },
-    {
-      "id": "f8de9d548d00",
-      "url": "https://www.wired.com/story/unitree-gd01-mecha-robot/",
-      "headline": "Unitree Unveils Giant Piloted Mecha Robot, Entering Consumer Hardware Market",
-      "body": "Unitree, the Chinese robotics company known for producing affordable humanoid and quadruped robots, has revealed the GD01—a large, piloted mecha-style robot capable of walking, crawling, and wall demolition. The machine marks a significant shift in product direction for a company that has built its reputation on relatively small, mass-producible units. Unitree confirmed to WIRED that the GD01 is a genuine commercial product rather than a publicity stunt, though the introductory video's emphasis on wall-smashing and dramatic contortions suggests the company views it partly as a proof-of-concept for its engineering capabilities and a platform for brand visibility.\n\n## Scale and Capability Shift\n\nThe GD01 represents Unitree's first entry into large-scale mecha robotics. The machine accommodates a human pilot in an open cockpit and can operate both with manual control and autonomous functions. Video demonstrations show the robot performing a range of movements: standard bipedal walking, hand-and-foot crawling (which places the operator on their back), and wall destruction. The robot is red-limbed and painted for visual impact, consistent with how Unitree has marketed its smaller units through social media content featuring synchronized dancing and martial arts sequences.\n\nUnitree's existing product line has achieved significant market penetration. The company produces the world's most popular four-legged and humanoid robots, with its G1 humanoid entry point priced around $15,000—roughly one-tenth the cost of comparable U.S.-manufactured humanoid systems. This cost advantage stems partly from Unitree's integration with China's supply chain and manufacturing ecosystem. The company is expected to go public this year and has demonstrated technical credibility through televised performances involving coordinated multi-robot wireless synchronization.\n\n## Market Position and Implications\n\nThe GD01 arrival signals Unitree's confidence in its engineering and manufacturing foundation, allowing it to expand beyond cost-optimized smaller platforms into larger engineering challenges. For enterprise AI practitioners, the development underscores how rapidly Chinese robotics companies are moving across multiple product categories—from research platforms to consumer-grade quadrupeds to now large-scale mechanical systems. This expansion trajectory suggests Unitree views its supply chain and control systems expertise as transferable across scale.\n\nThe practical applications for a piloted mecha remain unclear; the machine appears designed primarily for demonstration and brand differentiation rather than solving existing industrial problems. However, the project confirms that robotics startups with sufficient capital and manufacturing capability are exploring hardware categories previously confined to research labs or entertainment.",
-      "source": "Wired AI",
-      "published": "2026-05-12T22:51:45+00:00",
-      "curated_at": "2026-05-12T23:52:50.800307+00:00",
-      "original_title": "The Unitree GD01 Is a Giant Mecha Robot You Can Actually Buy"
     }
   ]
 }
