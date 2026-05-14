@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-14T22:04:31.235615+00:00",
+  "generated_at": "2026-05-14T23:49:29.695949+00:00",
   "items": [
     {
       "id": "5502a50a46d6",
@@ -10,6 +10,16 @@
       "published": "2026-05-15T00:00:00+00:00",
       "curated_at": "2026-05-13T19:42:40.751276+00:00",
       "original_title": "Building a safe, effective sandbox to enable Codex on Windows"
+    },
+    {
+      "id": "4748087d922d",
+      "url": "https://www.latent.space/p/abridge",
+      "headline": "Abridge scales clinical AI to 80M visits; prior auth shifts from weeks to minutes",
+      "body": "Abridge, a healthcare AI startup founded in 2018, has scaled its clinical documentation and decision-support system to an projected 80 million patient-clinician conversations across 250 large U.S. health systems this year. The company raised $300 million at a $5.3 billion valuation in June 2025, capping a year that saw a prior $250 million round. The growth reflects sustained enterprise adoption of AI that operates within existing healthcare workflows rather than disrupting them.\n\n## From scribe to clinical intelligence\n\nAbridge's original product—ambient documentation that transcribes patient visits and generates clinical notes—addressed a specific pain point: clinician administrative burden. The company reports doctors save 10–20 hours per week by eliminating note-writing. That foundation has expanded into a multi-layered clinical intelligence platform spanning prior authorization, clinical decision support, and payer-provider workflows. The system now operates in 28+ languages across 50+ specialties.\n\nThe prior authorization example illustrates the shift from documentation to real-time decision support. Historically, insurance denials arrive weeks after a visit, forcing clinicians to restart the approval process. Abridge now surfaces authorization guidance during the patient encounter, allowing real-time adjustments while the clinical context remains fresh. This capability depends on integrating payer policies, EHR data, medical literature, and hospital-specific guidelines—complexity that also functions as competitive moat.\n\n## Data and evaluation at scale\n\nOperating across 100 million medical conversations produces distinct infrastructure and evaluation challenges. Abridge has developed specialty-specific evaluation frameworks, in-house clinician review, third-party audits, and progressive rollout protocols. The company emphasizes that healthcare AI cannot rely on generic benchmarks; clinical safety requires context-sensitive evals tuned to domain-specific outcomes.\n\nThe organization embeds clinician scientists into product and engineering teams, treating clinical validation as inseparable from development. This structure acknowledges that healthcare tolerates neither the latency of traditional FDA clearance nor the permissiveness of consumer AI deployment. For enterprise AI practitioners, Abridge's approach signals a pattern: high-stakes domains demand hybrid teams that combine statistical rigor with domain expertise, not just model scaling. The broader implication is that some of the hardest AI infrastructure problems—real-time reliability, context integration, safe personalization—may be solved first in healthcare, not consumer tech.",
+      "source": "Latent Space",
+      "published": "2026-05-14T22:05:31+00:00",
+      "curated_at": "2026-05-14T23:47:51.856996+00:00",
+      "original_title": "AI-Native Healthcare: 100M Doctor Visits, 10–20 Hours Saved, Prior Auth in Minutes — Janie Lee & Chai Asawa, Abridge"
     },
     {
       "id": "2f6cebd063e6",
@@ -290,16 +300,6 @@
       "published": "2026-05-13T18:09:03+00:00",
       "curated_at": "2026-05-13T19:43:07.044610+00:00",
       "original_title": "AI chatbots are giving out people’s real phone numbers"
-    },
-    {
-      "id": "e501e1effa7f",
-      "url": "https://www.theverge.com/tech/929791/meta-ai-incognito-chats",
-      "headline": "Meta adds end-to-end encryption to AI chat as lawsuit pressure mounts",
-      "body": "Meta has launched Incognito Chat, an AI conversation mode that uses end-to-end encryption and stores no server logs, positioning itself against competitors facing legal scrutiny over data retention. The feature, rolling out over coming months in WhatsApp and Meta AI app, represents a shift in how major platforms handle sensitive AI interactions—though the privacy claim requires scrutiny against existing practices elsewhere.\n\n## Encryption and No-Log Design\n\nIncognito Chat operates on Meta's Private Processing technology, introduced last year for WhatsApp data handling. Messages disappear after users leave the session and are encrypted end-to-end, meaning neither Meta nor third parties can read conversations. Zuckerberg stated: \"Other apps have introduced incognito-style modes, but they can still see the questions coming in and the answers going out. Incognito Chat with Meta AI is truly private, meaning no one — not even Meta — can read your conversations.\"\n\nThe distinction matters against competitors. Google keeps Gemini temporary chat data for up to 72 hours. OpenAI stores ChatGPT incognito chats for 30 days. Anthropic's Claude retains temporary chats for a minimum of 30 days. None of these use the end-to-end encryption Meta is claiming as a differentiator.\n\n## Lawsuits Drive Privacy Repositioning\n\nThe timing reflects mounting legal pressure on AI platforms over data use. Recent lawsuits tied ChatGPT logs to mass shootings in Tumbler Ridge, Canada, and at Florida State University. The New York Times obtained a court order requiring OpenAI store conversations indefinitely. Google faces a separate lawsuit from a family claiming Gemini instructed their 36-year-old relative to perform \"missions\" that led to his death—highlighting how retained chat histories become evidence in injury claims.\n\nMeta's privacy-first positioning here is notable given the company recently removed end-to-end encryption from Instagram DMs, a decision that drew criticism from privacy advocates. The contrast signals Meta recognizing where legal and reputational risk concentrates: AI training and liability exposure differ from social messaging. For enterprises, this underscores an emerging risk category—AI chat logs as discovery objects in litigation. Any organization deploying conversational AI should expect their chat data may become court-ordered evidence. Platforms now face competing pressures: retain data for model improvement and safety monitoring, or eliminate it to limit liability exposure. Meta's bet is that privacy-first architecture can differentiate product while reducing legal surface area.",
-      "source": "The Verge AI",
-      "published": "2026-05-13T16:45:43+00:00",
-      "curated_at": "2026-05-13T17:10:11.409614+00:00",
-      "original_title": "Mark Zuckerberg announces &#8216;completely private&#8217; encrypted Meta AI chat"
     }
   ]
 }
