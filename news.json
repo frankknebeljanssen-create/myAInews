@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-14T09:30:07.885252+00:00",
+  "generated_at": "2026-05-14T11:47:18.824644+00:00",
   "items": [
     {
       "id": "5502a50a46d6",
@@ -10,6 +10,16 @@
       "published": "2026-05-15T00:00:00+00:00",
       "curated_at": "2026-05-13T19:42:40.751276+00:00",
       "original_title": "Building a safe, effective sandbox to enable Codex on Windows"
+    },
+    {
+      "id": "c4e224504660",
+      "url": "https://www.theverge.com/tech/928905/vibe-code-personal-software-revolution",
+      "headline": "AI coding tools spark shift toward personal software built for one",
+      "body": "A threshold has been crossed in AI-assisted development. As of late 2025, generative coding tools like Claude Code have moved from unreliable code generators to reliable application builders. The practical result: non-programmers can now specify what they want and receive working software in return. This is reshaping how people build tools for themselves rather than waiting for commercial products to approximate their needs.\n\n## When AI Coding Became Usable\n\nAnthropic's Claude Code update in late 2025 marked the inflection point. The model shifted from surprising successes to surprising failures—meaning it now builds functional software by default rather than as a happy accident. Competitors including OpenAI's Codex, GitHub Copilot, Cursor, Lovable, and Replit have followed similar trajectories. The barrier to entry has compressed to $20 per month and the ability to articulate a problem. Robin Sloan, an author and technologist, exemplifies the shift: he originally hand-coded a family messaging app in 2020 to escape platform churn. Five years later, he uses AI tools to build additional utilities—most recently a script that integrates Shopify and USPS data to auto-generate shipping labels for his olive oil business. These tools remain brittle (Sloan acknowledges his code is \"extremely hacky\"), but they work within their narrow scope.\n\n## The Pragmatic Limits of Bespoke Tools\n\nPersonal software fills genuine gaps in commercial offerings without replacing them wholesale. Enterprise software won't be abandoned for tools built by marketing departments through vibe coding. Consumer apps remain broadly adequate for most users. But the periphery—those specific workflows that no mass-market product addresses—now becomes addressable. A family budget tracker with exactly the required features and zero bloat. A custom meal planner. A domain-specific automation script. These edge cases, previously requiring either learning to code or accepting mediocre compromises, now require only clear specification and a willingness to accept limited support and no security guarantees. For enterprise practitioners, the implication is narrower than the hype suggests: AI coding tools will absorb the long tail of specialized internal tools and workarounds that currently bloat IT budgets. The productivity gains come from eliminating the translation layer between user need and custom software, not from displacing professional development.",
+      "source": "The Verge AI",
+      "published": "2026-05-14T11:00:00+00:00",
+      "curated_at": "2026-05-14T11:45:33.769088+00:00",
+      "original_title": "You can make an app for that"
     },
     {
       "id": "b7b38e74e742",
@@ -290,16 +300,6 @@
       "published": "2026-05-12T22:51:45+00:00",
       "curated_at": "2026-05-12T23:52:50.800307+00:00",
       "original_title": "The Unitree GD01 Is a Giant Mecha Robot You Can Actually Buy"
-    },
-    {
-      "id": "1f4cdabc7de5",
-      "url": "https://arstechnica.com/ai/2026/05/the-newest-ai-boom-pitch-host-a-mini-data-center-at-your-home/",
-      "headline": "Startup Plans 80,000 Home-Based AI Nodes to Bypass Data Center Bottleneck",
-      "body": "San Francisco startup SPAN is pursuing a distributed infrastructure strategy to address AI compute capacity constraints. Rather than building warehouse-scale data centers, the company plans to install liquid-cooled GPU nodes in residential homes, bundling the equipment with subsidized utility costs and backup power. SPAN has begun pilot testing and targets 100 homes this year, with plans to deploy 80,000 nodes across the US by 2027, providing over 1 gigawatt of distributed compute. The approach sidesteps some physical constraints of traditional data centers while introducing new operational complexities for utilities and grid management.\n\n## Hardware and Homeowner Economics\n\nEach XFRA node contains 16 Nvidia RTX Pro 6000 Blackwell Server Edition GPUs and 4 AMD EPYC server CPUs, with 3 terabytes of memory. The units operate via liquid cooling and are designed to consume up to 80 amps of electrical service—well within the 200-amp standard capacity of modern US homes. SPAN covers electricity and internet bills, offering residents either a $150 flat fee or potentially no fee, along with a 16 kilowatt-hour backup battery. The company estimates installation costs at five times lower than building a comparable 100-megawatt traditional data center.\n\nA wall-mounted smart panel and SPAN's PowerUp software manage load balancing. During peak household electricity demand, the system prioritizes home appliances over node operations, using the backup battery as a buffer or temporarily curtailing flexible loads like EV charging. Homeowners retain control over load-shedding priorities. SPAN positions the backup battery as added resilience for residents during grid outages.\n\n## Compute Use Cases and Grid Implications\n\nSPAN positions these distributed nodes for cloud gaming, content streaming, and AI inference workloads—not for intensive model training, which remains the domain of hyperscalers like Google and Microsoft. The distributed approach avoids land-use intensity and water consumption typical of centralized data centers, potentially reducing community opposition to large facilities.\n\nFor utilities, the appeal centers on load distribution. SPAN argues that embedding nodes in residential areas increases revenue across existing grid infrastructure, reducing pressure for costly upgrades. However, Harvard Law School's Ari Peskoe noted that utilities will need to adapt grid management practices for neighborhoods hosting embedded compute. The take-away for infrastructure planners: this model shifts rather than eliminates capacity challenges, moving coordination burdens from construction timelines to real-time grid operations.",
-      "source": "Ars Technica AI",
-      "published": "2026-05-12T21:59:03+00:00",
-      "curated_at": "2026-05-12T22:05:26.474117+00:00",
-      "original_title": "The newest AI boom pitch: Host a mini data center at your home"
     }
   ]
 }
