@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T02:17:08.742408+00:00",
+  "generated_at": "2026-05-15T06:27:11.282553+00:00",
   "items": [
     {
       "id": "a4e4814a5ae7",
@@ -50,6 +50,16 @@
       "published": "2026-05-14T20:58:55+00:00",
       "curated_at": "2026-05-14T22:03:02.790571+00:00",
       "original_title": "OpenAI says Codex is coming to your phone"
+    },
+    {
+      "id": "ca03c8de33d6",
+      "url": "https://openai.com/index/sea-david-chen",
+      "headline": "Sea rolls out AI coding agents across engineering org, sees 87% weekly usage",
+      "body": "Sea Limited, the Singapore-based tech conglomerate operating e-commerce, digital entertainment, and fintech businesses across Southeast Asia, is deploying Codex—an AI coding agent—across its entire developer organization. Internal data shows 87% of users engage with the tool weekly, signaling substantial adoption beyond initial early adopter phases. The rollout reflects a strategic bet that agentic AI represents a structural shift in how large engineering teams operate under complexity, not merely a productivity margin gain.\n\n## Complexity as the Core Problem\n\nSea's engineering challenge is distinctive. The company operates across fragmented, hyper-localized markets in Southeast Asia, where developers must solve problems spanning multilingual commerce, payment systems, logistics networks, and communication platforms—often within sprawling microservices architectures. David Chen, Sea's co-founder and CPO of Shopee (the e-commerce unit), noted that at this scale, friction stems not from typing syntax but from tracing dependencies across disparate codebases, understanding legacy logic, and maintaining reliability under peak loads.\n\nCodex's differentiation lies in contextual awareness of large, complex codebases. Rather than functioning as autocomplete, it operates as a knowledge engine that reduces the cognitive overhead of navigating unfamiliar services. Internal feedback highlights strong adoption for code understanding, debugging, and feature development, with 73% of users who rated the tool 4 or 5 out of 5 saying they would recommend it to colleagues.\n\n## The Shift From Speed to Discipline\n\nThe data suggests developers are using Codex to think differently, not just type faster. Sea is transitioning from passive autocomplete to integrated agentic workflows embedded directly into CI/CD pipelines. These agents reason through product requirements, autonomously propose test-driven implementations, surface edge cases in distributed systems, and accelerate debugging cycles.\n\nCritically, Sea frames this not as a velocity play alone but as a mechanism for engineering discipline. By allowing AI to rapidly prototype alternative implementations and generate exhaustive test coverage, the company is simultaneously shipping faster and systematically paying down technical debt. This combination—moving faster while improving resilience—signals a fundamental reconfiguration of how engineering teams allocate cognitive effort. The take-away for enterprise leaders: agentic AI's value lies not in replacing developer judgment but in freeing developers from implementation execution, allowing them to focus on architectural design, product judgment, and orchestrating AI-driven workflows.",
+      "source": "OpenAI Blog",
+      "published": "2026-05-14T20:30:00+00:00",
+      "curated_at": "2026-05-15T06:25:46.854029+00:00",
+      "original_title": "Sea's View on the Future of Agentic Software Development with Codex"
     },
     {
       "id": "a556742a8402",
@@ -290,16 +300,6 @@
       "published": "2026-05-13T19:15:59+00:00",
       "curated_at": "2026-05-13T19:42:50.138457+00:00",
       "original_title": "What It Will Take to Make AI Sustainable"
-    },
-    {
-      "id": "2700d0a3f8a0",
-      "url": "https://www.wired.com/story/dhs-plans-experiment-running-reconnaissance-drones-along-the-us-canada-border/",
-      "headline": "DHS Plans Cross-Border Drone Test Focused on 5G Surveillance Data Relay",
-      "body": "The Department of Homeland Security, working with Canada's Defense Research and Development agency, plans to test autonomous drones and ground vehicles along the US-Canada border in November. The experiment, called ACE-CASPER, will evaluate which commercial systems can stream surveillance video and sensor data across the border in real time using 5G networks. Though framed as emergency response testing, DHS procurement documents describe the capabilities in military terms—seeking platforms for gathering \"real-time battlefield intelligence\" and autonomous vehicles equipped with \"Command and Control: Intelligence Surveillance Reconnaissance\" systems borrowed from Department of Defense terminology.\n\n## The Test Framework and Timing\n\nACE-CASPER represents the first joint cross-border technology exercise between the US and Canada in nearly a decade. The last series of similar drills, called CAUSE, ran from 2011 to 2017 and tested interoperability between emergency responders on either side of the border through shared radio, video, and data systems. The November trials will involve a multi-day simulation of a national emergency scenario, with drones and vehicles transmitting live feeds to a shared command-and-control center as they operate across the border. DHS's Science and Technology Directorate is running the procurement process in partnership with Canada's counterpart agency.\n\nThe timing aligns with broader restructuring of US drone policy. Following a 2025 executive order, the S&T Directorate now sits at the center of the federal counter-drone program. The directorate recently launched a procurement tool for counter-drone systems aimed at police and emergency agencies in Washington, DC, and the 11 states hosting FIFA World Cup matches this summer.\n\n## Industry Access and Potential Conflicts\n\nThe procurement represents significant market opportunity within a narrowed vendor landscape. A recent FCC ruling bars new foreign-made drones from US wireless networks, while the executive order prioritizes American manufacturers. Multiple vendors positioned to bid on the ACE-CASPER trials have documented ties to President Trump's family members. Powerus Corporation, a Florida drone manufacturer that merged with an Eric Trump and Donald Trump Jr.-backed golf course company, told WIRED it welcomes the effort. Anduril Industries, in which Trump Jr.'s firm invested, already holds DHS's largest border contract: a $1.1 billion agreement for AI-powered surveillance towers on the southern border. Xtend, an Israeli drone maker now backed by Eric Trump, opened a Tampa headquarters in 2025 and recently secured a Pentagon contract.\n\nThe experiment underscores how government procurement in autonomous systems now involves overlapping commercial and national-security interests. Enterprise stakeholders should monitor how cross-border interoperability standards develop and whether proprietary systems dominate government 5G sensor networks.",
-      "source": "Wired AI",
-      "published": "2026-05-13T19:03:19+00:00",
-      "curated_at": "2026-05-13T19:42:58.972235+00:00",
-      "original_title": "DHS Plans Experiment Running ‘Reconnaissance’ Drones Along the US-Canada Border"
     }
   ]
 }
