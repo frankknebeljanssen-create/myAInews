@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-15T13:47:22.293304+00:00",
+  "generated_at": "2026-05-15T15:59:25.060129+00:00",
   "items": [
+    {
+      "id": "5d75227922b6",
+      "url": "https://techcrunch.com/2026/05/15/runway-started-by-helping-filmmakers-now-it-wants-to-beat-google-at-ai/",
+      "headline": "Runway Pivots From Video Tools to World Models, Challenging Google's AI Dominance",
+      "body": "Runway, the three-year-old video generation startup founded by creators from Chile and Greece, is shifting its entire strategy away from filmmaking tools toward building world models—AI systems that simulate and predict how physical environments behave. The move signals a fundamental divergence in how the AI industry thinks about next-generation intelligence. While tech giants like Google and OpenAI have bet heavily on language as the foundation for AI advancement, Runway is arguing that the path forward runs through video and observational data from the physical world.\n\n## From Video Generation to Physics Simulation\n\nRunway launched its first world model in December 2024 and plans to release another this year. The company, currently valued at $5.3 billion, reported $40 million in annual recurring revenue in Q2 2026, built primarily on its video generation tools used by filmmakers and advertisers at studios like Lionsgate and AMC Networks. But the founders—Anastasis Germanidis, Cristóbal Valenzuela, and Alejandro Matamala-Ortiz—see video generation as a stepping stone. Training AI models directly on raw observational data from the world, rather than on human-generated text and descriptions, produces systems less constrained by human bias and capable of understanding physical laws and causality rather than just language patterns.\n\nThe company now operates 155 employees across New York, London, San Francisco, Seattle, Tel Aviv, and Tokyo. Runway has also launched a robotics unit with real-world deployments already underway. Competitors including Luma and World Labs are pursuing similar approaches, as is Google with its Genie world model.\n\n## Why Physics-Based AI Matters Now\n\nWorld models trained on diverse sensor data could compress scientific iteration cycles by allowing researchers to run simulations and experiments digitally rather than waiting for lab results. Germanidis frames this as scientific infrastructure—a digital twin of the universe that accelerates progress in drug discovery, climate modeling, and robotics training. This is fundamentally different from language models, which distill existing human knowledge from the internet.\n\nThe stakes are existential for Runway. If video-to-world-model progression proves to be the correct architectural path, the company has first-mover advantage in a domain where it built real production credibility. If the bet fails, it risks being outpaced by well-capitalized competitors like Google. For enterprise practitioners, the signal is clear: the next wave of consequential AI won't emerge from language model iteration, but from companies building systems that learn directly from observational, multimodal data about how the world actually works.",
+      "source": "TechCrunch AI",
+      "published": "2026-05-15T14:00:00+00:00",
+      "curated_at": "2026-05-15T15:57:55.041131+00:00",
+      "original_title": "Runway started by helping filmmakers. Now it wants to beat Google at AI."
+    },
     {
       "id": "d9c742e591ee",
       "url": "https://techcrunch.com/2026/05/15/osaurus-brings-both-local-and-cloud-ai-models-to-your-mac/",
@@ -290,16 +300,6 @@
       "published": "2026-05-14T05:24:39+00:00",
       "curated_at": "2026-05-14T06:41:19.633296+00:00",
       "original_title": "Clio’s $500M milestone arrives just as Anthropic ups the ante"
-    },
-    {
-      "id": "7bae59d035f3",
-      "url": "https://www.latent.space/p/ainews-codex-rises-claude-meters",
-      "headline": "Anthropic Tightens Claude API Pricing As Coding Agents Reshape Market",
-      "body": "Anthropic has unified Claude's pricing structure across subscription and programmatic use, bundling API credits equal to monthly subscription cost directly into paid plans. The change caps a three-week period of competitive jostling between major AI labs, with OpenAI simultaneously launching enterprise promotions and Codex gaining ground among engineers. The shift signals a maturing market where pricing architecture—not just model capability—shapes platform adoption.\n\n## Claude's New Metering Model\n\nUnder the restructured plan, a $200 monthly Claude subscription now includes $200 in API credits for programmatic use on third-party platforms like claude-p and OpenClaw, while preserving separate limits for Claude.ai and Claude Code. Anthropic framed this as policy clarification, but the market received it as contraction: historical API discounts of 70-90% off published rates are now being recalibrated toward standard pricing. The company is reserving its most favorable rates for its own harnesses—Claude Code in particular—while metering consumption elsewhere.\n\nThis represents a strategic reversal. Anthropic initially subsidized third-party integrations aggressively to build ecosystem lock-in; now that Claude Code has established itself as a credible coding agent platform, the company is restructuring incentives to concentrate usage on owned surfaces. Competitors have noted the timing: OpenAI announced an enterprise switch promotion the same day, suggesting both labs are actively competing for production workloads rather than settling into stable market positions.\n\n## Implications for Agent Infrastructure\n\nThe pricing consolidation arrives as coding agents and their deployment harnesses—Cursor, Cline, LangChain, Notion—are shifting from stateless chat interfaces toward stateful, long-running execution with inspectable intermediate state. This architectural evolution requires stable, predictable API costs. Developers integrating Claude across multiple platforms now face higher programmatic costs unless they consolidate on Anthropic's own tools, creating pressure to standardize on fewer harnesses.\n\nFor enterprise teams, the takeaway is direct: model switching costs have risen. Moving from Claude to alternatives now involves rewriting not just prompts but agent orchestration logic and harness integration. Anthropic is banking on Claude Code's engineering momentum to make that switching cost prohibitive. Teams should audit current programmatic API usage patterns now and lock in pricing expectations before further consolidation cycles. The market is still establishing pricing equilibrium; those who optimize for current rates risk obsolescence as platforms shift leverage toward owned infrastructure.",
-      "source": "Latent Space",
-      "published": "2026-05-14T03:53:26+00:00",
-      "curated_at": "2026-05-14T06:41:29.380192+00:00",
-      "original_title": "[AINews] Codex Rises, Claude Meters Programmatic Usage"
     }
   ]
 }
