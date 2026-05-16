@@ -1,18 +1,5 @@
 [
   {
-    "timestamp": "2026-05-01T10:20:20.046003+00:00",
-    "feeds_checked": 13,
-    "items_fetched": 145,
-    "new_items": 30,
-    "kept": 19,
-    "dropped": 11,
-    "errors": 0,
-    "input_tokens": 49039,
-    "output_tokens": 11175,
-    "cost_usd": 0.0839,
-    "total_in_news": 30
-  },
-  {
     "timestamp": "2026-05-01T12:05:20.101562+00:00",
     "feeds_checked": 13,
     "items_fetched": 145,
@@ -2597,6 +2584,19 @@
     "input_tokens": 41832,
     "output_tokens": 9145,
     "cost_usd": 0.07,
+    "total_in_news": 30
+  },
+  {
+    "timestamp": "2026-05-16T16:50:51.479332+00:00",
+    "feeds_checked": 13,
+    "items_fetched": 147,
+    "new_items": 30,
+    "kept": 16,
+    "dropped": 14,
+    "errors": 0,
+    "input_tokens": 43546,
+    "output_tokens": 9368,
+    "cost_usd": 0.0723,
     "total_in_news": 30
   }
 ]
