@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-15T23:48:54.616760+00:00",
+  "generated_at": "2026-05-16T02:09:34.544823+00:00",
   "items": [
     {
       "id": "85eeec04b7b9",
@@ -222,6 +222,16 @@
       "original_title": "A new personal finance experience in ChatGPT"
     },
     {
+      "id": "c64312c3121c",
+      "url": "https://openai.com/index/databricks",
+      "headline": "GPT-5.5 hits 50% accuracy on Databricks' enterprise document benchmark",
+      "body": "Databricks has made GPT-5.5 available for enterprise agent workflows after the model achieved a new high on OfficeQA Pro, the company's benchmark for complex document processing tasks. The milestone matters because parsing legacy documents and scanned PDFs reliably remains a production bottleneck for AI agents—small extraction errors in these workflows compound downstream, breaking entire task chains. GPT-5.5 reduced errors by 46% compared to GPT-5.4 and became the first model to exceed 50% accuracy on the benchmark.\n\n## Performance gains in document parsing\n\nOfficeQA Pro evaluates models on tasks involving scanned PDFs, legacy files, and long-context documents—the kinds of materials that frequently cause agent systems to fail in real deployments. Databricks research engineer Arnav Singhvi attributed the largest gains to improvements in parsing older documents. \"Earlier models like 5.4 were unable to parse all the digits correctly, but it seems like 5.5 has a step-function lift in parsing older documents and scanned PDFs,\" he said. The benchmark also includes multi-step retrieval and reasoning workflows, where GPT-5.5 showed reduced tendency to pursue unnecessary search detours that earlier versions would take.\n\n## Production implications for agent systems\n\nThe results signal a meaningful capability shift for enterprise AI deployments. Databricks offers GPT-5.5 through its AI Unity Gateway, integrated with AgentBricks and the Agent Supervisor API—systems where the model orchestrates parsing, retrieval, and execution across specialized agents. For practitioners building custom agent workflows, this means a more reliable foundation for document-heavy tasks without additional supervision. The capability is particularly relevant for financial services, insurance, and legal technology workflows where document parsing errors directly impact downstream business logic. Organizations relying on agents to extract data from scanned forms, contracts, or legacy databases should expect measurable improvements in end-to-end accuracy.",
+      "source": "OpenAI Blog",
+      "published": "2026-05-15T00:00:00+00:00",
+      "curated_at": "2026-05-16T02:07:38.349448+00:00",
+      "original_title": "Databricks brings GPT-5.5 to enterprise agent workflows"
+    },
+    {
       "id": "4748087d922d",
       "url": "https://www.latent.space/p/abridge",
       "headline": "Abridge scales clinical AI to 80M visits; prior auth shifts from weeks to minutes",
@@ -290,16 +300,6 @@
       "published": "2026-05-14T19:57:20+00:00",
       "curated_at": "2026-05-14T20:24:19.054055+00:00",
       "original_title": "What happens when AI starts building itself?"
-    },
-    {
-      "id": "f9b33160411a",
-      "url": "https://arstechnica.com/ai/2026/05/energy-supplier-abandons-lake-tahoe-residents-to-serve-data-centers/",
-      "headline": "Nevada utility cuts Lake Tahoe power to prioritize data centers",
-      "body": "California's Lake Tahoe region faces an energy supply crisis after NV Energy, a Nevada utility, announced it will stop supplying 75 percent of the power to the 49,000 residents there by May 2027. The decision reveals a core tension in AI infrastructure expansion: the massive power demands of data center buildout are reshaping energy markets in ways that disadvantage smaller communities and expose regulatory gaps between states.\n\n## Data Center Demand Reshapes Nevada Power\n\nNV Energy cited data center development as a primary reason for terminating its power supply agreement with Lake Tahoe's local provider, Liberty Utilities. The Nevada utility's own planning documents project that a dozen data center projects in northern Nevada will drive 5,900 megawatts of new demand by 2033. To secure capacity for these facilities, NV Energy has already signed contracts with tech companies. Amazon recently committed to supporting 700 megawatts of \"low-carbon energy\" deployment for Reno data center operations, including 100 megawatts of geothermal generation.\n\nNV Energy contested claims that data centers were the sole driver, characterizing the decision as part of a long-term transition that predates the AI boom. The company originally sold its California assets to Liberty in 2009 and has extended temporary power agreements incrementally since then. But those temporary arrangements have now reached their limit.\n\n## A Regulatory Blind Spot in Regional Power Grids\n\nThe Lake Tahoe situation exposes a structural vulnerability in US energy governance. No single regulator oversees the complete chain from power generation to customer bills. California residents of Lake Tahoe pay rates set by state regulators, yet their electricity flows through a grid under Nevada's authority and depends entirely on Nevada transmission lines. This jurisdictional split left California communities vulnerable when a neighboring state's utility shifted priorities.\n\nA new $4.2 billion transmission line called Greenlink West could help Liberty access alternative energy suppliers, but it won't become operational until May 2027—the exact deadline for NV Energy's cutoff, leaving no buffer. The situation signals a broader problem: AI data center expansion is straining regional power infrastructure faster than transmission networks can adapt. Public opposition compounds the challenge, with 70 percent of Americans opposing data centers in their communities according to a March 2026 Gallup poll, and nearly half of data center projects facing delays due to power constraints and other factors. For enterprises planning data center deployments, Lake Tahoe demonstrates that securing power capacity requires engagement with state regulators and long-term transmission planning—not just bilateral utility agreements.",
-      "source": "Ars Technica AI",
-      "published": "2026-05-14T19:17:28+00:00",
-      "curated_at": "2026-05-14T20:24:27.788398+00:00",
-      "original_title": "Energy supplier abandons Lake Tahoe residents to serve data centers"
     }
   ]
 }
