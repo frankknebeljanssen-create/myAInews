@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-16T09:25:20.364253+00:00",
+  "generated_at": "2026-05-16T10:59:02.350474+00:00",
   "items": [
     {
       "id": "53a62602c298",
@@ -10,6 +10,16 @@
       "published": "2026-05-16T04:36:50+00:00",
       "curated_at": "2026-05-16T05:46:59.600630+00:00",
       "original_title": "[AINews] Cerebras' $60B IPO: Slowly, then All at Once"
+    },
+    {
+      "id": "f0106247dee4",
+      "url": "https://openai.com/index/malta-chatgpt-plus-partnership",
+      "headline": "Malta Becomes First Country to Offer Free ChatGPT Plus to All Citizens",
+      "body": "Malta and OpenAI announced a partnership on May 16 to provide ChatGPT Plus access to all Maltese citizens at no cost, contingent on completion of an AI literacy course. The initiative combines mandatory education with tool access, positioning itself as a model for national-scale AI adoption. The first phase launches this month, with the Malta Digital Innovation Authority managing distribution to eligible participants.\n\n## The Program Structure\n\nThe \"AI for All\" course, developed by the University of Malta, teaches citizens what AI is, its limitations, and responsible usage in personal and professional contexts. Completion grants one year of free ChatGPT Plus access. The program is designed to reach people regardless of background or prior technical experience.\n\nOpenAI frames this as part of its \"OpenAI for Countries\" initiative, which tailors AI deployment strategies to individual nation priorities rather than applying uniform models. The company is simultaneously working with Estonia and Greece on education system integration, signaling a broader push into government partnerships.\n\n## The Adoption Signal\n\nThe announcement reflects a strategic shift in how governments approach AI rollout. Rather than waiting for organic adoption or limiting access to early adopters, Malta is treating AI literacy and tool access as public goods similar to digital infrastructure. Minister Silvio Schembri explicitly positioned the initiative as preventing citizens from falling behind in the digital economy.\n\nFor enterprise practitioners, this represents an emerging pattern: governments will increasingly become distribution channels and literacy gatekeepers for AI tools, not barriers. Countries that build national competency programs may accelerate enterprise AI adoption faster than those relying on individual initiative. The model also suggests that bundling education with access—rather than offering either in isolation—may become standard for scaling AI use beyond tech-forward populations. Organizations serving public-sector clients should expect governments to prioritize workforce readiness before implementing AI systems themselves.",
+      "source": "OpenAI Blog",
+      "published": "2026-05-16T00:00:00+00:00",
+      "curated_at": "2026-05-16T10:56:04.068464+00:00",
+      "original_title": "OpenAI and Malta partner to bring ChatGPT Plus to all citizens"
     },
     {
       "id": "85eeec04b7b9",
@@ -290,16 +300,6 @@
       "published": "2026-05-14T21:30:44+00:00",
       "curated_at": "2026-05-14T22:02:54.245327+00:00",
       "original_title": "Elon Musk’s SpaceXAI has been bleeding staff since its merger"
-    },
-    {
-      "id": "210a0f1afb83",
-      "url": "https://techcrunch.com/2026/05/14/openai-says-codex-is-coming-to-your-phone/",
-      "headline": "OpenAI Brings Codex Agent Control to Mobile Devices",
-      "body": "OpenAI has integrated its Codex coding agent into the ChatGPT mobile app, allowing developers to monitor and direct their coding workflows from iOS and Android devices. The feature, now in preview across all subscription tiers, arrives as both OpenAI and Anthropic accelerate releases of remote-control capabilities for their respective agentic coding tools—a sign of intensifying competition in a market segment that has become central to both companies' enterprise strategy.\n\n## Mobile Access Expands Agent Oversight\n\nThe mobile integration lets users view live Codex environments running on any connected device and manage tasks from their phones. OpenAI framed the capability as more than simple remote access: users can work across multiple task threads, review outputs, approve commands, switch between models, and initiate new coding tasks—effectively operating Codex as if they were at a desktop.\n\nThe update follows recent feature additions to the Codex platform. Last month, OpenAI enabled the agent to run autonomously in background desktop sessions, handling multiple tasks without constant user input. Earlier this month, the company released a Chrome extension allowing Codex to work directly in live browser environments. Each release has broadened the tool's operational scope and autonomy.\n\n## The Agent Wars Heat Up\n\nAnthropic introduced a comparable remote-monitoring feature called Remote Control for Claude Code last February, establishing early ground in this category. Over the past year, Claude Code has gained measurable traction among businesses and technical professionals, though both tools remain widely deployed across enterprise settings.\n\nThe flurry of overlapping releases—remote control, background execution, browser integration—reveals a strategic race to embed agentic coding tools into developers' existing workflows. The company that makes autonomous code generation most frictionless and trustworthy across multiple contexts will likely capture a larger share of enterprise adoption. For practitioners, the convergence suggests that mobile oversight of code agents will become table stakes rather than a premium feature. The takeaway: expect agent control surfaces to continue fragmenting across devices and contexts, making integration and consistency of oversight a critical evaluation criterion when selecting coding platforms.",
-      "source": "TechCrunch AI",
-      "published": "2026-05-14T20:58:55+00:00",
-      "curated_at": "2026-05-14T22:03:02.790571+00:00",
-      "original_title": "OpenAI says Codex is coming to your phone"
     }
   ]
 }
