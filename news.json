@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-19T22:11:52.579511+00:00",
+  "generated_at": "2026-05-19T23:59:09.210202+00:00",
   "items": [
     {
       "id": "48767e595e58",
@@ -80,6 +80,16 @@
       "published": "2026-05-19T19:15:31+00:00",
       "curated_at": "2026-05-19T20:25:57.340469+00:00",
       "original_title": "Google takes a page out of Meta’s book, announces new audio-powered smart glasses"
+    },
+    {
+      "id": "3707ddb4a85d",
+      "url": "https://techcrunch.com/2026/05/19/google-takes-a-page-out-of-metas-book-announces-new-audio-powered-smart-glasses-at-io-2026/",
+      "headline": "Google Enters Smart Glasses Market With Audio-First Devices",
+      "body": "Google announced a new line of AI-powered audio glasses at I/O 2026 on Tuesday, marking a return to the hardware category after the company's failed Google Glass experiment years ago. The devices, developed in partnership with Warby Parker and Gentle Monster and designed with Samsung input, will ship later this year and work with both Android and iOS devices. The glasses function primarily as voice interfaces, allowing users to issue commands to Google's services—including Gemini—without touching a phone.\n\n## The Hardware Strategy\n\nGoogle is framing these as \"audio glasses\" rather than visual-display devices, a meaningful distinction from earlier smart eyewear attempts. The demonstration showed a user ordering coffee online through voice commands alone, with the glasses serving as the interaction layer between the user and Google's app ecosystem. The cross-platform compatibility signals Google's intent to reach beyond its own operating system, suggesting the company views the hardware as a wedge for deeper service adoption rather than a device-first play.\n\nThe partnerships with Warby Parker and Gentle Monster represent an attempt to address a persistent problem for smart glasses: consumer acceptance and fashion. By embedding Google's technology into established eyewear brands, the company sidesteps the branding baggage of Google Glass while gaining distribution through retailers already serving the optical market.\n\n## The Competitive Signal\n\nThe timing and positioning reveal Google responding directly to Meta's aggressive push into smart glasses, where the company has invested significantly in Ray-Ban collaboration and wearable AI. The smart glasses category has matured substantially since Google Glass's 2013 launch, with startups and major tech firms now treating wearables as a legitimate platform for AI interaction.\n\nFor enterprise deployments, audio-first glasses could serve field operations, customer service, and hands-free environments where voice interaction offers genuine productivity gains over mobile devices. The iOS compatibility is critical—it signals Google's willingness to compete for mindshare regardless of the underlying OS, positioning Gemini as the central value proposition rather than Android lock-in.\n\nThe take-away: Google is betting that voice-driven wearables will become a primary interface for AI assistance, moving beyond phones as the intermediary. Success here depends less on novel hardware and more on Gemini's ability to handle complex requests reliably and the ecosystem's integration depth.",
+      "source": "TechCrunch AI",
+      "published": "2026-05-19T19:15:31+00:00",
+      "curated_at": "2026-05-19T23:56:05.529627+00:00",
+      "original_title": "Google takes a page out of Meta’s book, announces new audio-powered smart glasses at IO 2026"
     },
     {
       "id": "dbf460fe3189",
@@ -290,16 +300,6 @@
       "published": "2026-05-19T17:45:00+00:00",
       "curated_at": "2026-05-19T18:57:34.788508+00:00",
       "original_title": "OpenAI is making it easier to check if an image was made by their models"
-    },
-    {
-      "id": "52871fdecb65",
-      "url": "https://techcrunch.com/2026/05/19/google-launches-antigravity-2-0-with-an-updated-desktop-app-and-cli-tool/",
-      "headline": "Google Expands Antigravity With CLI, SDK, and $100 Tier",
-      "body": "Google has released Antigravity 2.0, its agentic coding platform, with a redesigned desktop application, command-line interface, and developer SDK. The update positions the tool more directly against competitors like Cursor and Anthropic's recent product releases, while expanding its reach across both individual developers and enterprise Google Cloud customers.\n\n## Desktop App and Developer Tools\n\nThe new desktop application enables users to orchestrate multiple agents and run tasks in parallel. The interface supports custom subagent workflow design and background task scheduling. Google has also added voice command capabilities to Antigravity, mirroring features it recently introduced across Gmail and Docs.\n\nAlongside the app, Google is launching a CLI tool aimed at terminal-based developers and migrating users from its older Gemini CLI tool. The company is also releasing an Antigravity SDK that allows developers to build custom agents and enables Google Cloud customers to connect existing infrastructure. Developers can now export projects from AI Studio to continue work locally, and Google plans to release custom agent templates for enterprise adoption.\n\n## Pricing and Market Position\n\nGoogle introduced a new AI Ultra plan at $100 per month, offering 5x higher AI usage limits in Antigravity compared to its Pro tier. The company simultaneously reduced its top-tier plan from $250 to $200 monthly, which provides 20x higher limits. This tiered pricing structure mirrors moves by competitors Anthropic and OpenAI, both of which established $100 and $200 monthly plans in recent years.\n\nThe updates are powered partly by Google's Gemini 3.5 Flash model, which the company developed using Antigravity itself—an indication that the tool has matured enough for internal use. Google is also integrating Antigravity capabilities into consumer products: Search will generate custom UIs in real time as part of answers, allowing users to build mini-applications while researching topics.\n\n## Strategic Implication\n\nThe release signals Google's commitment to competing in agentic software on multiple fronts—from individual developers to enterprise teams. By offering local deployment options via the SDK and CLI, Google is addressing developer concerns about vendor lock-in. The pricing realignment suggests the company is prioritizing market share and developer adoption over margin extraction in this category. For enterprises evaluating agent platforms, the combination of local control, Google Cloud integration, and tiered pricing creates a substantive alternative to closed ecosystems.",
-      "source": "TechCrunch AI",
-      "published": "2026-05-19T17:45:00+00:00",
-      "curated_at": "2026-05-19T18:57:42.636280+00:00",
-      "original_title": "Google launches Antigravity 2.0 with an updated desktop app and CLI tool"
     }
   ]
 }
