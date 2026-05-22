@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-21T23:56:51.990832+00:00",
+  "generated_at": "2026-05-22T02:37:25.193158+00:00",
   "items": [
+    {
+      "id": "48b4828f428e",
+      "url": "https://www.wired.com/story/openai-chris-lehane-global-affairs-pr/",
+      "headline": "OpenAI's Political Operative Takes On AI Skepticism Crisis",
+      "body": "OpenAI has tasked Chris Lehane, a veteran political strategist and self-described \"master of disaster,\" with reversing a widening public relations problem: despite ChatGPT's popularity, public sentiment toward AI has turned increasingly negative. Lehane, who joined OpenAI in 2024 as chief of global affairs, now oversees the company's communications and policy work while navigating a dual mandate—convince regulators to adopt favorable AI policies while simultaneously shifting public narratives away from dystopian framings of artificial intelligence.\n\n## Lehane's Political Playbook\n\nLehane's resume spans crisis management in Bill Clinton's White House and regulatory fights on behalf of Airbnb, where he helped the company navigate hostile city-level regulations. He also played a founding role in Fairshake, a crypto industry super PAC designed to influence federal AI and digital asset policy. Since arriving at OpenAI, Lehane has become instrumental in the company's public strategy. He also helped establish Leading the Future, a pro-AI super PAC that launched last summer with over $100 million in commitments from tech figures including OpenAI cofounder Greg Brockman. The group has opposed Alex Bores, author of New York's strictest AI safety law and a congressional candidate.\n\nLehane argues that public discourse about AI has become \"artificially binary\"—oscillating between utopian scenarios where humans stop working entirely and dystopian visions where AI concentrates power among elites. He contends OpenAI must project a \"calibrated\" message. The company recently published policy proposals addressing societal concerns, including a four-day work week, expanded healthcare access, and taxes on AI-powered labor.\n\n## The Credibility Problem\n\nLehane's strategy faces a significant credibility gap. Former OpenAI employees have accused the company of downplaying AI's economic downsides, with researchers from its own economics unit departing after alleging their concerns about job displacement were treated as inconvenient rather than legitimate findings. Additionally, the company's leadership—particularly CEO Sam Altman—has shifted rhetoric considerably, previously warning of \"whole classes of jobs\" disappearing before recently declaring \"jobs doomerism is likely long-term wrong.\"\n\nFor enterprises evaluating OpenAI's policy commitments, the takeaway is clear: Lehane's role reflects a company under reputational pressure attempting to influence both regulatory outcomes and public opinion simultaneously. This creates inherent tensions between independent research and advocacy messaging that stakeholders should evaluate carefully when assessing the company's longer-term policy positions and reliability as a partner.",
+      "source": "Wired AI",
+      "published": "2026-05-22T00:04:25+00:00",
+      "curated_at": "2026-05-22T02:34:14.252209+00:00",
+      "original_title": "Can OpenAI’s ‘Master of Disaster’ Fix AI’s Reputation Crisis?"
+    },
     {
       "id": "866e4cbcfd49",
       "url": "https://arstechnica.com/ai/2026/05/as-grok-flounders-spacex-bets-future-on-beating-big-tech-at-ai/",
@@ -290,16 +300,6 @@
       "published": "2026-05-21T00:21:21+00:00",
       "curated_at": "2026-05-21T02:32:44.012863+00:00",
       "original_title": "Anthropic says it’s about to have its first profitable quarter"
-    },
-    {
-      "id": "5d43790d9958",
-      "url": "https://www.wired.com/story/elon-musk-spacex-spending-gas-turbines-grok/",
-      "headline": "SpaceX commits $2.8B to gas turbines for AI data center power",
-      "body": "SpaceX has committed to spending over $2.8 billion on gas turbines to power data centers supporting its AI operations, according to regulatory filings ahead of the company's planned initial public offering. The investment signals how acute the electricity shortage has become for the data center industry, even as it raises environmental questions about SpaceX's approach to solving the power constraint that is now the primary bottleneck limiting AI infrastructure expansion across the United States.\n\n## The Turbine Spending Plan\n\nSpaceX disclosed two separate procurement deals in its IPO prospectus. In March, the company agreed to purchase $805 million worth of turbines from an unnamed vendor through 2029. In late April, SpaceX struck a second deal for $2 billion in mobile gas turbines and related equipment from another unnamed supplier, a transaction still pending completion.\n\nThese turbines power two data centers operated by xAI, Elon Musk's AI unit that develops the Grok chatbot. Colossus 1 operates in Memphis, Tennessee, while Colossus 2 sits in Southaven, Mississippi. The facilities have expanded rapidly—recent reporting documented 19 additional portable turbines added to Colossus 2 over two months, bringing the total there to 46 units. As of March, the two data centers together consumed approximately 1 gigawatt of electricity, equivalent to a large U.S. city's power usage. SpaceX's construction pipeline includes more than $14 billion in data center equipment not yet operational, indicating substantially higher power demands ahead.\n\n## Environmental Trade-offs and Regulatory Scrutiny\n\nPortable gas turbines offer a compelling short-term solution: they operate independently from the grid and require no clean air permit for their first year of operation. SpaceX has deployed this regulatory window strategically, adding turbines incrementally to avoid triggering permitting requirements.\n\nHowever, this approach has drawn scrutiny. The NAACP and other advocacy groups sued xAI alleging that 27 gas turbines were operating without appropriate permits, creating public health and climate risks. SpaceX has also faced additional regulatory inquiries into potential air pollution and environmental requirement violations.\n\nFor enterprises evaluating infrastructure strategies, SpaceX's experience illustrates a fundamental tension in the current AI build-out: the speed advantage of temporary, grid-independent power sources versus the regulatory and reputational costs of circumventing environmental oversight. As power constraints tighten industry-wide, similar trade-offs will likely surface across the data center sector, making this a precedent worth monitoring.",
-      "source": "Wired AI",
-      "published": "2026-05-20T23:30:06+00:00",
-      "curated_at": "2026-05-21T02:32:52.001432+00:00",
-      "original_title": "SpaceX Is Spending $2.8 Billion to Buy Gas Turbines for Its AI Data Centers"
     }
   ]
 }
