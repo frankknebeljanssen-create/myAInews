@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-22T02:37:25.193158+00:00",
+  "generated_at": "2026-05-22T06:46:20.718407+00:00",
   "items": [
+    {
+      "id": "fe200fe72e51",
+      "url": "https://www.latent.space/p/ainews-new-ai-infra-unicorns-exa",
+      "headline": "Three AI Infrastructure Firms Hit Unicorn Status on Profitability Milestone",
+      "body": "Three enterprise AI infrastructure companies reached unicorn valuations this week, with one already profitable at $100M annual recurring revenue. TurboPuffer, Exa, and Modal collectively raised over $700M in Series C funding, signaling sustained investor confidence in infrastructure plays despite broader market questions about AI monetization. The trio represents different layers of the AI stack: vector databases, search primitives, and serverless compute.\n\n## Valuations and Capital Deployed\n\nTurboPuffer closed at $100M ARR and achieved profitability, a rare combination for infrastructure companies at scale. Exa raised $250M at a $2.2B valuation, while Modal secured $355M at $4.7B, the highest valuation of the three. These figures reflect investor bets on enduring demand for specialized infrastructure as AI applications move from research into production. The capital amounts signal continued willingness to fund companies solving narrower technical problems rather than chasing consumer-facing AI products.\n\nThe profitability claim from TurboPuffer is the more substantive signal than valuations alone. Reaching unit economics that work at meaningful scale—particularly for a database product serving AI workloads—addresses a persistent skepticism about whether infrastructure companies can sustain margins given competitive pressures and the commoditization risk from larger platforms.\n\n## What This Signals for Enterprise Builders\n\nThese fundraises underscore that enterprise AI adoption is moving beyond models into the operational layer. Companies building production systems need reliable vector search, semantic retrieval, and compute scheduling. Infrastructure companies that solve specific pain points can reach meaningful revenue without capturing entire markets.\n\nThe timing matters. These closings arrive as AI teams shift focus from experimentation to reliability and cost management. TurboPuffer's profitability suggests customers will pay for databases that handle their retrieval workloads efficiently. Modal's valuation jump reflects demand for serverless compute that abstracts away infrastructure complexity. Exa's capital raise points to sustained needs for improved search and ranking in retrieval-augmented generation pipelines.\n\nFor teams evaluating infrastructure vendors, the profitability of TurboPuffer and the scale of capital going to Modal and Exa indicate these products have graduated beyond early-stage experiments. They have paying customers and defined use cases. The infrastructure layer is hardening.",
+      "source": "Latent Space",
+      "published": "2026-05-22T05:50:58+00:00",
+      "curated_at": "2026-05-22T06:41:48.934139+00:00",
+      "original_title": "[AINews] New AI Infra unicorns: Exa, Modal, TurboPuffer"
+    },
     {
       "id": "48b4828f428e",
       "url": "https://www.wired.com/story/openai-chris-lehane-global-affairs-pr/",
@@ -290,16 +300,6 @@
       "published": "2026-05-21T00:28:31+00:00",
       "curated_at": "2026-05-21T02:32:36.511376+00:00",
       "original_title": "Jensen Huang says he’s found a ‘brand new’ $200B market for Nvidia"
-    },
-    {
-      "id": "3f71f42a46e5",
-      "url": "https://techcrunch.com/2026/05/20/anthropic-says-its-about-to-have-its-first-profitable-quarter/",
-      "headline": "Anthropic projects Q2 profitability as revenue doubles to $10.9B",
-      "body": "Anthropic has told investors it will deliver an operating profit in the second quarter of 2026, marking the AI startup's first profitable period. The company projects revenue will more than double to approximately $10.9 billion in Q2, according to disclosures made during a recent funding round and reported by the Wall Street Journal. The milestone places Anthropic in a stronger near-term financial position than OpenAI, its primary competitor, though executives cautioned that sustained profitability remains uncertain due to scheduled compute infrastructure investments.\n\n## Revenue surge and the profitability caveat\n\nAnthropic's projected Q2 revenue of $10.9 billion represents dramatic sequential growth, though the company has flagged a critical constraint: it may not remain profitable through the remainder of 2026 given planned capital expenditures on compute. The startup has not disclosed its Q1 revenues, so the exact baseline for the doubling claim is unclear from public statements. The company declined to comment beyond what was shared with investors.\n\nThe profitability claim appears timed strategically—it emerged the same day OpenAI news broke that the latter is preparing for an IPO filing. That context matters for investor narratives around AI business unit viability, though Anthropic remains private.\n\n## Growing enterprise traction\n\nAnthropic's financial trajectory reflects accelerating adoption among professionals and enterprise customers. The company has reported that its Claude chatbot has gained preference among a growing user base, particularly relative to OpenAI's offerings. Recent product moves suggest an intentional strategy to broaden its customer base beyond early adopters: Anthropic announced new offerings targeting small business owners and law firms, indicating an effort to capture revenue outside the research and software development segments that initially drove adoption.\n\nThe growth in revenue and path to profitability signal that Anthropic has moved beyond the pure R&D phase into a business with genuine commercial traction. For enterprise customers, this matters because it suggests the company has the financial runway and customer base to sustain development and infrastructure investments without the near-term funding pressure that can destabilize AI vendors. The caveat—that profitability may not hold through 2026—reflects a fundamental reality in AI: sustained competitive advantage currently requires continuous heavy investment in compute and model development, making profitability a tactical milestone rather than proof of a stable business model.",
-      "source": "TechCrunch AI",
-      "published": "2026-05-21T00:21:21+00:00",
-      "curated_at": "2026-05-21T02:32:44.012863+00:00",
-      "original_title": "Anthropic says it’s about to have its first profitable quarter"
     }
   ]
 }
