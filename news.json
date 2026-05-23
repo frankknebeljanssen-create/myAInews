@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-23T14:57:47.061276+00:00",
+  "generated_at": "2026-05-23T15:59:34.178198+00:00",
   "items": [
+    {
+      "id": "b15baeeedd1d",
+      "url": "https://techcrunch.com/2026/05/23/ferrari-is-using-ai-to-create-f1-superfans/",
+      "headline": "IBM and Ferrari Deploy AI to Build Year-Round Fan Engagement",
+      "body": "IBM has partnered with Ferrari to rebuild the team's fan app using AI-driven storytelling and personalization, marking the automaker's entry into Formula One sponsorships. The partnership targets a core problem in sports engagement: converting race-day attention into sustained fan loyalty through data-driven content delivery. Ferrari processes millions of data points per second during races—capturing every movement of driver and car—but historically failed to transform that raw information into material that kept fans engaged between events.\n\n## From Logistics to Storytelling\n\nThe redesigned Ferrari app, powered by IBM's AI infrastructure, shifts from a transactional platform for race schedules to an engagement engine centered on narrative. New features include AI-written race summaries, interactive games, prediction tools, and an AI chatbot for fan queries. The app now runs in Italian, addressing a basic oversight: despite Ferrari's Italian roots and Italian fan base, the previous version was not localized. IBM Vice President of Sports Partnerships Kameryn Stanhouse noted that the old app was \"a place where people went to find race details and then leave.\"\n\nEngagement metrics have moved upward since the partnership launched. Ferrari reported a 62 percent increase in engagement over race weekends. The storytelling approach reflects F1's expanding audience, particularly women and Gen Z viewers who now comprise 75 percent of new fans to the sport, many drawn by the F1 Academy women's racing series.\n\n## Real-Time Feedback Loop\n\nThe app generates two parallel data streams: user engagement signals (which content fans consume, message sentiment) and competitive intelligence from track operations. Ferrari's newly appointed head of fan development, Stefano Pallard, uses this feedback to refine content strategy, understanding which stories and data visualizations resonate with the \"Tifosi\" fan base and adjusting delivery accordingly.\n\nThis approach demonstrates how enterprise AI operates in consumer-facing applications: processing behavioral data to optimize engagement without requiring explicit user interaction. The signal for enterprise teams is concrete: sports franchises have legitimized AI-driven personalization as a business lever, not a novelty. Pallard's five-year vision—making \"every fan feel like the experience was built for them\"—translates directly to customer retention problems beyond sports. For organizations holding rich transactional or operational data, the Ferrari-IBM model shows that investing in narrative generation and feedback loops around user behavior drives measurable loyalty gains. The takeaway: data alone generates no engagement; only when processed into personalized, relevant content does it sustain attention.",
+      "source": "TechCrunch AI",
+      "published": "2026-05-23T15:08:00+00:00",
+      "curated_at": "2026-05-23T15:56:17.321192+00:00",
+      "original_title": "Ferrari is using IBM’s AI to create F1 superfans"
+    },
     {
       "id": "65518546ec73",
       "url": "https://www.theverge.com/tech/936507/gemini-omni-hands-on-deepfake-ai-video",
@@ -290,16 +300,6 @@
       "published": "2026-05-21T15:54:03+00:00",
       "curated_at": "2026-05-21T16:37:27.442524+00:00",
       "original_title": "Spotify is launching AI-generated remixes"
-    },
-    {
-      "id": "57e5b33ce937",
-      "url": "https://www.wired.com/story/i-cloned-myself-with-geminis-ai-avatar-tool-the-result-was-unnervingly-me/",
-      "headline": "Google's Gemini Avatar Tool Creates Photorealistic Video Deepfakes of Users",
-      "body": "Google has rolled out a new feature in its Gemini app that generates video deepfakes of individual users—digital clones that can perform any action requested through natural language prompts. A tester using the feature generated two 10-second clips of himself singing to a dinosaur at Dolores Park and surfing under the Golden Gate Bridge, both powered by Google's new Omni video model. The results were photorealistic enough to be unsettling: the avatar captured his mannerisms, voice cadence, and physical appearance well enough that it felt less like watching a video of himself than like watching an alternate version of himself perform scripted actions.\n\n## Avatar Creation and Current Constraints\n\nSetting up a personal avatar takes approximately five minutes through the Gemini app. Users sit in well-lit conditions while their phone camera records them reading two-digit numbers and performing head movements—left and right. The feature is currently available only to Google's AI Pro subscribers, who pay $20 monthly but face strict usage limits that reset every five hours. Google has implemented a safeguard that prevents users from generating videos of other people's likenesses, unlike OpenAI's now-discontinued Sora app, which allowed users to specify whose face should appear in generated content. The clothing worn during avatar setup typically appears in subsequent generations.\n\n## Safety Questions Amid Broader Deepfake Concerns\n\nThe timing of this launch carries weight given documented harms in the deepfake ecosystem. Nonconsensual deepfakes of women have proliferated across platforms with minimal friction, yet Google's product team—led by Nicole Brichtova at Google DeepMind—frames the feature as safety-conscious, stating the company attempts \"to prevent harm\" while avoiding \"blocking benign things.\" The distinction between preventing misuse and enabling legitimate creative uses remains unresolved. For enterprises deploying generative AI systems, the release signals that photorealistic video synthesis tied to individual identities is now accessible at consumer scale, requiring organizations to consider authentication, verification, and fraud detection frameworks that account for this capability.",
-      "source": "Wired AI",
-      "published": "2026-05-21T15:48:24+00:00",
-      "curated_at": "2026-05-21T16:37:35.791060+00:00",
-      "original_title": "I Cloned Myself With Gemini’s AI Avatar Tool. The Result Was Unnervingly Me"
     }
   ]
 }
