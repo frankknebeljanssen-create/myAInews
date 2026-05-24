@@ -1,362 +1,154 @@
 {
-  "date": "2026-05-23",
+  "date": "2026-05-24",
   "issue_url": "https://www.therundown.ai/p/exclusive-interview-sundar-pichai-on-ai-flip-phone-moment",
   "emoji": "🎙️",
   "headline": "Sundar Pichai on AI's flip phone moment",
-  "subtitle": "Google's top-to-bottom AI push · Codex upgrades · California worker protections",
-  "intro": "Google's I/O 2026 revealed the company's vision for AI-powered experiences across creators, engineers, and everyday users. In an exclusive interview, CEO Sundar Pichai explained why today's AI will look primitive as a flip phone in three years, and what that shift means for the future of work and technology.",
+  "subtitle": "Exclusive Google CEO interview · OpenAI Codex upgrades · California worker protections",
+  "intro": "Google's I/O announcements reveal the company's top-to-bottom AI strategy. The Rundown sat down with CEO Sundar Pichai to discuss how AI will reshape work for creators, engineers, and everyday users—and why today's technology will look primitive within three years.",
   "bullets": [
     {
       "emoji": "🎙️",
-      "text": "Sundar Pichai exclusive: AI agents will work 24/7, agentic coding becomes the metric",
+      "text": "Sundar Pichai discusses Google's AI push at I/O 2026",
       "url": "https://www.youtube.com/watch?v=zBOoEpsjWAo",
       "source": "The Rundown AI",
-      "summary": "Google's CEO discussed how AI models like Omni empower creators while keeping YouTube human-first, and emphasized that agents handling long-running tasks across devices will be commonplace in three years. He framed today's AI as primitive compared to what's coming, similar to flip phones."
+      "summary": "Pichai explained how models like Omni empower creators while maintaining YouTube's human-first ethos. He emphasized that agents will become ubiquitous within three years, handling 24/7 tasks across devices, and that success will be measured by agentic coding rather than AI-written code alone."
     },
     {
       "emoji": "💻",
-      "text": "OpenAI rolls out Codex upgrades: Appshots, goal mode, locked computer use",
+      "text": "OpenAI rolls out new Codex features including goal mode",
       "url": "https://x.com/OpenAI/status/2057617844800794878?s=20",
       "source": "The Rundown AI",
-      "summary": "OpenAI enhanced Codex with several new capabilities including the ability to attach app windows via Appshots, a goal mode that lets the assistant work toward objectives for extended periods, and locked computer use for hands-off automation even when devices are secured."
+      "summary": "OpenAI introduced Appshots for attaching app windows, goal mode for multi-hour tasks, locked computer use for automated work, and advanced annotation for web changes. These features expand Codex's utility and context awareness for developers working with agentic assistants."
     },
     {
       "emoji": "🛠️",
-      "text": "Generate agent-native CLI tools from any website with Printing Press",
+      "text": "Generate agent-native CLI tools from any website",
       "url": "",
       "source": "The Rundown AI",
-      "summary": "A new guide walks through using Printing Press to create agent-friendly command-line tools for complex APIs like Google Flights and ESPN. The approach lets agents build and test their own CLI commands, addressing limitations in existing integrations."
+      "summary": "Printing Press enables agents to generate command-line tools for hard-to-use APIs like Google Flights. Users can install the toolkit, instruct agents to inspect examples, and build custom CLI commands for accessing public data sources."
     },
     {
       "emoji": "🛡️",
-      "text": "California launches AI worker protection initiative after 70K tech job losses",
+      "text": "California moves to protect workers from AI disruption",
       "url": "https://www.gov.ca.gov/2026/05/21/governor-newsom-signs-first-of-its-kind-executive-order-to-prepare-workers-and-businesses-for-potential-ai-disruption/",
       "source": "The Rundown AI",
-      "summary": "Governor Newsom signed an executive order directing state agencies to study policies protecting workers from AI job displacement, including severance standards and universal basic capital. California will launch a job-impact dashboard within 90 days and review WARN Act updates within 180 days."
+      "summary": "Governor Newsom signed an executive order directing state agencies to develop worker protection policies including severance standards and universal basic capital. California will launch a tracking dashboard within 90 days and explore WARN Act updates as over 70K tech jobs have vanished in 2026."
     },
     {
       "emoji": "💰",
-      "text": "Figure AI co-founder's Hark raises $700M at $6B valuation for personal AI",
+      "text": "Anthropic paying SpaceX $1.25B monthly for compute access",
+      "url": "https://x.com/SawyerMerritt/status/2057208968741560744?s=20",
+      "source": "The Rundown AI",
+      "summary": "SpaceX's IPO prospectus revealed Anthropic's substantial compute deal spanning through 2029. The arrangement provides access to Colossus and Colossus II infrastructure for model training and operations."
+    },
+    {
+      "emoji": "🚀",
+      "text": "Brett Adcock's Hark raises $700M for personal AI platform",
       "url": "https://hark.com/articles/hark-announces-usd700-million-fundraising-round",
       "source": "The Rundown AI",
-      "summary": "Brett Adcock's startup Hark secured significant funding to develop its own approach to personal intelligence, combining native models, software, and hardware. The valuation reflects investor confidence in the consumer AI market."
+      "summary": "Hark, co-founded by Figure AI's Brett Adcock, secured $700M at a $6B valuation to build an integrated personal intelligence system with native models, software, and hardware components."
     },
     {
-      "emoji": "🤝",
-      "text": "Microsoft and EY announce $1B partnership to scale AI across 400K consultants",
-      "url": "https://news.microsoft.com/source/2026/05/21/ey-and-microsoft-announce-global-initiative-to-help-clients-scale-ai-enterprisewide-value-creation-and-move-beyond-experimentation/",
-      "source": "The Rundown AI",
-      "summary": "The collaboration pairs Microsoft's engineers and AI technology with EY's massive consulting workforce to accelerate enterprise AI adoption across clients. The partnership aims to help organizations move beyond experimentation to production-scale implementations."
-    },
-    {
-      "emoji": "🧠",
-      "text": "Andrej Karpathy joins Anthropic to lead pre-training research",
+      "emoji": "👤",
+      "text": "Andrej Karpathy joins Anthropic's pre-training team",
       "url": "https://x.com/karpathy/status/2056753169888334312",
       "source": "Ben's Bites",
-      "summary": "The Tesla and OpenAI veteran is joining Anthropic's pre-training team under Nick Joseph to focus on using Claude to accelerate the development of future Claude models."
+      "summary": "Karpathy is leading a new group under Nick Joseph focused on using Claude to accelerate pre-training research. This represents significant talent acquisition that could strengthen Anthropic's model development capabilities."
     },
     {
-      "emoji": "💰",
-      "text": "Anthropic securing $1.25B monthly compute from SpaceX",
-      "url": "",
-      "source": "Ben's Bites",
-      "summary": "SpaceX's IPO filing reveals Anthropic will pay $1.25 billion monthly for compute capacity, supporting the company's ambitious scaling plans alongside projected Q2 revenue of $10.9 billion."
-    },
-    {
-      "emoji": "🎬",
+      "emoji": "🎥",
       "text": "Google launches Gemini Omni Flash with video generation",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/",
       "source": "Ben's Bites",
-      "summary": "Google introduced its new any-input-any-output model family, with Omni Flash capable of generating and editing videos, though the technical distinction from competing models is modest."
+      "summary": "The new model family aims for any input/any output capability, with Omni Flash generating and editing videos. The technical distinction between Omni and Veo mirrors the gap between Imagen and Nano Banana."
     },
     {
-      "emoji": "⚡",
-      "text": "Gemini 3.5 Flash outperforms 3.1 Pro on paper",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5/",
-      "source": "Ben's Bites",
-      "summary": "Google released Gemini 3.5 Flash as a fast and intelligent alternative to 3.1 Pro, though it's no longer free and has a knowledge cutoff of January 2025."
-    },
-    {
-      "emoji": "✨",
-      "text": "OpenAI model solves famous discrete geometry problem",
+      "emoji": "📐",
+      "text": "OpenAI model reportedly solves famous math conjecture",
       "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
       "source": "Ben's Bites",
-      "summary": "OpenAI's model successfully resolved a well-known mathematical problem, with external mathematicians verifying the proof, demonstrating advances in reasoning capabilities."
+      "summary": "An OpenAI model solved a notable mathematics problem with the proof verified by external mathematicians, showcasing advanced reasoning capabilities in specialized domains."
+    },
+    {
+      "emoji": "🛡️",
+      "text": "OpenAI launches public image verification tool",
+      "url": "https://openai.com/verify/",
+      "source": "Ben's Bites",
+      "summary": "The verifier checks C2PA metadata and Google's SynthID to authenticate images from ChatGPT, the API, and Codex, addressing growing concerns about AI-generated content provenance."
     },
     {
       "emoji": "🎨",
-      "text": "Figma launches AI design agent with parallel generation",
+      "text": "Figma design agent launches with parallel direction generation",
       "url": "https://www.figma.com/blog/the-figma-agent-is-here/",
       "source": "Ben's Bites",
-      "summary": "Figma's new design agent operates within the canvas, generating multiple design directions simultaneously and integrating with design systems for collaborative workflows."
+      "summary": "The agent can generate multiple design directions in parallel, make bulk edits, respect design systems, and collaborate in shared files, streamlining design workflows."
     },
     {
       "emoji": "🐱",
-      "text": "OpenAI model disproves Erdős unit distance conjecture from 1946",
+      "text": "OpenAI reasoning model disproved 80-year Erdős conjecture",
       "url": "",
       "source": "The Neuron Daily",
-      "summary": "OpenAI's unreleased reasoning model found a counterexample to the Erdős conjecture by discovering new point arrangements that produce more unit-distance pairs than mathematicians believed possible. External mathematicians verified the result, and Princeton's Will Sawin sharpened the proof further, showing the construction scales more dramatically than initially thought."
+      "summary": "OpenAI's internal reasoning model found a counterexample to the Erdős unit distance conjecture from 1946, proving it false by discovering infinite point arrangements that create more unit-distance pairs than previously believed possible. The proof used algebraic number theory and was verified by external mathematicians including Princeton's Will Sawin."
     },
     {
       "emoji": "📰",
-      "text": "OpenAI and Anthropic's revenue projections diverge sharply",
+      "text": "OpenAI leads Q1 revenue race, Anthropic projects Q2 surge",
       "url": "",
       "source": "The Neuron Daily",
-      "summary": "OpenAI reportedly generated about $5.7 billion in Q1, roughly $1 billion ahead of Anthropic, though Anthropic is projected to more than double to $10.9 billion in Q2. The two companies are in an intense race for market dominance in the AI space."
+      "summary": "OpenAI reportedly generated $5.7B in Q1, nearly $1B ahead of Anthropic, while Anthropic is projected to double to $10.9B in Q2, showing the rapidly shifting dynamics in AI company valuations and growth trajectories."
     },
     {
       "emoji": "🍪",
-      "text": "Qwen 3.7 Max runs 35-hour autonomous optimization task",
+      "text": "Qwen 3.7 Max ran 35-hour autonomous GPU optimization task",
       "url": "",
       "source": "The Neuron Daily",
-      "summary": "Qwen's latest agent model completed a lengthy autonomous GPU-kernel optimization run lasting 35 hours with 1,158 tool calls and 432 tests, reportedly achieving a 10x speedup on Alibaba hardware. The extended duration demonstrates the model's capability for sustained autonomous work."
+      "summary": "Alibaba's Qwen 3.7 Max agent model completed a 35-hour autonomous GPU kernel optimization run involving 1,158 tool calls and 432 tests, reportedly delivering a 10x speedup on Alibaba hardware and demonstrating capability for extended autonomous work sessions."
     },
     {
       "emoji": "🎓",
       "text": "Codex adds /goal mode for multi-step long-running tasks",
       "url": "",
       "source": "The Neuron Daily",
-      "summary": "Codex now supports /goal mode, which helps agents maintain focus on persistent objectives during complex multi-step tasks like migrations, refactors, and audits. The feature requires defining success clearly through outcome, constraints, and tests to prevent the AI from losing sight of completion criteria."
+      "summary": "Codex now includes /goal mode that lets users define persistent objectives with outcome, constraints, and tests for complex tasks like migrations, refactors, and audits. The feature helps agents maintain focus on what 'done' means across many steps."
     },
     {
-      "emoji": "📰",
-      "text": "Trump delays AI order as California prepares workforce transitions",
+      "emoji": "🎵",
+      "text": "Spotify reportedly signs AI remix deal with major rights holders",
       "url": "",
       "source": "The Neuron Daily",
-      "summary": "California signed a first-in-the-nation order to prepare workers and small businesses for AI-driven disruption. Meanwhile, the Trump administration delayed an AI-related executive order, creating mixed signals about federal AI policy direction."
+      "summary": "Spotify has reportedly reached an agreement enabling AI-generated remixes and variations through its music licensing partnerships, expanding the platform's AI capabilities for music creation and personalization."
     },
     {
-      "emoji": "📰",
-      "text": "Intuit cuts 17% of workforce to refocus on AI products",
+      "emoji": "🚨",
+      "text": "Week's strangest AI failures highlight real-world deployment gaps",
       "url": "",
       "source": "The Neuron Daily",
-      "summary": "Intuit announced plans to lay off more than 3,000 workers, representing about 17% of its workforce, as part of a strategy to simplify operations and prioritize AI-driven product development. The move signals a broader industry shift toward automation and efficiency."
+      "summary": "The newsletter featured various AI deployment mishaps this week, underscoring ongoing challenges in moving theoretical AI capabilities into production environments where edge cases and real-world constraints matter significantly."
     }
   ],
   "main_story": {
-    "title": "Sundar Pichai on the coming wave of AI agents",
-    "body": "In an exclusive interview at Google I/O 2026, CEO Sundar Pichai outlined a vision where AI agents become ubiquitous, operating 24/7 across devices to handle tasks for creators, engineers, and everyday users. He emphasized that YouTube will remain creator-first despite advanced generative tools, focusing on human-to-human connection. For engineers, the metric of success will shift from lines of code written by AI to agentic systems handling complex, long-running tasks. Pichai warned that today's AI technology will seem as primitive as flip phones within three years, stressing that getting native to these tools will be critical across all domains.",
-    "why": "This reflects Google's strategic pivot toward agentic AI as the next computing paradigm. Understanding how major tech leaders view this shift helps developers and organizations prepare for the rapid evolution of AI capabilities.",
-    "take": "Pichai's framing of current AI as flip-phone-era technology underscores the magnitude of change ahead. The emphasis on agents handling persistent tasks suggests AI productivity gains may significantly reshape work, making upskilling in agentic systems a priority for technologists."
+    "title": "Sundar Pichai on Google's AI transformation",
+    "body": "Google CEO Sundar Pichai sat down for an exclusive interview at I/O 2026 to discuss the company's sweeping AI initiative. He outlined how Google is embedding AI across YouTube, consumer products, and developer tools. Pichai emphasized that models like Omni enable better creative expression while YouTube remains fundamentally creator-centric. For everyday users, the draw is seamless integration and AI agents that handle tasks 24/7 across devices. For engineers, the paradigm shifts from measuring code written by AI to measuring agentic coding that manages long-running, complex tasks.",
+    "why": "This represents a fundamental organizational pivot: AI isn't a feature but infrastructure. The shift will require creators, developers, and users to rethink how they work with technology daily.",
+    "take": "Pichai's framing of today's AI as \"flip phone moment\" technology underscores the pace of change ahead. Organizations that adapt native AI workflows now will have substantial competitive advantages as the technology matures over the next three years."
   },
   "around_the_horn": [
     {
-      "text": "Anthropic in talks to adopt Microsoft's Maia chips for AI training",
+      "text": "Anthropic in talks to use Microsoft's Maia chips alongside TPUs and Trainium",
       "url": "https://www.theinformation.com/articles/anthropic-talks-use-microsofts-ai-chips"
-    },
-    {
-      "text": "SpaceX's Colossus compute: Anthropic paying $1.25B monthly through 2029",
-      "url": "https://x.com/SawyerMerritt/status/2057208968741560744?s=20"
     },
     {
       "text": "Manus exploring $1B raise to unwind Meta's $2B+ acquisition per China order",
       "url": "https://www.bloomberg.com/news/articles/2026-05-21/manus-weighs-raising-1-billion-to-unwind-meta-takeover"
+    },
+    {
+      "text": "Microsoft and EY launch $1B partnership pairing engineers with 400K consultants",
+      "url": "https://news.microsoft.com/source/2026/05/21/ey-and-microsoft-announce-global-initiative-to-help-clients-scale-ai-enterprisewide-value-creation-and-move-beyond-experimentation/"
     }
   ],
   "sources_fetched": [
     "www.therundown.ai",
     "www.bensbites.com",
     "www.theneurondaily.com"
-  ],
-  "previous": {
-    "date": "2026-05-21",
-    "issue_url": "https://www.therundown.ai/p/openai-cracks-an-80-year-math-belief",
-    "emoji": "🧮",
-    "headline": "OpenAI cracks an 80-year math belief",
-    "subtitle": "OpenAI disproves Erdős' unit distance problem · Google's Co-Scientist launches for biology labs · Audit Claude's context in 15 minutes",
-    "intro": "OpenAI's reasoning model just autonomously disproved a famous 80-year-old math theorem—a first for AI in novel mathematical discovery. The breakthrough suggests general-purpose systems can soon make original contributions across science and engineering, not just accelerate existing work.",
-    "bullets": [
-      {
-        "emoji": "🧮",
-        "text": "OpenAI's reasoning model disproves Erdős' 80-year unit distance problem",
-        "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
-        "source": "The Rundown AI",
-        "summary": "An internal general-purpose model discovered a novel proof for a long-held mathematical conjecture using algebraic number theory, verified by top mathematicians like Tim Gowers. This marks the first time AI has autonomously disproven a famous mathematical theory rather than just finding existing solutions."
-      },
-      {
-        "emoji": "🔬",
-        "text": "Google's Co-Scientist uses AI to generate novel biology hypotheses",
-        "url": "https://www.nature.com/articles/s41586-026-10644-y",
-        "source": "The Rundown AI",
-        "summary": "Google published research on Hypothesis Generation, a Gemini-powered tool that runs tournament-style competitions between research agents to surface new scientific ideas. In one Stanford project, the system identified a drug lead that reduced liver fibrosis markers by 91% in testing."
-      },
-      {
-        "emoji": "📝",
-        "text": "Audit Claude's knowledge of you and your work habits quarterly",
-        "url": "",
-        "source": "The Rundown AI",
-        "summary": "The newsletter provides a step-by-step guide to evaluate what Claude knows about your role, priorities, and workflows by creating a table of assumptions, then conducting an interview to update its context. Repeating this quarterly keeps the AI assistant aligned with your current priorities and removes stale information."
-      },
-      {
-        "emoji": "🌍",
-        "text": "Emergence's town simulation reveals how AI models handle self-governance",
-        "url": "",
-        "source": "The Rundown AI",
-        "summary": "Virtual simulations of five towns run by different AI models showed wildly different outcomes: Claude's town had zero crimes while Grok's descended into chaos by day four. These experiments highlight how model reasoning and personality quirks shape autonomous agent behavior in complex social systems."
-      },
-      {
-        "emoji": "💰",
-        "text": "OpenAI launches compute reservation program for enterprise clients",
-        "url": "https://openai.com/business/guaranteed-capacity/",
-        "source": "The Rundown AI",
-        "summary": "OpenAI introduced Guaranteed Capacity, allowing enterprises to reserve compute resources with 1-3 year commitments and tiered discount structures. The program aims to lock in long-term customer relationships while providing cost predictability for large-scale AI deployments."
-      },
-      {
-        "emoji": "🚀",
-        "text": "Anthropic commits $45B to SpaceX for computing capacity",
-        "url": "https://www.bloomberg.com/news/articles/2026-05-20/anthropic-to-pay-spacex-nearly-45-billion-for-computing-deal?accessToken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzb3VyY2UiOiJTdWJzY3JpYmVyR2lmdGVkQXJ0aWNsZSIsImlhdCI6MTc3OTM0MDE0MywiZXhwIjoxNzc5OTQ0OTQzLCJhcnRpY2xlSWQiOiJURkNUNldLSUpISUkwMCIsImJjb25uZWN0SWQiOiJBOEExRDhFQTI5OTc0OTRGQTQ1QUE2REJBMjAwNTM3MSJ9.7GmTLgNTHuRQhQxgg38WqTvHCpZXe6DAGkd4qH3ckIA&utm_source=tldrai",
-        "source": "TLDR AI",
-        "summary": "Anthropic agreed to a massive computing deal worth nearly $45 billion with SpaceX, signaling the company's commitment to securing substantial computational resources for training and operating frontier AI models. This agreement reflects the intense competition for GPU capacity among leading AI labs."
-      },
-      {
-        "emoji": "📈",
-        "text": "OpenAI targets September IPO, accelerating public markets push",
-        "url": "https://techcrunch.com/2026/05/20/openai-barrels-toward-ipo-that-may-happen-in-september/?utm_source=tldrai",
-        "source": "TLDR AI",
-        "summary": "OpenAI is reportedly accelerating its path to becoming a public company, with sources indicating a potential IPO timeline around September. The move reflects confidence in the company's business fundamentals and market conditions."
-      },
-      {
-        "emoji": "⚙️",
-        "text": "Google unveils Agent Executor for distributed agent workloads",
-        "url": "https://cloud.google.com/blog/products/ai-machine-learning/agent-executor-googles-distributed-agent-runtime/?utm_source=tldrai",
-        "source": "TLDR AI",
-        "summary": "Google introduced Agent Executor, a distributed agent runtime designed to help developers build and deploy agents at scale. The platform aims to simplify orchestration and execution of complex agentic workflows across multiple systems."
-      },
-      {
-        "emoji": "🧠",
-        "text": "AI model disproves longstanding discrete geometry conjecture",
-        "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/?utm_source=tldrai",
-        "source": "TLDR AI",
-        "summary": "OpenAI's latest model made a breakthrough in pure mathematics by disproving a conjecture in discrete geometry. The achievement demonstrates AI's growing capability in tackling complex theoretical problems beyond typical applications."
-      },
-      {
-        "emoji": "🎵",
-        "text": "Stability AI releases Stable Audio 3.0 with open weights",
-        "url": "https://stability.ai/news-updates/meet-stable-audio-3-the-model-family-built-for-artistic-experimentation-with-open-weight-models?utm_source=tldrai",
-        "source": "TLDR AI",
-        "summary": "Stability AI unveiled Stable Audio 3.0, featuring open-weight models designed for music and audio generation. The release emphasizes artistic flexibility and accessibility for creators exploring generative audio capabilities."
-      },
-      {
-        "emoji": "💻",
-        "text": "ByteDance releases Lance multimodal model on GitHub",
-        "url": "https://github.com/bytedance/Lance?utm_source=tldrai",
-        "source": "TLDR AI",
-        "summary": "ByteDance open-sourced Lance, a unified multimodal model available through GitHub. The release contributes to the growing ecosystem of accessible multimodal AI tools for researchers and developers."
-      },
-      {
-        "emoji": "🧠",
-        "text": "Andrej Karpathy joins Anthropic to lead pre-training research using Claude",
-        "url": "https://x.com/karpathy/status/2056753169888334312",
-        "source": "Ben's Bites",
-        "summary": "The legendary AI researcher is joining Anthropic's pre-training team under Nick Joseph to build new capabilities focused on using Claude to accelerate model development. This marks a significant talent acquisition for the company as it scales."
-      },
-      {
-        "emoji": "💰",
-        "text": "Anthropic securing $1.25B monthly compute from SpaceX, projects profitability",
-        "url": "",
-        "source": "Ben's Bites",
-        "summary": "SpaceX IPO filing reveals Anthropic's substantial compute commitment, while the company projects $10.9 billion revenue in June quarter and its first operating profit. This could push Anthropic's valuation above OpenAI amid IPO rumors."
-      },
-      {
-        "emoji": "🎥",
-        "text": "Google launches Gemini Omni Flash with video generation capabilities",
-        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-omni/",
-        "source": "Ben's Bites",
-        "summary": "Google's I/O event introduced the Omni family aimed at any input/output use cases, with Flash handling video generation and editing. The company also released Gemini 3.5 Flash, which outperforms 3.1 Pro on paper but comes at higher cost."
-      },
-      {
-        "emoji": "✅",
-        "text": "OpenAI's model solves famous math conjecture, adds image verification tool",
-        "url": "https://openai.com/index/model-disproves-discrete-geometry-conjecture/",
-        "source": "Ben's Bites",
-        "summary": "OpenAI announced a model solving a discrete geometry problem verified by external mathematicians. The company also released a public image verifier checking C2PA metadata and Google's SynthID to authenticate ChatGPT-generated images."
-      },
-      {
-        "emoji": "🎨",
-        "text": "Figma launches design agent for parallel generation and bulk editing",
-        "url": "https://www.figma.com/blog/the-figma-agent-is-here/",
-        "source": "Ben's Bites",
-        "summary": "Figma's new agent operates within the canvas to generate multiple design directions simultaneously, apply bulk edits, respect design systems, and collaborate in shared files. It streamlines the design workflow for team-based development."
-      },
-      {
-        "emoji": "🛡️",
-        "text": "Neimo MCP provides AI regulatory expertise across 200+ jurisdictions",
-        "url": "https://gamesbeat.com/k-id-launches-ai-powered-compliance-tool-aimed-at-speeding-global-game-launches-exclusive/",
-        "source": "Ben's Bites",
-        "summary": "Built by compliance experts from major gaming and platform companies, Neimo turns Claude and OpenAI's Codex into regulatory specialists supporting global launches. The tool helps developers navigate complex compliance requirements efficiently."
-      },
-      {
-        "emoji": "📹",
-        "text": "Zuckerberg explained Meta monitored workers to learn from 'really smart people'",
-        "url": "",
-        "source": "The Neuron Daily",
-        "summary": "A leaked all-hands recording shows Zuckerberg justified keystroke and mouse-tracking software by claiming elite engineers make better AI training data than outside contractors. Meta had initially claimed the monitoring was just to understand user behavior like menu clicks."
-      },
-      {
-        "emoji": "🏦",
-        "text": "OpenAI confidentially filing for IPO, targeting $852B valuation in September",
-        "url": "",
-        "source": "The Neuron Daily",
-        "summary": "Goldman Sachs and Morgan Stanley are leading the deal. The filing comes one day after Elon Musk lost a lawsuit attempting to block OpenAI's restructuring from non-profit to for-profit status."
-      },
-      {
-        "emoji": "🧠",
-        "text": "Grok launches Skills feature for persistent conversation memory",
-        "url": "",
-        "source": "The Neuron Daily",
-        "summary": "The new Skills feature allows users to teach Grok formatting rules, workflows, or preferences once, and the AI remembers them across all future conversations without needing to be re-prompted."
-      },
-      {
-        "emoji": "🏛️",
-        "text": "White House plans AI review mandate before public model release",
-        "url": "",
-        "source": "The Neuron Daily",
-        "summary": "The executive order would require AI companies to share advanced models with government agencies 90 days before public launch. Trump could sign as early as today, with cloud providers and chip companies also briefed."
-      },
-      {
-        "emoji": "🌐",
-        "text": "Google Gemini becomes #2 AI referral source, ChatGPT falls for first time",
-        "url": "",
-        "source": "The Neuron Daily",
-        "summary": "Gemini nearly tripled its Q1 2026 share to 11.6%, now driving more traffic than Perplexity, Claude, Meta AI, and DeepSeek combined. ChatGPT experienced its first decline in referral traffic during this period."
-      },
-      {
-        "emoji": "✈️",
-        "text": "Airbnb adds groceries, car hire, and hotels beyond rental properties",
-        "url": "",
-        "source": "The Neuron Daily",
-        "summary": "The travel platform expanded to include grocery delivery, airport pickups, boutique hotels, and AI-powered review summaries, continuing its shift from pure vacation rental marketplace to full travel operating system."
-      }
-    ],
-    "main_story": {
-      "title": "OpenAI's reasoning model autonomously disproves 80-year math theorem",
-      "body": "OpenAI announced that an internal general-purpose reasoning model successfully disproved a conjecture tied to Erdős' famous 1946 unit distance problem, marking what the company claims is the first time AI has autonomously discovered a novel mathematical proof. The solution employed algebraic number theory rather than the grid-based approaches that dominated the field for eight decades, and was verified by renowned mathematicians including Tim Gowers and Noga Alon. Critically, this breakthrough came from a general-purpose model rather than a specialized math system like DeepMind's AlphaProof, suggesting broader reasoning capabilities. Sam Altman called it a \"kinda big milestone,\" though the company previously walked back a 2025 claim about solving multiple Erdős problems that turned out to be literature findings rather than novel discoveries.",
-      "why": "This demonstrates what researchers call \"Level 4\" AI—systems capable of making original contributions across multiple fields rather than just automating existing work. If general-purpose models can autonomously tackle unsolved mathematical problems, similar capabilities could soon unlock discoveries in biology, physics, and engineering.",
-      "take": "The result is impressive given past hype cycles around AI and math, but the verification from elite mathematicians and the novel proof method distinguish this from previous overclaimed achievements. This signals a genuine inflection point where AI moves from tool to research contributor."
-    },
-    "around_the_horn": [
-      {
-        "text": "Sam Altman commits $2M in OpenAI tokens to all current Y Combinator startups",
-        "url": ""
-      },
-      {
-        "text": "Jeff Bezos says space data centers are realistic but current timeline is too ambitious",
-        "url": ""
-      },
-      {
-        "text": "Intuit cutting 17% of workforce to focus on AI initiatives",
-        "url": "https://www.reuters.com/business/world-at-work/intuit-cut-17-global-jobs-streamline-operations-memo-shows-2026-05-20/"
-      },
-      {
-        "text": "GitHub confirms malicious VS Code extension compromised internal code repositories",
-        "url": "https://x.com/github/status/2056949168208552080?s=20"
-      }
-    ],
-    "sources_fetched": [
-      "www.therundown.ai",
-      "tldr.tech",
-      "www.bensbites.com",
-      "www.theneurondaily.com"
-    ]
-  }
+  ]
 }
