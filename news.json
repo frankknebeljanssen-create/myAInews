@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-25T17:03:26.579344+00:00",
+  "generated_at": "2026-05-25T19:19:34.467332+00:00",
   "items": [
     {
       "id": "3a07a00116f5",
@@ -30,6 +30,16 @@
       "published": "2026-05-25T10:30:00+00:00",
       "curated_at": "2026-05-25T11:44:59.111817+00:00",
       "original_title": "The AI Era Is Creating a Bug Hunting Arms Race"
+    },
+    {
+      "id": "2958e44acb3b",
+      "url": "https://openai.com/index/grupo-folha-grupo-uol-partnership",
+      "headline": "OpenAI integrates Brazilian news into ChatGPT via Folha, UOL deal",
+      "body": "OpenAI has signed its first media partnership in Brazil, granting ChatGPT access to journalism from Folha de S.Paulo and UOL. Starting immediately, the platform's 900 million weekly active users can read summaries of reporting from both outlets, with attribution and links back to original articles. The deal extends OpenAI's strategy of licensing content from established news organizations across multiple markets—the company now has similar agreements in the US, UK, France, and Germany.\n\n## Scale and Access in Brazil's Market\n\nBrazil ranks among ChatGPT's largest markets globally, with over 50 million monthly active users and approximately 140 million messages exchanged daily. Folha de S.Paulo and UOL are among the country's most established sources of original reporting. Under the partnership terms, both publishers gain access to OpenAI's Codex, ChatGPT Enterprise, and API, enabling them to experiment with AI-powered tools for product development, internal workflows, and business operations. The arrangement also positions the outlets to reach international audiences through ChatGPT's global user base.\n\n## Model for Publisher-AI Relations\n\nThe partnership signals OpenAI's continued effort to establish licensing arrangements rather than relying solely on publicly available training data. By emphasizing attribution, transparency, and links to source material, the company is attempting to address longstanding publisher concerns about content use by AI systems. For enterprise organizations and AI practitioners, this reflects a broader pattern: major generative AI platforms are increasingly treating premium journalism as a licensed product rather than free input.\n\nThe deal also underscores a calculus shift among publishers. Rather than viewing AI platforms primarily as competitors or threats, outlets like Folha and UOL are positioning themselves as essential infrastructure for reliable information delivery within AI systems. This framing—that AI systems require credible sources and publishers should be compensated for that role—has become the working assumption in most recent OpenAI licensing deals. For companies building or deploying AI systems at scale, the implication is direct: sourcing content from recognized publishers is becoming an operational cost, not an optional feature. Organizations integrating third-party AI APIs into customer-facing products should expect similar licensing arrangements to become standard practice.",
+      "source": "OpenAI Blog",
+      "published": "2026-05-25T00:00:00+00:00",
+      "curated_at": "2026-05-25T19:16:51.881845+00:00",
+      "original_title": "OpenAI, Grupo Folha and Grupo UOL announce strategic content partnership"
     },
     {
       "id": "cf45cfd62842",
@@ -290,16 +300,6 @@
       "published": "2026-05-21T21:51:26+00:00",
       "curated_at": "2026-05-21T22:13:29.029790+00:00",
       "original_title": "As Grok flounders, SpaceX bets future on beating Big Tech at AI"
-    },
-    {
-      "id": "c8a73e3436ef",
-      "url": "https://www.wired.com/story/uncanny-valley-podcast-meta-in-crisis-google-search-makeover-ai-booed-by-graduates/",
-      "headline": "Meta's Layoffs Compound Morale Crisis as AI Workplace Surveillance Expands",
-      "body": "Meta is cutting roughly 8,000 employees—10 percent of its workforce—in the latest round of reductions that add to 25,000 jobs eliminated since 2023. The company attributed the cuts partly to massive spending on AI infrastructure and data centers, but the announcement created months of uncertainty after the news leaked weeks before official acknowledgment. Employees faced a one-in-ten probability of job loss while continuing daily work, creating sustained organizational friction that extends beyond the layoffs themselves.\n\n## Internal Shifts Beyond Headcount\n\nThe layoffs represent only one dimension of Meta's workplace transformation. Mark Zuckerberg has simultaneously pushed aggressive AI adoption internally, introducing monitoring software on employee laptops that trains AI models on user behavior—ostensibly to improve workplace tools. Some employees have embraced the shift; others openly resist it. The combination has shattered the relative stability that attracted talent during Meta's earlier growth phase, when the company offered job security and perks competitive with Google. Employees who joined during that era now face an environment marked by surveillance, forced AI integration, and persistent job insecurity, eroding the cultural bargain that once defined the organization.\n\n## The Broader Signal for Enterprise AI\n\nMeta's experience underscores a critical tension in enterprise AI adoption: the gap between technological capability and organizational readiness. Companies installing monitoring systems and AI-driven productivity tools face employee friction not merely from job displacement fears, but from loss of autonomy and trust. The extended timeline of Meta's layoff uncertainty—with weeks between leak and confirmation—demonstrates how poor communication compounds technical disruption. For organizations planning similar AI integration, the lesson is direct: surveillance and capability-building without transparent change management produces the opposite of intended efficiency gains. Morale collapse, institutional knowledge loss, and reduced productivity often follow. Enterprise leaders should recognize that AI implementation requires not just technical deployment but explicit workforce communication and realistic timelines. Meta's current state suggests that ignoring these factors produces crisis conditions even amid record profitability.",
-      "source": "Wired AI",
-      "published": "2026-05-21T20:44:53+00:00",
-      "curated_at": "2026-05-21T20:47:07.969469+00:00",
-      "original_title": "Meta Is in Crisis, Google Search’s Makeover, and AI Gets Booed by Graduates"
     }
   ]
 }
