@@ -1,6 +1,16 @@
 {
-  "generated_at": "2026-05-25T07:08:16.478606+00:00",
+  "generated_at": "2026-05-25T11:48:19.739633+00:00",
   "items": [
+    {
+      "id": "b50ae0e6c06f",
+      "url": "https://www.wired.com/story/the-ai-era-is-creating-a-bug-hunting-arms-race/",
+      "headline": "AI Bug Hunters Flood Vulnerability Programs, Forcing Enterprise Reckoning",
+      "body": "AI-powered vulnerability discovery is reshaping software security economics at scale. As machine learning models grow more effective at autonomously identifying bugs and developing exploits, bug bounty programs are experiencing submission surges that strain both researcher income models and corporate patch management processes. The shift is happening simultaneously for defenders and attackers—creating structural pressure on disclosure timelines and forcing enterprises to reexamine how they allocate security resources.\n\n## Submission Surge Strains Traditional Models\n\nIndependent security researcher Joseph Thacker reports submitting three times more bugs in the past year using AI-assisted methods, and predicts major tech companies will spend two to ten times more on bug payouts than previously. The volume spike is already destabilizing smaller programs. Curl discontinued its bug bounty program in January after being overwhelmed by low-quality AI-generated submissions. Linux creator Linus Torvalds reported the Linux security mailing list has become \"almost entirely unmanageable\" from duplicate AI reports. However, the quality picture is shifting. By late April, Curl's founder Daniel Stenberg noted the project had stopped receiving \"AI slop\" reports and instead faced \"a never-before seen frequency\" of genuinely good vulnerabilities, mostly aided by AI tools. Google responded by restructuring its Chrome and Android vulnerability reward programs, lowering payouts for some bug classes while increasing others to prioritize \"the most challenging and impactful vulnerabilities.\"\n\n## Attackers Close Behind, Disclosure Timelines at Risk\n\nEvidence now confirms what security teams long suspected: criminal threat actors are using AI to discover zero-day vulnerabilities and build exploits. Google researchers documented prominent cybercriminals using AI tools to identify a previously unknown flaw in an open-source system administration platform to bypass two-factor authentication. This represents the first documented instance of the threat that researchers had theorized. The pace matters because traditional 90-day responsible disclosure windows were designed for an era of scarce vulnerability finders and slow exploit development. Security researcher Himanshu Anand noted bluntly: \"That world is gone. LLMs have compressed both timelines.\" As AI accelerates vulnerability discovery for both sides, enterprises face mounting pressure to patch faster. This creates real operational risk—hasty patches deployed at scale without adequate testing can cause outages. The enterprise take-away is clear: security teams must move beyond treating patch management as a routine process and treat it as infrastructure prioritization equivalent to incident response. The economics of vulnerability disclosure are shifting faster than most organizations can adapt.",
+      "source": "Wired AI",
+      "published": "2026-05-25T10:30:00+00:00",
+      "curated_at": "2026-05-25T11:44:59.111817+00:00",
+      "original_title": "The AI Era Is Creating a Bug Hunting Arms Race"
+    },
     {
       "id": "cf45cfd62842",
       "url": "https://techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/",
@@ -290,16 +300,6 @@
       "published": "2026-05-21T20:37:40+00:00",
       "curated_at": "2026-05-21T20:47:16.270597+00:00",
       "original_title": "Giving Agents Computers — Ivan Burazin, Daytona"
-    },
-    {
-      "id": "cf9e5a542f53",
-      "url": "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks/",
-      "headline": "Google DeepMind launches AI accelerator for climate tech in Asia-Pacific",
-      "body": "Google DeepMind is opening a three-month accelerator program in Asia-Pacific designed to help startups, research teams, and nonprofits deploy frontier AI models to solve environmental problems. The initiative arrives as the region faces mounting climate and environmental risks despite growing adoption of green technologies that remain insufficient in scale. The program will provide participating organizations with mentorship from Google AI experts, integration support for frontier and science AI models, and resources to accelerate deployment of climate solutions across nature conservation, agriculture, energy, and related domains.\n\n## Program scope and mechanics\n\nThe Google DeepMind Accelerator program focuses on \"AI for the Planet\" and begins with an in-person bootcamp in Singapore. The region's vulnerability to climate change—coupled with its status as a global economic engine—creates both urgency and opportunity for innovation. A recent report cited by Google indicates that while green technology adoption is accelerating in Asia-Pacific, deployment rates are not keeping pace with rising environmental risks. The program targets this gap by offering selected teams direct access to Google's AI infrastructure and expertise. Organizations can register interest immediately, with the accelerator structured to run for three months following the Singapore bootcamp launch.\n\n## The enterprise signal\n\nFor enterprises and AI practitioners, this launch signals consolidation of generalist AI capability into domain-specific deployment. Google is positioning frontier AI models—particularly science AI—as practical tools for environmental problem-solving rather than research curiosities. This reflects a broader shift toward measuring AI value through application rather than capability. The accelerator model also suggests that major AI providers see climate tech as a sustained investment area, not a temporary initiative. For organizations working on environmental challenges in the region, access to mentorship and model integration support from a major AI provider reduces both technical and risk barriers to deployment. The take-away: established AI labs are moving beyond publishing research to actively building the supply chain for climate solutions, and regional accelerators are becoming a primary distribution channel for that expertise.",
-      "source": "Google DeepMind",
-      "published": "2026-05-21T19:46:42+00:00",
-      "curated_at": "2026-05-21T20:47:25.050187+00:00",
-      "original_title": "We’re launching the Google DeepMind Accelerator program in Asia Pacific to tackle environmental risks"
     }
   ]
 }
