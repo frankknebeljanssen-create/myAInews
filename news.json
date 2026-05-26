@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-26T20:00:26.277648+00:00",
+  "generated_at": "2026-05-26T21:46:00.839548+00:00",
   "items": [
     {
       "id": "3d614cc22e93",
@@ -152,6 +152,16 @@
       "original_title": "It’s time to address the looming crisis in entry-level work."
     },
     {
+      "id": "67475d83eb93",
+      "url": "https://www.technologyreview.com/2026/05/26/1137855/a-reality-check-on-the-ai-jobs-hysteria/",
+      "headline": "AI Jobs Impact Remains Speculative—Data Shows Labor Market Still Stable",
+      "body": "Tech sector layoffs at Meta, Cisco, and Coinbase have fueled warnings of an imminent white-collar jobs apocalypse. But current economic data tells a different story. Analysis of US Bureau of Labor Statistics figures reveals that unemployment rates for jobs most exposed to AI are actually lower than those in less-exposed occupations. There are no signs of large-scale worker migration from AI-threatened roles to safer ones. While future disruption remains possible, the evidence available today suggests AI's labor market impact has been overstated.\n\n## The Data Gap\n\nOnly one in five US companies currently use AI in any business function, according to Census data cited by labor economist Erika McEntarfer, former BLS director and now a fellow at Stanford's Institute for Economic Policy Research. This limited adoption partly explains why broad labor market disruptions haven't yet materialized. McEntarfer notes that technological innovation historically takes time to ripple through industries and reshape occupations. \"AI is unlikely to transform labor markets until it first transforms businesses,\" she said.\n\nThe picture is murkier for young workers entering specific fields. Recent college graduate unemployment sits at 5.6%, the highest rate since the pandemic and 2008-era aftermath. Software developers and other AI-exposed roles have seen particularly weak hiring. But these represent a small fraction of the overall labor market, and economists debate how much to attribute to AI versus broader macroeconomic factors like the \"low-fire, low-hire\" environment affecting hiring more generally.\n\n## What We Actually Need to Know\n\nThe honest assessment from researchers is one of substantial uncertainty. Harvard economics professor David Deming describes the current situation as \"flying blind\"—existing data tools don't adequately capture how AI is reshaping work. Critical questions remain unanswered: How is AI being deployed in different sectors? Does it replace workers or increase their productivity? Which occupations face genuine risk, and which workers are most vulnerable?\n\nFor enterprise leaders and AI practitioners, the implication is clear: claims about inevitable mass displacement lack empirical support. Better data collection—including granular surveys of actual workplace AI use and worker outcomes—is essential before making strategic decisions about workforce planning or technology deployment. The current evidence suggests time exists to understand and manage this transition deliberately rather than react to crisis.",
+      "source": "MIT Technology Review AI",
+      "published": "2026-05-26T09:00:00+00:00",
+      "curated_at": "2026-05-26T21:43:38.493353+00:00",
+      "original_title": "A reality check on the AI jobs hysteria"
+    },
+    {
       "id": "3a07a00116f5",
       "url": "https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/",
       "headline": "ClickUp Cuts 22% of Staff, Bets Company on AI Agents Replacing Workers",
@@ -290,16 +300,6 @@
       "published": "2026-05-22T20:40:48+00:00",
       "curated_at": "2026-05-22T22:00:07.020986+00:00",
       "original_title": "How VCs and founders use inflated ‘ARR’ to crown AI startups"
-    },
-    {
-      "id": "1d62850b4929",
-      "url": "https://www.theverge.com/tech/936176/google-ai-overviews-search-disregard",
-      "headline": "Google's AI Search Malfunctions on Basic Command Words",
-      "body": "Google's AI Overviews feature is exhibiting unexpected behavior when users search for certain common words, returning chatbot-like responses that ignore the actual search query. The issue surfaced on Friday when searches for terms like \"disregard,\" \"ignore,\" and \"skip\" produced generic assistant replies rather than summaries of relevant web content. Google has since begun suppressing AI Overviews for affected searches, but the incident underscores fragility in the company's recently launched AI search integration.\n\n## The Pattern of Failures\n\nWhen users searched for \"disregard,\" Google's AI Overview returned a response stating \"Got it. If you need anything else or have a new question later, just let me know!\" — language typical of a conversational chatbot rather than a search result summary. Similar malfunctions occurred with \"ignore,\" which prompted \"Message received! I'm here and ready to help. What would you like to focus on today?\" A search for \"skip\" yielded \"It looks like your message was just a test or a typo! Feel free to ask a question.\"\n\nBy Friday afternoon, Google had begun removing AI Overviews entirely for \"disregard\" while the feature remained broken for \"ignore\" and \"skip.\" Google has not commented publicly on the cause or timeline for resolution. The company only acknowledged the issue indirectly by changing its display behavior without explanation.\n\n## Implications for AI Reliability at Scale\n\nThe incident reveals how AI systems can misinterpret input in ways that appear absurd in retrospect but highlight genuine technical problems. When a search engine's AI component treats a query term as a command directed at itself rather than a search intent, it signals confusion in the underlying prompt handling or routing logic. For enterprise users relying on AI search features, this kind of failure — however temporary — raises questions about robustness under edge cases.\n\nThe broader concern is not this specific bug but what it suggests about testing and failure modes. Basic English words triggered the malfunction, not obscure search queries. This implies either insufficient testing of common terms or architectural issues with how the system distinguishes between user intent and system directives. For organizations considering AI-enhanced search or relying on Google Search for mission-critical workflows, the incident demonstrates that even polished consumer AI products can degrade unpredictably. Enterprises should maintain fallback strategies and avoid complete dependence on AI-generated summaries until these systems demonstrate more consistent reliability.",
-      "source": "The Verge AI",
-      "published": "2026-05-22T20:39:54+00:00",
-      "curated_at": "2026-05-22T22:00:14.883499+00:00",
-      "original_title": "Google&#8217;s AI search is so broken it can &#8216;disregard&#8217; what you&#8217;re looking for"
     }
   ]
 }
