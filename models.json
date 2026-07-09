@@ -1,5 +1,5 @@
 {
-  "updated": "2026-05-16",
+  "updated": "2026-07-09",
   "note": "Big Five frontier models. Auto-updated daily from OpenRouter /v1/models.",
   "models": [
     {
@@ -25,9 +25,9 @@
     },
     {
       "provider": "xAI",
-      "model": "Grok 4.3",
-      "context": "1M",
-      "price": "$1.25/M",
+      "model": "Grok 4.5",
+      "context": "500k",
+      "price": "$2.00/M",
       "color": "#6B7280"
     },
     {
